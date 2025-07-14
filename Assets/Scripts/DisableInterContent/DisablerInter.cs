@@ -51,7 +51,7 @@ namespace DisableInterContent
 
         public void GetReward()
         {
-            _ads.ShowRewarded(() =>
+            /*_ads.ShowRewarded(() =>
             {
                 _currentValueShowReward++;
 
@@ -71,7 +71,7 @@ namespace DisableInterContent
                     _disableInterScreen.CloseScreen();
                     AppMetrica.ReportEvent("RemoveInter_6h");
                 }
-            });
+            });*/
         }
 
         public void Reset()

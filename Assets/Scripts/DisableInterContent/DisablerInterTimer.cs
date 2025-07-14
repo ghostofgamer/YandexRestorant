@@ -59,7 +59,7 @@ namespace DisableInterContent
         private void Activate()
         {
             // _interstitialTimer.SetTemporaryIntersValue(true);
-            _ads.SetTemporaryIntersValue(true);
+            // _ads.SetTemporaryIntersValue(true);
             _isTimerActive = true;
 
             _endTime = DateTime.Now.AddSeconds(_durationSeconds);
@@ -85,8 +85,7 @@ namespace DisableInterContent
         private void OnTimerComplete()
         {
             _isTimerActive = false;
-            // _interstitialTimer.SetTemporaryIntersValue(false);
-            _ads.SetTemporaryIntersValue(false);
+            // _ads.SetTemporaryIntersValue(false);
             Debug.Log("TimerCompleted!!!!!!!!!!!!!!!!!!!!");
             TimerCompleted?.Invoke();
             PlayerPrefs.DeleteKey(TIMER_SAVE_KEY);
@@ -114,8 +113,7 @@ namespace DisableInterContent
                 if (DateTime.Now < _endTime)
                 {
                     _isTimerActive = true;
-                    // _interstitialTimer.SetTemporaryIntersValue(true);
-                    _ads.SetTemporaryIntersValue(true);
+                    // _ads.SetTemporaryIntersValue(true);
                     UpdateTimerDisplay();
 
                     if (_timerCoroutine != null)
@@ -131,7 +129,7 @@ namespace DisableInterContent
             else
             {
                 _isTimerActive = false;
-                _ads.SetTemporaryIntersValue(false);
+                // _ads.SetTemporaryIntersValue(false);
                 // _interstitialTimer.SetTemporaryIntersValue(false);
             }
         }

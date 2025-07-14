@@ -39,12 +39,12 @@ namespace UI.Screens.NewLevelContent
 
         public void ChooseRewardX2()
         {
-            _ads.ShowRewarded(() =>
+            /*_ads.ShowRewarded(() =>
             {
                 OpenSecondScreen();
                 AppMetrica.ReportEvent("RewardAD", "{\"" + "ChooseRewardX2UpLevel" + "\":null}");
                 AddPrize(4, 50);
-            });
+            });*/
         }
 
         private void OpenSecondScreen()

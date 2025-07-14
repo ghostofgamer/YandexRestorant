@@ -37,7 +37,7 @@ namespace MysteryGiftContent
 
         public void GivePrizeADS()
         {
-            if (_randomPrize != null)
+            /*if (_randomPrize != null)
                 _ads.ShowRewarded(() =>
                 {
                     SoundPlayer.Instance.PlayMysteryBoxPrize();
@@ -46,7 +46,7 @@ namespace MysteryGiftContent
                     _mysteryBoxScreen.CloseScreen();
                     _congratulationMysteryBoxScreen.OpenScreen();
                     _congratulationMysteryBoxScreen.Init(_randomPrize.SpriteIcon, _randomPrize.Value);
-                });
+                });*/
         }
 
         private void SelectRandomPrize()

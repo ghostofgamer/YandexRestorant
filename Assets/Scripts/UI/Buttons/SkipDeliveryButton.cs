@@ -23,7 +23,7 @@ namespace UI.Buttons
             if (_isAdButton)
             {
                 Debug.Log("РЕВАРД КНОПКА");
-                _ads.ShowRewarded(() => _delivery.SpawnAllItems());
+                // _ads.ShowRewarded(() => _delivery.SpawnAllItems());
                 AppMetrica.ReportEvent("RewardAD", "{\"" + "SkipDeliveryADS" + "\":null}");
             }
             else if (_isEnergyButton)

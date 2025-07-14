@@ -1,19 +1,10 @@
-using System;
-using System.Collections;
-using AppodealStack.Monetization.Api;
-using AppodealStack.Monetization.Common;
-using Io.AppMetrica;
-using JetBrains.Annotations;
-using TMPro;
-using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.UI;
 
 namespace ADSContent
 {
     public class ADS : MonoBehaviour
     {
-        [Header("Appodeal")] [SerializeField] private string _keyAppodeal;
+        /*[Header("Appodeal")] [SerializeField] private string _keyAppodeal;
         [SerializeField] private bool _isAppodeal;
 
         [Space] [Header("Applovin")] public string SDKKey =
@@ -38,7 +29,7 @@ namespace ADSContent
 
         public event Action _interHidden;
 
-        private void Awake()
+        /*private void Awake()
         {
             bool removeAds = PlayerPrefs.GetInt("removeADS") == 1;
             SetValue(!removeAds);
@@ -47,7 +38,7 @@ namespace ADSContent
                 Initialize(_keyAppodeal);
             else
                 Init();
-        }
+        }#1#
 
 
         /*private void Start()
@@ -59,7 +50,7 @@ namespace ADSContent
                 Initialize(_keyAppodeal);
             else
                 Init();
-        }*/
+        }#1#
 
         private void Init()
         {
@@ -192,7 +183,7 @@ namespace ADSContent
                 else
                 {
                     Appodeal.Cache(AppodealAdType.Interstitial);
-                }*/
+                }#1#
                 
             }
             else
@@ -323,7 +314,7 @@ namespace ADSContent
         private void Initialize(string key)
         {
             /*Appodeal.SetAutoCache(AppodealAdType.RewardedVideo, true);
-            Appodeal.SetAutoCache(AppodealAdType.Interstitial, true);*/
+            Appodeal.SetAutoCache(AppodealAdType.Interstitial, true);#1#
 
             // Appodeal.SetTesting(true); // Включить тестовые объявления
             // Appodeal.SetLogLevel(AppodealLogLevel.Verbose);
@@ -374,14 +365,14 @@ namespace ADSContent
 
             /*_interstitialRetryCount++;
             float delay = Mathf.Pow(2, Mathf.Min(5, _interstitialRetryCount));
-            StartCoroutine(RetryLoadInterstitial(delay));*/
+            StartCoroutine(RetryLoadInterstitial(delay));#1#
         }
 
         /*private IEnumerator RetryLoadInterstitial(float delay)
         {
             yield return new WaitForSeconds(delay);
             Appodeal.Cache(AppodealAdType.Interstitial);
-        }*/
+        }#1#
 
         private void OnInterstitialShowFailed(object sender, EventArgs e)
         {
@@ -455,6 +446,6 @@ namespace ADSContent
         private void OnRewardedVideoExpired(object sender, EventArgs e)
         {
             Debug.Log("[APDUnity] [Callback] OnRewardedVideoExpired()");
-        }
+        }*/
     }
 }

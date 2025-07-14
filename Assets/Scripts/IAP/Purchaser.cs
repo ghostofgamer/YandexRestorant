@@ -101,8 +101,8 @@ namespace IAP
             if (_interstitialTimer != null)
                 _interstitialTimer.SetValue(false);
 
-            if (_ads != null)
-                _ads.SetValue(false);
+            /*if (_ads != null)
+                _ads.SetValue(false);*/
 
             if (_uiInfo != null)
                 _uiInfo.UpdateRemoveAdsButton();

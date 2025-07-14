@@ -44,7 +44,7 @@ namespace ADSContent
 
             if (timer >= interval)
             {
-                if (_ads.IsInterstitialReady)
+                /*if (_ads.IsInterstitialReady)
                 {
                     ShowInterstitial();
                     ResetTimer();
@@ -53,11 +53,7 @@ namespace ADSContent
                 {
                     CheckAdReadiness();
                     _nextCheckTime = Time.time + 5f; // Следующая проверка через 5 сек
-                }
-                
-                /*ShowInterstitial();
-                timer = 0f;
-                lastAdTime = DateTime.Now;*/
+                }*/
             }
         }
 
@@ -79,7 +75,7 @@ namespace ADSContent
 
         private void ShowInterstitial()
         {
-            _ads.ShowInterstitial();
+            // _ads.ShowInterstitial();
 
             adShowCount++;
 
@@ -92,7 +88,7 @@ namespace ADSContent
         
         private void CheckAdReadiness()
         {
-            if (_ads.IsInterstitialReady)
+            /*if (_ads.IsInterstitialReady)
             {
                 ShowInterstitial();
                 ResetTimer();
@@ -100,7 +96,7 @@ namespace ADSContent
             else if (timer >= interval + 60f) // Превысили максимальное время ожидания
             {
                 ResetTimer(); // Сбрасываем, чтобы попробовать через 2 минуты
-            }
+            }*/
         }
         
         private void ResetTimer()

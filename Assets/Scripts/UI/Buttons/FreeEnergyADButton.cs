@@ -12,11 +12,11 @@ namespace UI.Buttons
         
         public override void OnClick()
         {
-            _ads.ShowRewarded(() =>
+            /*_ads.ShowRewarded(() =>
             {
                 AppMetrica.ReportEvent("RewardAD", "{\"" + "FreeEnergyAD" + "\":null}");
                 _energy.IncreaseEnergy(3);
-            });
+            });*/
         }
     }
 }

@@ -23,7 +23,7 @@ namespace UI.Buttons
         {
             SoundPlayer.Instance.PlayButtonClick();
             
-            _ads.ShowRewarded(() =>
+            /*_ads.ShowRewarded(() =>
             {
                 AppMetrica.ReportEvent("RewardAD", "{\"" + "ExperienceOverDay" + "\":null}");
                 _wallet.Add(new DollarValue(25, 0));
@@ -31,7 +31,7 @@ namespace UI.Buttons
                 _statisticCounter.ClearData();
                 _workers.PaySalary();
                 _statisticsScreen.CloseScreen();
-            });
+            });*/
         }
     }
 }
