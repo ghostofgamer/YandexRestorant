@@ -1,0 +1,30 @@
+namespace Enums
+{
+    public enum TutorialType
+    {
+        NameRestaurant,
+        LookAround,
+        MoveAround,
+        TakeBoxBuns,
+        PutBunsAssemblyTable,
+        ThrowEmptyBoxInTrash,
+        TakeBoxBurgerPackages,
+        PutPackagesAssemblyTable,
+        ThrowEmptyBoxInTrashSecond,
+        OrderBurgerPatties,
+        SkipDelivery,
+        TakeBoxesOutside,
+        PutRawCutletInContainer,
+        ThrowEmptyBoxInTrashThird,
+        TakeRawCutletInTrayPlayer,
+        PutCutletsOnGrill,
+        FryCutletGrill,
+        TakeWellCutlet,
+        PutWellCutletToContainer,
+        LetsMakeFirstBurger,
+        LetsSetPrice,
+        OpenRestaurant,
+        TakeFirstOrder,
+        TutorCompleted,
+    }
+}

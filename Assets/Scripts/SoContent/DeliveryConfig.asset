@@ -1,0 +1,54 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08b0da03d833b8a4d9ecf3ac03b1b225, type: 3}
+  m_Name: DeliveryConfig
+  m_EditorClassIdentifier: 
+  _itemPrefabs:
+    keyValues:
+    - key: 3
+      value: {fileID: 1781197540288751231, guid: 27c2fb083394d21469f5932918aa4199, type: 3}
+    - key: 10
+      value: {fileID: 4880559694474019401, guid: b1cc3bf07caa90948b744cfd7729393b, type: 3}
+    - key: 9
+      value: {fileID: 9012199491416444520, guid: f2f50ba2020d6854ebbb52d1a3ce05bf, type: 3}
+    - key: 2
+      value: {fileID: 7718645176362415343, guid: 1f64437103984324a8b8806ab23cfe0d, type: 3}
+    - key: 22
+      value: {fileID: 5643424525729383551, guid: 11faddea8e566c14bb71613ceeb87c22, type: 3}
+    - key: 27
+      value: {fileID: 8633807457731639758, guid: 7b773dfcdf1df7b4f92a354d36e668bd, type: 3}
+    - key: 6
+      value: {fileID: 4791603657145020080, guid: 141211709b147d948afccaf825f4c15f, type: 3}
+    - key: 7
+      value: {fileID: 3972183978174400577, guid: 3cbed0cbf41e3ae43b6335a6afc5d1df, type: 3}
+    - key: 23
+      value: {fileID: 2779256394255862160, guid: c4b4108bbd12b974584ec86673595928, type: 3}
+    - key: 24
+      value: {fileID: 4034907550720534695, guid: 13d85f13a4058af46aee6a4161a20723, type: 3}
+    - key: 28
+      value: {fileID: 2669910488221700465, guid: 34df2cbccaad72544ba91dac415b6ddb, type: 3}
+    - key: 25
+      value: {fileID: 4524947710719297594, guid: de2798d4787117e4db1e69bbc1f60074, type: 3}
+    - key: 26
+      value: {fileID: 5693519656060174544, guid: ee6010aabe7ed024e80382b398f6490e, type: 3}
+    - key: 8
+      value: {fileID: 5463582091869878773, guid: afba304ccf833a243a22f5e7ea636c6d, type: 3}
+    - key: 29
+      value: {fileID: 3604261212595852624, guid: 3f1102e3b67f76f4d856d2d730e71efc, type: 3}
+    - key: 30
+      value: {fileID: 58047670382442154, guid: 844612c00e4291c4da8c24f72575943b, type: 3}
+    - key: 31
+      value: {fileID: 8936110102788574231, guid: 4b40a766f9503ee49bc5c892dd3d66a7, type: 3}
+    - key: 32
+      value: {fileID: 4389329851181484578, guid: 39a22d58815a8424d8fd7ddcefca0a1b, type: 3}
+  _minValueTimer: 20
+  _maxValueTimer: 46

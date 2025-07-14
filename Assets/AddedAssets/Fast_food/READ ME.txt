@@ -1,0 +1,10 @@
+Thank you for purchasing this pack. This package contains everything needed for the creation of a complete fast food restaurant scene. The prefabs can be found in the folder of the same name and include objects prepared for the scene, some of which have LODs (Levels of Detail). The materials are located in the 'Mod>Materials' folder.
+
+Included is an Animator and a script designed to operate the 'kitchen_range' prefab. This setup allows for dynamic interactions within the scene, enhancing the realism and functionality of your fast food restaurant environment.
+
+The scene utilizes the URP (Universal Render Pipeline) and includes lightmaps, reflection probes, and volumes for post-processing. We have made an effort to ensure the assets are easily adaptable to your project. If you encounter any issues, please do not hesitate to send us an email at [assetstore@enozone.fr].
+
+Enozone's team
+
+SCRIPT --
+Animation Toggle' is a script designed to control the 'toggle' parameter of the Animator. It triggers either an 'open' or 'close' animation based on the current state of an object when a mouse click occurs. The script operates by monitoring mouse inputs, adjusting the animation state to switch between 'open' and 'close' upon clicking. It is important to ensure that a kinematic Rigidbody is attached to the parent of each panel to ensure proper functionality of the script within the game's physics environment.

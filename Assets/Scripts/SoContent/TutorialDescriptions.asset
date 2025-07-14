@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f69566453d054db46b8bd7d81926e124, type: 3}
+  m_Name: TutorialDescriptions
+  m_EditorClassIdentifier: 
+  descriptions:
+  - type: 3
+    text: Let's get ready  for the guests!  Take the box of buns.
+  - type: 4
+    text: Let's put them  on the assembly  table.
+  - type: 5
+    text: Now throw  the empty box  in the trash!
+  - type: 6
+    text: Now we need to lay out the burger boxes
+  - type: 7
+    text: Let's put them  on the assembly  table.
+  - type: 8
+    text: Now throw  the empty box  in the trash again!
+  - type: 9
+    text: It's time to cook!  Let's order burger  patties!
+  - type: 10
+    text: There is no time  to wait! Speed  up the delivery!
+  - type: 11
+    text: Go to outside  Take the boxes!
+  - type: 12
+    text: Put the Raw patties  on the container
+  - type: 13
+    text: Now throw the empty box in the trash for the last time!
+  - type: 14
+    text: Take the raw cutlets on the tray
+  - type: 15
+    text: Put the patties  on the grill!
+  - type: 16
+    text: ' Press the grill to fry the cutlets'
+  - type: 17
+    text: The patties  are ready,  take them away!
+  - type: 18
+    text: Put Well patties to Assembly table container
+  - type: 19
+    text: Let's make  the first  S burger!
+  - type: 20
+    text: 'We need a profit:  let''s set  the price!'
+  - type: 21
+    text: 'We are ready:  we are opening  a restaurant!'
+  - type: 22
+    text: Wait for customers and  Take one orders
+  - type: 23
+    text: Wait until the client finishes eating and clean the table

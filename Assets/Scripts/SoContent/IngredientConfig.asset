@@ -1,0 +1,199 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd73d7122534bb449b2347ee13195436, type: 3}
+  m_Name: IngredientConfig
+  m_EditorClassIdentifier: 
+  _ingredients:
+  - itemType: 1
+    sprite: {fileID: 21300000, guid: c4b6e13af22125e4a983d255de2a275d, type: 3}
+    outlineSprite: {fileID: 21300000, guid: 883ee51494517a54d80250739dc9bcf2, type: 3}
+    shopItemSprite: {fileID: 21300000, guid: c4b6e13af22125e4a983d255de2a275d, type: 3}
+    dollarsPrice: 22
+    centsPrice: 0
+    name: Cutlet
+    term: Cutlet
+  - itemType: 4
+    sprite: {fileID: 21300000, guid: b9c18eebb83d23841a75f86d5cc38e6e, type: 3}
+    outlineSprite: {fileID: 21300000, guid: 8e0083d3c968d524e9231029d31f5f02, type: 3}
+    shopItemSprite: {fileID: 21300000, guid: b9c18eebb83d23841a75f86d5cc38e6e, type: 3}
+    dollarsPrice: 0
+    centsPrice: 0
+    name: Bun Top
+    term: Bun Top
+  - itemType: 5
+    sprite: {fileID: 21300000, guid: 278fdaa037e6ee34d82d1f074c62c83d, type: 3}
+    outlineSprite: {fileID: 21300000, guid: f59b1a230dd868146a012707972f5347, type: 3}
+    shopItemSprite: {fileID: 21300000, guid: 278fdaa037e6ee34d82d1f074c62c83d, type: 3}
+    dollarsPrice: 0
+    centsPrice: 0
+    name: Bun Low
+    term: 
+  - itemType: 2
+    sprite: {fileID: 21300000, guid: 5a6357fef741f7146ba0f491df7dbedc, type: 3}
+    outlineSprite: {fileID: 21300000, guid: c52b2483f068710439af7d03749a28b3, type: 3}
+    shopItemSprite: {fileID: 21300000, guid: 5a6357fef741f7146ba0f491df7dbedc, type: 3}
+    dollarsPrice: 13
+    centsPrice: 80
+    name: Chesee
+    term: Chesee
+  - itemType: 6
+    sprite: {fileID: 21300000, guid: 02f060e893177e148a2410e006c0e0f6, type: 3}
+    outlineSprite: {fileID: 21300000, guid: b89901260a15e1f4ab4d03b103768eaf, type: 3}
+    shopItemSprite: {fileID: 21300000, guid: 02f060e893177e148a2410e006c0e0f6, type: 3}
+    dollarsPrice: 10
+    centsPrice: 0
+    name: Tomato
+    term: Tomato
+  - itemType: 7
+    sprite: {fileID: 21300000, guid: c0f427cd90d42b449b83ba09967ef275, type: 3}
+    outlineSprite: {fileID: 21300000, guid: 5541c214241f73640be493c50ba80422, type: 3}
+    shopItemSprite: {fileID: 21300000, guid: c0f427cd90d42b449b83ba09967ef275, type: 3}
+    dollarsPrice: 6
+    centsPrice: 40
+    name: Onion
+    term: Onion
+  - itemType: 8
+    sprite: {fileID: 21300000, guid: 7faaaea68e2114f4c87f767ce6b28a71, type: 3}
+    outlineSprite: {fileID: 21300000, guid: 2d9c91aad9625b94caf828be4691e8ca, type: 3}
+    shopItemSprite: {fileID: 21300000, guid: 7faaaea68e2114f4c87f767ce6b28a71, type: 3}
+    dollarsPrice: 10
+    centsPrice: 80
+    name: Cabbage
+    term: Cabbage
+  - itemType: 17
+    sprite: {fileID: 21300000, guid: f8aa91323ce187241aa12295b855865a, type: 3}
+    outlineSprite: {fileID: 21300000, guid: 9e70ff66f0606624c9c1b1c392b14c31, type: 3}
+    shopItemSprite: {fileID: 21300000, guid: f8aa91323ce187241aa12295b855865a, type: 3}
+    dollarsPrice: 0
+    centsPrice: 0
+    name: Ketchup
+    term: 
+  - itemType: 18
+    sprite: {fileID: 21300000, guid: dbcbb1e756530d64c8ad35cda44c40f1, type: 3}
+    outlineSprite: {fileID: 21300000, guid: b6bd211056f01af4abeccca1b7e48ef9, type: 3}
+    shopItemSprite: {fileID: 21300000, guid: dbcbb1e756530d64c8ad35cda44c40f1, type: 3}
+    dollarsPrice: 0
+    centsPrice: 0
+    name: Mustard
+    term: 
+  - itemType: 28
+    sprite: {fileID: 21300000, guid: 6daf063fe1455ef44b6e98f0b50968e2, type: 3}
+    outlineSprite: {fileID: 0}
+    shopItemSprite: {fileID: 21300000, guid: b9d4d420a44338e49b831220488309b3, type: 3}
+    dollarsPrice: 27
+    centsPrice: 0
+    name: Soda Plum
+    term: Soda Plum
+  - itemType: 25
+    sprite: {fileID: 21300000, guid: d5f0d54eae5873f498194f8ba5968c2c, type: 3}
+    outlineSprite: {fileID: 0}
+    shopItemSprite: {fileID: 21300000, guid: ee6ef2d0bf4221841b41931efe906877, type: 3}
+    dollarsPrice: 27
+    centsPrice: 0
+    name: Soda Barberry
+    term: Soda Barberry
+  - itemType: 24
+    sprite: {fileID: 21300000, guid: 3e0b8bcbb040d3247ba09d913614b7e4, type: 3}
+    outlineSprite: {fileID: 0}
+    shopItemSprite: {fileID: 21300000, guid: 2a4bf7c078816834da21feb533fb63ca, type: 3}
+    dollarsPrice: 27
+    centsPrice: 0
+    name: Soda Orange
+    term: Soda Orange
+  - itemType: 23
+    sprite: {fileID: 21300000, guid: b5ab434810078124fadb1611f9e8c182, type: 3}
+    outlineSprite: {fileID: 0}
+    shopItemSprite: {fileID: 21300000, guid: 51654195ab516d044bfd313eea1b874d, type: 3}
+    dollarsPrice: 27
+    centsPrice: 0
+    name: Soda Lemon
+    term: Soda Lemon
+  - itemType: 22
+    sprite: {fileID: 21300000, guid: a5c0b58b5a99eb54c9e0b8246a3abec8, type: 3}
+    outlineSprite: {fileID: 0}
+    shopItemSprite: {fileID: 21300000, guid: 0f14a6c119873d446ad7fbbe2df037c7, type: 3}
+    dollarsPrice: 15
+    centsPrice: 0
+    name: Coffee
+    term: Coffee
+  - itemType: 9
+    sprite: {fileID: 21300000, guid: 5c4c298ded5f4fe43996afded3032fc1, type: 3}
+    outlineSprite: {fileID: 21300000, guid: 3fe977cd06faa6540abb9eefe63b56d7, type: 3}
+    shopItemSprite: {fileID: 21300000, guid: 5c4c298ded5f4fe43996afded3032fc1, type: 3}
+    dollarsPrice: 12
+    centsPrice: 60
+    name: Package Burger
+    term: Package Burger
+  - itemType: 3
+    sprite: {fileID: 21300000, guid: b9c18eebb83d23841a75f86d5cc38e6e, type: 3}
+    outlineSprite: {fileID: 21300000, guid: 8e0083d3c968d524e9231029d31f5f02, type: 3}
+    shopItemSprite: {fileID: 21300000, guid: b9c18eebb83d23841a75f86d5cc38e6e, type: 3}
+    dollarsPrice: 6
+    centsPrice: 0
+    name: Bun
+    term: Bun
+  - itemType: 27
+    sprite: {fileID: 21300000, guid: a5c0b58b5a99eb54c9e0b8246a3abec8, type: 3}
+    outlineSprite: {fileID: 21300000, guid: a5c0b58b5a99eb54c9e0b8246a3abec8, type: 3}
+    shopItemSprite: {fileID: 21300000, guid: a5c0b58b5a99eb54c9e0b8246a3abec8, type: 3}
+    dollarsPrice: 9
+    centsPrice: 60
+    name: Cup Coffee
+    term: Cup Coffee
+  - itemType: 26
+    sprite: {fileID: 21300000, guid: ca80cb80d5793634189fc5d2e0699187, type: 3}
+    outlineSprite: {fileID: 21300000, guid: ca80cb80d5793634189fc5d2e0699187, type: 3}
+    shopItemSprite: {fileID: 21300000, guid: ca80cb80d5793634189fc5d2e0699187, type: 3}
+    dollarsPrice: 10
+    centsPrice: 0
+    name: Cup Soda
+    term: Cup Soda
+  - itemType: 10
+    sprite: {fileID: 21300000, guid: 51b55e7c3ee0e2140a2695cbe9453739, type: 3}
+    outlineSprite: {fileID: 21300000, guid: 51b55e7c3ee0e2140a2695cbe9453739, type: 3}
+    shopItemSprite: {fileID: 21300000, guid: 51b55e7c3ee0e2140a2695cbe9453739, type: 3}
+    dollarsPrice: 22
+    centsPrice: 0
+    name: Raw Cutlet
+    term: Raw Cutlet
+  - itemType: 29
+    sprite: {fileID: 21300000, guid: fc03c93d36af02c43ab0b398dcbdeb3c, type: 3}
+    outlineSprite: {fileID: 21300000, guid: fc03c93d36af02c43ab0b398dcbdeb3c, type: 3}
+    shopItemSprite: {fileID: 21300000, guid: fc03c93d36af02c43ab0b398dcbdeb3c, type: 3}
+    dollarsPrice: 22
+    centsPrice: 20
+    name: French Fries
+    term: French Fries
+  - itemType: 30
+    sprite: {fileID: 21300000, guid: 58164a534fdcf6d45b43db4faab8dc58, type: 3}
+    outlineSprite: {fileID: 21300000, guid: 58164a534fdcf6d45b43db4faab8dc58, type: 3}
+    shopItemSprite: {fileID: 21300000, guid: 58164a534fdcf6d45b43db4faab8dc58, type: 3}
+    dollarsPrice: 22
+    centsPrice: 20
+    name: Nuggets
+    term: Nuggets
+  - itemType: 31
+    sprite: {fileID: 21300000, guid: 96c3a07bea2b2934b8f125d7cff94ad3, type: 3}
+    outlineSprite: {fileID: 21300000, guid: 96c3a07bea2b2934b8f125d7cff94ad3, type: 3}
+    shopItemSprite: {fileID: 21300000, guid: 96c3a07bea2b2934b8f125d7cff94ad3, type: 3}
+    dollarsPrice: 15
+    centsPrice: 0
+    name: Fries package
+    term: Fries package
+  - itemType: 32
+    sprite: {fileID: 21300000, guid: 9364a3ed984870e42879e7f13c20737d, type: 3}
+    outlineSprite: {fileID: 21300000, guid: 9364a3ed984870e42879e7f13c20737d, type: 3}
+    shopItemSprite: {fileID: 21300000, guid: 9364a3ed984870e42879e7f13c20737d, type: 3}
+    dollarsPrice: 15
+    centsPrice: 0
+    name: Nuggets Package
+    term: Nuggets Package

@@ -1,0 +1,5444 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f0b0c553be8edd4682e9180fdd13e37, type: 3}
+  m_Name: I2Languages
+  m_EditorClassIdentifier: 
+  mSource:
+    UserAgreesToHaveItOnTheScene: 0
+    UserAgreesToHaveItInsideThePluginsFolder: 0
+    GoogleLiveSyncIsUptoDate: 1
+    mTerms:
+    - Term: "\u042D\u0442\u043E\u0442 \u0422\u0435\u043A\u0441\u0442\u043E\u0432\u044B\u0439
+        \u0422\u0435\u0441\u0442"
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: TutorialStep1
+      TermType: 0
+      Description: 
+      Languages:
+      - This training has begun
+      - Dieses Training hat begonnen
+      - "Cette formation a commenc\xE9"
+      - "\u042D\u0442\u043E \u043E\u0431\u0443\u0447\u0435\u043D\u0438\u0435 \u043D\u0430\u0447\u0430\u043B\u043E\u0441\u044C"
+      - "Bu e\u011Fitim ba\u015Flad\u0131"
+      - "\u3053\u306E\u30C8\u30EC\u30FC\u30CB\u30F3\u30B0\u306F\u59CB\u307E\u308A\u307E\u3057\u305F"
+      - "Esta formaci\xF3n ya ha comenzado"
+      - "To szkolenie si\u0119 rozpocz\u0119\u0142o"
+      - "Questa formazione \xE8 iniziata"
+      - "Este treinamento j\xE1 come\xE7ou"
+      - Pelatihan ini telah dimulai
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: Test
+      TermType: 0
+      Description: 
+      Languages:
+      - Here I Will Test The Text For Errors And Other Actions, Understood, My Friend
+      - Hier Werde Ich Den Text Auf Fehler Und Andere Aktionen Testen, Verstanden,
+        Mein Freund
+      - Ici Je Vais Tester Le Texte Pour Les Erreurs Et Autres Actions, Compris,
+        Mon Ami
+      - "\u0442\u0443\u0442 \u044F \u0431\u0443\u0434\u0443  \u0442\u0435\u0441\u0442\u0438\u0440\u043E\u0432\u0430\u0442\u044C
+        \u0442\u0435\u043A\u0441\u0442 \u043D\u0430 \u043E\u0448\u0438\u0431\u043A\u0438
+        \u0438 \u0438\u043D\u044B\u0435 \u0434\u0435\u0439\u0441\u0442\u0432\u0438\u044F
+        \u043F\u043E\u043D\u044F\u043B \u0434\u0440\u0443\u0433 \u0442\u044B \u043C\u043E\u0439"
+      - "Burada Metni Hatalar Ve Di\u011Fer Eylemler A\xE7\u0131s\u0131ndan Test
+        Edece\u011Fim, Anla\u015F\u0131ld\u0131, Dostum"
+      - "\u3053\u3053\u3067\u79C1\u306F\u30C6\u30AD\u30B9\u30C8\u306E\u30A8\u30E9\u30FC\u3084\u305D\u306E\u4ED6\u306E\u30A2\u30AF\u30B7\u30E7\u30F3\u3092\u30C6\u30B9\u30C8\u3057\u307E\u3059\u3001\u7406\u89E3\u3057\u307E\u3057\u305F\u3001\u79C1\u306E\u53CB\u4EBA"
+      - "Aqu\xED Probar\xE9 El Texto En Busca De Errores Y Otras Acciones, Entendido
+        Amigo."
+      - "Tutaj Sprawdz\u0119 Tekst Pod K\u0105tem B\u0142\u0119d\xF3w I Innych Dzia\u0142a\u0144,
+        Rozumiem, M\xF3j Przyjacielu"
+      - "Qui Metter\xF2 Alla Prova Il Testo Per Errori E Altre Azioni, Capito, Amico
+        Mio"
+      - "Aqui Vou Testar O Texto Em Busca De Erros E Outras A\xE7\xF5es, Entendido,
+        Meu Amigo"
+      - Di Sini Saya Akan Menguji Teks Untuk Kesalahan Dan Tindakan Lainnya, Dipahami,
+        Teman Saya
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: "\u0412\u044B\u0431\u0435\u0440\u0438 \u044F\u0437\u044B\u043A :"
+      TermType: 0
+      Description: 
+      Languages:
+      - 'Select language:'
+      - "Sprache ausw\xE4hlen:"
+      - "S\xE9lectionnez la langue:"
+      - "\u0412\u044B\u0431\u0435\u0440\u0438 \u044F\u0437\u044B\u043A :"
+      - "Dil se\xE7in:"
+      - "\r\u8A00\u8A9E\u3092\u9078\u629E\u3057\u3066\u304F\u3060\u3055\u3044:"
+      - 'Seleccionar idioma:'
+      - "Wybierz j\u0119zyk:"
+      - 'Seleziona la lingua:'
+      - 'Selecione o idioma:'
+      - 'Pilih bahasa:'
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: "\u042F\u0437\u044B\u043A"
+      TermType: 0
+      Description: 
+      Languages:
+      - Language
+      - Sprache
+      - Langue
+      - "\u042F\u0437\u044B\u043A"
+      - Dil
+      - "\u8A00\u8A9E"
+      - Idioma
+      - "J\u0119zyk"
+      - Lingua
+      - Linguagem
+      - Bahasa
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: "\u0422\u0435\u0441\u0442\u0438\u043A"
+      TermType: 0
+      Description: 
+      Languages:
+      - Promo
+      - Aktion
+      - Promotion
+      - "\u041F\u0440\u043E\u043C\u043E"
+      - Promosyon
+      - "\u30D7\u30ED\u30E2\u30FC\u30B7\u30E7\u30F3"
+      - "Promoci\xF3n"
+      - Promocja
+      - Promozione
+      - "Promo\xE7\xE3o"
+      - Promosi
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: Code New Roman SDF
+      TermType: 9
+      Description: 
+      Languages:
+      - Code New Roman SDF
+      - Code New Roman SDF
+      - Code New Roman SDF
+      - Code New Roman SDF
+      - Code New Roman SDF
+      - MPLUSRounded1c-Medium SDF
+      - Code New Roman SDF
+      - Code New Roman SDF
+      - Code New Roman SDF
+      - Code New Roman SDF
+      - Code New Roman SDF
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: Vibro
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: Settings
+      TermType: 0
+      Description: 
+      Languages:
+      - SETTINGS
+      - Einstellungen
+      - "Param\xE8tres"
+      - "\u041D\u0430\u0441\u0442\u0440\u043E\u0439\u043A\u0438"
+      - Ayarlar
+      - "\u8A2D\u5B9A"
+      - Ajustes
+      - Ustawienia
+      - Impostazioni
+      - "Configura\xE7\xF5es"
+      - Pengaturan
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: Join
+      TermType: 0
+      Description: 
+      Languages:
+      - JOIN!
+      - Verbinden!
+      - Rejoindre!
+      - "\u0412\u043E\u0439\u0442\u0438"
+      - "Kat\u0131lmak!"
+      - "\u53C2\u52A0\u3059\u308B\uFF01"
+      - "\xA1Unirse!"
+      - "Do\u0142\u0105czy\u0107!"
+      - Giuntura!
+      - Juntar!
+      - Bergabung!
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: OurGame
+      TermType: 0
+      Description: 
+      Languages:
+      - Our Games
+      - Unsere Spiele
+      - Nos Jeux
+      - "\u041D\u0430\u0448\u0438 \u0418\u0433\u0440\u044B"
+      - "Oyunlar\u0131m\u0131z"
+      - "\u79C1\u305F\u3061\u306E\u30B2\u30FC\u30E0"
+      - Nuestros Juegos
+      - Nasze Gry
+      - I Nostri Giochi
+      - Nossos Jogos
+      - Permainan Kami
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: Promo
+      TermType: 0
+      Description: 
+      Languages:
+      - Promo
+      - Aktion
+      - Promotion
+      - "\u041F\u0440\u043E\u043C\u043E"
+      - Promosyon
+      - "\u30D7\u30ED\u30E2\u30FC\u30B7\u30E7\u30F3"
+      - "Promoci\xF3n"
+      - Promocja
+      - Promozione
+      - "Promo\xE7\xE3o"
+      - Promosi
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: Sound
+      TermType: 0
+      Description: 
+      Languages:
+      - Sound
+      - Klang
+      - Son
+      - "\u0417\u0432\u0443\u043A"
+      - Ses
+      - "\u97F3"
+      - Sonido
+      - "D\u017Awi\u0119k"
+      - Suono
+      - Som
+      - Suara
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: Music
+      TermType: 0
+      Description: 
+      Languages:
+      - Music
+      - Musik
+      - Musique
+      - "\u041C\u0443\u0437\u044B\u043A\u0430"
+      - "M\xFCzik"
+      - "\u97F3\u697D"
+      - "M\xFAsica"
+      - Muzyka
+      - Musica
+      - "M\xFAsica"
+      - Musik
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: Sensa
+      TermType: 0
+      Description: 
+      Languages:
+      - Sensiv
+      - Empfind
+      - Sensibil
+      - "\u0421\u0435\u043D\u0441\u0430"
+      - "Duyarl\u0131l\u0131k"
+      - "\u611F\u5EA6"
+      - Sensibil
+      - "Wra\u017Cliwo\u015B\u0107"
+      - Sensibil
+      - Sensibil
+      - Kepekaan
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: PRODUCTS
+      TermType: 0
+      Description: 
+      Languages:
+      - Products
+      - Produkte
+      - Produits
+      - "\u041F\u0440\u043E\u0434\u0443\u043A\u0442\u044B"
+      - "\xDCr\xFCnler"
+      - "\u88FD\u54C1"
+      - Productos
+      - Produkty
+      - Prodotti
+      - Produtos
+      - Produk
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: Places
+      TermType: 0
+      Description: 
+      Languages:
+      - Places
+      - Orte
+      - Lieux
+      - "\u041C\u0435\u0441\u0442\u0430"
+      - Yer
+      - "\u5834\u6240"
+      - Lugares
+      - Miejsca
+      - Luoghi
+      - Lugares
+      - Tempat
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: Zones
+      TermType: 0
+      Description: 
+      Languages:
+      - Zones
+      - Zonen
+      - Zones
+      - "\u0417\u043E\u043D\u044B"
+      - "B\xF6lgeler"
+      - "\u30BE\u30FC\u30F3"
+      - Zonas
+      - Strefy
+      - Zone
+      - Zonas
+      - Zona
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: Equipment
+      TermType: 0
+      Description: 
+      Languages:
+      - Equipment
+      - "Ausr\xFCstung"
+      - "\xC9quipement"
+      - "\u041E\u0441\u043D\u0430\u0449\u0435\u043D\u0438\u0435"
+      - "Te\xE7hizat"
+      - "\u88C5\u7F6E"
+      - Equipo
+      - "Sprz\u0119t"
+      - Attrezzatura
+      - Equipamento
+      - Peralatan
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: Menu
+      TermType: 0
+      Description: 
+      Languages:
+      - Menu
+      - Speisekarte
+      - Menu
+      - "\u041C\u0435\u043D\u044E"
+      - "Men\xFC"
+      - "\u30E1\u30CB\u30E5\u30FC"
+      - "Men\xFA"
+      - Menu
+      - Menu
+      - Menu
+      - Menu
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: Workers
+      TermType: 0
+      Description: 
+      Languages:
+      - Workers
+      - Arbeitnehmer
+      - Ouvriers
+      - "\u0420\u0430\u0431\u043E\u0447\u0438\u0435"
+      - "I\u015F\xE7iler"
+      - "\u52B4\u50CD\u8005"
+      - Trabajadores
+      - Pracownicy
+      - Lavoratori
+      - Trabalhadores
+      - Pekerja
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: Shop
+      TermType: 0
+      Description: 
+      Languages:
+      - Shop
+      - "Gesch\xE4ft"
+      - Boutique
+      - "\u041C\u0430\u0433\u0430\u0437\u0438\u043D"
+      - "Ma\u011Faza"
+      - "\u5E97"
+      - Comercio
+      - Sklep
+      - Negozio
+      - Comprar
+      - Toko
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: RemoveADS
+      TermType: 0
+      Description: 
+      Languages:
+      - REMOVE ADS
+      - Anzeigen Entfernen
+      - Supprimer
+      - "\u0423\u0434\u0430\u043B\u0438\u0442\u044C \u0420\u0435\u043A\u043B\u0430\u043C\u0443"
+      - "Reklamlar\u0131 Kald\u0131r"
+      - "\u5E83\u544A\u3092\u524A\u9664\u3059\u308B"
+      - Eliminar Anuncios
+      - "Usu\u0144 Reklamy"
+      - Rimuovere Annunci
+      - "Remover An\xFAncios"
+      - Hapus Iklan
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: DescriptionRemoveADS
+      TermType: 0
+      Description: 
+      Languages:
+      - "REMOVE ALL INTERSTITIAL \nADS"
+      - Entfernen Sie Alle Interstitial-Anzeigen
+      - "Supprimer Toutes Les Publicit\xE9s Interstitielles"
+      - "\u0423\u0434\u0430\u043B\u0438\u0442\u044C \u0412\u0441\u0435 \u041F\u0440\u043E\u043C\u0435\u0436\u0443\u0442\u043E\u0447\u043D\u044B\u0435
+        \n\u0420\u0435\u043A\u043B\u0430\u043C\u044B"
+      - "T\xFCm Ara Reklamlar\u0131 Kald\u0131r"
+      - "\u3059\u3079\u3066\u306E\u30A4\u30F3\u30BF\u30FC\u30B9\u30C6\u30A3\u30B7\u30E3\u30EB\u5E83\u544A\u3092\u524A\u9664\u3059\u308B"
+      - Eliminar Todos Los Anuncios Intersticiales
+      - "Usu\u0144 Wszystkie Reklamy \u015Ar\xF3dmi\u0105\u017Cszowe"
+      - Rimuovere Tutti Gli Annunci Interstiziali
+      - "Remover Todos Os An\xFAncios Intersticiais\n"
+      - Hapus Semua Iklan Interstisial
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: FREE MONEY
+      TermType: 0
+      Description: 
+      Languages:
+      - FREE MONEY
+      - Kostenloses Geld
+      - Argent Gratuit
+      - "\u0414\u0435\u043D\u044C\u0433\u0438 \u0414\u0410\u0440\u043E\u043C"
+      - Bedava Para
+      - "\u7121\u6599\u306E\u304A\u91D1"
+      - Dinero Gratis
+      - "Darmowe Pien\u0443"
+      - Soldi Gratis
+      - "Dinheiro Gr\xE1tis"
+      - Uang Gratis
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: PAY MONEY
+      TermType: 0
+      Description: 
+      Languages:
+      - BUY MONEY
+      - Geld Kaufen
+      - Acheter De L'argent
+      - "\u041A\u0443\u043F\u0438\u0442\u044C \u0414\u0435\u043D\u044C\u0433\u0438"
+      - "Para Sat\u0131n Almak"
+      - "\u304A\u91D1\u3092\u8CB7\u3046"
+      - Comprar Dinero
+      - "Kupi\u0107 Pieni\u0105dze"
+      - Comprare Soldi
+      - Comprar Dinheiro
+      - Membeli Uang
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: FREE
+      TermType: 0
+      Description: 
+      Languages:
+      - FREE
+      - Frei
+      - Gratuit
+      - "\u0414\u0410\u0420\u041E\u041C"
+      - "\xD6zg\xFCr"
+      - "\u7121\u6599"
+      - Gratis
+      - "Bezp\u0142atny"
+      - Gratuito
+      - Livre
+      - Bebas
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: Dishes
+      TermType: 0
+      Description: 
+      Languages:
+      - Positions
+      - Positionen
+      - Postes
+      - "\u041F\u043E\u0437\u0438\u0446\u0438\u0438"
+      - Pozisyonlar
+      - "\u30DD\u30B8\u30B7\u30E7\u30F3"
+      - Posiciones
+      - Pozycje
+      - Posizioni
+      - "Posi\xE7\xF5es"
+      - Posisi
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: AddToMenu
+      TermType: 0
+      Description: 
+      Languages:
+      - Add to the menu
+      - "Zum Men\xFC hinzuf\xFCgen"
+      - Ajouter au menu
+      - "\u0414\u043E\u0431\u0430\u0432\u0438\u0442\u044C \u0432 \u043C\u0435\u043D\u044E"
+      - "Men\xFCye ekle"
+      - "\u30E1\u30CB\u30E5\u30FC\u306B\u8FFD\u52A0"
+      - "A\xF1adir al men\xFA"
+      - Dodaj do menu
+      - Aggiungi al menu
+      - Adicionar ao menu
+      - Tambahkan ke menu
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: The guests are satisfied
+      TermType: 0
+      Description: 
+      Languages:
+      - "The guests are satisfied \Lwith the price."
+      - "Die G\xE4ste sind mit dem Preis zufrieden."
+      - Les clients sont satisfaits du prix.
+      - "\u0413\u043E\u0441\u0442\u0438 \u0434\u043E\u0432\u043E\u043B\u044C\u043D\u044B
+        \u0446\u0435\u043D\u043E\u0439."
+      - Misafirler fiyattan memnun.
+      - "\u30B2\u30B9\u30C8\u306F\u4FA1\u683C\u306B\u6E80\u8DB3\u3057\u3066\u3044\u307E\u3059\u3002"
+      - "Los hu\xE9spedes est\xE1n satisfechos con el precio."
+      - "Go\u015Bcie s\u0105 zadowoleni z ceny."
+      - Gli ospiti sono soddisfatti del prezzo.
+      - "Os h\xF3spedes est\xE3o satisfeitos com o pre\xE7o."
+      - Para tamu merasa puas dengan harganya.
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: Remove from the menu
+      TermType: 0
+      Description: 
+      Languages:
+      - Remove from the menu
+      - "Aus dem Men\xFC entfernen"
+      - Supprimer du menu
+      - "\u0423\u0434\u0430\u043B\u0438\u0442\u044C \u0438\u0437 \u043C\u0435\u043D\u044E"
+      - "Men\xFCden kald\u0131r"
+      - "\u30E1\u30CB\u30E5\u30FC\u304B\u3089\u524A\u9664"
+      - "Quitar del men\xFA"
+      - "Usu\u0144 z menu"
+      - Rimuovi dal menu
+      - Remover do menu
+      - Hapus dari menu
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: Coffee Machine
+      TermType: 0
+      Description: 
+      Languages:
+      - Coffe Machine
+      - Kaffeemaschine
+      - "Machine \xC0 Caf\xE9"
+      - "\u041A\u043E\u0444\u0435\u043C\u0430\u0448\u0438\u043D\u0430"
+      - Kahve Makinesi
+      - "\u30B3\u30FC\u30D2\u30FC\u30DE\u30B7\u30F3"
+      - "M\xE1quina De Caf\xE9"
+      - Ekspres Do Kawy
+      - "Macchina Da Caff\xE8"
+      - "M\xE1quina De Caf\xE9"
+      - Mesin Kopi
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: SodaMachine
+      TermType: 0
+      Description: 
+      Languages:
+      - Soda Machine
+      - "Getr\xE4nkeautomat"
+      - Distributeur De Soda
+      - "\u0410\u0432\u0442\u043E\u043C\u0430\u0442  \u0413\u0430\u0437\u0438\u0440\u043E\u0432\u043A\u0438"
+      - Soda Makinesi
+      - "\u30BD\u30FC\u30C0\u30DE\u30B7\u30F3"
+      - "M\xE1quina Refrescos"
+      - Automat  Gazowanymi
+      - Macchina  Gassate
+      - "M\xE1quina Refrigerantes"
+      - Mesin Soda
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: DeepFryer
+      TermType: 0
+      Description: 
+      Languages:
+      - Deep Fryer
+      - Fritteuse
+      - Friteuse
+      - "\u0424\u0440\u0438\u0442\u044E\u0440\u043D\u0438\u0446\u0430"
+      - "Frit\xF6z"
+      - "\u30D5\u30E9\u30A4\u30E4\u30FC"
+      - Freidora
+      - Frytkownica
+      - Friggitrice
+      - Fritadeira
+      - Penggorengan
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: Storage
+      TermType: 0
+      Description: 
+      Languages:
+      - Storage
+      - Lagerung
+      - Stockage
+      - "\u0425\u0440\u0430\u043D\u0438\u043B\u0438\u0449\u0435"
+      - Depolamak
+      - "\u30B9\u30C8\u30EC\u30FC\u30B8"
+      - Almacenamiento
+      - "Sk\u0142adowanie"
+      - Magazzinaggio
+      - Armazenar
+      - Penyimpanan
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: KitchenZone
+      TermType: 0
+      Description: 
+      Languages:
+      - Kitchen Zone
+      - "K\xFCchenbereich"
+      - Coin Cuisine
+      - "\u041A\u0443\u0445\u043E\u043D\u043D\u0430\u044F \u0417\u043E\u043D\u0430"
+      - "Mutfak Alan\u0131"
+      - "\u30AD\u30C3\u30C1\u30F3\u30BE\u30FC\u30F3"
+      - Zona De Cocina
+      - Strefa Kuchenna
+      - Zona Cucina
+      - Zona Da Cozinha
+      - Zona Dapur
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: Staff Zone
+      TermType: 0
+      Description: 
+      Languages:
+      - Staff Zone
+      - Mitarbeiterzone
+      - Zone Personnel
+      - "\u0417\u043E\u043D\u0430 \u041F\u0435\u0440\u0441\u043E\u043D\u0430\u043B\u0430"
+      - "Personel B\xF6lgesi"
+      - "\u30B9\u30BF\u30C3\u30D5\u30BE\u30FC\u30F3"
+      - Zona Del Personal
+      - Strefa Personelu
+      - Zona Personale
+      - "Zona Funcion\xE1rios"
+      - Zona Staf
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: Zone
+      TermType: 0
+      Description: 
+      Languages:
+      - Zone
+      - Zone
+      - Zone
+      - "\u0417\u043E\u043D\u0430"
+      - Alan
+      - "\u30BE\u30FC\u30F3"
+      - Zona
+      - Strefa
+      - Zona
+      - Zona
+      - Daerah
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: OWNED
+      TermType: 0
+      Description: 
+      Languages:
+      - Owned
+      - Owned
+      - "Poss\xE9d\xE9"
+      - "\u041A\u0443\u043F\u043B\u0435\u043D"
+      - Sahip Olunan
+      - "\u6240\u6709"
+      - Propiedad
+      - Posiadany
+      - Posseduto
+      - Controlado
+      - Dimiliki
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: Table
+      TermType: 0
+      Description: 
+      Languages:
+      - Table
+      - Tisch
+      - Tableau
+      - "\u0421\u0442\u043E\u043B"
+      - Masa
+      - "\u30C6\u30FC\u30D6\u30EB"
+      - Mesa
+      - Tabela
+      - Tavolo
+      - Mesa
+      - Meja
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: Sofa
+      TermType: 0
+      Description: 
+      Languages:
+      - Sofa
+      - Sofa
+      - "Canap\xE9"
+      - "\u0414\u0438\u0432\u0430\u043D \u043D\u0430 \u0434\u0432\u043E\u0438\u0445"
+      - Divan
+      - "\u30BD\u30D5\u30A1\u30FC"
+      - "Sof\xE1"
+      - Sofa
+      - Divano
+      - "Sof\xE1"
+      - Sofa
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: SingleSofa
+      TermType: 0
+      Description: 
+      Languages:
+      - Single Sofa
+      - Einzelsofa
+      - "Canap\xE9 Simple"
+      - "\u0414\u0438\u0432\u0430\u043D \u043D\u0430 \u043E\u0434\u043D\u043E\u0433\u043E"
+      - "Tek Ki\u015Filik Kanepe"
+      - "\u30B7\u30F3\u30B0\u30EB\u30BD\u30D5\u30A1"
+      - "Sof\xE1 Individual"
+      - Pojedyncza Sofa
+      - Divano Singolo
+      - "Sof\xE1 Individual"
+      - Sofa Tunggal
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: PRICE PER UNIT
+      TermType: 0
+      Description: 
+      Languages:
+      - PRICE PER UNIT
+      - Preis Pro Einheit
+      - Prix Unitaire
+      - "\u0426\u0435\u043D\u0430 \u0417\u0430 \u0415\u0434\u0438\u043D\u0438\u0446\u0443"
+      - "Birim Fiyat\u0131"
+      - "\u5358\u4FA1"
+      - Precio Por Unidad
+      - "Cena Za Jednostk\u0119"
+      - "Prezzo Per Unit\xE0"
+      - "Pre\xE7o Por Unidade"
+      - Harga Per Unit
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: SHOPPING CART
+      TermType: 0
+      Description: 
+      Languages:
+      - SHOPPING CART
+      - Warenkorb
+      - Panier
+      - "\u041A\u043E\u0440\u0437\u0438\u043D\u0430"
+      - "Al\u0131\u015Fveri\u015F Sepeti"
+      - "\u30B7\u30E7\u30C3\u30D4\u30F3\u30B0\u30AB\u30FC\u30C8"
+      - Carro De La Compra
+      - Koszyk
+      - Carrello Della Spesa
+      - Carrinho De Compras
+      - Kereta Belanja
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: ITEM
+      TermType: 0
+      Description: 
+      Languages:
+      - ITEM
+      - Artikel
+      - Article
+      - "\u0412\u0435\u0449\u044C"
+      - "\xD6\u011Fe"
+      - "\u30A2\u30A4\u30C6\u30E0"
+      - "Art\xEDculo"
+      - Przedmiot
+      - Articolo
+      - Item
+      - Barang
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: PRICE
+      TermType: 0
+      Description: 
+      Languages:
+      - PRICE
+      - Preis
+      - Prix
+      - "\u0426\u0435\u043D\u0430"
+      - Fiyat
+      - "\u4FA1\u683C"
+      - Precio
+      - Cena
+      - Prezzo
+      - "Pre\xE7o"
+      - Harga
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: UNITS
+      TermType: 0
+      Description: 
+      Languages:
+      - UNITS
+      - Einheiten
+      - "Unit\xE9s"
+      - "\u041A\u043E\u043B-\u0432\u043E"
+      - Birimler
+      - "\u30E6\u30CB\u30C3\u30C8"
+      - Unidades
+      - Jednostki
+      - "Unit\xE0"
+      - Unidades
+      - Satuan
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: TOTAL
+      TermType: 0
+      Description: 
+      Languages:
+      - TOTAL
+      - Gesamt
+      - Total
+      - "\u041E\u0431\u0449\u0438\u0439"
+      - Toplam
+      - "\u5408\u8A08"
+      - Total
+      - "Ca\u0142kowity"
+      - Totale
+      - Total
+      - Total
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: BUY
+      TermType: 0
+      Description: 
+      Languages:
+      - BUY
+      - Kaufen
+      - Acheter
+      - "\u041A\u0443\u043F\u0438\u0442\u044C"
+      - "Sat\u0131n "
+      - "\u8CB7\u3046"
+      - Comprar
+      - "Kupi\u0107"
+      - Acquistare
+      - Comprar
+      - Membeli
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: CLEAR
+      TermType: 0
+      Description: 
+      Languages:
+      - CLEAR
+      - Klar
+      - Clair
+      - "\u0427\u0438\u0441\u0442\u0438\u0442\u044C"
+      - Temizl
+      - "\u30AF\u30EA\u30A2"
+      - Claro
+      - Jasne
+      - Chiaro
+      - Claro
+      - Jernih
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: Close
+      TermType: 0
+      Description: 
+      Languages:
+      - CLOSE
+      - "Schlie\xDFen"
+      - Fermer
+      - "\u0417\u0410\u041A\u0420\u042B\u0422\u042C"
+      - "Kapal\u0131"
+      - "\u8FD1\u3044"
+      - Cerca
+      - "Zamkn\u0105\u0107"
+      - Vicino
+      - Fechar
+      - Menutup
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: SKIP
+      TermType: 0
+      Description: 
+      Languages:
+      - 'SKIP
+
+'
+      - Passieren
+      - 'Sauter
+
+'
+      - "\u041F\u0440\u043E\u043F\u0443\u0441\u043A"
+      - 'Atlamak
+
+'
+      - "\u30B9\u30AD\u30C3\u30D7"
+      - 'Saltar
+
+'
+      - "Pomin\u0105\u0107\n"
+      - 'Saltare
+
+'
+      - 'Pular
+
+'
+      - 'Melewati
+
+'
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: Skip Ad
+      TermType: 0
+      Description: 
+      Languages:
+      - 'SKIP AD
+
+'
+      - 
+      - "Sauter La Publicit\xE9\n"
+      - "\u041F\u0440\u043E\u043F\u0443\u0441\u043A\n"
+      - "Reklam\u0131 Atla\n"
+      - "\u5E83\u544A\u3092\u30B9\u30AD\u30C3\u30D7"
+      - Saltar Anuncio
+      - "Pomi\u0144 Reklam\u0119\n"
+      - "Salta La Pubblicit\xE0\n"
+      - "Pular An\xFAncio\n"
+      - Lewati Iklan
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: THE WHEEL OF FORTUNE
+      TermType: 0
+      Description: 
+      Languages:
+      - THE WHEEL OF FORTUNE
+      - "Das Gl\xFCcksrad"
+      - La Roue De La Fortune
+      - "\u041A\u043E\u043B\u0435\u0441\u043E \u0424\u043E\u0440\u0442\u0443\u043D\u044B"
+      - "Talih \xC7ark\u0131"
+      - "\u904B\u547D\u306E\u8F2A"
+      - La Rueda De La Fortuna
+      - "Ko\u0142o Fortuny"
+      - La Ruota Della Fortuna
+      - A Roda Da Fortuna
+      - Roda Keberuntungan
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: CLEANER
+      TermType: 0
+      Description: 
+      Languages:
+      - 'CLEANER
+
+'
+      - 'Reiniger
+
+'
+      - 'Nettoyeur
+
+'
+      - "\u0423\u0411\u041E\u0420\u0429\u0418\u041A"
+      - Temizleyici
+      - "\u30AF\u30EA\u30FC\u30CA\u30FC"
+      - Limpiador
+      - "Sprz\u0105taczka"
+      - "\rpi\xF9 pulito\n"
+      - 'Limpador
+
+'
+      - Pembersih
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: GET THE BEST REWARD
+      TermType: 0
+      Description: 
+      Languages:
+      - GET THE BEST REWARD
+      - Holen Belohnung
+      - "Obtenir R\xE9compense"
+      - "\u041F\u043E\u043B\u0443\u0447\u0438\u0442\u044C \u041D\u0430\u0433\u0440\u0430\u0434\u0443"
+      - "En Iyi \xD6d\xFCl\xFC Al"
+      - "\u6700\u9AD8\u306E\u5831\u916C\u3092\u5F97\u308B"
+      - Obtenga Recompensa
+      - "Zdob\u0105d\u017ANagrod\u0119"
+      - Ottenere Ricompensa
+      - Receba Recompensa
+      - Dapatkan Terbaik
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: FORGET ABOUT DIRT FOREVER!
+      TermType: 0
+      Description: 
+      Languages:
+      - FORGET ABOUT DIRT FOREVER!
+      - "Vergessen Sie Schmutz F\xFCr Immer!"
+      - "Oubliez La Salet\xE9 Pour Toujours !"
+      - "\u0417\u0430\u0431\u0443\u0434\u044C\u0442\u0435 \u041E \u0413\u0440\u044F\u0437\u0438
+        \u041D\u0430\u0432\u0441\u0435\u0433\u0434\u0430!"
+      - "Kirlili\u011Fi Sonsuza Dek Unutun!"
+      - "\u6C5A\u308C\u3092\u6C38\u4E45\u306B\u5FD8\u308C\u3066\u304F\u3060\u3055\u3044!"
+      - "\xA1Olv\xEDdate De La Suciedad Para Siempre!"
+      - Zapomnij O Brudzie Na Zawsze!
+      - Dimenticatevi Per Sempre Dello Sporco!
+      - "Esque\xE7a A Sujeira Para Sempre!"
+      - Lupakan Kotoran Selamanya!
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: SPIN
+      TermType: 0
+      Description: 
+      Languages:
+      - SPIN
+      - Drehen
+      - Rotation
+      - "\u041A\u0440\u0443\u0442\u0438\u0442\u044C"
+      - "D\xF6nd\xFCrmek"
+      - "\u30B9\u30D4\u30F3"
+      - Girar
+      - "Kr\u0119ci\u0107 Si\u0119"
+      - Rotazione
+      - Rodar
+      - Putaran
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: SpinFree
+      TermType: 0
+      Description: 
+      Languages:
+      - SPIN FREE
+      - Spinfrei
+      - Rotation Libre
+      - "\u041A\u0440\u0443\u0442\u0438 \u0434\u0430\u0440\u043E\u043C"
+      - "\xDCcretsiz d\xF6nd\xFCr"
+      - "\u30B9\u30D4\u30F3\u30D5\u30EA\u30FC"
+      - Girar Gratis
+      - "Wolny Obr\xF3t"
+      - Girare Gratis
+      - Girar Livremente
+      - Berputar Bebas
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: Daily Login
+      TermType: 0
+      Description: 
+      Languages:
+      - Daily Login
+      - "T\xE4gliche Anmeldung"
+      - "\rConnexion quotidienne"
+      - "\u0414\u043D\u0435\u0432\u043D\u043E\u0439 \u0412\u0445\u043E\u0434"
+      - "G\xFCnl\xFCk Giri\u015F"
+      - "\u6BCE\u65E5\u30ED\u30B0\u30A4\u30F3"
+      - "Inicio De Sesi\xF3n Diario"
+      - Codzienne Logowanie
+      - Accesso Giornaliero
+      - "Login Di\xE1rio"
+      - Masuk Harian
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: Claim
+      TermType: 0
+      Description: 
+      Languages:
+      - Claim
+      - Beanspruchen
+      - "R\xE9clamer"
+      - "\u0422\u0440\u0435\u0431\u043E\u0432\u0430\u0442\u044C"
+      - Iddia
+      - "\u8ACB\u6C42"
+      - Afirmar
+      - Prawo
+      - Reclamo
+      - Alegar
+      - Mengeklaim
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: Day
+      TermType: 0
+      Description: 
+      Languages:
+      - Day
+      - Tag
+      - Jour
+      - "\u0414\u0435\u043D\u044C"
+      - "G\xFCn"
+      - "\u65E5"
+      - "D\xEDa"
+      - "Dzie\u0144"
+      - Giorno
+      - Dia
+      - Hari
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: Log in daily for rewards!
+      TermType: 0
+      Description: 
+      Languages:
+      - Log in daily for rewards!
+      - "Melden Sie sich t\xE4glich an, um Belohnungen zu erhalten!"
+      - "Connectez-vous quotidiennement pour des r\xE9compenses\_!"
+      - "\u0417\u0430\u0445\u043E\u0434\u0438\u0442\u0435 \u043A\u0430\u0436\u0434\u044B\u0439
+        \u0434\u0435\u043D\u044C \u0438 \u043F\u043E\u043B\u0443\u0447\u0430\u0439\u0442\u0435
+        \u043D\u0430\u0433\u0440\u0430\u0434\u044B!"
+      - "\xD6d\xFCller i\xE7in her g\xFCn giri\u015F yap\u0131n!"
+      - "\u6BCE\u65E5\u30ED\u30B0\u30A4\u30F3\u3057\u3066\u5831\u916C\u3092\u7372\u5F97\u3057\u307E\u3057\u3087\u3046\uFF01"
+      - "\xA1Inicie sesi\xF3n diariamente para obtener recompensas!"
+      - "Loguj si\u0119 codziennie i odbieraj nagrody!"
+      - Accedi ogni giorno per ricevere premi!
+      - "Fa\xE7a login diariamente para ganhar recompensas!"
+      - Masuk setiap hari untuk mendapatkan hadiah!
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: Play
+      TermType: 0
+      Description: 
+      Languages:
+      - PLAY
+      - Spielen
+      - Jouer
+      - "\u0418\u0433\u0440\u0430\u0442\u044C"
+      - Oynamak
+      - "\u904A\u3076"
+      - Jugar
+      - "Gra\u0107"
+      - Giocare
+      - Jogar
+      - Bermain
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: Play without ads!
+      TermType: 0
+      Description: 
+      Languages:
+      - Play without ads!
+      - Spielen Sie ohne Werbung!
+      - "Jouez sans publicit\xE9 !"
+      - "\u0418\u0433\u0440\u0430\u0439\u0442\u0435 \u0431\u0435\u0437 \u0440\u0435\u043A\u043B\u0430\u043C\u044B!"
+      - "Reklams\u0131z oyna!"
+      - "\u5E83\u544A\u306A\u3057\u3067\u30D7\u30EC\u30A4\u3057\u307E\u3057\u3087\u3046\uFF01"
+      - "\xA1Juega sin anuncios!"
+      - Graj bez reklam!
+      - "Gioca senza pubblicit\xE0!"
+      - "Jogue sem an\xFAncios!"
+      - Mainkan tanpa iklan!
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: Collect views and disable interstitial ads for 6 hours!
+      TermType: 0
+      Description: 
+      Languages:
+      - Collect views and disable interstitial ads for 6 hours!
+      - "Sammeln Sie Aufrufe und deaktivieren Sie Interstitial-Anzeigen f\xFCr 6
+        Stunden!"
+      - "Collectez des vues et d\xE9sactivez les publicit\xE9s interstitielles pendant
+        6 heures\_!"
+      - "\u0421\u043E\u0431\u0438\u0440\u0430\u0439\u0442\u0435 \u043F\u0440\u043E\u0441\u043C\u043E\u0442\u0440\u044B
+        \u0438 \u043E\u0442\u043A\u043B\u044E\u0447\u0438\u0442\u0435 \u0440\u0435\u043A\u043B\u0430\u043C\u043D\u044B\u0435
+        \u043E\u0431\u044A\u044F\u0432\u043B\u0435\u043D\u0438\u044F \u043D\u0430
+        6 \u0447\u0430\u0441\u043E\u0432!"
+      - "G\xF6r\xFCnt\xFClemeleri toplay\u0131n ve 6 saat boyunca ge\xE7i\u015F reklamlar\u0131n\u0131
+        devre d\u0131\u015F\u0131 b\u0131rak\u0131n!"
+      - "\u8996\u8074\u56DE\u6570\u3092\u96C6\u3081\u3066\u3001\u30A4\u30F3\u30BF\u30FC\u30B9\u30C6\u30A3\u30B7\u30E3\u30EB\u5E83\u544A\u3092
+        6 \u6642\u9593\u7121\u52B9\u306B\u3057\u307E\u3057\u3087\u3046!"
+      - "\xA1Recopila vistas y desactiva los anuncios intersticiales durante 6 horas!"
+      - "Zbieraj wy\u015Bwietlenia i wy\u0142\u0105cz reklamy \u015Br\xF3dmi\u0105\u017Cszowe
+        na 6 godzin!"
+      - Raccogli visualizzazioni e disattiva gli annunci interstiziali per 6 ore!
+      - "Colete visualiza\xE7\xF5es e desative an\xFAncios intersticiais por 6 horas!"
+      - Kumpulkan penayangan dan nonaktifkan iklan interstisial selama 6 jam!
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: GET
+      TermType: 0
+      Description: 
+      Languages:
+      - GET!
+      - Erhalten!
+      - Obtenir!
+      - "\u041F\u043E\u043B\u0443\u0447\u0438!"
+      - Elde Etmek!
+      - "\u5F97\u308B\uFF01"
+      - "\xA1Conseguir!"
+      - "Dostawa\u0107!"
+      - Ottenere!
+      - Pegar!
+      - Mendapatkan!
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: 6 HOURS!
+      TermType: 0
+      Description: 
+      Languages:
+      - 6 HOURS!
+      - 6 Stunden!
+      - 6 Heures !
+      - "6 \u0427\u0430\u0441\u043E\u0432!"
+      - 6 Saat!
+      - "6\u6642\u9593\uFF01"
+      - "\xA16 Horas!"
+      - 6 Godzin!
+      - 6 Ore!
+      - 6 Horas!
+      - 6 Jam!
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: no,thanks
+      TermType: 0
+      Description: 
+      Languages:
+      - no,thanks
+      - Nein danke
+      - non merci
+      - "\u043D\u0435\u0442, \u0441\u043F\u0430\u0441\u0438\u0431\u043E"
+      - "hay\u0131r, te\u015Fekk\xFCrler"
+      - "\u7D50\u69CB\u3067\u3059"
+      - No, gracias
+      - "nie, dzi\u0119kuj\u0119"
+      - no grazie
+      - "n\xE3o, obrigado"
+      - tidak,terima kasih
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: NO ADS FOREVER
+      TermType: 0
+      Description: 
+      Languages:
+      - 'NO ADS
+
+        FOREVER'
+      - "Keine Werbung\nF\xFCr Immer"
+      - "Pas De Publicit\xE9\nPour Toujours"
+      - "\u0411\u0435\u0437 \u0420\u0435\u043A\u043B\u0430\u043C\u044B\n\u041D\u0430\u0432\u0441\u0435\u0433\u0434\u0430"
+      - 'Reklam Yok
+
+        Sonsuza Kadar'
+      - "\u5E83\u544A\u306A\u3057\n\u6C38\u9060\u306B"
+      - 'Sin Anuncios
+
+        Para Siempre'
+      - 'Bez Reklam
+
+        Na Zawsze'
+      - "Nessuna Pubblicit\xE0\nPer Sempre"
+      - "Sem An\xFAncios\nPara Sempre"
+      - 'Tanpa Iklan
+
+        Selamanya'
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: Remove all interstitial ads
+      TermType: 0
+      Description: 
+      Languages:
+      - 'Remove all interstitial
+
+        ads'
+      - Alle Interstitial-Anzeigen entfernen
+      - "Supprimer toutes les publicit\xE9s interstitielles"
+      - "\u0423\u0434\u0430\u043B\u0438\u0442\u044C \u0432\u0441\u0435 \u043F\u0440\u043E\u043C\u0435\u0436\u0443\u0442\u043E\u0447\u043D\u044B\u0435\n\u0440\u0435\u043A\u043B\u0430\u043C\u044B"
+      - "T\xFCm ara\nreklamlar\u0131 kald\u0131r"
+      - "\u3059\u3079\u3066\u306E\u30A4\u30F3\u30BF\u30FC\u30B9\u30C6\u30A3\u30B7\u30E3\u30EB\u5E83\u544A\u3092\u524A\u9664"
+      - Eliminar todos los anuncios intersticiales
+      - "Usu\u0144 wszystkie reklamy\ninterstitialne"
+      - Rimuovi tutti gli annunci interstiziali
+      - "Remover todos os an\xFAncios\nintersticiais"
+      - Hapus semua iklan interstisial
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: STARTER PACK
+      TermType: 0
+      Description: 
+      Languages:
+      - STARTER PACK
+      - Starterpaket
+      - "Pack De D\xE9marrage"
+      - "\u0421\u0442\u0430\u0440\u0442 \u041F\u0430\u043A\u0435\u0442"
+      - "Ba\u015Flang\u0131\xE7 \u200B\u200BPaketi"
+      - "\u30B9\u30BF\u30FC\u30BF\u30FC\u30D1\u30C3\u30AF"
+      - Paquete De Inicio
+      - Pakiet Startowy
+      - Pacchetto Iniziale
+      - Pacote Inicial
+      - Paket Pemula
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: PROFIT
+      TermType: 0
+      Description: 
+      Languages:
+      - PROFIT
+      - Profitieren
+      - Profit
+      - "\u0412\u044B\u0433\u043E\u0434\u0430"
+      - "K\xE2r"
+      - "\u5229\u76CA"
+      - Ganancia
+      - Zysk
+      - Profitto
+      - Lucro
+      - Laba
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: Enter the promo code
+      TermType: 0
+      Description: 
+      Languages:
+      - 'Enter the promo code
+
+'
+      - Geben Sie den Aktionscode ein.
+      - Entrez le code promo
+      - "\u0412\u0432\u0435\u0434\u0438\u0442\u0435 \u043F\u0440\u043E\u043C\u043E\u043A\u043E\u0434\n"
+      - 'Promosyon kodunu girin
+
+'
+      - "\u30D7\u30ED\u30E2\u30FC\u30B7\u30E7\u30F3\u30B3\u30FC\u30C9\u3092\u5165\u529B\u3057\u3066\u304F\u3060\u3055\u3044"
+      - "Introduce el c\xF3digo promocional"
+      - "Wprowad\u017A kod promocyjny\n"
+      - 'Inserisci il codice promozionale
+
+'
+      - "Insira o c\xF3digo promocional\n"
+      - 'Masukkan kode promo
+
+'
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: OK
+      TermType: 0
+      Description: 
+      Languages:
+      - OK
+      - OK
+      - D'accord
+      - "\u0425\u043E\u0440\u043E\u0448\u043E"
+      - Tamam
+      - "\u308F\u304B\u308A\u307E\u3057\u305F"
+      - OK
+      - OK
+      - OK
+      - OK
+      - Oke
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: Enter text...
+      TermType: 0
+      Description: 
+      Languages:
+      - Enter text...
+      - Text eingeben...
+      - Entrez du texte...
+      - "\u0412\u0432\u0435\u0434\u0438\u0442\u0435 \u0442\u0435\u043A\u0441\u0442..."
+      - Metin girin...
+      - "\u30C6\u30AD\u30B9\u30C8\u3092\u5165\u529B\u3057\u3066\u304F\u3060\u3055\u3044..."
+      - Introduzca texto...
+      - "Wprowad\u017A tekst..."
+      - Inserisci il testo...
+      - Digite o texto...
+      - Masukkan teks...
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: Level to unlock
+      TermType: 0
+      Description: 
+      Languages:
+      - Level to unlock
+      - Zu entsperrendes Level
+      - "Niveau \xE0 d\xE9bloquer"
+      - "\u0423\u0440\u043E\u0432\u0435\u043D\u044C \u043E\u0442\u043A\u0440\u044B\u0442\u0438\u044F"
+      - "Kilidi a\xE7\u0131lacak seviye"
+      - "\u30ED\u30C3\u30AF\u89E3\u9664\u30EC\u30D9\u30EB"
+      - Nivel para desbloquear
+      - Poziom do odblokowania
+      - Livello da sbloccare
+      - "N\xEDvel para desbloquear"
+      - Level untuk dibuka
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: Cutlet
+      TermType: 0
+      Description: 
+      Languages:
+      - Cutlet
+      - Kotelett
+      - Escalope
+      - "\u041A\u043E\u0442\u043B\u0435\u0442\u0430"
+      - Pirzola
+      - "\u30AB\u30C4\u30EC\u30C4"
+      - Chuleta
+      - Kotlet
+      - Cotoletta
+      - Costeleta
+      - Sayatan Daging
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: Bun Top
+      TermType: 0
+      Description: 
+      Languages:
+      - Bun Top
+      - Duttoberteil
+      - Chignon Haut
+      - "\u0411\u0443\u043B\u043A\u0430 \u0432\u0435\u0440\u0445"
+      - "Topuz \xDCst\xFC"
+      - "\u30D0\u30F3\u30BA\u30C8\u30C3\u30D7"
+      - "Parte Superior Del Mo\xF1o"
+      - "Bu\u0142ka"
+      - Chignon Alto
+      - Coque Alto
+      - Bagian Atas Sanggul
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: Chesee
+      TermType: 0
+      Description: 
+      Languages:
+      - Chesee
+      - "K\xE4se"
+      - Fromage
+      - "\u0421\u044B\u0440"
+      - Peynir
+      - "\u30C1\u30FC\u30BA"
+      - Queso
+      - Ser
+      - Formaggio
+      - Queijo
+      - Keju
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: Tomato
+      TermType: 0
+      Description: 
+      Languages:
+      - Tomato
+      - Tomate
+      - Tomate
+      - "\u041F\u043E\u043C\u0438\u0434\u043E\u0440"
+      - Domates
+      - "\u30C8\u30DE\u30C8"
+      - Tomate
+      - Pomidor
+      - Pomodoro
+      - Tomate
+      - Tomat
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: Onion
+      TermType: 0
+      Description: 
+      Languages:
+      - Onion
+      - Zwiebel
+      - Oignon
+      - "\u041B\u0443\u043A"
+      - "So\u011Fan"
+      - "\u30BF\u30DE\u30CD\u30AE"
+      - Cebolla
+      - Cebula
+      - Cipolla
+      - Cebola
+      - Bawang
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: Cabbage
+      TermType: 0
+      Description: 
+      Languages:
+      - Lettuce leaf
+      - Salatblatt
+      - feuille de laitue
+      - "\u041B\u0438\u0441\u0442 \u0441\u0430\u043B\u0430\u0442\u0430"
+      - "Marul yapra\u011F\u0131"
+      - "\u30EC\u30BF\u30B9\u306E\u8449"
+      - Hoja de lechuga
+      - "Li\u015B\u0107 sa\u0142aty"
+      - Foglia di lattuga
+      - Folha de alface
+      - Daun selada
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: Soda Plum
+      TermType: 0
+      Description: 
+      Languages:
+      - Soda Plum
+      - Soda-Pflaume
+      - Prune Soda
+      - "\u0421\u043E\u0434\u043E\u0432\u0430\u044F \u0421\u043B\u0438\u0432\u0430"
+      - Soda Erik
+      - "\u30BD\u30FC\u30C0\u30D7\u30E9\u30E0"
+      - Ciruela De Soda
+      - "Sodowa \u015Aliwka"
+      - Prugna Soda
+      - Ameixa De Soda
+      - Minuman Bersoda
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: Soda Barberry
+      TermType: 0
+      Description: 
+      Languages:
+      - Soda Barberry
+      - Soda-Berberitze
+      - "\xC9pine-Vinette Soda"
+      - "\u0421\u043E\u0434\u0430 \u0411\u0430\u0440\u0431\u0430\u0440\u0438\u0441"
+      - "Soda K\u0131z\u0131lc\u0131k"
+      - "\u30BD\u30FC\u30C0\u30D0\u30FC\u30D9\u30EA\u30FC"
+      - Agracejo De Soda
+      - Soda Berberysowa
+      - Crespino Soda
+      - "B\xE9rberis Refrigerante"
+      - Bersoda Berberis
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: Soda Orange
+      TermType: 0
+      Description: 
+      Languages:
+      - Soda Orange
+      - Soda Orange
+      - "Soda \xC0 L'orange"
+      - "\u0421\u043E\u0434\u0430 \u0410\u043F\u0435\u043B\u044C\u0441\u0438\u043D"
+      - "Soda Portakal\u0131"
+      - "\u30BD\u30FC\u30C0\u30AA\u30EC\u30F3\u30B8"
+      - Refresco De Naranja
+      - "Pomara\u0144cza Sodowa"
+      - Soda All'arancia
+      - Refrigerante Laranja
+      - Soda Jeruk
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: Soda Lemon
+      TermType: 0
+      Description: 
+      Languages:
+      - Soda Lemon
+      - Limonade Zitrone
+      - Soda Citron
+      - "\u0421\u043E\u0434\u0430 \u041B\u0438\u043C\u043E\u043D"
+      - Soda Limon
+      - "\u30BD\u30FC\u30C0\u30EC\u30E2\u30F3"
+      - "Refresco De Lim\xF3n"
+      - Soda Cytrynowa
+      - Soda Al Limone
+      - "Refrigerante De Lim\xE3o"
+      - Bersoda Jeruk Nipis
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: Coffee
+      TermType: 0
+      Description: 
+      Languages:
+      - Coffee
+      - Kaffee
+      - "Caf\xE9"
+      - "\u041A\u043E\u0444\u0435"
+      - Kahve
+      - "\u30B3\u30FC\u30D2\u30FC"
+      - "Caf\xE9"
+      - Kawa
+      - "Caff\xE8"
+      - "Caf\xE9"
+      - Kopi
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: Package Burger
+      TermType: 0
+      Description: 
+      Languages:
+      - Package Burger
+      - Paket-Burger
+      - "Hamburger Emball\xE9"
+      - "\u0423\u043F\u0430\u043A\u043E\u0432\u043A\u0430 \u0411\u0443\u0440\u0433\u0435\u0440\u0430"
+      - Paket Burger
+      - "\u30D1\u30C3\u30B1\u30FC\u30B8\u30D0\u30FC\u30AC\u30FC"
+      - Paquete Hamburguesa
+      - Burger Opakowaniu
+      - Hamburger Confezione
+      - "Pacote Hamb\xFArguer"
+      - Paket Burger
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: Bun
+      TermType: 0
+      Description: 
+      Languages:
+      - Bun
+      - "Br\xF6tchen"
+      - Chignon
+      - "\u0411\u0443\u043B\u043E\u0447\u043A\u0430"
+      - Topuz
+      - "\u30D1\u30F3"
+      - Bollo
+      - Kok
+      - Panino
+      - "P\xE3ozinho"
+      - Sanggul
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: Cup Coffee
+      TermType: 0
+      Description: 
+      Languages:
+      - Cup Coffee
+      - Tasse Kaffee
+      - "Tasse De Caf\xE9"
+      - "\u0427\u0430\u0448\u043A\u0430 \u041A\u043E\u0444\u0435"
+      - Fincan Kahve
+      - "\u30AB\u30C3\u30D7\u30B3\u30FC\u30D2\u30FC"
+      - "Taza De Caf\xE9"
+      - "Fili\u017Canka Kawy"
+      - "Tazza Di Caff\xE8"
+      - "X\xEDcara De Caf\xE9"
+      - Cangkir Kopi
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: Cup Soda
+      TermType: 0
+      Description: 
+      Languages:
+      - Cup Soda
+      - Tasse Limonade
+      - Tasse De Soda
+      - "\u0421\u0442\u0430\u043A\u0430\u043D \u0421\u043E\u0434\u044B"
+      - Bardak Soda
+      - "\u30AB\u30C3\u30D7\u30BD\u30FC\u30C0"
+      - Taza De Refresco
+      - Szklanka Gazowan
+      - Tazza Di Soda
+      - Copo Refrigerante
+      - Cangkir Soda
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: Raw Cutlet
+      TermType: 0
+      Description: 
+      Languages:
+      - Raw Cutlet
+      - Rohes Schnitzel
+      - "C\xF4telette Crue"
+      - "\u0421\u044B\u0440\u0430\u044F \u041A\u043E\u0442\u043B\u0435\u0442\u0430"
+      - "\xC7i\u011F Pirzola"
+      - "\u751F\u30AB\u30C4\u30EC\u30C4"
+      - Chuleta Cruda
+      - Surowy Kotlet
+      - Cotoletta Cruda
+      - Costeleta Crua
+      - Daging Mentah
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: French Fries
+      TermType: 0
+      Description: 
+      Languages:
+      - French Fries
+      - Pommes Frites
+      - Frites
+      - "\u041A\u0430\u0440\u0442\u043E\u0444\u0435\u043B\u044C \u0424\u0440\u0438"
+      - "Patates K\u0131zartmas\u0131"
+      - "\u30D5\u30E9\u30A4\u30C9\u30DD\u30C6\u30C8"
+      - Papas Fritas
+      - Frytki
+      - Patate Fritte
+      - Batatas Fritas
+      - Kentang Goreng
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: Nuggets
+      TermType: 0
+      Description: 
+      Languages:
+      - Nuggets
+      - Nuggets
+      - "P\xE9pites"
+      - "\u041D\u0430\u0433\u0433\u0435\u0442\u0441\u044B"
+      - "K\xFCl\xE7eler"
+      - "\u30CA\u30B2\u30C3\u30C8"
+      - Pepitas
+      - "Bry\u0142ki"
+      - Pepite
+      - Pepitas
+      - Bongkahan
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: Fries package
+      TermType: 0
+      Description: 
+      Languages:
+      - Fries package
+      - Pommes-Paket
+      - Paquet de frites
+      - "\u0423\u043F\u0430\u043A\u043E\u0432\u043A\u0430 \u0444\u0440\u0438"
+      - Patates paketi
+      - "\u30D5\u30E9\u30A4\u30C9\u30DD\u30C6\u30C8\u30D1\u30C3\u30B1\u30FC\u30B8"
+      - Paquete de papas fritas
+      - Opakowanie frytek
+      - Pacchetto patatine fritte
+      - Pacote batatas fritas
+      - Paket kentang goreng
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: Nuggets Package
+      TermType: 0
+      Description: 
+      Languages:
+      - Nuggets Package
+      - Nuggets-Paket
+      - "Paquet De P\xE9pites"
+      - "\u0423\u043F\u0430\u043A\u043E\u0432\u043A\u0430 \u041D\u0430\u0433\u0433\u0435\u0442\u0441\u043E\u0432"
+      - Nuggets Paketi
+      - "\u30CA\u30B2\u30C3\u30C8\u30D1\u30C3\u30B1\u30FC\u30B8"
+      - Paquete De Pepitas
+      - "Pakiet Nuggets\xF3w"
+      - Pacchetto Di Pepite
+      - Pacote De Nuggets
+      - Paket Nugget
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: Buy Zone
+      TermType: 0
+      Description: 
+      Languages:
+      - Buy Zone
+      - Kaufzone
+      - Zone D'achat
+      - "\u041A\u0443\u043F\u0438\u0442\u0435 \u0417\u043E\u043D\u0443"
+      - "Sat\u0131n Alma B\xF6lgesi"
+      - "\u8CFC\u5165\u30BE\u30FC\u30F3"
+      - Zona De Compra
+      - Strefa Kupna
+      - Zona Di Acquisto
+      - Zona De Compra
+      - Zona Pembelian
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: Required is
+      TermType: 0
+      Description: 
+      Languages:
+      - Required  is
+      - Erforderlich ist
+      - Obligatoire est
+      - "\u0422\u0440\u0435\u0431\u0443\u0435\u0442\u0441\u044F"
+      - Gerekli olan
+      - "\u5FC5\u9808\u306F"
+      - Se requiere
+      - Wymagane jest
+      - "Obbligatorio \xE8"
+      - "Obrigat\xF3rio \xE9"
+      - Diperlukan adalah
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: level
+      TermType: 0
+      Description: 
+      Languages:
+      - level
+      - Ebene
+      - niveau
+      - "\u0443\u0440\u043E\u0432\u0435\u043D\u044C"
+      - seviye
+      - "\u30EC\u30D9\u30EB"
+      - nivel
+      - poziom
+      - livello
+      - "n\xEDvel"
+      - tingkat
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: level and prev zone
+      TermType: 0
+      Description: 
+      Languages:
+      - level and prev zone
+      - Level und vorherige Zone
+      - "niveau et zone pr\xE9c\xE9dente"
+      - "\u0443\u0440\u043E\u0432\u0435\u043D\u044C \u0438 \u043F\u0440\u0435\u0434.
+        \u0437\u043E\u043D\u0430"
+      - "seviye ve \xF6nceki b\xF6lge"
+      - "\u30EC\u30D9\u30EB\u3068\u524D\u306E\u30BE\u30FC\u30F3"
+      - nivel y zona previa
+      - poziom i strefa poprzednia
+      - livello e zona precedente
+      - "n\xEDvel e zona anterior"
+      - level dan zona sebelumnya
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: Required
+      TermType: 0
+      Description: 
+      Languages:
+      - Required is level
+      - Voraussetzung ist Niveau
+      - Le niveau requis est
+      - "\u0422\u0440\u0435\u0431\u0443\u0435\u0442\u0441\u044F \u0443\u0440\u043E\u0432\u0435\u043D\u044C"
+      - Gerekli olan seviyedir
+      - "\u5FC5\u8981\u306A\u306E\u306F\u30EC\u30D9\u30EB"
+      - Se requiere nivel
+      - Wymagany jest poziom
+      - "\xC8 richiesto il livello"
+      - "Obrigat\xF3rio \xE9 n\xEDvel"
+      - Diperlukan level
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: prev zone
+      TermType: 0
+      Description: 
+      Languages:
+      - and prev zone
+      - und vorherige Zone
+      - "et zone pr\xE9c\xE9dente"
+      - "\u0438 \u043F\u0440\u0435\u0434. \u0437\u043E\u043D\u0430"
+      - "ve \xF6nceki b\xF6lge"
+      - "\u524D\u306E\u30BE\u30FC\u30F3"
+      - y zona anterior
+      - i poprzednia strefa
+      - e zona precedente
+      - e zona anterior
+      - dan zona sebelumnya
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: Required is kitchen Zone
+      TermType: 0
+      Description: 
+      Languages:
+      - Required  is kitchen Zone
+      - "Erforderlich ist eine K\xFCchenzone"
+      - Zone de cuisine requise
+      - "\u0422\u0440\u0435\u0431\u0443\u0435\u0442\u0441\u044F \u0437\u043E\u043D\u0430
+        \u043A\u0443\u0445\u043D\u0438"
+      - "Gerekli olan mutfak b\xF6lgesidir"
+      - "\u30AD\u30C3\u30C1\u30F3\u30BE\u30FC\u30F3\u304C\u5FC5\u8981\u3067\u3059"
+      - Se requiere zona de cocina
+      - Wymagana jest strefa kuchenna
+      - "\xC8 richiesta la zona cucina"
+      - "\xC9 necess\xE1ria uma zona de cozinha"
+      - Diperlukan adalah Zona Dapur
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: Required kitchen zone
+      TermType: 0
+      Description: 
+      Languages:
+      - Required kitchen zone
+      - "Erforderlicher K\xFCchenbereich"
+      - Zone de cuisine requise
+      - "\u0422\u0440\u0435\u0431\u0443\u0435\u0442\u0441\u044F \u0437\u043E\u043D\u0430
+        \u043A\u0443\u0445\u043D\u0438"
+      - "Gerekli mutfak alan\u0131"
+      - "\u5FC5\u8981\u306A\u30AD\u30C3\u30C1\u30F3\u30BE\u30FC\u30F3"
+      - Zona de cocina requerida
+      - Wymagana strefa kuchenna
+      - Zona cucina richiesta
+      - "Zona de cozinha necess\xE1ria"
+      - Zona dapur yang dibutuhkan
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: Shelf
+      TermType: 0
+      Description: 
+      Languages:
+      - Shelf
+      - Regal
+      - "\xC9tag\xE8re"
+      - "\u0428\u043A\u0430\u0444"
+      - Raf
+      - "\u68DA"
+      - Estante
+      - "P\xF3\u0142ka"
+      - Mensola
+      - Prateleira
+      - Rak
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: DAY
+      TermType: 0
+      Description: 
+      Languages:
+      - DAY
+      - Tag
+      - Jour
+      - "\u0414\u0435\u043D\u044C"
+      - "G\xFCn"
+      - "\u65E5"
+      - "D\xEDa"
+      - "Dzie\u0144"
+      - Giorno
+      - Dia
+      - Hari
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: Lv.
+      TermType: 0
+      Description: 
+      Languages:
+      - Lv.
+      - Eb.
+      - Niv.
+      - "\u0423\u0440."
+      - Sev.
+      - "\u30EC\u30D9\u30EB"
+      - Niv.
+      - Poz.
+      - Liv.
+      - "N\xEDv."
+      - Tin.
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: 'Profit:'
+      TermType: 0
+      Description: 
+      Languages:
+      - 'Profit:'
+      - 'Profitieren:'
+      - 'Profit:'
+      - "\u0412\u044B\u0433\u043E\u0434\u0430:"
+      - "K\xE2r:"
+      - "\u5229\u76CA\uFF1A"
+      - 'Ganancia:'
+      - 'Zysk:'
+      - 'Profitto:'
+      - 'Lucro:'
+      - 'Laba:'
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: Price
+      TermType: 0
+      Description: 
+      Languages:
+      - Price
+      - Preis
+      - Prix
+      - "\u0426\u0435\u043D\u0430"
+      - Fiyat
+      - "\u4FA1\u683C"
+      - Precio
+      - Cena
+      - Prezzo
+      - "Pre\xE7o"
+      - Harga
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: Cost
+      TermType: 0
+      Description: 
+      Languages:
+      - Cost
+      - Kosten
+      - "Co\xFBt"
+      - "\u0420\u0430\u0441\u0445\u043E\u0434"
+      - Maliyet
+      - "\u6599\u91D1"
+      - Costo
+      - Koszt
+      - Costo
+      - Custo
+      - Biaya
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: Small Burger
+      TermType: 0
+      Description: 
+      Languages:
+      - Small Burger
+      - Kleiner Burger
+      - Petit Hamburger
+      - "\u041C\u0438\u043D\u0438 \u0411\u0443\u0440\u0433\u0435\u0440"
+      - "K\xFC\xE7\xFCk Burger"
+      - "\u5C0F\u3055\u306A\u30CF\u30F3\u30D0\u30FC\u30AC\u30FC"
+      - "Hamburguesa Peque\xF1a"
+      - "Ma\u0142y Burger"
+      - Piccolo Hamburger
+      - "Hamb\xFArguer Pequeno"
+      - Burger Kecil
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: Cheeseburger
+      TermType: 0
+      Description: 
+      Languages:
+      - Cheeseburger
+      - Cheeseburger
+      - Cheeseburger
+      - "\u0427\u0438\u0437\u0431\u0443\u0440\u0433\u0435\u0440"
+      - Cheeseburger
+      - "\u30C1\u30FC\u30BA\u30D0\u30FC\u30AC\u30FC"
+      - Hamburguesa Con Queso
+      - Cheeseburger
+      - Cheeseburger
+      - X-Burger
+      - Cheeseburger
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: Middle Burger
+      TermType: 0
+      Description: 
+      Languages:
+      - Middle Burger
+      - Mittlerer Burger
+      - Burger Du Milieu
+      - "\u0421\u0440\u0435\u0434\u043D\u0438\u0439 \u0411\u0443\u0440\u0433\u0435\u0440"
+      - Orta Burger
+      - "\u30DF\u30C9\u30EB\u30D0\u30FC\u30AC\u30FC"
+      - Hamburguesa Mediana
+      - "\u015Arodkowy Burger"
+      - Hamburger Medio
+      - "Hamb\xFArguer Do Meio"
+      - Burger Tengah
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: Star Burger
+      TermType: 0
+      Description: 
+      Languages:
+      - Star Burger
+      - Star-Burger
+      - "Burger \xC9toil\xE9"
+      - "\u0411\u0443\u0440\u0433\u0435\u0440 \u0417\u0432\u0435\u0437\u0434\u0430"
+      - "Y\u0131ld\u0131z Burger"
+      - "\u30B9\u30BF\u30FC\u30D0\u30FC\u30AC\u30FC"
+      - Hamburguesa Estrella
+      - Burger Gwiazdka
+      - Hamburger Stellato
+      - "Hamb\xFArguer Estrela"
+      - Burger Bintang
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: Big Burger
+      TermType: 0
+      Description: 
+      Languages:
+      - Big Burger
+      - "Gro\xDFer Burger"
+      - Gros Hamburger
+      - "\u0411\u0438\u0433 \u0411\u0443\u0440\u0433\u0435\u0440"
+      - "B\xFCy\xFCk Burger"
+      - "\u5927\u304D\u306A\u30CF\u30F3\u30D0\u30FC\u30AC\u30FC"
+      - Hamburguesa Grande
+      - "Du\u017Cy Burger"
+      - Grande Hamburger
+      - "Hamb\xFArguer Grande"
+      - Burger Besar
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: Mega Burger
+      TermType: 0
+      Description: 
+      Languages:
+      - Mega Burger
+      - Mega-Burger
+      - "M\xE9ga Burger"
+      - "\u041C\u0435\u0433\u0430 \u0411\u0443\u0440\u0433\u0435\u0440"
+      - "B\xFCy\xFCk Hamburger"
+      - "\u30E1\u30AC\u30D0\u30FC\u30AC\u30FC"
+      - Mega Hamburguesa
+      - Mega Burger
+      - Mega Hamburger
+      - "Mega Hamb\xFArguer"
+      - Burger Raksasa
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: Frens Fries
+      TermType: 0
+      Description: 
+      Languages:
+      - Frens Fries
+      - Pommes Frites
+      - Frites
+      - "\u041A\u0430\u0440\u0442\u043E\u0444\u0435\u043B\u044C \u0424\u0440\u0438"
+      - "Patates K\u0131zartmas\u0131"
+      - "\u30D5\u30EC\u30F3\u30BA\u30D5\u30E9\u30A4"
+      - Papas Fritas Francesas
+      - "Frytki Dla Przyjaci\xF3\u0142"
+      - Patatine Fritte
+      - Batatas Fritas Francesas
+      - Kentang Goreng Frens
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: Salary
+      TermType: 0
+      Description: 
+      Languages:
+      - Salary
+      - Gehalt
+      - Salaire
+      - "\u0417\u0430\u0440\u043F\u043B\u0430\u0442\u0430"
+      - "Maa\u015F"
+      - "\u7D66\u6599"
+      - Salario
+      - Wynagrodzenie
+      - Stipendio
+      - "Sal\xE1rio"
+      - Gaji
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: Reqired buy staff room
+      TermType: 0
+      Description: 
+      Languages:
+      - "Reqired\r              buy staff room"
+      - Erforderlich Personalzimmer kaufen
+      - Obligatoire acheter une salle du personnel
+      - "\u0422\u0440\u0435\u0431\u0443\u0435\u0442\u0441\u044F \u043A\u0443\u043F\u0438\u0442\u044C
+        \u043A\u043E\u043C\u043D\u0430\u0442\u0443 \u0434\u043B\u044F \u043F\u0435\u0440\u0441\u043E\u043D\u0430\u043B\u0430"
+      - "Gerekli sat\u0131n alma personel odas\u0131"
+      - "\u5FC5\u9808 \u30B9\u30BF\u30C3\u30D5\u30EB\u30FC\u30E0\u3092\u8CFC\u5165"
+      - Se requiere comprar sala para el personal
+      - Wymagane kupno pokoju dla personelu
+      - Necessario acquistare una stanza per il personale
+      - "Necess\xE1rio comprar sala para funcion\xE1rios"
+      - Diperlukan untuk membeli ruang staf
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: Cleans and fixes tables
+      TermType: 0
+      Description: 
+      Languages:
+      - Cleans and fixes tables
+      - Reinigt und repariert Tische
+      - "Nettoie et r\xE9pare les tables"
+      - "\u0427\u0438\u0441\u0442\u0438\u0442 \u0438 \u0440\u0435\u043C\u043E\u043D\u0442\u0438\u0440\u0443\u0435\u0442
+        \u0441\u0442\u043E\u043B\u044B"
+      - "Masalar\u0131 temizler ve onar\u0131r"
+      - "\u30C6\u30FC\u30D6\u30EB\u3092\u6383\u9664\u3057\u3066\u4FEE\u7406\u3059\u308B"
+      - Limpia y arregla mesas
+      - "Czy\u015Bci i naprawia sto\u0142y"
+      - Pulisce e ripara le tabelle
+      - Limpa e conserta mesas
+      - Membersihkan dan memperbaiki meja
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: NO ADS
+      TermType: 0
+      Description: 
+      Languages:
+      - NO ADS
+      - Keine Werbung
+      - "Pas De Publicit\xE9"
+      - "\u041D\u0435\u0442 \u0420\u0435\u043A\u043B\u0430\u043C\u044B"
+      - Reklam Yok
+      - "\u5E83\u544A\u306A\u3057"
+      - Sin Anuncios
+      - Bez Reklam
+      - "Nessuna Pubblicit\xE0"
+      - "Sem An\xFAncios"
+      - Tidak Ada Iklan
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: FOREVER
+      TermType: 0
+      Description: 
+      Languages:
+      - FOREVER
+      - "F\xFCr Immer"
+      - Pour Toujours
+      - "\u041D\u0430\u0432\u0441\u0435\u0433\u0434\u0430"
+      - Sonsuza Kadar
+      - "\u6C38\u9060\u306B"
+      - Para Siempre
+      - Na Zawsze
+      - Per Sempre
+      - Para Sempre
+      - Selamanya
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: BALANCE
+      TermType: 0
+      Description: 
+      Languages:
+      - BALANCE
+      - Gleichgewicht
+      - "\xC9quilibre"
+      - "\u0411\u0430\u043B\u0430\u043D\u0441"
+      - Denge
+      - "\u30D0\u30E9\u30F3\u30B9"
+      - Balance
+      - "Balansowa\u0107"
+      - Bilancia
+      - "Equil\xEDbrio"
+      - Keseimbangan
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: Report of the day
+      TermType: 0
+      Description: 
+      Languages:
+      - Report of the day
+      - Bericht des Tages
+      - Rapport du jour
+      - "\u041E\u0442\u0447\u0435\u0442 \u0434\u043D\u044F"
+      - "G\xFCn\xFCn raporu"
+      - "\u4ECA\u65E5\u306E\u30EC\u30DD\u30FC\u30C8"
+      - "Informe del d\xEDa"
+      - Raport dnia
+      - Resoconto del giorno
+      - "Relat\xF3rio do dia"
+      - Laporan hari ini
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: Total clients
+      TermType: 0
+      Description: 
+      Languages:
+      - Total clients
+      - Kunden insgesamt
+      - Nombre total de clients
+      - "\u0412\u0441\u0435\u0433\u043E \u043A\u043B\u0438\u0435\u043D\u0442\u043E\u0432"
+      - "Toplam m\xFC\u015Fteri say\u0131s\u0131"
+      - "\u7DCF\u9867\u5BA2\u6570"
+      - Total de clientes
+      - "\u0141\u0105czna liczba klient\xF3w"
+      - Clienti totali
+      - Total de clientes
+      - Jumlah klien
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: Total orders
+      TermType: 0
+      Description: 
+      Languages:
+      - Total orders
+      - Bestellungen gesamt
+      - Total des commandes
+      - "\u0412\u0441\u0435\u0433\u043E \u0437\u0430\u043A\u0430\u0437\u043E\u0432"
+      - "Toplam sipari\u015Fler"
+      - "\u5408\u8A08\u6CE8\u6587\u6570"
+      - Pedidos totales
+      - "\u0141\u0105czna liczba zam\xF3wie\u0144"
+      - Ordini totali
+      - Total de pedidos
+      - Jumlah pesanan
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: Completed orders
+      TermType: 0
+      Description: 
+      Languages:
+      - Completed orders
+      - Abgeschlossene Bestellungen
+      - "Commandes termin\xE9es"
+      - "\u0412\u044B\u043F\u043E\u043B\u043D\u0435\u043D\u043D\u044B\u0435 \u0437\u0430\u043A\u0430\u0437\u044B"
+      - "Tamamlanan sipari\u015Fler"
+      - "\u5B8C\u4E86\u3057\u305F\u6CE8\u6587"
+      - Pedidos completados
+      - "Zrealizowane zam\xF3wienia"
+      - Ordini completati
+      - "Pedidos conclu\xEDdos"
+      - Pesanan yang sudah selesai
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: Experience
+      TermType: 0
+      Description: 
+      Languages:
+      - Experience
+      - Erfahrung
+      - "Exp\xE9rience"
+      - "\u041E\u043F\u044B\u0442"
+      - Deneyim
+      - "\u7D4C\u9A13"
+      - Experiencia
+      - "Do\u015Bwiadczenie"
+      - Esperienza
+      - "Experi\xEAncia"
+      - Pengalaman
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: Levels
+      TermType: 0
+      Description: 
+      Languages:
+      - Levels
+      - Ebenen
+      - Niveaux
+      - "\u0423\u0440\u043E\u0432\u043D\u0438"
+      - Seviyeler
+      - "\u30EC\u30D9\u30EB"
+      - Niveles
+      - Poziomy
+      - Livelli
+      - "N\xEDveis"
+      - Tingkatan
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: Income
+      TermType: 0
+      Description: 
+      Languages:
+      - Income
+      - Einkommen
+      - Revenu
+      - "\u0414\u043E\u0445\u043E\u0434"
+      - Gelir
+      - "\u6240\u5F97"
+      - Ingreso
+      - "Doch\xF3d"
+      - Reddito
+      - Renda
+      - Penghasilan
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: Expenses
+      TermType: 0
+      Description: 
+      Languages:
+      - Expenses
+      - Kosten
+      - "D\xE9penses"
+      - "\u0417\u0430\u0442\u0440\u0430\u0442\u044B"
+      - Masraflar
+      - "\u7D4C\u8CBB"
+      - Gastos
+      - Wydatki
+      - Spese
+      - Despesas
+      - Pengeluaran
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: x2 Experience
+      TermType: 0
+      Description: 
+      Languages:
+      - x2 Experience
+      - x2 Erfahrung
+      - "x2 Exp\xE9rience"
+      - "x2 \u041E\u043F\u044B\u0442"
+      - x2 Deneyim
+      - "\u7D4C\u9A13\u50242\u500D"
+      - Experiencia x2
+      - "x2 Do\u015Bwiadczenie"
+      - x2 Esperienza
+      - "Experi\xEAncia x2"
+      - x2 Pengalaman
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: end of the day
+      TermType: 0
+      Description: 
+      Languages:
+      - end of the day
+      - Ende des Tages
+      - "fin de la journ\xE9e"
+      - "\u043A\u043E\u043D\u0435\u0446 \u0434\u043D\u044F"
+      - "g\xFCn\xFCn sonu"
+      - "\u4E00\u65E5\u306E\u7D42\u308F\u308A"
+      - "fin del d\xEDa"
+      - koniec dnia
+      - fine della giornata
+      - fim do dia
+      - akhir hari
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: CUSTOMERS
+      TermType: 0
+      Description: 
+      Languages:
+      - CUSTOMERS
+      - Kunden
+      - Clients
+      - "\u041A\u043B\u0438\u0435\u043D\u0442\u044B"
+      - "M\xFC\u015Fteriler"
+      - "\u9867\u5BA2"
+      - Clientes
+      - Klienci
+      - Clienti
+      - Clientes
+      - Pelanggan
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: RESTAURANT
+      TermType: 0
+      Description: 
+      Languages:
+      - RESTAURANT
+      - Restaurant
+      - Restaurant
+      - "\u0420\u0435\u0441\u0442\u043E\u0440\u0430\u043D"
+      - Restoran
+      - "\u30EC\u30B9\u30C8\u30E9\u30F3"
+      - Restaurante
+      - Restauracja
+      - Ristorante
+      - Restaurante
+      - Restoran
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: Grill
+      TermType: 0
+      Description: 
+      Languages:
+      - Grill
+      - Grill
+      - Gril
+      - "\u0413\u0440\u0438\u043B\u044C"
+      - Izgara
+      - "\u30B0\u30EA\u30EB"
+      - Parrilla
+      - Grill
+      - Griglia
+      - Grade
+      - Memanggang
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: Raw
+      TermType: 0
+      Description: 
+      Languages:
+      - Raw
+      - Roh
+      - Brut
+      - "\u0421\u044B\u0440\u043E\u0439"
+      - "\xC7i\u011F"
+      - "\u751F"
+      - Crudo
+      - Surowy
+      - Crudo
+      - Cru
+      - Mentah
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: Well
+      TermType: 0
+      Description: 
+      Languages:
+      - Well
+      - Also
+      - Bien
+      - "\u0413\u043E\u0442\u043E\u0432\u043E"
+      - Peki
+      - "\u826F\u3044"
+      - Bueno
+      - Dobrze
+      - BENE
+      - Bem
+      - Sehat
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: Fry
+      TermType: 0
+      Description: 
+      Languages:
+      - Fry
+      - Braten
+      - Frire
+      - "\u0416\u0430\u0440\u043A\u0430"
+      - "Ya\u011Fda K\u0131zartmak"
+      - "\u7A1A\u9B5A"
+      - "Fre\xEDr"
+      - "Sma\u017Cy\u0107"
+      - Friggere
+      - Fritar
+      - Menggoreng
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: New Day
+      TermType: 0
+      Description: 
+      Languages:
+      - New Day
+      - Neuer Tag
+      - Nouveau Jour
+      - "\u041D\u043E\u0432\u044B\u0439 \u0414\u0435\u043D\u044C"
+      - "Yeni G\xFCn"
+      - "\u65B0\u3057\u3044\u65E5"
+      - "Nuevo D\xEDa"
+      - "Nowy Dzie\u0144"
+      - Nuovo Giorno
+      - Novo Dia
+      - Hari Baru
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: New Menu
+      TermType: 0
+      Description: 
+      Languages:
+      - New Menu
+      - "Neues Men\xFC"
+      - Nouveau Menu
+      - "\u041D\u043E\u0432\u043E\u0435 \u041C\u0435\u043D\u044E"
+      - "Yeni Men\xFC"
+      - "\u65B0\u3057\u3044\u30E1\u30CB\u30E5\u30FC"
+      - "Nuevo Men\xFA"
+      - Nowe Menu
+      - Nuovo Menu
+      - Novo Menu
+      - Menu Baru
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: Let's use it to get the reward!
+      TermType: 0
+      Description: 
+      Languages:
+      - Let's use it to get the reward!
+      - Nutzen wir es, um die Belohnung zu erhalten!
+      - "Utilisons-le pour obtenir la r\xE9compense\_!"
+      - "\u0414\u0430\u0432\u0430\u0439\u0442\u0435 \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u0435\u043C
+        \u044D\u0442\u043E, \u0447\u0442\u043E\u0431\u044B \u043F\u043E\u043B\u0443\u0447\u0438\u0442\u044C
+        \u043D\u0430\u0433\u0440\u0430\u0434\u0443!"
+      - "Hadi \xF6d\xFCl\xFC almak i\xE7in kullanal\u0131m!"
+      - "\u4F7F\u3063\u3066\u5831\u916C\u3092\u30B2\u30C3\u30C8\u3057\u3088\u3046\uFF01"
+      - "\xA1Us\xE9moslo para obtener la recompensa!"
+      - "Wykorzystajmy to, aby zdoby\u0107 nagrod\u0119!"
+      - Usiamolo per ottenere la ricompensa!
+      - "Vamos us\xE1-lo para receber a recompensa!"
+      - Ayo gunakan untuk mendapatkan hadiahnya!
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: ORDER
+      TermType: 0
+      Description: 
+      Languages:
+      - ORDER
+      - Befehl
+      - Commande
+      - "\u0417\u0430\u043A\u0430\u0437"
+      - Emir
+      - "\u6CE8\u6587"
+      - Orden
+      - "Zam\xF3wienie"
+      - Ordine
+      - Ordem
+      - Memesan
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: CARD PAYMENT
+      TermType: 0
+      Description: 
+      Languages:
+      - CARD PAYMENT
+      - Kartenzahlung
+      - Paiement Par Carte
+      - "\u041E\u043F\u043B\u0430\u0442\u0430 \u041A\u0430\u0440\u0442\u043E\u0439"
+      - "Kart \xD6demesi"
+      - "\u30AB\u30FC\u30C9\u6C7A\u6E08"
+      - Pago Con Tarjeta
+      - "P\u0142atno\u015B\u0107 Kart\u0105"
+      - Pagamento Con Carta
+      - "Pagamento Com Cart\xE3o"
+      - Pembayaran Kartu
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: 'Total:'
+      TermType: 0
+      Description: 
+      Languages:
+      - 'Total:'
+      - 'Gesamt:'
+      - 'Total:'
+      - "\u041E\u0431\u0449\u0438\u0439:"
+      - 'Toplam:'
+      - "\u5408\u8A08\uFF1A"
+      - 'Total:'
+      - "Ca\u0142kowity:"
+      - 'Totale:'
+      - 'Total:'
+      - 'Total:'
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: Received
+      TermType: 0
+      Description: 
+      Languages:
+      - Received
+      - Erhalten
+      - "Re\xE7u"
+      - "\u041F\u043E\u043B\u0443\u0447\u0435\u043D\u043E"
+      - "Kabul Edilmi\u015F"
+      - "\u53D7\u3051\u53D6\u3063\u305F"
+      - "Recibi\xF3"
+      - Otrzymane
+      - Ricevuto
+      - Recebido
+      - Diterima
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: Change
+      TermType: 0
+      Description: 
+      Languages:
+      - Change
+      - "\xC4ndern"
+      - Changement
+      - "\u0421\u0434\u0430\u0447\u0430"
+      - "De\u011Fi\u015Ftirmek"
+      - "\u5909\u5316"
+      - Cambiar
+      - Zmiana
+      - Modifica
+      - Mudar
+      - Mengubah
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: Giving
+      TermType: 0
+      Description: 
+      Languages:
+      - Giving
+      - Geben
+      - Donner
+      - "\u041E\u0442\u0434\u0430\u0435\u043C"
+      - Vermek
+      - "\u4E0E\u3048\u308B"
+      - "Donaci\xF3n"
+      - "Daj\u0105cy"
+      - Dare
+      - Dando
+      - Memberi
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: Cash payment
+      TermType: 0
+      Description: 
+      Languages:
+      - Cash payment
+      - Barzahlung
+      - "Paiement esp\xE8ces"
+      - "\u041E\u043F\u043B\u0430\u0442\u0430 \u043D\u0430\u043B\u043E\u043C"
+      - "Nakit \xF6deme"
+      - "\u73FE\u91D1\u6255\u3044"
+      - Pago al contado
+      - "P\u0142atno\u015B\u0107 got\xF3wkowa"
+      - Pagamento contanti
+      - Pagamento em dinheiro
+      - Pembayaran tunai
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: GIVE THE CHANGE
+      TermType: 0
+      Description: 
+      Languages:
+      - GIVE THE CHANGE
+      - Gib Das Wechselgeld
+      - Rendre La Monnaie
+      - "\u0414\u0430\u0439\u0442\u0435 \u0421\u0434\u0430\u0447\u0443"
+      - "Para \xDCst\xFCn\xFC Ver"
+      - "\u304A\u91E3\u308A\u3092\u6E21\u3059"
+      - Dar El Cambio
+      - "Wyda\u0107 Reszt\u0119"
+      - Dare Il Resto
+      - "D\xEA O Troco"
+      - Berikan Kembaliannya
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: OPEN
+      TermType: 0
+      Description: 
+      Languages:
+      - OPEN
+      - Offen
+      - Ouvrir
+      - "\u041E\u0442\u043A\u0440\u044B\u0442\u043E"
+      - "A\xE7\u0131k"
+      - "\u958B\u3051\u308B"
+      - Abierto
+      - Otwarte
+      - Aprire
+      - Abrir
+      - Membuka
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: CLOSE
+      TermType: 0
+      Description: 
+      Languages:
+      - CLOSE
+      - "Schlie\xDFen"
+      - Fermer
+      - "\u0417\u0430\u043A\u0440\u044B\u0442\u043E"
+      - "Kapal\u0131"
+      - "\u8FD1\u3044"
+      - Cerca
+      - "Zamkn\u0105\u0107"
+      - Vicino
+      - Fechar
+      - Menutup
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: THROW
+      TermType: 0
+      Description: 
+      Languages:
+      - THROW
+      - Werfen
+      - Lancer
+      - "\u0411\u0440\u043E\u0441\u0430\u0442\u044C"
+      - "F\u0131rlatmak"
+      - "\u6295\u3052\u308B"
+      - Tirar
+      - "Rzuci\u0107"
+      - Gettare
+      - "Lan\xE7ar"
+      - Melemparkan
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: Language
+      TermType: 0
+      Description: 
+      Languages:
+      - Language
+      - Sprache
+      - Langue
+      - "\u042F\u0437\u044B\u043A"
+      - Dil
+      - "\u8A00\u8A9E"
+      - Idioma
+      - "J\u0119zyk"
+      - Lingua
+      - Linguagem
+      - Bahasa
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: Flag
+      TermType: 2
+      Description: 
+      Languages:
+      - English
+      - German
+      - French (1)
+      - Russian
+      - Turkish
+      - Japanese
+      - Spanish
+      - Polish
+      - Italian
+      - Portuguese
+      - Indonesian
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: CountryFlag
+      TermType: 5
+      Description: 
+      Languages:
+      - English
+      - German
+      - French (1)
+      - Russian
+      - Turkish
+      - Japanese
+      - Spanish
+      - Polish
+      - Italian
+      - Portuguese
+      - Indonesian
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: Staff
+      TermType: 0
+      Description: 
+      Languages:
+      - Staff
+      - Personal
+      - Personnel
+      - "\u041F\u0435\u0440\u0441\u043E\u043D\u0430\u043B"
+      - Kadro
+      - "\u30B9\u30BF\u30C3\u30D5"
+      - Personal
+      - Personel
+      - Personale
+      - "Funcion\xE1rios"
+      - Staf
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: Accept
+      TermType: 0
+      Description: 
+      Languages:
+      - Accept
+      - Akzeptieren
+      - Accepter
+      - "\u041F\u0440\u0438\u043D\u044F\u0442\u044C"
+      - Kabul Etmek
+      - "\u53D7\u3051\u5165\u308C\u308B"
+      - Aceptar
+      - "Przyj\u0105\u0107"
+      - Accettare
+      - Aceitar
+      - Menerima
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: TakeBoxBuns
+      TermType: 0
+      Description: 
+      Languages:
+      - Let's get ready  for the guests!  Take the box of buns.
+      - "Bereiten wir uns auf die G\xE4ste vor! Nimm die Schachtel Br\xF6tchen."
+      - "Pr\xE9parons-nous pour les invit\xE9s ! Prenez la bo\xEEte de brioches."
+      - "\u0414\u0430\u0432\u0430\u0439\u0442\u0435 \u0433\u043E\u0442\u043E\u0432\u0438\u0442\u044C\u0441\u044F
+        \u043A \u043F\u0440\u0438\u0445\u043E\u0434\u0443 \u0433\u043E\u0441\u0442\u0435\u0439!
+        \u0411\u0435\u0440\u0438\u0442\u0435 \u043A\u043E\u0440\u043E\u0431\u043A\u0443
+        \u0441 \u0431\u0443\u043B\u043E\u0447\u043A\u0430\u043C\u0438."
+      - "Hadi misafirler i\xE7in haz\u0131rlanal\u0131m! \xC7\xF6rek kutusunu al\u0131n."
+      - "\u304A\u5BA2\u69D8\u3092\u8FCE\u3048\u308B\u6E96\u5099\u3092\u3057\u307E\u3057\u3087\u3046\uFF01\u30D1\u30F3\u306E\u7BB1\u3092\u6301\u3063\u3066\u884C\u3063\u3066\u304F\u3060\u3055\u3044\u3002"
+      - "\xA1Prepar\xE9monos para recibir a los invitados! Coge la caja de bollos."
+      - "Przygotujmy si\u0119 na go\u015Bci! We\u017A pude\u0142ko bu\u0142ek."
+      - Prepariamoci per gli ospiti! Prendi la scatola di panini.
+      - "Vamos nos preparar para os convidados! Pegue a caixa de p\xE3ezinhos."
+      - Ayo bersiap menyambut tamu! Ambil kotak roti itu.
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: Tutorial progress
+      TermType: 0
+      Description: 
+      Languages:
+      - Tutorial progress
+      - Tutorial-Fortschritt
+      - Progression du tutoriel
+      - "\u041F\u0440\u043E\u0433\u0440\u0435\u0441\u0441 \u043E\u0431\u0443\u0447\u0435\u043D\u0438\u044F"
+      - "E\u011Fitim ilerlemesi"
+      - "\u30C1\u30E5\u30FC\u30C8\u30EA\u30A2\u30EB\u306E\u9032\u6357"
+      - Progreso tutorial
+      - "Post\u0119p samouczka"
+      - Avanzamento tutorial
+      - Progresso tutorial
+      - Kemajuan tutorial
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: PutBunsAssemblyTable
+      TermType: 0
+      Description: 
+      Languages:
+      - Let's put them  on the assembly  table.
+      - Legen wir sie auf den Montagetisch.
+      - Mettons-les sur la table de montage.
+      - "\u0414\u0430\u0432\u0430\u0439\u0442\u0435 \u043F\u043E\u043B\u043E\u0436\u0438\u043C
+        \u0438\u0445 \u043D\u0430 \u0441\u0431\u043E\u0440\u043E\u0447\u043D\u044B\u0439
+        \u0441\u0442\u043E\u043B."
+      - "Bunlar\u0131 montaj masas\u0131na koyal\u0131m."
+      - "\u7D44\u307F\u7ACB\u3066\u30C6\u30FC\u30D6\u30EB\u306E\u4E0A\u306B\u7F6E\u304D\u307E\u3057\u3087\u3046\u3002"
+      - Vamos a ponerlos sobre la mesa de montaje.
+      - "Po\u0142\xF3\u017Cmy je na stole monta\u017Cowym."
+      - Mettiamoli sul tavolo dell'assemblea.
+      - "Vamos coloc\xE1-los na mesa de montagem."
+      - Mari kita taruh mereka di meja perakitan.
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: ThrowEmptyBoxInTrash
+      TermType: 0
+      Description: 
+      Languages:
+      - Now throw  the empty box  in the trash!
+      - "Werfen Sie die leere Schachtel nun in den M\xFCll!"
+      - "Jetez maintenant la bo\xEEte vide \xE0 la poubelle !"
+      - "\u0410 \u0442\u0435\u043F\u0435\u0440\u044C \u0432\u044B\u0431\u0440\u043E\u0441\u044C\u0442\u0435
+        \u043F\u0443\u0441\u0442\u0443\u044E \u043A\u043E\u0440\u043E\u0431\u043A\u0443
+        \u0432 \u043C\u0443\u0441\u043E\u0440!"
+      - "\u015Eimdi bo\u015F kutuyu \xE7\xF6pe at!"
+      - "\u7A7A\u306B\u306A\u3063\u305F\u7BB1\u306F\u30B4\u30DF\u7BB1\u306B\u6368\u3066\u3066\u304F\u3060\u3055\u3044\u3002"
+      - "\xA1Ahora tira la caja vac\xEDa a la basura!"
+      - "Teraz wyrzu\u0107 puste pude\u0142ko do kosza!"
+      - Adesso butta la scatola vuota nella spazzatura!
+      - Agora jogue a caixa vazia no lixo!
+      - Sekarang buang kotak kosong itu ke tempat sampah!
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: TakeBoxBurgerPackages
+      TermType: 0
+      Description: 
+      Languages:
+      - Now we need to lay out the burger boxes
+      - "Jetzt m\xFCssen wir die Burgerboxen auslegen"
+      - "Maintenant, nous devons disposer les bo\xEEtes de hamburgers"
+      - "\u0422\u0435\u043F\u0435\u0440\u044C \u043D\u0430\u043C \u043D\u0443\u0436\u043D\u043E
+        \u0440\u0430\u0437\u043B\u043E\u0436\u0438\u0442\u044C \u043A\u043E\u0440\u043E\u0431\u043A\u0438
+        \u0434\u043B\u044F \u0431\u0443\u0440\u0433\u0435\u0440\u043E\u0432."
+      - "\u015Eimdi burger kutular\u0131n\u0131 yerle\u015Ftirmemiz gerekiyor"
+      - "\u6B21\u306F\u30CF\u30F3\u30D0\u30FC\u30AC\u30FC\u306E\u7BB1\u3092\u4E26\u3079\u307E\u3059"
+      - Ahora tenemos que disponer las cajas de hamburguesas.
+      - "Teraz musimy roz\u0142o\u017Cy\u0107 pude\u0142ka z burgerami"
+      - Ora dobbiamo disporre le scatole degli hamburger
+      - "Agora precisamos preparar as caixas de hamb\xFArguer"
+      - Sekarang kita perlu menata kotak burgernya
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: PutPackagesAssemblyTable
+      TermType: 0
+      Description: 
+      Languages:
+      - Let's put them  on the assembly  table.
+      - Legen wir sie auf den Montagetisch.
+      - Mettons-les sur la table de montage.
+      - "\u0414\u0430\u0432\u0430\u0439\u0442\u0435 \u043F\u043E\u043B\u043E\u0436\u0438\u043C
+        \u0438\u0445 \u043D\u0430 \u0441\u0431\u043E\u0440\u043E\u0447\u043D\u044B\u0439
+        \u0441\u0442\u043E\u043B."
+      - "Bunlar\u0131 montaj masas\u0131na koyal\u0131m."
+      - "\u7D44\u307F\u7ACB\u3066\u30C6\u30FC\u30D6\u30EB\u306E\u4E0A\u306B\u7F6E\u304D\u307E\u3057\u3087\u3046\u3002"
+      - Vamos a ponerlos sobre la mesa de montaje.
+      - "Po\u0142\xF3\u017Cmy je na stole monta\u017Cowym."
+      - Mettiamoli sul tavolo dell'assemblea.
+      - "Vamos coloc\xE1-los na mesa de montagem."
+      - Mari kita taruh mereka di meja perakitan.
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: ThrowEmptyBoxInTrashSecond
+      TermType: 0
+      Description: 
+      Languages:
+      - Now throw  the empty box  in the trash again!
+      - "Werfen Sie die leere Schachtel nun wieder in den M\xFCll!"
+      - "Maintenant, jetez \xE0 nouveau la bo\xEEte vide \xE0 la poubelle !"
+      - "\u0410 \u0442\u0435\u043F\u0435\u0440\u044C \u0432\u044B\u0431\u0440\u043E\u0441\u044C\u0442\u0435
+        \u043F\u0443\u0441\u0442\u0443\u044E \u043A\u043E\u0440\u043E\u0431\u043A\u0443
+        \u0441\u043D\u043E\u0432\u0430 \u0432 \u043C\u0443\u0441\u043E\u0440!"
+      - "\u015Eimdi bo\u015F kutuyu tekrar \xE7\xF6pe at!"
+      - "\u7A7A\u306B\u306A\u3063\u305F\u7BB1\u3092\u518D\u3073\u30B4\u30DF\u7BB1\u306B\u6368\u3066\u3066\u304F\u3060\u3055\u3044\u3002"
+      - "\xA1Ahora vuelve a tirar la caja vac\xEDa a la basura!"
+      - "A teraz wyrzu\u0107 puste pude\u0142ko z powrotem do kosza!"
+      - Ora getta di nuovo la scatola vuota nella spazzatura!
+      - Agora jogue a caixa vazia no lixo novamente!
+      - Sekarang buang kotak kosong itu ke tempat sampah lagi!
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: OrderBurgerPatties
+      TermType: 0
+      Description: 
+      Languages:
+      - It's time to cook!  Let's order burger  patties!
+      - Es ist Zeit zu kochen! Lasst uns Burger-Patties bestellen!
+      - "C'est l'heure de cuisiner ! On commande des steaks hach\xE9s !"
+      - "\u041F\u043E\u0440\u0430 \u0433\u043E\u0442\u043E\u0432\u0438\u0442\u044C!
+        \u0414\u0430\u0432\u0430\u0439\u0442\u0435 \u0437\u0430\u043A\u0430\u0436\u0435\u043C
+        \u043A\u043E\u0442\u043B\u0435\u0442\u044B \u0434\u043B\u044F \u0431\u0443\u0440\u0433\u0435\u0440\u043E\u0432!"
+      - "Yemek pi\u015Firme zaman\u0131! Hadi burger k\xF6ftesi sipari\u015F edelim!"
+      - "\u3055\u3042\u3001\u8ABF\u7406\u306E\u6642\u9593\u3067\u3059\uFF01\u30CF\u30F3\u30D0\u30FC\u30AC\u30FC\u306E\u30D1\u30C6\u3092\u6CE8\u6587\u3057\u307E\u3057\u3087\u3046\uFF01"
+      - "\xA1Es hora de cocinar! \xA1Pidamos hamburguesas!"
+      - "Czas gotowa\u0107! Zam\xF3wmy kotlety burgerowe!"
+      - "\xC8 ora di cucinare! Ordiniamo hamburger!"
+      - "\xC9 hora de cozinhar! Vamos pedir hamb\xFArgueres!"
+      - Saatnya memasak! Ayo pesan roti burger!
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: SkipDelivery
+      TermType: 0
+      Description: 
+      Languages:
+      - There is no time  to wait! Speed  up the delivery!
+      - Es gibt keine Zeit zu warten! Beschleunigen Sie die Lieferung!
+      - "N'attendez plus\_! Acc\xE9l\xE9rez la livraison\_!"
+      - "\u041D\u0435\u0442 \u0432\u0440\u0435\u043C\u0435\u043D\u0438 \u0436\u0434\u0430\u0442\u044C!
+        \u0423\u0441\u043A\u043E\u0440\u044C\u0442\u0435 \u0434\u043E\u0441\u0442\u0430\u0432\u043A\u0443!"
+      - "Beklemeye zaman yok! Teslimat\u0131 h\u0131zland\u0131r\u0131n!"
+      - "\u5F85\u3064\u6642\u9593\u306F\u3042\u308A\u307E\u305B\u3093\uFF01\u914D\u9054\u3092\u65E9\u3081\u307E\u3057\u3087\u3046\uFF01"
+      - "\xA1No hay tiempo que perder! \xA1Acelera la entrega!"
+      - "Nie ma czasu na czekanie! Przyspiesz dostaw\u0119!"
+      - "Non c'\xE8 tempo da perdere! Accelera la consegna!"
+      - "N\xE3o h\xE1 tempo a perder! Acelere a entrega!"
+      - Tidak ada waktu untuk menunggu! Percepat pengiriman!
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: TakeBoxesOutside
+      TermType: 0
+      Description: 
+      Languages:
+      - Go to outside  Take the box!
+      - "Geh nach drau\xDFen und nimm die Kiste!"
+      - "Va dehors Prends la bo\xEEte !"
+      - "\u0412\u044B\u0439\u0434\u0438 \u043D\u0430 \u0443\u043B\u0438\u0446\u0443
+        \u0438 \u0432\u043E\u0437\u044C\u043C\u0438 \u043A\u043E\u0440\u043E\u0431\u043A\u0443!"
+      - "D\u0131\u015Far\u0131 \xE7\u0131k. Kutuyu al!"
+      - "\u5916\u3078\u884C\u3063\u3066\u7BB1\u3092\u53D6\u3063\u3066\u304F\u3060\u3055\u3044\uFF01"
+      - "Ve afuera \xA1Toma la caja!"
+      - "Wyjd\u017A na zewn\u0105trz! We\u017A pude\u0142ko!"
+      - Vai fuori Prendi la scatola!
+      - "V\xE1 para fora Pegue a caixa!"
+      - Pergi ke luar Ambil kotaknya!
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: PutRawCutletInContainer
+      TermType: 0
+      Description: 
+      Languages:
+      - Put the Raw patties  on the container
+      - "Legen Sie die rohen Pastetchen auf den Beh\xE4lter"
+      - "Mettez les galettes crues sur le r\xE9cipient"
+      - "\u041F\u043E\u043B\u043E\u0436\u0438\u0442\u0435 \u0441\u044B\u0440\u044B\u0435
+        \u043A\u043E\u0442\u043B\u0435\u0442\u044B \u0432 \u043A\u043E\u043D\u0442\u0435\u0439\u043D\u0435\u0440."
+      - "\xC7i\u011F k\xF6fteleri kab\u0131n \xFCzerine koyun"
+      - "\u751F\u30D1\u30C6\u30A3\u3092\u5BB9\u5668\u306B\u5165\u308C\u308B"
+      - Coloque las hamburguesas crudas en el recipiente.
+      - "W\u0142\xF3\u017C surowe kotlety do pojemnika"
+      - Metti le polpette crude nel contenitore
+      - "Coloque os hamb\xFArgueres crus no recipiente"
+      - Taruh daging mentah di wadah
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: ThrowEmptyBoxInTrashThird
+      TermType: 0
+      Description: 
+      Languages:
+      - Now throw the empty box in the trash for the last time!
+      - "Werfen Sie die leere Schachtel nun ein letztes Mal in den M\xFCll!"
+      - "Jetez maintenant la bo\xEEte vide \xE0 la poubelle pour la derni\xE8re fois
+        !"
+      - "\u0410 \u0442\u0435\u043F\u0435\u0440\u044C \u0432\u044B\u0431\u0440\u043E\u0441\u044C\u0442\u0435
+        \u043F\u0443\u0441\u0442\u0443\u044E \u043A\u043E\u0440\u043E\u0431\u043A\u0443
+        \u0432 \u043C\u0443\u0441\u043E\u0440\u043D\u043E\u0435 \u0432\u0435\u0434\u0440\u043E
+        \u0432 \u043F\u043E\u0441\u043B\u0435\u0434\u043D\u0438\u0439 \u0440\u0430\u0437!"
+      - "\u015Eimdi bo\u015F kutuyu son kez \xE7\xF6pe at!"
+      - "\u6700\u5F8C\u306B\u7A7A\u306B\u306A\u3063\u305F\u7BB1\u3092\u30B4\u30DF\u7BB1\u306B\u6368\u3066\u307E\u3057\u3087\u3046\u3002"
+      - "\xA1Ahora tira la caja vac\xEDa a la basura por \xFAltima vez!"
+      - "A teraz wyrzu\u0107 puste pude\u0142ko do kosza po raz ostatni!"
+      - Adesso getta la scatola vuota nella spazzatura per l'ultima volta!
+      - "Agora jogue a caixa vazia no lixo pela \xFAltima vez!"
+      - Sekarang buang kotak kosong itu ke tempat sampah untuk terakhir kalinya!
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: TakeRawCutletInTrayPlayer
+      TermType: 0
+      Description: 
+      Languages:
+      - Take the raw cutlets on the tray
+      - Nehmen Sie die rohen Schnitzel auf das Tablett
+      - "Prenez les c\xF4telettes crues sur le plateau"
+      - "\u0412\u043E\u0437\u044C\u043C\u0438\u0442\u0435 \u0441\u044B\u0440\u044B\u0435
+        \u043A\u043E\u0442\u043B\u0435\u0442\u044B \u043D\u0430 \u043F\u043E\u0434\u043D\u043E\u0441."
+      - "\xC7i\u011F pirzolalar\u0131 tepsiye al\u0131n"
+      - "\u30C8\u30EC\u30A4\u306E\u4E0A\u306E\u751F\u306E\u30AB\u30C4\u30EC\u30C4\u3092\u53D6\u308A\u307E\u3059"
+      - Coge las chuletas crudas en la bandeja.
+      - "We\u017A surowe kotlety na tack\u0119"
+      - Prendi le cotolette crude sul vassoio
+      - "Pegue os hamb\xFArgueres crus na bandeja"
+      - Ambil potongan daging mentah di atas nampan
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: PutCutletsOnGrill
+      TermType: 0
+      Description: 
+      Languages:
+      - Put the patties  on the grill!
+      - Legen Sie die Patties auf den Grill!
+      - Mettez les galettes sur le gril !
+      - "\u0412\u044B\u043B\u043E\u0436\u0438\u0442\u0435 \u043A\u043E\u0442\u043B\u0435\u0442\u044B
+        \u043D\u0430 \u0433\u0440\u0438\u043B\u044C!"
+      - "K\xF6fteleri \u0131zgaraya koyun!"
+      - "\u30D1\u30C6\u3092\u30B0\u30EA\u30EB\u306B\u306E\u305B\u307E\u3057\u3087\u3046\uFF01"
+      - "\xA1Pon las hamburguesas en la parrilla!"
+      - "W\u0142\xF3\u017C kotlety na grilla!"
+      - Metti gli hamburger sulla griglia!
+      - "Coloque os hamb\xFArgueres na grelha!"
+      - Taruh roti lapis di atas panggangan!
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: FryCutletGrill
+      TermType: 0
+      Description: 
+      Languages:
+      - ' Press the grill to fry the cutlets'
+      - "Dr\xFCcken Sie den Grill, um die Schnitzel zu braten"
+      - "Appuyez sur le gril pour faire frire les c\xF4telettes"
+      - "\u041D\u0430\u0436\u043C\u0438\u0442\u0435 \u043D\u0430 \u0433\u0440\u0438\u043B\u044C,
+        \u0447\u0442\u043E\u0431\u044B \u043F\u043E\u0434\u0436\u0430\u0440\u0438\u0442\u044C
+        \u043A\u043E\u0442\u043B\u0435\u0442\u044B."
+      - "Pirzolalar\u0131 k\u0131zartmak i\xE7in \u0131zgaraya bas\u0131n"
+      - "\u30B0\u30EA\u30EB\u3092\u62BC\u3057\u3066\u30AB\u30C4\u30EC\u30C4\u3092\u63DA\u3052\u308B"
+      - "Presionar la parrilla para fre\xEDr las chuletas."
+      - "Naci\u015Bnij grill, aby usma\u017Cy\u0107 kotlety"
+      - Premere la griglia per friggere le cotolette
+      - "Pressione a grelha para fritar os hamb\xFArgueres"
+      - Tekan panggangan untuk menggoreng irisan daging
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: TakeWellCutlet
+      TermType: 0
+      Description: 
+      Languages:
+      - The patties  are ready,  take them away!
+      - Die Patties sind fertig, zum Mitnehmen!
+      - "Les galettes sont pr\xEAtes, emportez-les !"
+      - "\u041A\u043E\u0442\u043B\u0435\u0442\u044B \u0433\u043E\u0442\u043E\u0432\u044B,
+        \u0437\u0430\u0431\u0438\u0440\u0430\u0439\u0442\u0435!"
+      - "K\xF6fteler haz\u0131r, hadi al\u0131n!"
+      - "\u30D1\u30C6\u304C\u3067\u304D\u307E\u3057\u305F\u3002\u3069\u3046\u305E\u304A\u53EC\u3057\u4E0A\u304C\u308A\u304F\u3060\u3055\u3044\u3002"
+      - "\xA1Las hamburguesas est\xE1n listas, ll\xE9valas!"
+      - "Kotlety s\u0105 gotowe, zabierz je!"
+      - Le polpette sono pronte, portatele via!
+      - "Os hamb\xFArgueres est\xE3o prontos, leve-os embora!"
+      - Roti sudah siap, angkat!
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: PutWellCutletToContainer
+      TermType: 0
+      Description: 
+      Languages:
+      - Put Well patties to Assembly table container
+      - "Legen Sie Well-Patties in den Beh\xE4lter des Montagetisches"
+      - "Mettre les galettes Well dans le r\xE9cipient de la table d'assemblage"
+      - "\u041F\u043E\u043B\u043E\u0436\u0438\u0442\u0435 \u0433\u043E\u0442\u043E\u0432\u044B\u0435
+        \u043A\u043E\u0442\u043B\u0435\u0442\u044B \u0432 \u043A\u043E\u043D\u0442\u0435\u0439\u043D\u0435\u0440
+        \u043D\u0430 \u0441\u0431\u043E\u0440\u043E\u0447\u043D\u043E\u043C \u0441\u0442\u043E\u043B\u0435."
+      - "Kuyu k\xF6ftelerini Montaj masas\u0131 kab\u0131na koyun"
+      - "\u30A6\u30A7\u30EB\u30D1\u30C6\u30A3\u3092\u7D44\u307F\u7ACB\u3066\u30C6\u30FC\u30D6\u30EB\u30B3\u30F3\u30C6\u30CA\u306B\u5165\u308C\u308B"
+      - Coloque las hamburguesas bien en el recipiente de la mesa de montaje.
+      - "W\u0142\xF3\u017C kotlety Well do pojemnika na stole monta\u017Cowym"
+      - Metti le polpette nel contenitore del tavolo di assemblaggio
+      - "Coloque os hamb\xFArgueres Well no recipiente da mesa de montagem"
+      - Taruh roti lapis Well ke dalam wadah meja perakitan
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: LetsMakeFirstBurger
+      TermType: 0
+      Description: 
+      Languages:
+      - Let's make  the first burger!
+      - Lasst uns den ersten Burger machen!
+      - "Pr\xE9parons le premier burger !"
+      - "\u0414\u0430\u0432\u0430\u0439\u0442\u0435 \u043F\u0440\u0438\u0433\u043E\u0442\u043E\u0432\u0438\u043C
+        \u043F\u0435\u0440\u0432\u044B\u0439 \u0431\u0443\u0440\u0433\u0435\u0440!"
+      - "\u0130lk burgeri yapal\u0131m!"
+      - "\u307E\u305A\u306F\u30CF\u30F3\u30D0\u30FC\u30AC\u30FC\u3092\u4F5C\u3063\u3066\u307F\u307E\u3057\u3087\u3046\uFF01"
+      - "\xA1Hagamos la primera hamburguesa!"
+      - "Zr\xF3bmy pierwszego burgera!"
+      - Prepariamo il primo hamburger!
+      - "Vamos fazer o primeiro hamb\xFArguer!"
+      - Ayo buat burger pertama!
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: LetsSetPrice
+      TermType: 0
+      Description: 
+      Languages:
+      - 'We need a profit:  let''s set  the price!'
+      - 'Wir brauchen einen Gewinn: Lasst uns den Preis festlegen!'
+      - 'Nous avons besoin de profit : fixons le prix !'
+      - "\u041D\u0430\u043C \u043D\u0443\u0436\u043D\u0430 \u043F\u0440\u0438\u0431\u044B\u043B\u044C:
+        \u0434\u0430\u0432\u0430\u0439\u0442\u0435 \u0443\u0441\u0442\u0430\u043D\u043E\u0432\u0438\u043C
+        \u0446\u0435\u043D\u0443!"
+      - "K\xE2r laz\u0131m: Fiyat\u0131 belirleyelim!"
+      - "\u5229\u76CA\u304C\u5FC5\u8981\u3067\u3059\u3002\u4FA1\u683C\u3092\u8A2D\u5B9A\u3057\u307E\u3057\u3087\u3046\u3002"
+      - "Necesitamos una ganancia: \xA1fijemos el precio!"
+      - "Potrzebujemy zysku: ustalmy cen\u0119!"
+      - 'Abbiamo bisogno di un profitto: stabiliamo il prezzo!'
+      - "Precisamos de lucro: vamos definir o pre\xE7o!"
+      - 'Kita butuh untung: mari kita tetapkan harganya!'
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: OpenRestaurant
+      TermType: 0
+      Description: 
+      Languages:
+      - 'We are ready: Open a restaurant'
+      - "Wir sind bereit: Er\xF6ffnen Sie ein Restaurant"
+      - "Nous sommes pr\xEAts : Ouvrir un restaurant"
+      - "\u041C\u044B \u0433\u043E\u0442\u043E\u0432\u044B: \u041E\u0442\u043A\u0440\u043E\u0439\u0442\u0435
+        \u0440\u0435\u0441\u0442\u043E\u0440\u0430\u043D"
+      - "Haz\u0131r\u0131z: Restoran a\xE7\u0131yoruz"
+      - "\u6E96\u5099\u5B8C\u4E86\uFF1A\u30EC\u30B9\u30C8\u30E9\u30F3\u3092\u958B\u5E97"
+      - 'Estamos listos: Abrir un restaurante'
+      - "Jeste\u015Bmy gotowi: Otworzy\u0107 restauracj\u0119"
+      - 'Siamo pronti: apri un ristorante'
+      - 'Estamos prontos: Abra um restaurante'
+      - 'Kami siap: Buka restoran'
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: TakeFirstOrder
+      TermType: 0
+      Description: 
+      Languages:
+      - Wait for customers and  Take one orders
+      - Warten Sie auf Kunden und nehmen Sie eine Bestellung entgegen
+      - Attendez les clients et prenez une commande
+      - "\u0414\u043E\u0436\u0434\u0438\u0442\u0435\u0441\u044C \u043A\u043B\u0438\u0435\u043D\u0442\u043E\u0432
+        \u0438 \u043F\u0440\u0438\u043C\u0438\u0442\u0435 \u043E\u0434\u0438\u043D
+        \u0437\u0430\u043A\u0430\u0437"
+      - "M\xFC\u015Fterileri bekleyin ve sipari\u015F al\u0131n"
+      - "\u9867\u5BA2\u3092\u5F85\u3063\u3066\u6CE8\u6587\u3092\u53D6\u308B"
+      - Esperar a los clientes y tomar un pedido
+      - "Poczekaj na klient\xF3w i przyjmij jedno zam\xF3wienie"
+      - Aspetta i clienti e prendi un ordine
+      - "Aguarde os clientes e fa\xE7a um pedido"
+      - Tunggu pelanggan dan Ambil satu pesanan
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: CleanTable
+      TermType: 0
+      Description: 
+      Languages:
+      - Wait until the client finishes eating and clean the table
+      - "Warten Sie, bis der Kunde mit dem Essen fertig ist und r\xE4umen Sie den
+        Tisch ab"
+      - Attendez que le client ait fini de manger et nettoyez la table
+      - "\u041F\u043E\u0434\u043E\u0436\u0434\u0438\u0442\u0435, \u043F\u043E\u043A\u0430
+        \u043A\u043B\u0438\u0435\u043D\u0442 \u0437\u0430\u043A\u043E\u043D\u0447\u0438\u0442
+        \u0435\u0441\u0442\u044C, \u0438 \u0443\u0431\u0435\u0440\u0438\u0442\u0435
+        \u0441\u043E \u0441\u0442\u043E\u043B\u0430."
+      - "M\xFC\u015Fterinin yeme\u011Fini bitirmesini bekleyin ve masay\u0131 temizleyin"
+      - "\u304A\u5BA2\u69D8\u304C\u98DF\u3079\u7D42\u308F\u308B\u307E\u3067\u5F85\u3063\u3066\u30C6\u30FC\u30D6\u30EB\u3092\u7247\u4ED8\u3051\u307E\u3059"
+      - Esperar hasta que el cliente termine de comer y limpiar la mesa.
+      - "Poczekaj, a\u017C klient sko\u0144czy je\u015B\u0107 i posprz\u0105taj ze
+        sto\u0142u"
+      - Aspetta che il cliente finisca di mangiare e pulisci il tavolo
+      - "Espere at\xE9 que o cliente termine de comer e limpe a mesa"
+      - Tunggu sampai klien selesai makan dan bersihkan meja
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: TutorCompleted
+      TermType: 0
+      Description: 
+      Languages:
+      - Congratulations! You have completed the training! Enjoy the game!
+      - "Herzlichen Gl\xFCckwunsch! Du hast das Training abgeschlossen! Viel Spa\xDF
+        beim Spielen!"
+      - "F\xE9licitations ! Vous avez termin\xE9 la formation ! Bon jeu !"
+      - "\u041F\u043E\u0437\u0434\u0440\u0430\u0432\u043B\u044F\u0435\u043C! \u0412\u044B
+        \u043F\u0440\u043E\u0448\u043B\u0438 \u043E\u0431\u0443\u0447\u0435\u043D\u0438\u0435!
+        \u041F\u0440\u0438\u044F\u0442\u043D\u043E\u0439 \u0438\u0433\u0440\u044B!"
+      - "Tebrikler! E\u011Fitimi tamamlad\u0131n\u0131z! Oyunun tad\u0131n\u0131
+        \xE7\u0131kar\u0131n!"
+      - "\u304A\u3081\u3067\u3068\u3046\u3054\u3056\u3044\u307E\u3059\uFF01\u30C8\u30EC\u30FC\u30CB\u30F3\u30B0\u304C\u5B8C\u4E86\u3057\u307E\u3057\u305F\uFF01\u30B2\u30FC\u30E0\u3092\u304A\u697D\u3057\u307F\u304F\u3060\u3055\u3044\uFF01"
+      - "\xA1Felicidades! \xA1Has completado el entrenamiento! \xA1Disfruta del juego!"
+      - "Gratulacje! Uko\u0144czy\u0142e\u015B szkolenie! Mi\u0142ej gry!"
+      - Congratulazioni! Hai completato l'allenamento! Buon divertimento!
+      - "Parab\xE9ns! Voc\xEA concluiu o treinamento! Aproveite o jogo!"
+      - Selamat! Anda telah menyelesaikan pelatihan! Nikmati permainannya!
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: Congratulations on buying your own restaurant! What would you call it?
+      TermType: 0
+      Description: 
+      Languages:
+      - "Congratulations on buying your own restaurant! \nWhat would you call it?"
+      - "Herzlichen Gl\xFCckwunsch zum Kauf Ihres eigenen Restaurants!\nWie w\xFCrden
+        Sie es nennen?"
+      - "F\xE9licitations pour l'achat de votre propre restaurant\_!\nComment l'appelleriez-vous\_?"
+      - "\u041F\u043E\u0437\u0434\u0440\u0430\u0432\u043B\u044F\u044E \u0441 \u043F\u043E\u043A\u0443\u043F\u043A\u043E\u0439
+        \u0441\u043E\u0431\u0441\u0442\u0432\u0435\u043D\u043D\u043E\u0433\u043E
+        \u0440\u0435\u0441\u0442\u043E\u0440\u0430\u043D\u0430! \n\u041A\u0430\u043A
+        \u0431\u044B \u0432\u044B \u0435\u0433\u043E \u043D\u0430\u0437\u0432\u0430\u043B\u0438?"
+      - "Kendi restoran\u0131n\u0131z\u0131 sat\u0131n ald\u0131\u011F\u0131n\u0131z
+        i\xE7in tebrikler!\nBuna ne ad verirdiniz?"
+      - "\u81EA\u5206\u306E\u30EC\u30B9\u30C8\u30E9\u30F3\u3092\u8CB7\u3063\u305F\u3068\u306E\u3053\u3068\u3001\u304A\u3081\u3067\u3068\u3046\u3054\u3056\u3044\u307E\u3059\uFF01\n\u3069\u3093\u306A\u540D\u524D\u306B\u3057\u307E\u3059\u304B\uFF1F"
+      - "\xA1Felicidades por comprar tu propio restaurante!\n\xBFC\xF3mo lo llamar\xEDas?"
+      - "Gratulacje z okazji zakupu w\u0142asnej restauracji! \nJak by\u015B j\u0105
+        nazwa\u0142?"
+      - Congratulazioni per aver acquistato il tuo ristorante! Come lo chiameresti?
+      - "Parab\xE9ns por comprar seu pr\xF3prio restaurante!\nComo voc\xEA o chamaria?"
+      - 'Selamat karena telah membeli restoran Anda sendiri!
+
+        Apa nama restoran
+        itu?'
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: Please enter a name of Restaurant!
+      TermType: 0
+      Description: 
+      Languages:
+      - Please enter a name of Restaurant!
+      - Bitte geben Sie den Namen eines Restaurants ein!
+      - Veuillez entrer un nom de restaurant !
+      - "\u0412\u0432\u0435\u0434\u0438\u0442\u0435 \u043D\u0430\u0437\u0432\u0430\u043D\u0438\u0435
+        \u0440\u0435\u0441\u0442\u043E\u0440\u0430\u043D\u0430!"
+      - "L\xFCtfen Restoran\u0131n ad\u0131n\u0131 girin!"
+      - "\u30EC\u30B9\u30C8\u30E9\u30F3\u306E\u540D\u524D\u3092\u5165\u529B\u3057\u3066\u304F\u3060\u3055\u3044\u3002"
+      - "\xA1Por favor introduzca el nombre del restaurante!"
+      - "Prosz\u0119 poda\u0107 nazw\u0119 restauracji!"
+      - Inserisci il nome del ristorante!
+      - Por favor, insira o nome do restaurante!
+      - Silakan masukkan nama Restoran!
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: Save
+      TermType: 0
+      Description: 
+      Languages:
+      - Save
+      - Speichern
+      - Sauvegarder
+      - "\u0421\u043E\u0445\u0440\u0430\u043D\u044F\u0442\u044C"
+      - Kaydetmek
+      - "\u4FDD\u5B58"
+      - Ahorrar
+      - "Ratowa\u0107"
+      - Salva
+      - Salvar
+      - Menyimpan
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: Use right thumb to look around
+      TermType: 0
+      Description: 
+      Languages:
+      - Use right thumb to look around
+      - Verwenden Sie den rechten Daumen, um sich umzusehen
+      - Utilisez le pouce droit pour regarder autour de vous
+      - "\u0418\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u0439\u0442\u0435 \u0431\u043E\u043B\u044C\u0448\u043E\u0439
+        \u043F\u0430\u043B\u0435\u0446 \u043F\u0440\u0430\u0432\u043E\u0439 \u0440\u0443\u043A\u0438,
+        \u0447\u0442\u043E\u0431\u044B \u043E\u0441\u043C\u043E\u0442\u0440\u0435\u0442\u044C\u0441\u044F."
+      - "Etraf\u0131n\u0131za bakmak i\xE7in sa\u011F ba\u015F parma\u011F\u0131n\u0131z\u0131
+        kullan\u0131n"
+      - "\u53F3\u624B\u306E\u89AA\u6307\u3067\u5468\u56F2\u3092\u898B\u56DE\u3059"
+      - Utilice el pulgar derecho para mirar alrededor
+      - "U\u017Cyj prawego kciuka, aby rozejrze\u0107 si\u0119 dooko\u0142a"
+      - Usa il pollice destro per guardarti intorno
+      - Use o polegar direito para olhar ao redor
+      - Gunakan ibu jari kanan untuk melihat-lihat
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: Use
+      TermType: 0
+      Description: 
+      Languages:
+      - Use
+      - Verwenden
+      - Utiliser
+      - "\u0418\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u0439"
+      - Kullanmak
+      - "\u4F7F\u7528"
+      - Usar
+      - "U\u017Cywa\u0107"
+      - Utilizzo
+      - Usar
+      - Menggunakan
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: left thumb
+      TermType: 0
+      Description: 
+      Languages:
+      - left stick
+      - linker Stick
+      - joystick gauche
+      - "\u043B\u0435\u0432\u044B\u0439 \u0434\u0436\u043E\u0439\u0441\u0442\u0438\u043A"
+      - "sol \xE7ubuk"
+      - "\u5DE6\u30B9\u30C6\u30A3\u30C3\u30AF"
+      - joystick izquierdo
+      - "lewy dr\u0105\u017Cek"
+      - levetta sinistra
+      - "man\xEDpulo esquerdo"
+      - tongkat kiri
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: to move
+      TermType: 0
+      Description: 
+      Languages:
+      - to move
+      - bewegen
+      - "se d\xE9placer"
+      - "\u0434\u043B\u044F \u0434\u0432\u0438\u0436\u0435\u043D\u0438\u044F"
+      - hareket etmek
+      - "\u79FB\u52D5\u3059\u308B"
+      - moverse
+      - "ruszy\u0107 si\u0119"
+      - muoversi
+      - mover
+      - untuk bergerak
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: right thumb
+      TermType: 0
+      Description: 
+      Languages:
+      - Right Side
+      - Rechte Seite
+      - "C\xF4t\xE9 Droit"
+      - "\u043F\u0440\u0430\u0432\u0443\u044E \u0441\u0442\u043E\u0440\u043E\u043D\u0443"
+      - "Sa\u011F Taraf"
+      - "\u53F3\u5074"
+      - Lado Derecho
+      - Prawa Strona
+      - Lato Destro
+      - Lado Direito
+      - Sisi Kanan
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: look around
+      TermType: 0
+      Description: 
+      Languages:
+      - look around
+      - sich umsehen
+      - regarde autour de toi
+      - "\u0438 \u043E\u0441\u043C\u043E\u0442\u0440\u0438\u0441\u044C"
+      - "etraf\u0131na bak"
+      - "\u5468\u308A\u3092\u898B\u56DE\u3059"
+      - mirar alrededor
+      - "rozejrzyj si\u0119"
+      - guardarsi intorno
+      - olhe ao redor
+      - melihat-lihat
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: HIRE
+      TermType: 0
+      Description: 
+      Languages:
+      - HIRE
+      - Mieten
+      - Embaucher
+      - "\u041D\u0430\u043D\u044F\u0442\u044C"
+      - Kiralamak
+      - "\u96C7\u3046"
+      - Contratar
+      - "Wynajmowa\u0107"
+      - Assumere
+      - Contratar
+      - Mempekerjakan
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: DISMISS
+      TermType: 0
+      Description: 
+      Languages:
+      - DISMISS
+      - "Zur\xFCckweisen"
+      - Rejeter
+      - "\u0423\u0432\u043E\u043B\u0438\u0442\u044C"
+      - Azletmek
+      - "\u5374\u4E0B\u3059\u308B"
+      - Despedir
+      - "Odrzuca\u0107"
+      - Congedare
+      - Liberar
+      - Membubarkan
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: Delivery in
+      TermType: 0
+      Description: 
+      Languages:
+      - Delivery
+      - Lieferung
+      - Livraison
+      - "\u0414\u043E\u0441\u0442\u0430\u0432\u043A\u0430"
+      - Teslimat
+      - "\u914D\u9054"
+      - Entrega
+      - Dostawa
+      - Consegna
+      - Entrega
+      - Pengiriman
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: Congratulations!
+      TermType: 0
+      Description: 
+      Languages:
+      - Congratulations!
+      - "Gl\xFCckwunsch!"
+      - "F\xE9licitations!"
+      - "\u041F\u043E\u0437\u0434\u0440\u0430\u0432\u043B\u044F\u044E!"
+      - Tebrikler!
+      - "\u304A\u3081\u3067\u3068\u3046\uFF01"
+      - "\xA1Felicidades!"
+      - Gratulacje!
+      - Congratulazioni!
+      - "Parab\xE9ns!"
+      - Selamat!
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: click to close
+      TermType: 0
+      Description: 
+      Languages:
+      - click to close
+      - "Zum Schlie\xDFen klicken"
+      - cliquez pour fermer
+      - "\u043D\u0430\u0436\u043C\u0438\u0442\u0435, \u0447\u0442\u043E\u0431\u044B
+        \u0437\u0430\u043A\u0440\u044B\u0442\u044C"
+      - "kapatmak i\xE7in t\u0131klay\u0131n"
+      - "\u30AF\u30EA\u30C3\u30AF\u3057\u3066\u9589\u3058\u308B"
+      - Haga clic para cerrar
+      - "kliknij aby zamkn\u0105\u0107"
+      - clicca per chiudere
+      - clique para fechar
+      - klik untuk menutup
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: POUR
+      TermType: 0
+      Description: 
+      Languages:
+      - POUR
+      - "Gie\xDFen"
+      - Verser
+      - "\u041D\u0430\u043B\u0438\u0442\u044C"
+      - "D\xF6kmek"
+      - "\u6CE8\u3050"
+      - Derramar
+      - "Wla\u0107"
+      - Versare
+      - Derramar
+      - Menuangkan
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: Required is storage
+      TermType: 0
+      Description: 
+      Languages:
+      - Required  is storage
+      - "Ben\xF6tigt wird Speicherplatz"
+      - Le stockage est requis
+      - "\u0422\u0440\u0435\u0431\u0443\u0435\u0442\u0441\u044F \u0445\u0440\u0430\u043D\u0438\u043B\u0438\u0449\u0435"
+      - "Gerekli olan depolama alan\u0131d\u0131r"
+      - "\u5FC5\u8981\u306A\u306E\u306F\u30B9\u30C8\u30EC\u30FC\u30B8"
+      - Se requiere almacenamiento
+      - Wymagane jest przechowywanie
+      - "\xC8 richiesto lo spazio di archiviazione"
+      - "\xC9 necess\xE1rio armazenamento"
+      - Diperlukan penyimpanan
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: RequeredStorage
+      TermType: 0
+      Description: 
+      Languages:
+      - Required  is storage
+      - "Ben\xF6tigt wird Speicherplatz"
+      - Le stockage est requis
+      - "\u0422\u0440\u0435\u0431\u0443\u0435\u0442\u0441\u044F \u0445\u0440\u0430\u043D\u0438\u043B\u0438\u0449\u0435"
+      - "Gerekli olan depolama alan\u0131d\u0131r"
+      - "\u5FC5\u8981\u306A\u306E\u306F\u30B9\u30C8\u30EC\u30FC\u30B8"
+      - Se requiere almacenamiento
+      - Wymagane jest przechowywanie
+      - "\xC8 richiesto lo spazio di archiviazione"
+      - "O armazenamento \xE9 necess\xE1rio"
+      - Diperlukan penyimpanan
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: StorageRequired
+      TermType: 0
+      Description: 
+      Languages:
+      - Storage required
+      - Speicherplatz erforderlich
+      - Stockage requis
+      - "\u0422\u0440\u0435\u0431\u0443\u0435\u0442\u0441\u044F \u0445\u0440\u0430\u043D\u0438\u043B\u0438\u0449\u0435"
+      - Depolama gerekli
+      - "\u5FC5\u8981\u306A\u30B9\u30C8\u30EC\u30FC\u30B8"
+      - Se requiere almacenamiento
+      - Wymagane miejsce do przechowywania
+      - Spazio di archiviazione richiesto
+      - "Armazenamento necess\xE1rio"
+      - Penyimpanan diperlukan
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: Right! Get prizes in the delivery area!
+      TermType: 0
+      Description: 
+      Languages:
+      - Right! Get prizes in the delivery area!
+      - Richtig! Gewinne Preise im Liefergebiet!
+      - C'est vrai ! Gagnez des prix dans la zone de livraison !
+      - "\u041F\u0440\u0430\u0432\u0438\u043B\u044C\u043D\u043E! \u041F\u043E\u043B\u0443\u0447\u0430\u0439\u0442\u0435
+        \u043F\u0440\u0438\u0437\u044B \u0432 \u0437\u043E\u043D\u0435 \u0434\u043E\u0441\u0442\u0430\u0432\u043A\u0438!"
+      - "Do\u011Fru! Teslimat alan\u0131nda \xF6d\xFClleri al\u0131n!"
+      - "\u6B63\u89E3\uFF01\u914D\u9054\u30A8\u30EA\u30A2\u3067\u8CDE\u54C1\u3092\u30B2\u30C3\u30C8\uFF01"
+      - "\xA1Correcto! \xA1Consigue premios en el \xE1rea de entrega!"
+      - Dobrze! Odbierz nagrody w strefie dostaw!
+      - Giusto! Ricevi i premi nell'area di consegna!
+      - "Certo! Ganhe pr\xEAmios na \xE1rea de entrega!"
+      - Benar! Dapatkan hadiah di area pengiriman!
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: This promo code has already been purchased.
+      TermType: 0
+      Description: 
+      Languages:
+      - This promo code has already been used.
+      - Dieser Promocode wurde bereits verwendet.
+      - "Ce code promo a d\xE9j\xE0 \xE9t\xE9 utilis\xE9."
+      - "\u042D\u0442\u043E\u0442 \u043F\u0440\u043E\u043C\u043E\u043A\u043E\u0434
+        \u0443\u0436\u0435 \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u043D."
+      - "Bu promosyon kodu daha \xF6nce kullan\u0131ld\u0131."
+      - "\u3053\u306E\u30D7\u30ED\u30E2\u30FC\u30B7\u30E7\u30F3\u30B3\u30FC\u30C9\u306F\u65E2\u306B\u4F7F\u7528\u3055\u308C\u3066\u3044\u307E\u3059\u3002"
+      - "Este c\xF3digo de promoci\xF3n ya ha sido utilizado."
+      - "Ten kod promocyjny zosta\u0142 ju\u017C wykorzystany."
+      - "Questo codice promozionale \xE8 gi\xE0 stato utilizzato."
+      - "Este c\xF3digo promocional j\xE1 foi utilizado."
+      - Kode promo ini sudah digunakan.
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: Invalid promo code.
+      TermType: 0
+      Description: 
+      Languages:
+      - Invalid promo code.
+      - "Ung\xFCltiger Aktionscode."
+      - Code promo invalide.
+      - "\u041D\u0435\u0434\u0435\u0439\u0441\u0442\u0432\u0438\u0442\u0435\u043B\u044C\u043D\u044B\u0439
+        \u043F\u0440\u043E\u043C\u043E\u043A\u043E\u0434."
+      - "Ge\xE7ersiz promosyon kodu."
+      - "\u30D7\u30ED\u30E2\u30FC\u30B7\u30E7\u30F3\u30B3\u30FC\u30C9\u304C\u7121\u52B9\u3067\u3059\u3002"
+      - "C\xF3digo de promoci\xF3n no v\xE1lido."
+      - "Nieprawid\u0142owy kod promocyjny."
+      - Codice promozionale non valido.
+      - "C\xF3digo promocional inv\xE1lido."
+      - Kode promo tidak valid.
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: NEWS!
+      TermType: 0
+      Description: 
+      Languages:
+      - NEWS!
+      - Nachricht!
+      - Nouvelles!
+      - "\u041D\u043E\u0432\u043E\u0441\u0442\u0438!"
+      - Haberler!
+      - "\u30CB\u30E5\u30FC\u30B9\uFF01"
+      - "\xA1Noticias!"
+      - "Aktualno\u015Bci!"
+      - Notizia!
+      - "Not\xEDcias!"
+      - Berita!
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: Mysterious Gift
+      TermType: 0
+      Description: 
+      Languages:
+      - Mysterious Gift
+      - Geheimnisvolles Geschenk
+      - "Cadeau Myst\xE9rieux"
+      - "\u0422\u0430\u0438\u043D\u0441\u0442\u0432\u0435\u043D\u043D\u044B\u0439
+        \u0414\u0430\u0440"
+      - Gizemli Hediye
+      - "\u4E0D\u601D\u8B70\u306A\u8D08\u308A\u7269"
+      - Regalo Misterioso
+      - Tajemniczy Prezent
+      - Dono Misterioso
+      - Presente Misterioso
+      - Hadiah Misterius
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: Don't rush!
+      TermType: 0
+      Description: 
+      Languages:
+      - Don't rush!
+      - Beeilen Sie sich nicht!
+      - "Ne vous pr\xE9cipitez pas !"
+      - "\u041D\u0435 \u0442\u043E\u0440\u043E\u043F\u0438\u0442\u0435\u0441\u044C!"
+      - Acele etmeyin!
+      - "\u6025\u304C\u306A\u3044\u3067\uFF01"
+      - "\xA1No te apresures!"
+      - "Nie spiesz si\u0119!"
+      - Non avere fretta!
+      - "N\xE3o tenha pressa!"
+      - Jangan terburu-buru!
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: If you close this offer, you will lose your mysterious gift!
+      TermType: 0
+      Description: 
+      Languages:
+      - "If you close this offer, \nyou will lose \nyour mysterious gift!"
+      - 'Wenn Sie dieses Angebot ablehnen,
+
+        verlieren Sie
+
+        Ihr geheimnisvolles
+        Geschenk!'
+      - "Si vous fermez cette offre,\nvous perdrez\nvotre cadeau myst\xE9rieux\_!"
+      - "\u0415\u0441\u043B\u0438 \u0432\u044B \u0437\u0430\u043A\u0440\u043E\u0435\u0442\u0435
+        \u044D\u0442\u043E \u043F\u0440\u0435\u0434\u043B\u043E\u0436\u0435\u043D\u0438\u0435,
+        \n\u0432\u044B \u043F\u043E\u0442\u0435\u0440\u044F\u0435\u0442\u0435 \n\u0441\u0432\u043E\u0439
+        \u0442\u0430\u0438\u043D\u0441\u0442\u0432\u0435\u043D\u043D\u044B\u0439
+        \u043F\u043E\u0434\u0430\u0440\u043E\u043A!"
+      - "Bu teklifi kapat\u0131rsan\u0131z,\ngizemli hediyenizi\nkaybedeceksiniz!"
+      - "\u3053\u306E\u30AA\u30D5\u30A1\u30FC\u3092\u9589\u3058\u308B\u3068\u3001\n\u8B0E\u306E\u30AE\u30D5\u30C8\u3092\u5931\u3063\u3066\u3057\u307E\u3044\u307E\u3059\uFF01"
+      - "Si cierras esta oferta, \xA1perder\xE1s tu regalo misterioso!"
+      - "Je\u015Bli zamkniesz t\u0119 ofert\u0119, \nstracisz \nsw\xF3j tajemniczy
+        prezent!"
+      - 'Se chiudi questa offerta,
+
+        perderai
+
+        il tuo regalo misterioso!'
+      - "Se voc\xEA fechar esta oferta,\nvoc\xEA perder\xE1\nseu presente misterioso!"
+      - Jika Anda menutup penawaran ini, Anda akan kehilangan hadiah misterius Anda!
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: Come back!
+      TermType: 0
+      Description: 
+      Languages:
+      - Come back!
+      - "Komm zur\xFCck!"
+      - Revenir!
+      - "\u0412\u0435\u0440\u043D\u0443\u0442\u044C\u0441\u044F"
+      - Geri gelmek!
+      - "\u623B\u3063\u3066\u304F\u308B\uFF01"
+      - "\xA1Regresar!"
+      - "Wraca\u0107!"
+      - Ritorno!
+      - Voltar!
+      - Kembali!
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: Refuse a gift
+      TermType: 0
+      Description: 
+      Languages:
+      - Refuse a gift
+      - Ein Geschenk ablehnen
+      - Refuser un cadeau
+      - "\u041E\u0442\u043A\u0430\u0437\u0430\u0442\u044C\u0441\u044F \u043E\u0442
+        \u043F\u043E\u0434\u0430\u0440\u043A\u0430"
+      - Bir hediyeyi reddetmek
+      - "\u8D08\u308A\u7269\u3092\u65AD\u308B"
+      - Rechazar un regalo
+      - "Odrzu\u0107 prezent"
+      - Rifiutare un regalo
+      - Recusar um presente
+      - Menolak hadiah
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: Free Energy
+      TermType: 0
+      Description: 
+      Languages:
+      - Free Energy
+      - Freie Energie
+      - "\xC9nergie Libre"
+      - "\u042D\u043D\u0435\u0440\u0433\u0438\u044F \u0414\u0430\u0440\u043E\u043C"
+      - Bedava Enerji
+      - "\u81EA\u7531\u30A8\u30CD\u30EB\u30AE\u30FC"
+      - "Energ\xEDa Libre"
+      - Darmowa Energia
+      - Energia Libera
+      - Energia Livre
+      - Energi Bebas
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: PAY ENERGY
+      TermType: 0
+      Description: 
+      Languages:
+      - PAY ENERGY
+      - Energie Bezahlen
+      - "Payer L'\xE9nergie"
+      - "\u041A\u0443\u043F\u0438\u0442\u044C \u042D\u043D\u0435\u0440\u0433\u0438\u044E"
+      - "Enerji \xD6de"
+      - "\u30A8\u30CD\u30EB\u30AE\u30FC\u3092\u652F\u6255\u3046"
+      - "Pagar Energ\xEDa"
+      - "Zap\u0142a\u0107 Energi\u0119"
+      - Pagare L'energia
+      - Pagar Energia
+      - Membayar Energi
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: The best offer!
+      TermType: 0
+      Description: 
+      Languages:
+      - The best offer!
+      - Das beste Angebot!
+      - La meilleure offre !
+      - "\u041B\u0443\u0447\u0448\u0435\u0435 \u043F\u0440\u0435\u0434\u043B\u043E\u0436\u0435\u043D\u0438\u0435!"
+      - En iyi teklif!
+      - "\u6700\u9AD8\u306E\u30AA\u30D5\u30A1\u30FC\u3067\u3059!"
+      - "\xA1La mejor oferta!"
+      - Najlepsza oferta!
+      - La migliore offerta!
+      - A melhor oferta!
+      - Penawaran terbaik!
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: Daily Reward
+      TermType: 0
+      Description: 
+      Languages:
+      - Daily Reward
+      - "T\xE4gliche Belohnung"
+      - "R\xE9compense Quotidienne"
+      - "\u0415\u0436\u0435\u0434\u043D\u0435\u0432\u043D\u0430\u044F \u041D\u0430\u0433\u0440\u0430\u0434\u0430"
+      - "G\xFCnl\xFCk \xD6d\xFCl"
+      - "\u6BCE\u65E5\u306E\u5831\u916C"
+      - Recompensa Diaria
+      - Nagroda Dzienna
+      - Ricompensa Giornaliera
+      - "Recompensa Di\xE1ria"
+      - Hadiah Harian
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: +5 Energy
+      TermType: 0
+      Description: 
+      Languages:
+      - +5 Energy
+      - +5 Energie
+      - "+5 \xC9nergie"
+      - "+5 \u042D\u043D\u0435\u0440\u0433\u0438\u0438"
+      - +5 Enerji
+      - "\u30A8\u30CD\u30EB\u30AE\u30FC+5"
+      - "+5 Energ\xEDa"
+      - +5 Energii
+      - +5 Energia
+      - +5 De Energia
+      - +5 Energi
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: KEEP PLAY
+      TermType: 0
+      Description: 
+      Languages:
+      - KEEP PLAY
+      - Weiterspielen
+      - "Continuer \xC0 Jouer"
+      - "\u041F\u0440\u043E\u0434\u043E\u043B\u0436\u0438\u0442\u044C"
+      - Oynamaya Devam Et
+      - "\u30D7\u30EC\u30A4\u3092\u7D9A\u3051\u308B"
+      - Seguir Jugando
+      - "Kontynuuj Gr\u0119"
+      - Continua A Giocare
+      - Continue Jogando
+      - Terus Bermain
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: UpdateNews
+      TermType: 0
+      Description: 
+      Languages:
+      - "Update 2.0.9\r\n- New Cashier employee! Forget about the queues of guests,
+        concentrate on cooking burgers!\r\n- Worker leveling - Workers can now be
+        improved!\r\n- Warning hints for a pleasant game!\r\n- New promo code: \"Cashier2025\"
+        (Plum Soda \u04451, orange soda \u04451, lemon soda \u04451, barberry soda
+        \u04451, 50$)\r\n- PROMO CODE INSTRUCTIONS: TAP SETTINGS -> TAP ON THE GIFT
+        ICON -> ENTER THE PROMO CODE -> RECEIVE GIFTS IN THE DELIVERY AREA!\r\n-
+        We will definitely add even more employees! Stay tuned!"
+      - "Update 2.0.9\n- Neuer Kassierer! Vergesst die Warteschlangen, konzentriert
+        euch aufs Burger-Braten!\n- Mitarbeiter-Leveling \u2013 Mitarbeiter k\xF6nnen
+        jetzt verbessert werden!\n- Warnhinweise f\xFCr ein angenehmes Spiel!\n-
+        Neuer Promo-Code: \u201ECashier2025\u201C (Pflaumenlimonade 1 x, Orangenlimonade
+        1 x, Zitronenlimonade 1 x, Berberitzenlimonade 1 x, 50 $)\n- ANLEITUNG ZUM
+        PROMO-CODE: TIPPEN SIE AUF EINSTELLUNGEN -> TIPPEN SIE AUF DAS GESCHENK-SYMBOL
+        -> GEBEN SIE DEN PROMO-CODE EIN -> ERHALTEN SIE GESCHENKE IM LIEFERBEREICH!\n-
+        Wir werden definitiv noch mehr Mitarbeiter einstellen! Bleiben Sie dran!"
+      - "Mise \xE0 jour 2.0.9\n- Nouveau caissier\_! Oubliez les files d'attente
+        et concentrez-vous sur la pr\xE9paration des burgers\_!\n- Mont\xE9e en niveau
+        des ouvriers\_: les ouvriers peuvent d\xE9sormais \xEAtre am\xE9lior\xE9s\_!\n-
+        Conseils pour un jeu agr\xE9able\_!\n- Nouveau code promo\_: \xAB\_Cashier2025\_\xBB
+        (soda \xE0 la prune x1, soda \xE0 l'orange x1, soda au citron x1, soda \xE0
+        l'\xE9pine-vinette x1, 50\_$)\n- INSTRUCTIONS POUR LE CODE PROMO\_: APPUYEZ
+        SUR \xAB\_PARAMETRES\_\xBB -> APPUYEZ SUR L'IC\xD4NE CADEAU -> SAISISSEZ
+        LE CODE PROMO -> RECEVEZ DES CADEAUX DANS LA ZONE DE LIVRAISON\_!\n- Nous
+        ajouterons certainement encore plus d'employ\xE9s\_! Restez connect\xE9s\_!"
+      - "\u041E\u0431\u043D\u043E\u0432\u043B\u0435\u043D\u0438\u0435 2.0.9\n- \u041D\u043E\u0432\u044B\u0439
+        \u043A\u0430\u0441\u0441\u0438\u0440! \u0417\u0430\u0431\u0443\u0434\u044C\u0442\u0435
+        \u043E\u0431 \u043E\u0447\u0435\u0440\u0435\u0434\u044F\u0445 \u0433\u043E\u0441\u0442\u0435\u0439,
+        \u0441\u043E\u0441\u0440\u0435\u0434\u043E\u0442\u043E\u0447\u044C\u0442\u0435\u0441\u044C
+        \u043D\u0430 \u043F\u0440\u0438\u0433\u043E\u0442\u043E\u0432\u043B\u0435\u043D\u0438\u0438
+        \u0431\u0443\u0440\u0433\u0435\u0440\u043E\u0432!\n- \u041F\u043E\u0432\u044B\u0448\u0435\u043D\u0438\u0435
+        \u0443\u0440\u043E\u0432\u043D\u044F \u0441\u043E\u0442\u0440\u0443\u0434\u043D\u0438\u043A\u043E\u0432
+        - \u0422\u0435\u043F\u0435\u0440\u044C \u0441\u043E\u0442\u0440\u0443\u0434\u043D\u0438\u043A\u043E\u0432
+        \u043C\u043E\u0436\u043D\u043E \u0443\u043B\u0443\u0447\u0448\u0430\u0442\u044C!\n-
+        \u041F\u0440\u0435\u0434\u0443\u043F\u0440\u0435\u0436\u0434\u0430\u044E\u0449\u0438\u0435
+        \u043F\u043E\u0434\u0441\u043A\u0430\u0437\u043A\u0438 \u0434\u043B\u044F
+        \u043F\u0440\u0438\u044F\u0442\u043D\u043E\u0439 \u0438\u0433\u0440\u044B!\n-
+        \u041D\u043E\u0432\u044B\u0439 \u043F\u0440\u043E\u043C\u043E\u043A\u043E\u0434:
+        \xABCashier2025\xBB (\u0421\u043B\u0438\u0432\u043E\u0432\u0430\u044F \u0433\u0430\u0437\u0438\u0440\u043E\u0432\u043A\u0430
+        \u04451, \u0410\u043F\u0435\u043B\u044C\u0441\u0438\u043D\u043E\u0432\u0430\u044F
+        \u0433\u0430\u0437\u0438\u0440\u043E\u0432\u043A\u0430 \u04451, \u041B\u0438\u043C\u043E\u043D\u043D\u0430\u044F
+        \u0433\u0430\u0437\u0438\u0440\u043E\u0432\u043A\u0430 \u04451, \u0411\u0430\u0440\u0431\u0430\u0440\u0438\u0441\u043E\u0432\u0430\u044F
+        \u0433\u0430\u0437\u0438\u0440\u043E\u0432\u043A\u0430 \u04451, 50$)\n- \u0418\u041D\u0421\u0422\u0420\u0423\u041A\u0426\u0418\u042F
+        \u041F\u041E \u041F\u0420\u041E\u041C\u041E\u041A\u041E\u0414\u0423: \u041D\u0410\u0416\u041C\u0418\u0422\u0415
+        \u041D\u0410 \u041D\u0410\u0421\u0422\u0420\u041E\u0419\u041A\u0418 -> \u041D\u0410\u0416\u041C\u0418\u0422\u0415
+        \u041D\u0410 \u0417\u041D\u0410\u0427\u041E\u041A \u041F\u041E\u0414\u0410\u0420\u041A\u0410
+        -> \u0412\u0412\u0415\u0414\u0418\u0422\u0415 \u041F\u0420\u041E\u041C\u041E\u041A\u041E\u0414
+        -> \u041F\u041E\u041B\u0423\u0427\u0410\u0419\u0422\u0415 \u041F\u041E\u0414\u0410\u0420\u041A\u0418
+        \u0412 \u0417\u041E\u041D\u0415 \u0414\u041E\u0421\u0422\u0410\u0412\u041A\u0418!\n-
+        \u041C\u044B \u043E\u0431\u044F\u0437\u0430\u0442\u0435\u043B\u044C\u043D\u043E
+        \u0434\u043E\u0431\u0430\u0432\u0438\u043C \u0435\u0449\u0451 \u0431\u043E\u043B\u044C\u0448\u0435
+        \u0441\u043E\u0442\u0440\u0443\u0434\u043D\u0438\u043A\u043E\u0432! \u0421\u043B\u0435\u0434\u0438\u0442\u0435
+        \u0437\u0430 \u043D\u043E\u0432\u043E\u0441\u0442\u044F\u043C\u0438!"
+      - "2.0.9 G\xFCncellemesi\n- Yeni Kasiyer \xE7al\u0131\u015Fan\u0131! M\xFC\u015Fteri
+        kuyruklar\u0131n\u0131 unutun, hamburger pi\u015Firmeye odaklan\u0131n!\n-
+        \xC7al\u0131\u015Fan seviyelendirme - \xC7al\u0131\u015Fanlar art\u0131k
+        geli\u015Ftirilebilir!\n- Keyifli bir oyun i\xE7in uyar\u0131 ipu\xE7lar\u0131!\n-
+        Yeni promosyon kodu: \"Cashier2025\" (Erik Gazozu 1 x, portakal gazozu 1
+        x, limon gazozu 1 x, k\u0131z\u0131lc\u0131k gazozu 1 x, 50$)\n- PROMOSYON
+        KODU TAL\u0130MATLARI: AYARLAR'A DOKUNUN -> HED\u0130YE S\u0130MGES\u0130NE
+        DOKUNUN -> PROMOSYON KODUNU G\u0130R\u0130N -> TESL\u0130MAT ALANINDA HED\u0130YELER
+        ALIN!\n- Kesinlikle daha fazla \xE7al\u0131\u015Fan ekleyece\u011Fiz! Bizi
+        takip edin!"
+      - "\u30A2\u30C3\u30D7\u30C7\u30FC\u30C8 2.0.9\n- \u65B0\u3057\u3044\u30EC\u30B8\u4FC2\u54E1\uFF01\u304A\u5BA2\u69D8\u306E\u5217\u306B\u4E26\u3076\u306E\u306F\u3082\u3046\u5FD8\u308C\u3066\u3001\u30CF\u30F3\u30D0\u30FC\u30AC\u30FC\u4F5C\u308A\u306B\u96C6\u4E2D\u3057\u307E\u3057\u3087\u3046\uFF01\n-
+        \u5F93\u696D\u54E1\u306E\u30EC\u30D9\u30EB\u30A2\u30C3\u30D7 - \u5F93\u696D\u54E1\u306E\u30EC\u30D9\u30EB\u30A2\u30C3\u30D7\u304C\u53EF\u80FD\u306B\u306A\u308A\u307E\u3057\u305F\uFF01\n-
+        \u697D\u3057\u3044\u30B2\u30FC\u30E0\u306E\u305F\u3081\u306E\u30D2\u30F3\u30C8\uFF01\n-
+        \u65B0\u3057\u3044\u30D7\u30ED\u30E2\u30FC\u30B7\u30E7\u30F3\u30B3\u30FC\u30C9\uFF1A\u300CCashier2025\u300D\uFF08\u30D7\u30E9\u30E0\u30BD\u30FC\u30C0
+        1\u500B\u3001\u30AA\u30EC\u30F3\u30B8\u30BD\u30FC\u30C0 1\u500B\u3001\u30EC\u30E2\u30F3\u30BD\u30FC\u30C0
+        1\u500B\u3001\u30D0\u30FC\u30D9\u30EA\u30FC\u30BD\u30FC\u30C0 1\u500B\u300150\u30C9\u30EB\uFF09\n-
+        \u30D7\u30ED\u30E2\u30FC\u30B7\u30E7\u30F3\u30B3\u30FC\u30C9\u306E\u4F7F\u3044\u65B9\uFF1A\u8A2D\u5B9A\u3092\u30BF\u30C3\u30D7
+        -> \u30AE\u30D5\u30C8\u30A2\u30A4\u30B3\u30F3\u3092\u30BF\u30C3\u30D7 ->
+        \u30D7\u30ED\u30E2\u30FC\u30B7\u30E7\u30F3\u30B3\u30FC\u30C9\u3092\u5165\u529B
+        -> \u914D\u9054\u30A8\u30EA\u30A2\u3067\u30AE\u30D5\u30C8\u3092\u53D7\u3051\u53D6\u308C\u307E\u3059\uFF01\n-
+        \u4ECA\u5F8C\u3082\u5F93\u696D\u54E1\u3092\u968F\u6642\u8FFD\u52A0\u4E88\u5B9A\u3067\u3059\uFF01\u304A\u697D\u3057\u307F\u306B\uFF01"
+      - "Actualizaci\xF3n 2.0.9\n- \xA1Nuevo cajero! \xA1Olv\xEDdate de las colas
+        de clientes y conc\xE9ntrate en cocinar hamburguesas!\n- Subida de nivel
+        de los trabajadores: \xA1Ahora puedes mejorarlos!\n- \xA1Consejos para disfrutar
+        del juego!\n- Nuevo c\xF3digo promocional: \"Cashier2025\" (Refresco de ciruela
+        x1, refresco de naranja x1, refresco de lim\xF3n x1, refresco de agracejo
+        x1, 50 $)\n- INSTRUCCIONES PARA EL C\xD3DIGO PROMOCIONAL: TOCA AJUSTES ->
+        TOCA EL ICONO DE REGALO -> INTRODUCE EL C\xD3DIGO PROMOCIONAL -> \xA1RECIBE
+        REGALOS EN LA ZONA DE ENTREGA!\n- \xA1Seguro que a\xF1adiremos m\xE1s empleados!
+        \xA1No te lo pierdas!"
+      - "Aktualizacja 2.0.9\n- Nowy pracownik na stanowisku kasjera! Zapomnij o kolejkach
+        go\u015Bci, skup si\u0119 na sma\u017Ceniu burger\xF3w!\n- Awans pracownik\xF3w
+        - Teraz mo\u017Cna rozwija\u0107 pracownik\xF3w!\n- Ostrzegawcze wskaz\xF3wki
+        dla przyjemnej gry!\n- Nowy kod promocyjny: \u201EKasjer2025\u201D (Nap\xF3j
+        \u015Bliwkowy x1, nap\xF3j pomara\u0144czowy x1, nap\xF3j cytrynowy x1, nap\xF3j
+        berberysowy x1, 50$)\n- INSTRUKCJA WPISU KODU PROMOCYJNEGO: DOTKNIJ USTAWIENIA
+        -> DOTKNIJ IKON\u0118 PREZENTU -> WPISZ KOD PROMOCYJNY -> ODBIERZ PREZENTY
+        W OBSZARZE DOSTAWY!\n- Z pewno\u015Bci\u0105 dodamy jeszcze wi\u0119cej pracownik\xF3w!
+        B\u0105d\u017Acie czujni!"
+      - "Aggiornamento 2.0.9\n- Nuovo cassiere! Dimentica le code per i clienti,
+        concentrati sulla preparazione degli hamburger!\n- Aumento di livello dei
+        lavoratori - Ora \xE8 possibile migliorare i lavoratori!\n- Consigli di avvertimento
+        per un gioco piacevole!\n- Nuovo codice promozionale: \"Cashier2025\" (Plum
+        Soda x1, Aranciata x1, Limonata x1, Crespino x1, 50$)\n- ISTRUZIONI PER IL
+        CODICE PROMOZIONALE: TOCCA IMPOSTAZIONI -> TOCCA L'ICONA REGALO -> INSERISCI
+        IL CODICE PROMOZIONALE -> RICEVI I REGALI NELL'AREA DI CONSEGNA!\n- Aggiungeremo
+        sicuramente altri dipendenti! Restate sintonizzati!"
+      - "Atualiza\xE7\xE3o 2.0.9\n- Novo funcion\xE1rio Caixa! Esque\xE7a as filas
+        de clientes e concentre-se em preparar hamb\xFArgueres!\n- Evolu\xE7\xE3o
+        dos funcion\xE1rios - Agora \xE9 poss\xEDvel aprimorar os funcion\xE1rios!\n-
+        Dicas de alerta para um jogo agrad\xE1vel!\n- Novo c\xF3digo promocional:
+        \"Cashier2025\" (Refrigerante de Ameixa x1, Refrigerante de Laranja x1, Refrigerante
+        de Lim\xE3o x1, Refrigerante de B\xE9rberis x1, R$ 50)\n- INSTRU\xC7\xD5ES
+        DO C\xD3DIGO PROMOCIONAL: TOQUE EM CONFIGURA\xC7\xD5ES -> TOQUE NO \xCDCONE
+        DE PRESENTE -> DIGITE O C\xD3DIGO PROMOCIONAL -> RECEBA PRESENTES NA \xC1REA
+        DE ENTREGA!\n- Com certeza adicionaremos ainda mais funcion\xE1rios! Fique
+        ligado!"
+      - 'Pembaruan 2.0.9
+
+        - Karyawan Kasir Baru! Lupakan antrean tamu, fokuslah
+        memasak burger!
+
+        - Leveling Pekerja - Pekerja sekarang bisa ditingkatkan!
+
+        -
+        Petunjuk peringatan untuk permainan yang menyenangkan!
+
+        - Kode promo
+        baru: "Cashier2025" (Plum Soda x1, Orange Soda x1, Lemon Soda x1, Barberry
+        Soda x1, 50$)
+
+        - PETUNJUK KODE PROMO: KETUK PENGATURAN -> KETUK IKON
+        HADIAH -> MASUKKAN KODE PROMO -> TERIMA HADIAH DI AREA PENGANTARAN!
+
+        -
+        Kami pasti akan menambah lebih banyak karyawan! Nantikan terus!'
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: RewardX2
+      TermType: 0
+      Description: 
+      Languages:
+      - Reward X2
+      - Belohnung X2
+      - "R\xE9compense X2"
+      - "\u041D\u0430\u0433\u0440\u0430\u0434\u0430 X2"
+      - "\xD6d\xFCl X2"
+      - "\u5831\u916C\xD72"
+      - Recompensa X2
+      - Nagroda X2
+      - Ricompensa X2
+      - Recompensa X2
+      - Hadiah X2
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: LevelUp
+      TermType: 0
+      Description: 
+      Languages:
+      - Level Up!
+      - Level Aufsteigen!
+      - Monte De Niveau !
+      - "\u041D\u043E\u0432\u044B\u0439 \u0423\u0440\u043E\u0432\u0435\u043D\u044C!"
+      - Seviye Atla!
+      - "\u30EC\u30D9\u30EB\u30A2\u30C3\u30D7\uFF01"
+      - "\xA1Elevar A Mismo Nivel!"
+      - "Podnie\u015B\u0107 Poziomu!"
+      - Salire Di Livello!
+      - "Suba De N\xEDvel!"
+      - Naik Level!
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: Rewards for leveling up
+      TermType: 0
+      Description: 
+      Languages:
+      - Rewards for leveling up
+      - "Belohnungen f\xFCr den Levelaufstieg"
+      - "R\xE9compenses pour la mont\xE9e en niveau"
+      - "\u041D\u0430\u0433\u0440\u0430\u0434\u044B \u0437\u0430 \u043F\u043E\u0432\u044B\u0448\u0435\u043D\u0438\u0435
+        \u0443\u0440\u043E\u0432\u043D\u044F"
+      - "Seviye atlama \xF6d\xFClleri"
+      - "\u30EC\u30D9\u30EB\u30A2\u30C3\u30D7\u306E\u5831\u916C"
+      - Recompensas por subir de nivel
+      - Nagrody za awansowanie
+      - Ricompense per il passaggio di livello
+      - "Recompensas por subir de n\xEDvel"
+      - Hadiah untuk naik level
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: Keep playing!
+      TermType: 0
+      Description: 
+      Languages:
+      - Keep playing!
+      - Spielen Sie weiter!
+      - "Continuez \xE0 jouer !"
+      - "\u041F\u0440\u043E\u0434\u043E\u043B\u0436\u0438\u0442\u044C!"
+      - Oynamaya edin!
+      - "\u30D7\u30EC\u30A4\u3057\u7D9A\u3051\u3066\u304F\u3060\u3055\u3044\uFF01"
+      - "\xA1Sigue jugando!"
+      - Graj dalej!
+      - Continua a giocare!
+      - Continue jogando!
+      - Terus bermain!
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: Level
+      TermType: 0
+      Description: 
+      Languages:
+      - Level
+      - Ebene
+      - Niveau
+      - "\u0423\u0440\u043E\u0432\u0435\u043D\u044C"
+      - Seviye
+      - "\u30EC\u30D9\u30EB"
+      - Nivel
+      - Poziom
+      - Livello
+      - "N\xEDvel"
+      - Tingkat
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: NewProduct
+      TermType: 0
+      Description: 
+      Languages:
+      - 'New products:'
+      - 'Neue Produkte:'
+      - 'Nouveaux produits :'
+      - "\u041D\u043E\u0432\u044B\u0435 \u043F\u0440\u043E\u0434\u0443\u043A\u0442\u044B:"
+      - "Yeni \xFCr\xFCnler:"
+      - "\u65B0\u88FD\u54C1:"
+      - 'Nuevos productos:'
+      - 'Nowe produkty:'
+      - 'Nuovi prodotti:'
+      - 'Novos produtos:'
+      - 'Produk baru:'
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: Cheese
+      TermType: 0
+      Description: 
+      Languages:
+      - Cheese
+      - "K\xE4se"
+      - Fromage
+      - "\u0421\u044B\u0440"
+      - Peynir
+      - "\u30C1\u30FC\u30BA"
+      - Queso
+      - Ser
+      - 
+      - Queijo
+      - Keju
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: CupCoffeeEmpty
+      TermType: 0
+      Description: 
+      Languages:
+      - Coffee cups
+      - Kaffeetassen
+      - "Tasses \xE0 caf\xE9"
+      - "\u0421\u0442\u0430\u043A\u0430\u043D\u0447\u0438\u043A\u0438 \u0434\u043B\u044F
+        \u043A\u043E\u0444\u0435"
+      - "Kahve fincanlar\u0131"
+      - "\u30B3\u30FC\u30D2\u30FC\u30AB\u30C3\u30D7"
+      - "Tazas de caf\xE9"
+      - "Fili\u017Canki do kawy"
+      - "Tazze da caff\xE8"
+      - "X\xEDcaras de caf\xE9"
+      - Cangkir kopi
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: NewRecipes
+      TermType: 0
+      Description: 
+      Languages:
+      - 'New Recipes:'
+      - 'Neue Rezepte:'
+      - 'Nouvelles Recettes:'
+      - "\u041D\u043E\u0432\u044B\u0435 \u0420\u0435\u0446\u0435\u043F\u0442\u044B:"
+      - 'Yeni Tarifler:'
+      - "\u65B0\u3057\u3044\u30EC\u30B7\u30D4:"
+      - 'Nuevas Recetas:'
+      - 'Nowe Przepisy:'
+      - 'Nuove Ricette:'
+      - 'Novas Receitas:'
+      - 'Resep Baru:'
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: NewEquipment
+      TermType: 0
+      Description: 
+      Languages:
+      - 'New Equipment:'
+      - "Neue Ausr\xFCstung:"
+      - "Nouvel \xC9quipement :"
+      - "\u041D\u043E\u0432\u043E\u0435 \u041E\u0431\u043E\u0440\u0443\u0434\u043E\u0432\u0430\u043D\u0438\u0435:"
+      - 'Yeni Ekipman:'
+      - "\u65B0\u3057\u3044\u88C5\u5099\uFF1A"
+      - 'Nuevo Equipo:'
+      - "Nowy Sprz\u0119t:"
+      - 'Nuove Attrezzature:'
+      - 'Novos Equipamentos:'
+      - 'Peralatan Baru:'
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: FinishCheeseburger
+      TermType: 0
+      Description: 
+      Languages:
+      - Cheeseburger
+      - Cheeseburger
+      - Cheeseburger
+      - "\u0427\u0438\u0437\u0431\u0443\u0440\u0433\u0435\u0440"
+      - Cheeseburger
+      - "\u30C1\u30FC\u30BA\u30D0\u30FC\u30AC\u30FC"
+      - Hamburguesa Con Queso
+      - Cheeseburger
+      - Cheeseburger
+      - X-Burger
+      - Cheeseburger
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: SodaTable
+      TermType: 0
+      Description: 
+      Languages:
+      - Soda Machine
+      - "Getr\xE4nkeautomat"
+      - Distributeur De Soda
+      - "\u0410\u0432\u0442\u043E\u043C\u0430\u0442 \u0413\u0430\u0437\u0438\u0440\u043E\u0432\u043A\u0438"
+      - Soda Makinesi
+      - "\u30BD\u30FC\u30C0\u30DE\u30B7\u30F3"
+      - "M\xE1quina De Refrescos"
+      - Automat Gazowanymi
+      - Macchina Gassate
+      - "M\xE1quina Refrigerante"
+      - Mesin Soda
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: CoffeeTable
+      TermType: 0
+      Description: 
+      Languages:
+      - Coffee Machine
+      - Kaffeemaschine
+      - "Machine \xC0 Caf\xE9"
+      - "\u041A\u043E\u0444\u0435\u043C\u0430\u0448\u0438\u043D\u0430"
+      - Kahve Makinesi
+      - "\u30B3\u30FC\u30D2\u30FC\u30DE\u30B7\u30F3"
+      - "M\xE1quina De Caf\xE9"
+      - Ekspres Do Kawy
+      - "Macchina Per Il Caff\xE8"
+      - "M\xE1quina De Caf\xE9"
+      - Mesin Kopi
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: FinishMiddleBurger
+      TermType: 0
+      Description: 
+      Languages:
+      - Middle Burger
+      - Mittlerer Burger
+      - Burger Du Milieu
+      - "\u0421\u0440\u0435\u0434\u043D\u0438\u0439 \u0411\u0443\u0440\u0433\u0435\u0440"
+      - Orta Burger
+      - "\u30DF\u30C9\u30EB\u30D0\u30FC\u30AC\u30FC"
+      - Hamburguesa Mediana
+      - "\u015Arodkowy Burger"
+      - Hamburger Medio
+      - "Hamb\xFArguer Do Meio"
+      - Burger Tengah
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: DeepFryer1
+      TermType: 0
+      Description: 
+      Languages:
+      - Deep Fryer For Nuggets
+      - "Fritteuse F\xFCr Nuggets"
+      - Friteuse Pour Nuggets
+      - "\u0444\u0440\u0438\u0442\u044E\u0440 \u0434\u043B\u044F  \u043D\u0430\u0433\u0433\u0435\u0442\u0441\u043E\u0432"
+      - "Nugget'lar Tavas\u0131"
+      - "\u30CA\u30B2\u30C3\u30C8\u7528\u30D5\u30E9\u30A4\u30E4\u30FC"
+      - Freidora Para Nuggets
+      - "Frytkownica Do Nuggets\xF3w"
+      - Friggitrice Per Crocchette
+      - Fritadeira Para Nuggets
+      - Penggorengan  Nugget
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: FrenchFriesPackage
+      TermType: 0
+      Description: 
+      Languages:
+      - Packaging for fries
+      - Verpackung Pommes frites
+      - Emballage pour frites
+      - "\u0423\u043F\u0430\u043A\u043E\u0432\u043A\u0430 \u043F\u043E\u0434 \u0444\u0440\u0438"
+      - "Patates k\u0131zartmas\u0131 i\xE7in ambalaj"
+      - "\u30D5\u30E9\u30A4\u30C9\u30DD\u30C6\u30C8\u306E\u5305\u88C5"
+      - Envases para patatas fritas
+      - Opakowanie na frytki
+      - Imballaggio per patatine fritte
+      - Embalagem para batatas fritas
+      - Kemasan untuk kentang goreng
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: FrenchFries
+      TermType: 0
+      Description: 
+      Languages:
+      - French Fries
+      - Pommes Frites
+      - Frites
+      - "\u041A\u0430\u0440\u0442\u043E\u0444\u0435\u043B\u044C \u0424\u0440\u0438"
+      - "Patates K\u0131zartmas\u0131"
+      - "\u30D5\u30E9\u30A4\u30C9\u30DD\u30C6\u30C8"
+      - Papas Fritas
+      - Frytki
+      - Patate Fritte
+      - Batatas Fritas
+      - Kentang Goreng
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: RewardLevelingZona2
+      TermType: 0
+      Description: 
+      Languages:
+      - Zona 2
+      - Zone 2
+      - Zone 2
+      - "\u0417\u043E\u043D\u0430 2"
+      - "B\xF6lge 2"
+      - "\u30BE\u30FC\u30F32"
+      - Zona 2
+      - Strefa 2
+      - Zona 2
+      - Zona 2
+      - Daerah 2
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: RewardLevelingTables
+      TermType: 0
+      Description: 
+      Languages:
+      - Tables
+      - Tabellen
+      - Tables
+      - "\u0421\u0442\u043E\u043B\u044B"
+      - Tablolar
+      - "\u30C6\u30FC\u30D6\u30EB"
+      - Mesas
+      - "Sto\u0142y"
+      - Tavoli
+      - Tabelas
+      - Tabel
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: RewardLevelingZona3
+      TermType: 0
+      Description: 
+      Languages:
+      - Zona 3
+      - Zone 3
+      - Zone 3
+      - "\u0417\u043E\u043D\u0430 3"
+      - "B\xF6lge 3"
+      - "\u30BE\u30FC\u30F33"
+      - Zona 3
+      - Strefa 3
+      - Zona 3
+      - Zona 3
+      - Daerah 3
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: RewardLevelingZona4
+      TermType: 0
+      Description: 
+      Languages:
+      - Zona 4
+      - Zone 4
+      - Zone 4
+      - "\u0417\u043E\u043D\u0430 4"
+      - "B\xF6lge 4"
+      - "\u30BE\u30FC\u30F34"
+      - Zona 4
+      - Strefa 4
+      - Zona 4
+      - Zona 4
+      - Zona 4
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: RewardLevelingStorage
+      TermType: 0
+      Description: 
+      Languages:
+      - Storage
+      - Lagerung
+      - Stockage
+      - "\u0425\u0440\u0430\u043D\u0438\u043B\u0438\u0449\u0435"
+      - Depolamak
+      - "\u30B9\u30C8\u30EC\u30FC\u30B8"
+      - Almacenamiento
+      - "Sk\u0142adowanie"
+      - Magazzinaggio
+      - Armazenar
+      - Penyimpanan
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: RewardLevelingStaffRoom
+      TermType: 0
+      Description: 
+      Languages:
+      - Staff Room
+      - Lehrerzimmer
+      - Salle Du Personnel
+      - "\u041A\u043E\u043C\u043D\u0430\u0442\u0430 \u041F\u0435\u0440\u0441\u043E\u043D\u0430\u043B\u0430"
+      - "Personel Odas\u0131"
+      - "\u8077\u54E1\u5BA4"
+      - Sala De Profesores
+      - "Pok\xF3j Nauczycielski"
+      - Sala Del Personale
+      - Sala Professores
+      - Ruang Staf
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: RewardLevelingCleaner
+      TermType: 0
+      Description: 
+      Languages:
+      - Cleaner
+      - Reiniger
+      - Nettoyeur
+      - "\u0423\u0431\u043E\u0440\u0449\u0438\u043A"
+      - Temizleyici
+      - "\u30AF\u30EA\u30FC\u30CA\u30FC"
+      - Limpiador
+      - Odkurzacz
+      - Addetto Alle Pulizie
+      - Limpador
+      - Pembersih
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: RewardLevelingKitchenZone
+      TermType: 0
+      Description: 
+      Languages:
+      - Kitchen Zone
+      - "K\xFCchenbereich"
+      - Coin Cuisine
+      - "\u041A\u0443\u0445\u043E\u043D\u043D\u0430\u044F \u0417\u043E\u043D\u0430"
+      - "Mutfak Alan\u0131"
+      - "\u30AD\u30C3\u30C1\u30F3\u30BE\u30FC\u30F3"
+      - Zona De Cocina
+      - Strefa Kuchenna
+      - Zona Cucina
+      - Zona Da Cozinha
+      - Zona Dapur
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: RewardLevelingCheese
+      TermType: 0
+      Description: 
+      Languages:
+      - Cheese
+      - "K\xE4se"
+      - Fromage
+      - "\u0421\u044B\u0440"
+      - Peynir
+      - "\u30C1\u30FC\u30BA"
+      - Queso
+      - Ser
+      - Formaggio
+      - Queijo
+      - Keju
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: RewardLevelingCupCoffee
+      TermType: 0
+      Description: 
+      Languages:
+      - Cups Coffee
+      - Tassen Kaffee
+      - "Tasses De Caf\xE9"
+      - "\u0421\u0442\u0430\u043A\u0430\u043D\u0447\u0438\u043A\u0438 \u041A\u043E\u0444\u0435"
+      - Fincan Kahve
+      - "\u30B3\u30FC\u30D2\u30FC\u30AB\u30C3\u30D7"
+      - "Tazas De Caf\xE9"
+      - "Fili\u017Canki Kawy"
+      - "Tazze Di Caff\xE8"
+      - "X\xEDcaras De Caf\xE9"
+      - Cangkir Kopi
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: RewardLevelingCoffee
+      TermType: 0
+      Description: 
+      Languages:
+      - Coffee
+      - Kaffee
+      - "Caf\xE9"
+      - "\u041A\u043E\u0444\u0435"
+      - Kahve
+      - "\u30B3\u30FC\u30D2\u30FC"
+      - "Caf\xE9"
+      - Kawa
+      - "Caff\xE8"
+      - "Caf\xE9"
+      - Kopi
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: RewardLevelingTomato
+      TermType: 0
+      Description: 
+      Languages:
+      - Tomato
+      - Tomate
+      - Tomate
+      - "\u041F\u043E\u043C\u0438\u0434\u043E\u0440"
+      - Domates
+      - "\u30C8\u30DE\u30C8"
+      - Tomate
+      - Pomidor
+      - Pomodoro
+      - Tomate
+      - Tomat
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: RewardLevelingShelfToStorage
+      TermType: 0
+      Description: 
+      Languages:
+      - Storage shelfs
+      - Lagerregale
+      - "\xC9tag\xE8res de rangement"
+      - "\u0421\u0442\u0435\u043B\u043B\u0430\u0436\u0438 \u0445\u0440\u0430\u043D\u0438\u043B\u0438\u0449\u0430"
+      - "Depolama raflar\u0131"
+      - "\u53CE\u7D0D\u30E9\u30C3\u30AF"
+      - Estantes almacenamiento
+      - "Rega\u0142y magazynowe"
+      - Scaffali stoccaggio
+      - Prateleiras armazenamento
+      - Rak penyimpanan
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: RewardLevelingOnion
+      TermType: 0
+      Description: 
+      Languages:
+      - Onion
+      - Zwiebel
+      - Oignon
+      - "\u041B\u0443\u043A"
+      - "So\u011Fan"
+      - "\u30BF\u30DE\u30CD\u30AE"
+      - Cebolla
+      - Cebula
+      - Cipolla
+      - Cebola
+      - Bawang Bombai
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: RewardLevelingSodas
+      TermType: 0
+      Description: 
+      Languages:
+      - Sodas
+      - Limonaden
+      - Sodas
+      - "\u0421\u043E\u0434\u043E\u0432\u044B\u0435"
+      - "Gazl\u0131 I\xE7ecekler"
+      - "\u30BD\u30FC\u30C0"
+      - Refrescos
+      - Napoje Gazowane
+      - Bibite Gassate
+      - Refrigerantes
+      - Minuman Bersoda
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: RewardLevelingCupSoda
+      TermType: 0
+      Description: 
+      Languages:
+      - Soda cups
+      - Sodabecher
+      - Gobelets de soda
+      - "\u0421\u0442\u0430\u043A\u0430\u043D\u0447\u0438\u043A\u0438 \u0441\u043E\u0434\u043E\u0432\u043E\u0439"
+      - "Soda bardaklar\u0131"
+      - "\u30BD\u30FC\u30C0\u30AB\u30C3\u30D7"
+      - Vasos de refresco
+      - "Kubki do napoj\xF3w gazowanych"
+      - Bicchieri di soda
+      - Copos de refrigerante
+      - Gelas soda
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: RewardLevelingCabbage
+      TermType: 0
+      Description: 
+      Languages:
+      - Salad
+      - Salat
+      - Salade
+      - "\u0421\u0430\u043B\u0430\u0442"
+      - Salata
+      - "\u30B5\u30E9\u30C0"
+      - Ensalada
+      - "Sa\u0142atka"
+      - Insalata
+      - Salada
+      - Salad
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: RewardLevelingFrenchFries
+      TermType: 0
+      Description: 
+      Languages:
+      - French Fries
+      - Pommes Frites
+      - Frites
+      - "\u041A\u0430\u0440\u0442\u043E\u0444\u0435\u043B\u044C \u0424\u0440\u0438"
+      - "Patates K\u0131zartmas\u0131"
+      - "\u30D5\u30E9\u30A4\u30C9\u30DD\u30C6\u30C8"
+      - Papas Fritas
+      - Frytki
+      - Patate Fritte
+      - Batatas Fritas
+      - Kentang Goreng
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: RewardLevelingNuggets
+      TermType: 0
+      Description: 
+      Languages:
+      - Nuggets
+      - Nuggets
+      - "P\xE9pites"
+      - "\u041D\u0430\u0433\u0433\u0435\u0442\u0441\u044B"
+      - "K\xFCl\xE7eler"
+      - "\u30CA\u30B2\u30C3\u30C8"
+      - Pepitas
+      - "Bry\u0142ki"
+      - Pepite
+      - Pepitas
+      - Bongkahan
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: RewardLevelingFrenchFriesPackage
+      TermType: 0
+      Description: 
+      Languages:
+      - French Fries Package
+      - Pommes Frites Paket
+      - Paquet De Frites
+      - "\u0423\u043F\u0430\u043A\u043E\u0432\u043A\u0430 \u041A\u0430\u0440\u0442\u043E\u0444\u0435\u043B\u044F
+        \u0424\u0440\u0438"
+      - "Patates K\u0131zartmas\u0131 Paketi"
+      - "\u30D5\u30E9\u30A4\u30C9\u30DD\u30C6\u30C8\u306E\u30D1\u30C3\u30B1\u30FC\u30B8"
+      - Paquete De Papas Fritas
+      - Opakowanie Frytek
+      - Pacchetto Di Patatine Fritte
+      - Pacote De Batatas Fritas
+      - Paket Kentang Goreng
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: RewardLevelingNuggetsPackage
+      TermType: 0
+      Description: 
+      Languages:
+      - Nugget packaging
+      - Nugget-Verpackung
+      - "Emballage de p\xE9pites"
+      - "\u0423\u043F\u0430\u043A\u043E\u0432\u043A\u0438 \u0434\u043B\u044F \u043D\u0430\u0433\u0433\u0435\u0442\u0441\u043E\u0432"
+      - Nugget paketleme
+      - "\u30CA\u30B2\u30C3\u30C8\u306E\u30D1\u30C3\u30B1\u30FC\u30B8"
+      - Empaquetado de pepitas
+      - "Opakowanie samorodk\xF3w"
+      - Confezione Nugget
+      - Embalagem de pepitas
+      - Pengemasan nugget
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: RewardLevelingCoffeeMachine
+      TermType: 0
+      Description: 
+      Languages:
+      - Coffee Machine
+      - Kaffeemaschine
+      - "Machine \xC0 Caf\xE9"
+      - "\u041A\u043E\u0444\u0435\u043C\u0430\u0448\u0438\u043D\u0430"
+      - Kahve Makinesi
+      - "\u30B3\u30FC\u30D2\u30FC\u30DE\u30B7\u30F3"
+      - "M\xE1quina De Caf\xE9"
+      - Ekspres Do Kawy
+      - "Macchina Per Il Caff\xE8"
+      - "M\xE1quina De Caf\xE9"
+      - Mesin Kopi
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: RewardLevelingSodaMachine
+      TermType: 0
+      Description: 
+      Languages:
+      - Soda Machine
+      - "Getr\xE4nkeautomat"
+      - Distributeur De Soda
+      - "\u0410\u0432\u0442\u043E\u043C\u0430\u0442 \u0413\u0430\u0437\u0438\u0440\u043E\u0432\u043A\u0438"
+      - Soda Makinesi
+      - "\u30BD\u30FC\u30C0\u30DE\u30B7\u30F3"
+      - "M\xE1quina De Refrescos"
+      - Automat  Gazowanymi
+      - Macchina Gassate
+      - "M\xE1quina Refrigerante"
+      - Mesin Soda
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: RewardLevelingFryer
+      TermType: 0
+      Description: 
+      Languages:
+      - Fryer
+      - Fritteuse
+      - Friteuse
+      - "\u0424\u0440\u0438\u0442\u044E\u0440\u043D\u0438\u0446\u0430"
+      - "K\u0131zartma Tavas\u0131"
+      - "\u30D5\u30E9\u30A4\u30E4\u30FC"
+      - Freidora
+      - Frytkownica
+      - Friggitrice
+      - Fritadeira
+      - Penggorengan
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: RewardLevelingMiniBurger
+      TermType: 0
+      Description: 
+      Languages:
+      - Mini Burger
+      - Mini-Burger
+      - Mini-Burger
+      - "\u041C\u0438\u043D\u0438-\u0411\u0443\u0440\u0433\u0435\u0440"
+      - Mini Hamburger
+      - "\u30DF\u30CB\u30D0\u30FC\u30AC\u30FC"
+      - Minihamburguesa
+      - Mini Burger
+      - Mini Hamburger
+      - "Mini Hamb\xFArguer"
+      - Burger Mini
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: RewardLevelingCheeseburger
+      TermType: 0
+      Description: 
+      Languages:
+      - Cheeseburger
+      - Cheeseburger
+      - Cheeseburger
+      - "\u0427\u0438\u0437\u0431\u0443\u0440\u0433\u0435\u0440"
+      - Cheeseburger
+      - "\u30C1\u30FC\u30BA\u30D0\u30FC\u30AC\u30FC"
+      - Hamburguesa Con Queso
+      - Cheeseburger
+      - Cheeseburger
+      - X-Burger
+      - Cheeseburger
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: RewardLevelingMiddleBurger
+      TermType: 0
+      Description: 
+      Languages:
+      - Middle Burger
+      - Mittlerer Burger
+      - Burger Du Milieu
+      - "\u0421\u0440\u0435\u0434\u043D\u0438\u0439 \u0411\u0443\u0440\u0433\u0435\u0440"
+      - Orta Burger
+      - "\u30DF\u30C9\u30EB\u30D0\u30FC\u30AC\u30FC"
+      - Hamburguesa Mediana
+      - "\u015Arodkowy Burger"
+      - Hamburger Medio
+      - "Hamb\xFArguer Do Meio"
+      - Burger Tengah
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: RewardLevelingStarBurger
+      TermType: 0
+      Description: 
+      Languages:
+      - Star Burger
+      - Star-Burger
+      - "Burger \xC9toil\xE9"
+      - "\u0417\u0432\u0435\u0437\u0434\u043D\u044B\u0439 \u0411\u0443\u0440\u0433\u0435\u0440"
+      - "Y\u0131ld\u0131z Burger"
+      - "\u30B9\u30BF\u30FC\u30D0\u30FC\u30AC\u30FC"
+      - Hamburguesa Estrella
+      - Burger Gwiazdka
+      - Hamburger Stellato
+      - "Hamb\xFArguer Estrela"
+      - Burger Bintang
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: RewardLevelingSoda
+      TermType: 0
+      Description: 
+      Languages:
+      - Soda
+      - Soda
+      - Soude
+      - "\u0413\u0430\u0437\u0438\u0440\u043E\u0432\u043A\u0430"
+      - Soda
+      - "\u30BD\u30FC\u30C0"
+      - Soda
+      - Soda
+      - Soda
+      - Refrigerante
+      - Soda
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: RewardLevelingBigBurger
+      TermType: 0
+      Description: 
+      Languages:
+      - Big Burger
+      - "Gro\xDFer Burger"
+      - Gros Hamburger
+      - "\u0411\u043E\u043B\u044C\u0448\u043E\u0439 \u0411\u0443\u0440\u0433\u0435\u0440"
+      - "B\xFCy\xFCk Burger"
+      - "\u5927\u304D\u306A\u30CF\u30F3\u30D0\u30FC\u30AC\u30FC"
+      - Hamburguesa Grande
+      - "Du\u017Cy Burger"
+      - Grande Hamburger
+      - "Hamb\xFArguer Grande"
+      - Burger Besar
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: RewardLevelingMegaBurger
+      TermType: 0
+      Description: 
+      Languages:
+      - Mega Burger
+      - Mega-Burger
+      - "M\xE9ga Burger"
+      - "\u041C\u0435\u0433\u0430 \u0411\u0443\u0440\u0433\u0435\u0440"
+      - "B\xFCy\xFCk Hamburger"
+      - "\u30E1\u30AC\u30D0\u30FC\u30AC\u30FC"
+      - Mega Hamburguesa
+      - Mega Burger
+      - Mega Hamburger
+      - "Mega Hamb\xFArguer"
+      - Burger Raksasa
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: Information
+      TermType: 0
+      Description: 
+      Languages:
+      - Information
+      - Information
+      - Information
+      - "\u0418\u043D\u0444\u043E\u0440\u043C\u0430\u0446\u0438\u044F"
+      - Bilgi
+      - "\u60C5\u5831"
+      - "Informaci\xF3n"
+      - Informacja
+      - Informazioni
+      - "Informa\xE7\xE3o"
+      - Informasi
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: A complete set for the restaurant!
+      TermType: 0
+      Description: 
+      Languages:
+      - A complete set for the restaurant!
+      - "Ein Komplettset f\xFCr das Restaurant!"
+      - Un ensemble complet pour le restaurant !
+      - "\u041F\u043E\u043B\u043D\u044B\u0439 \u043D\u0430\u0431\u043E\u0440 \u0434\u043B\u044F
+        \u0440\u0435\u0441\u0442\u043E\u0440\u0430\u043D\u0430!"
+      - "Restoran i\xE7in tam tak\u0131m!"
+      - "\u30EC\u30B9\u30C8\u30E9\u30F3\u5411\u3051\u306E\u5145\u5B9F\u3057\u305F\u30BB\u30C3\u30C8\uFF01"
+      - "\xA1Un conjunto completo para el restaurante!"
+      - Kompletny zestaw do restauracji!
+      - Un set completo per il ristorante!
+      - Um conjunto completo para o restaurante!
+      - Satu set lengkap untuk restoran!
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: THE OFFER IS LIMITED IN TIME!
+      TermType: 0
+      Description: 
+      Languages:
+      - THE OFFER IS LIMITED IN TIME!
+      - Das Angebot Ist Zeitlich Begrenzt!
+      - "L'offre Est Limit\xE9e Dans Le Temps !"
+      - "\u041F\u0440\u0435\u0434\u043B\u043E\u0436\u0435\u043D\u0438\u0435 \u041E\u0433\u0440\u0430\u043D\u0438\u0447\u0435\u043D\u043E
+        \u041F\u043E \u0412\u0440\u0435\u043C\u0435\u043D\u0438!"
+      - "Teklif Zamanla S\u0131n\u0131rl\u0131d\u0131r!"
+      - "\u30AA\u30D5\u30A1\u30FC\u306F\u671F\u9593\u9650\u5B9A\u3067\u3059\uFF01"
+      - "\xA1La Oferta Es Limitada En El Tiempo!"
+      - Oferta Jest Ograniczona Czasowo!
+      - "L'offerta \xC8 Limitata Nel Tempo!"
+      - "A Oferta \xC9 Por Tempo Limitado!"
+      - Penawaran Ini Terbatas Waktunya!
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: StoragepackItemsDescription
+      TermType: 0
+      Description: 
+      Languages:
+      - "300$\nStorage - Additional storage for all your boxes\nShelf x4 - To the
+        kitchen and to the storage\Lboxes of buns x4         boxes of tomatoes x4\nboxes
+        of patties x4      boxes of burger packages x4\Lboxes of cheese x4      
+        boxes of coffee x4\nboxes of coffee cups x4\n\nDon't worry about repeat purchases
+        - we will compensate for the cost of existing items!\n"
+      - "300 $\nLagerung \u2013 Zus\xE4tzlicher Lagerraum f\xFCr all Ihre Kisten\n4
+        Regale \u2013 Zur K\xFCche und zum Lager \n4 Kisten Br\xF6tchen        4
+        Kisten Tomaten\n4 Kisten Patties        4 Kisten Burger-Pakete\n4 Kisten
+        K\xE4se           4 Kisten Kaffee\n4 Kisten Kaffeetassen\n\nKeine Sorge bei
+        Wiederholungsk\xE4ufen \u2013 wir erstatten Ihnen die Kosten f\xFCr vorhandene
+        Artikel!\n"
+      - "300 $\nRangement - Rangement suppl\xE9mentaire pour toutes vos bo\xEEtes\n\xC9tag\xE8re
+        x4 - Vers la cuisine et le rangement\_\nbo\xEEtes de pains x4         bo\xEEtes
+        de tomates x4\nbo\xEEtes de steaks x4        bo\xEEtes de hamburgers x4\nbo\xEEtes
+        de fromage x4       bo\xEEtes de caf\xE9 x4 \nbo\xEEtes de tasses \xE0 caf\xE9
+        x4\n\nNe vous inqui\xE9tez pas des achats r\xE9p\xE9t\xE9s\_: nous vous rembourserons
+        le co\xFBt des articles d\xE9j\xE0 achet\xE9s\_!"
+      - "300$\n\u0425\u0440\u0430\u043D\u0435\u043D\u0438\u0435 - \u0414\u043E\u043F\u043E\u043B\u043D\u0438\u0442\u0435\u043B\u044C\u043D\u043E\u0435
+        \u0445\u0440\u0430\u043D\u0438\u043B\u0438\u0449\u0435 \u0434\u043B\u044F
+        \u0432\u0441\u0435\u0445 \u0432\u0430\u0448\u0438\u0445 \u043A\u043E\u0440\u043E\u0431\u043E\u043A\n\u041F\u043E\u043B\u043A\u0430
+        x4 - \u041D\u0430 \u043A\u0443\u0445\u043D\u044E \u0438 \u043D\u0430 \u0441\u043A\u043B\u0430\u0434      
+        \u044F\u0449\u0438\u043A\u0438 \u0431\u0443\u043B\u043E\u0447\u0435\u043A
+        x4 \n\u044F\u0449\u0438\u043A\u0438 \u043F\u043E\u043C\u0438\u0434\u043E\u0440\u043E\u0432
+        x4                   \u044F\u0449\u0438\u043A\u0438 \u043A\u043E\u0442\u043B\u0435\u0442
+        x4 \n\u044F\u0449\u0438\u043A\u0438 \u0443\u043F\u0430\u043A\u043E\u0432\u043E\u043A
+        \u0431\u0443\u0440\u0433\u0435\u0440\u043E\u0432 x4           \u044F\u0449\u0438\u043A\u0438
+        \u0441\u044B\u0440\u0430 x4 \n\u044F\u0449\u0438\u043A\u0438 \u043A\u043E\u0444\u0435
+        x4                    \u044F\u0449\u0438\u043A\u0438 \u043A\u043E\u0444\u0435\u0439\u043D\u044B\u0445
+        \u0447\u0430\u0448\u0435\u043A x4\n\n\u041D\u0435 \u0431\u0435\u0441\u043F\u043E\u043A\u043E\u0439\u0442\u0435\u0441\u044C
+        \u043E \u043F\u043E\u0432\u0442\u043E\u0440\u043D\u044B\u0445 \u043F\u043E\u043A\u0443\u043F\u043A\u0430\u0445
+        - \u043C\u044B \u043A\u043E\u043C\u043F\u0435\u043D\u0441\u0438\u0440\u0443\u0435\u043C
+        \u0441\u0442\u043E\u0438\u043C\u043E\u0441\u0442\u044C \u0441\u0443\u0449\u0435\u0441\u0442\u0432\u0443\u044E\u0449\u0438\u0445
+        \u0442\u043E\u0432\u0430\u0440\u043E\u0432!\n"
+      - "300$\nDepolama - T\xFCm kutular\u0131n\u0131z i\xE7in ek depolama\nRaf x4
+        - Mutfa\u011Fa ve depolamaya  \n\xE7\xF6rek kutular\u0131 x4             
+        kutu domates x4\nk\xF6fte kutular\u0131 x4              kutu burger paketleri
+        x4 \nkutu peynir x4                 kutu kahve x4\nkahve fincanlar\u0131
+        x4\n\nTekrarlanan sat\u0131n al\u0131mlar konusunda endi\u015Felenmeyin -
+        mevcut \xFCr\xFCnlerin maliyetini telafi edece\u011Fiz!\n"
+      - "300\u30C9\u30EB\n\u53CE\u7D0D - \u3059\u3079\u3066\u306E\u7BB1\u3092\u53CE\u7D0D\u3067\u304D\u308B\u8FFD\u52A0\u53CE\u7D0D\u68DA\n\u68DA
+        x4 - \u30AD\u30C3\u30C1\u30F3\u3068\u53CE\u7D0D\u68DA\u3078          \u30D1\u30F3
+        x4\u7BB1   \n\u30C8\u30DE\u30C8 x4\u7BB1                               \u30D1\u30C6\u30A3
+        x4\u7BB1 \n\u30D0\u30FC\u30AC\u30FC\u30D1\u30C3\u30AF x4\u7BB1                  
+        \u30C1\u30FC\u30BA x4\u7BB1  \n\u30B3\u30FC\u30D2\u30FC\u30AB\u30C3\u30D7
+        x4\u7BB1\n\u30EA\u30D4\u30FC\u30C8\u8CFC\u5165\u3067\u3082\u3054\u5B89\u5FC3\u304F\u3060\u3055\u3044\u3002\u65E2\u5B58\u306E\u5546\u54C1\u306E\u4EE3\u91D1\u3092\u88DC\u511F\u3044\u305F\u3057\u307E\u3059\uFF01\n"
+      - "300$\nAlmacenamiento: Almacenamiento adicional para todas tus cajas\nEstante
+        x4 - Para la cocina y el almacenamiento\n4 cajas de panecillos       4 cajas
+        de tomates\n4 cajas de hamburguesas     4 cajas de queso\n4 cajas de caf\xE9           
+        4 cajas de tazas de caf\xE9\ncajas de chuletas x4\n\nNo te preocupes por
+        las compras repetidas: \xA1te compensamos el costo de los art\xEDculos existentes!"
+      - "300$\nPrzechowywanie - Dodatkowe miejsce do przechowywania wszystkich pude\u0142ek\nP\xF3\u0142ka
+        x4 - Do kuchni i do przechowywania\npude\u0142ka z bu\u0142kami x4       
+        pude\u0142ka z pomidorami x4\npude\u0142ka z kotletami x4      pude\u0142ka
+        z burgerami x4\npude\u0142ka z serem x4          pude\u0142ka z kaw\u0105
+        x4\npude\u0142ka z kubkami do kawy x4\n\nNie martw si\u0119 o powtarzaj\u0105ce
+        si\u0119 zakupy - zrekompensujemy koszt istniej\u0105cych produkt\xF3w!\n"
+      - "300$\nSpazio di archiviazione - Spazio aggiuntivo per tutte le tue scatole\nScaffali
+        x4 - Per la cucina e per lo stoccaggio \nscatole di panini x4,        scatole
+        di pomodori x4 \nscatole di hamburger x4      scatole di hamburger x4\nscatole
+        di formaggio x4      scatole di caff\xE8 x4\nscatole di tazze da caff\xE8
+        x4\n\nNon preoccuparti per gli acquisti ripetuti: ti rimborseremo il costo
+        degli articoli gi\xE0 acquistati!"
+      - "R$ 300\nArmazenamento - Armazenamento adicional para todas as suas caixas\nPrateleira
+        x4 - Para a cozinha e para o dep\xF3sito \ncaixas de p\xE3es x4            
+        caixas de tomates x4\ncaixas de hamb\xFArgueres x4     caixas de pacotes
+        de hamb\xFArguer x4 caixas de queijo x4           caixas de caf\xE9 x4\ncaixas
+        de x\xEDcaras de caf\xE9 x4\n\nN\xE3o se preocupe com compras repetidas -
+        compensaremos o custo dos itens existentes!\n"
+      - '300$
+
+        Penyimpanan - Penyimpanan tambahan untuk semua kotak Anda
+
+        Rak
+        x4 - Ke dapur dan ke tempat penyimpanan
+
+        kotak roti x4                    
+        kotak tomat x4
+
+        kotak roti lapis x4               kotak paket burger
+        x4
+
+        kotak keju x4                     kotak kopi x4
+
+        kotak
+        cangkir kopi x4
+
+
+        Jangan khawatir tentang pembelian berulang - kami
+        akan mengganti biaya barang yang sudah ada!'
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: SPECIAL OFFER
+      TermType: 0
+      Description: 
+      Languages:
+      - SPECIAL OFFER
+      - Sonderangebot
+      - "Offre Sp\xE9ciale"
+      - "\u0421\u043F\u0435\u0446 \u041F\u0440\u0435\u0434\u043B\u043E\u0436\u0435\u043D\u0438\u0435"
+      - "\xD6zel Teklif"
+      - "\u7279\u5225\u30AA\u30D5\u30A1\u30FC"
+      - Oferta Especial
+      - Oferta Specjalna
+      - Offerta Speciale
+      - Oferta Especial
+      - Penawaran Khusus
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: FULL SET
+      TermType: 0
+      Description: 
+      Languages:
+      - FULL SET
+      - Komplettes Set
+      - Ensemble Complet
+      - "\u041F\u043E\u043B\u043D\u044B\u0439 \u041A\u043E\u043C\u043F\u043B\u0435\u043A\u0442"
+      - Tam Set
+      - "\u30D5\u30EB\u30BB\u30C3\u30C8"
+      - Conjunto Completo
+      - "Pe\u0142en Zestaw"
+      - Set Completo
+      - Conjunto Completo
+      - Set Lengkap
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: Work
+      TermType: 0
+      Description: 
+      Languages:
+      - Work
+      - Arbeiten
+      - Travail
+      - "\u0420\u0430\u0431\u043E\u0442\u0430"
+      - "I\u015F"
+      - "\u4ED5\u4E8B"
+      - Trabajar
+      - Praca
+      - Lavoro
+      - Trabalhar
+      - Bekerja
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: MaxLevel
+      TermType: 0
+      Description: 
+      Languages:
+      - Max Level
+      - Maximales Level
+      - Niveau Max
+      - "\u041C\u0430\u043A\u0441. \u0423\u0440\u043E\u0432\u0435\u043D\u044C"
+      - Maks. Seviye
+      - "\u6700\u5927\u30EC\u30D9\u30EB"
+      - "Nivel M\xE1ximo"
+      - Maksymalny Poziom
+      - Livello Massimo
+      - "N\xEDvel M\xE1ximo"
+      - Tingkat Maksimal
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: Attention
+      TermType: 0
+      Description: 
+      Languages:
+      - Attention
+      - Aufmerksamkeit
+      - Attention
+      - "\u0412\u043D\u0438\u043C\u0430\u043D\u0438\u0435"
+      - Dikkat
+      - "\u6CE8\u610F"
+      - "Atenci\xF3n"
+      - Uwaga
+      - Attenzione
+      - "Aten\xE7\xE3o"
+      - Perhatian
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: No ingredients of this type
+      TermType: 0
+      Description: 
+      Languages:
+      - There are no ingredients of this type
+      - Es gibt keine Zutaten dieses Typs
+      - "Il n'y a aucun ingr\xE9dient de ce type"
+      - "\u041D\u0435\u0442\u0443 \u0438\u043D\u0433\u0440\u0438\u0434\u0438\u0435\u043D\u0442\u043E\u0432
+        \u044D\u0442\u043E\u0433\u043E \u0442\u0438\u043F\u0430"
+      - "Bu t\xFCrden hi\xE7bir i\xE7erik yok"
+      - "\u3053\u306E\u30BF\u30A4\u30D7\u306E\u6750\u6599\u306F\u3042\u308A\u307E\u305B\u3093"
+      - No hay ingredientes de este tipo.
+      - "Nie ma sk\u0142adnik\xF3w tego typu"
+      - Non ci sono ingredienti di questo tipo
+      - "N\xE3o h\xE1 ingredientes deste tipo"
+      - Tidak ada bahan jenis ini
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: No packaging
+      TermType: 0
+      Description: 
+      Languages:
+      - No packaging
+      - Keine Verpackung
+      - Sans emballage
+      - "\u041D\u0435\u0442 \u0443\u043F\u0430\u043A\u043E\u0432\u043A\u0438"
+      - Ambalaj yok
+      - "\u5305\u88C5\u306A\u3057"
+      - Sin embalaje
+      - Brak opakowania
+      - Nessun imballaggio
+      - Sem embalagem
+      - Tidak ada kemasan
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: Incorrect assembly
+      TermType: 0
+      Description: 
+      Languages:
+      - Incorrect assembly
+      - Falsche Montage
+      - Assemblage incorrect
+      - "\u041D\u0435\u043F\u0440\u0430\u0432\u0438\u043B\u044C\u043D\u0430\u044F
+        \u0441\u0431\u043E\u0440\u043A\u0430"
+      - "Yanl\u0131\u015F montaj"
+      - "\u7D44\u307F\u7ACB\u3066\u4E0D\u826F"
+      - Montaje incorrecto
+      - "Nieprawid\u0142owy monta\u017C"
+      - Montaggio non corretto
+      - Montagem incorreta
+      - Perakitan salah
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: Nothing to cook
+      TermType: 0
+      Description: 
+      Languages:
+      - Nothing to cook
+      - Nichts zu kochen
+      - "Rien \xE0 cuisiner"
+      - "\u041D\u0435\u0447\u0435\u0433\u043E \u0433\u043E\u0442\u043E\u0432\u0438\u0442\u044C"
+      - "Pi\u015Firilecek bir \u015Fey yok"
+      - "\u6599\u7406\u3059\u308B\u3082\u306E\u304C\u306A\u3044"
+      - Nada que cocinar
+      - Nic do gotowania
+      - Niente da cucinare
+      - Nada para cozinhar
+      - Tidak ada yang perlu dimasak
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: No place
+      TermType: 0
+      Description: 
+      Languages:
+      - "\rNo place"
+      - Kein Ort
+      - Aucun endroit
+      - "\u041D\u0435\u0442 \u043C\u0435\u0441\u0442\u0430"
+      - "Hi\xE7bir yer"
+      - "\u5834\u6240\u304C\u306A\u3044"
+      - No hay lugar
+      - Nie ma miejsca
+      - Nessun posto
+      - Nenhum lugar
+      - Tidak ada tempat
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: The tray is empty
+      TermType: 0
+      Description: 
+      Languages:
+      - The tray is empty
+      - Das Fach ist leer
+      - Le plateau est vide
+      - "\u041F\u043E\u0434\u043D\u043E\u0441 \u043F\u0443\u0441\u0442"
+      - "Tepsi bo\u015F"
+      - "\u30C8\u30EC\u30A4\u306F\u7A7A\u3067\u3059"
+      - "La bandeja est\xE1 vac\xEDa"
+      - Taca jest pusta
+      - "Il vassoio \xE8 vuoto"
+      - "A bandeja est\xE1 vazia"
+      - Bakinya kosong
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: 'You can''t put raw cutlets in: take away cooked cutlets'
+      TermType: 0
+      Description: 
+      Languages:
+      - "\rYou can't put raw cutlets in: take away cooked cutlets"
+      - "Rohe Koteletts d\xFCrfen nicht hineingelegt werden: gekochte Koteletts wegnehmen"
+      - "Vous ne pouvez pas mettre de c\xF4telettes crues dans : emporter les c\xF4telettes
+        cuites"
+      - "\u041D\u0435\u043B\u044C\u0437\u044F \u043F\u043E\u043B\u043E\u0436\u0438\u0442\u044C
+        \u0441\u044B\u0440\u044B\u0435 \u043A\u043E\u0442\u043B\u0435\u0442\u044B:
+        \u0437\u0430\u0431\u0435\u0440\u0438\u0442\u0435 \u043F\u0440\u0438\u0433\u043E\u0442\u043E\u0432\u043B\u0435\u043D\u043D\u044B\u0435
+        \u043A\u043E\u0442\u043B\u0435\u0442\u044B"
+      - "\xC7i\u011F pirzolalar\u0131 koyamazs\u0131n\u0131z: pi\u015Fmi\u015F pirzolalar\u0131
+        al\u0131n"
+      - "\u751F\u306E\u30AB\u30C4\u30EC\u30C4\u306F\u5165\u308C\u306A\u3044\u3067\u304F\u3060\u3055\u3044\u3002\u8ABF\u7406\u6E08\u307F\u306E\u30AB\u30C4\u30EC\u30C4\u306F\u53D6\u308A\u9664\u3044\u3066\u304F\u3060\u3055\u3044\u3002"
+      - 'No puedes poner chuletas crudas: quita las chuletas cocidas.'
+      - "Nie mo\u017Cna wk\u0142ada\u0107 surowych kotlet\xF3w: nale\u017Cy zabra\u0107
+        ugotowane kotlety"
+      - 'Non puoi mettere le cotolette crude: togli le cotolette cotte'
+      - "N\xE3o pode colocar costeletas cruas: retire as costeletas cozidas"
+      - 'Anda tidak bisa memasukkan potongan daging mentah: singkirkan potongan daging
+        yang sudah dimasak'
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: 'You can''t put in raw ones: take away cooked ones'
+      TermType: 0
+      Description: 
+      Languages:
+      - 'You can''t put in raw ones: take away cooked ones'
+      - "Rohe d\xFCrfen nicht hineingegeben werden, gekochte wegnehmen"
+      - 'Vous ne pouvez pas mettre les crus : retirez les cuits'
+      - "\u041D\u0435\u043B\u044C\u0437\u044F \u043F\u043E\u043B\u043E\u0436\u0438\u0442\u044C
+        \u0441\u044B\u0440\u044B\u0435: \u0437\u0430\u0431\u0435\u0440\u0438\u0442\u0435
+        \u043F\u0440\u0438\u0433\u043E\u0442\u043E\u0432\u043B\u0435\u043D\u043D\u044B\u0435"
+      - "\xC7i\u011F olanlar\u0131 koyamazs\u0131n\u0131z: pi\u015Fmi\u015F olanlar\u0131
+        \xE7\u0131kar\u0131n"
+      - "\u751F\u306E\u3082\u306E\u3092\u5165\u308C\u308B\u3053\u3068\u306F\u3067\u304D\u307E\u305B\u3093\u3002\u8ABF\u7406\u6E08\u307F\u306E\u3082\u306E\u306F\u53D6\u308A\u9664\u3044\u3066\u304F\u3060\u3055\u3044\u3002"
+      - 'No puedes ponerlos crudos: retira los cocidos.'
+      - "Nie mo\u017Cesz doda\u0107 surowych: usu\u0144 ugotowane"
+      - 'Non puoi metterli crudi: togli quelli cotti'
+      - "N\xE3o pode colocar crus: retire os cozidos"
+      - 'Anda tidak bisa memasukkan yang mentah: singkirkan yang sudah dimasak'
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: Unsuitable product type
+      TermType: 0
+      Description: 
+      Languages:
+      - Unsuitable product type
+      - Ungeeigneter Produkttyp
+      - "Type de produit inappropri\xE9"
+      - "\u041D\u0435\u043F\u043E\u0434\u0445\u043E\u0434\u044F\u0449\u0438\u0439
+        \u0442\u0438\u043F \u043F\u0440\u043E\u0434\u0443\u043A\u0442\u0430"
+      - "Uygun olmayan \xFCr\xFCn t\xFCr\xFC"
+      - "\u4E0D\u9069\u5207\u306A\u88FD\u54C1\u30BF\u30A4\u30D7"
+      - Tipo de producto no adecuado
+      - Nieodpowiedni typ produktu
+      - Tipo di prodotto non idoneo
+      - Tipo de produto inadequado
+      - Jenis produk tidak cocok
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: The box is empty
+      TermType: 0
+      Description: 
+      Languages:
+      - The box is empty
+      - Die Kiste ist leer
+      - "La bo\xEEte est vide"
+      - "\u041A\u043E\u0440\u043E\u0431\u043A\u0430 \u043F\u0443\u0441\u0442\u0430"
+      - "Kutu bo\u015F"
+      - "\u7BB1\u306F\u7A7A\u3067\u3059"
+      - "La caja est\xE1 vac\xEDa"
+      - "Pude\u0142ko jest puste"
+      - "La scatola \xE8 vuota"
+      - "A caixa est\xE1 vazia"
+      - Kotaknya kosong
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: You can't throw away a box if there are products in it
+      TermType: 0
+      Description: 
+      Languages:
+      - You can't throw away a box if there are products in it
+      - "Man kann eine Schachtel nicht wegwerfen, wenn sie Produkte enth\xE4lt"
+      - "Vous ne pouvez pas jeter une bo\xEEte si elle contient des produits."
+      - "\u041D\u0435\u043B\u044C\u0437\u044F \u0432\u044B\u0431\u0440\u0430\u0441\u044B\u0432\u0430\u0442\u044C
+        \u043A\u043E\u0440\u043E\u0431\u043A\u0443, \u0435\u0441\u043B\u0438 \u0432
+        \u043D\u0435\u0439 \u0435\u0441\u0442\u044C \u043F\u0440\u043E\u0434\u0443\u043A\u0442\u044B."
+      - "\u0130\xE7inde \xFCr\xFCn varsa kutuyu atamazs\u0131n\u0131z"
+      - "\u7BB1\u306E\u4E2D\u306B\u5546\u54C1\u304C\u5165\u3063\u3066\u3044\u308B\u5834\u5408\u306F\u6368\u3066\u308B\u3053\u3068\u306F\u3067\u304D\u307E\u305B\u3093"
+      - No puedes tirar una caja si hay productos dentro
+      - "Nie mo\u017Cna wyrzuci\u0107 pude\u0142ka, je\u015Bli znajduj\u0105 si\u0119
+        w nim produkty"
+      - Non puoi buttare via una scatola se contiene dei prodotti
+      - "Voc\xEA n\xE3o pode jogar fora uma caixa se houver produtos nela"
+      - Anda tidak bisa membuang kotak jika ada produk di dalamnya
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: Throw away nothing
+      TermType: 0
+      Description: 
+      Languages:
+      - Nothing to throw away
+      - Nichts zum Wegwerfen
+      - "Rien \xE0 jeter"
+      - "\u041D\u0435\u0447\u0435\u0433\u043E \u0432\u044B\u043A\u0438\u0434\u044B\u0432\u0430\u0442\u044C"
+      - "At\u0131lacak bir \u015Fey yok"
+      - "\u6368\u3066\u308B\u3082\u306E\u306F\u4F55\u3082\u306A\u3044"
+      - Nada que tirar
+      - Nic do wyrzucenia
+      - Niente da buttare via
+      - Nada para jogar fora
+      - Tidak ada yang perlu dibuang
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: There's no one in line
+      TermType: 0
+      Description: 
+      Languages:
+      - There's no one in line
+      - Es steht niemand in der Schlange
+      - Il n'y a personne dans la file
+      - "\u0412 \u043E\u0447\u0435\u0440\u0435\u0434\u0438 \u043D\u0438\u043A\u043E\u0433\u043E
+        \u043D\u0435\u0442"
+      - "S\u0131rada kimse yok"
+      - "\u5217\u306B\u4E26\u3093\u3067\u3044\u308B\u4EBA\u306F\u3044\u306A\u3044"
+      - No hay nadie en la fila
+      - Nikogo nie ma w kolejce
+      - "Non c'\xE8 nessuno in coda"
+      - "N\xE3o tem ningu\xE9m na fila"
+      - Tidak ada seorang pun yang mengantri
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: Free your hands
+      TermType: 0
+      Description: 
+      Languages:
+      - Free your hands
+      - "Befreien Sie Ihre H\xE4nde"
+      - "Lib\xE9rez vos mains"
+      - "\u041E\u0441\u0432\u043E\u0431\u043E\u0434\u0438 \u0440\u0443\u043A\u0438"
+      - "Ellerinizi serbest b\u0131rak\u0131n"
+      - "\u624B\u3092\u81EA\u7531\u306B"
+      - Libera tus manos
+      - "Uwolnij r\u0119ce"
+      - Libera le tue mani
+      - "Liberte suas m\xE3os"
+      - Bebaskan tanganmu
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: CashierOnSite
+      TermType: 0
+      Description: 
+      Languages:
+      - The cash register is occupied by a cashier
+      - Die Kasse ist mit einer Kassiererin besetzt
+      - "La caisse enregistreuse est occup\xE9e par un caissier"
+      - "\u041A\u0430\u0441\u0441\u0430 \u0437\u0430\u043D\u044F\u0442\u0430 \u043A\u0430\u0441\u0441\u0438\u0440\u043E\u043C"
+      - "Kasa bir kasiyer taraf\u0131ndan i\u015Fgal ediliyor"
+      - "\u30EC\u30B8\u306B\u306F\u30EC\u30B8\u4FC2\u304C\u3044\u307E\u3059"
+      - "La caja registradora est\xE1 ocupada por un cajero."
+      - "Kasa jest obs\u0142ugiwana przez kasjera"
+      - "La cassa \xE8 occupata da un cassiere"
+      - "A caixa registradora \xE9 ocupada por um caixa"
+      - Mesin kasir ditempati oleh seorang kasir
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: Speed
+      TermType: 0
+      Description: 
+      Languages:
+      - Speed
+      - Gangart
+      - Vitesse
+      - "\u0421\u043A\u043E\u0440\u043E\u0441\u0442\u044C"
+      - "H\u0131z"
+      - "\u30B9\u30D4\u30FC\u30C9"
+      - Velocidad
+      - "Pr\u0119dko\u015B\u0107"
+      - "Velocit\xE0"
+      - Velocidade
+      - Kecepatan
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: Rest
+      TermType: 0
+      Description: 
+      Languages:
+      - Rest
+      - Ausruhen
+      - Repos
+      - "\u041E\u0442\u0434\u044B\u0445"
+      - Dinlenmek
+      - "\u4F11\u3080"
+      - Descansar
+      - Odpoczynek
+      - Riposo
+      - Descansar
+      - Istirahat
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: Efficiency
+      TermType: 0
+      Description: 
+      Languages:
+      - Efficiency
+      - Effizienz
+      - "Efficacit\xE9"
+      - "\u042D\u0444\u0444\u0435\u043A\u0442\u0438\u0432\u043D\u043E\u0441\u0442\u044C"
+      - Yeterlik
+      - "\u52B9\u7387"
+      - Eficiencia
+      - "Efektywno\u015B\u0107"
+      - Efficienza
+      - "Efici\xEAncia"
+      - Efisiensi
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: Cashier
+      TermType: 0
+      Description: 
+      Languages:
+      - Cashier
+      - Kassierer
+      - Caissier
+      - "\u041A\u0430\u0441\u0441\u0438\u0440"
+      - Kasiyer
+      - "\u30AD\u30E3\u30C3\u30B7\u30E3\u30FC"
+      - Cajero
+      - Kasjer
+      - Cassiere
+      - Caixa
+      - Kasir
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: Need to buy a staff room and reach level
+      TermType: 0
+      Description: 
+      Languages:
+      - Need to buy a staff room and reach level
+      - Muss ein Personalzimmer kaufen und Level erreichen
+      - Besoin d'acheter une salle du personnel et d'atteindre le niveau
+      - "\u0422\u0440\u0435\u0431\u0443\u0435\u0442\u0441\u044F \u043A\u0443\u043F\u0438\u0442\u044C
+        \u043A\u043E\u043C\u043D\u0430\u0442\u0443 \u0434\u043B\u044F \u043F\u0435\u0440\u0441\u043E\u043D\u0430\u043B\u0430
+        \u0438 \u0434\u043E\u0441\u0442\u0438\u0433\u043D\u0443\u0442\u044C \u0443\u0440\u043E\u0432\u0435\u043D\u044C"
+      - "Bir personel odas\u0131 sat\u0131n almam ve seviyeye ula\u015Fmam gerekiyor"
+      - "\u30B9\u30BF\u30C3\u30D5\u30EB\u30FC\u30E0\u3092\u8CFC\u5165\u3057\u3066\u30EC\u30D9\u30EB\u30A2\u30C3\u30D7\u3059\u308B\u5FC5\u8981\u304C\u3042\u308B"
+      - Necesita comprar una sala para el personal y alcanzar el nivel
+      - "Trzeba kupi\u0107 pok\xF3j nauczycielski i osi\u0105gn\u0105\u0107 poziom"
+      - Bisogna acquistare una sala per il personale e raggiungere il livello
+      - "Precisa comprar uma sala para funcion\xE1rios e atingir o n\xEDvel"
+      - Perlu membeli ruang staf dan mencapai level
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: Serves people at the cash register
+      TermType: 0
+      Description: 
+      Languages:
+      - Serves people at the cash register
+      - Bedient Leute an der Kasse
+      - "Sert les gens \xE0 la caisse"
+      - "\u041E\u0431\u0441\u043B\u0443\u0436\u0438\u0432\u0430\u0435\u0442 \u043B\u044E\u0434\u0435\u0439
+        \u043D\u0430 \u043A\u0430\u0441\u0441\u0435"
+      - Kasada insanlara hizmet eder
+      - "\u30EC\u30B8\u3067\u63A5\u5BA2\u3059\u308B"
+      - Atiende a la gente en la caja registradora.
+      - "Obs\u0142uguje ludzi przy kasie"
+      - Serve le persone alla cassa
+      - Atende pessoas no caixa
+      - Melayani orang di kasir
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    CaseInsensitiveTerms: 0
+    OnMissingTranslation: 1
+    mTerm_AppName: 
+    mLanguages:
+    - Name: English
+      Code: en
+      Flags: 0
+    - Name: German (Germany)
+      Code: de-DE
+      Flags: 0
+    - Name: French (France)
+      Code: fr-FR
+      Flags: 0
+    - Name: Russian (Republic of Moldova)
+      Code: ru-MO
+      Flags: 0
+    - Name: Turkish
+      Code: tr
+      Flags: 0
+    - Name: Japanese
+      Code: ja
+      Flags: 0
+    - Name: Spanish (Spain)
+      Code: es-ES
+      Flags: 0
+    - Name: Polish
+      Code: pl
+      Flags: 0
+    - Name: Italian (Italy)
+      Code: it-IT
+      Flags: 0
+    - Name: Portuguese
+      Code: pt
+      Flags: 0
+    - Name: Indonesian
+      Code: id
+      Flags: 0
+    IgnoreDeviceLanguage: 0
+    _AllowUnloadingLanguages: 0
+    Google_WebServiceURL: https://script.google.com/macros/s/AKfycbyZ9wFT0IyKWNf4BvjpHqeJUHKyzB2Ay52WH0o53981i2-39LeuKhSPA5Bix5ZxGgup/exec
+    Google_SpreadsheetKey: 
+    Google_SpreadsheetName: 
+    Google_LastUpdatedVersion: 
+    Google_Password: change_this
+    GoogleUpdateFrequency: 3
+    GoogleInEditorCheckFrequency: 2
+    GoogleUpdateSynchronization: 1
+    GoogleUpdateDelay: 0
+    Assets: []
+    Spreadsheet_LocalFileName: 
+    Spreadsheet_LocalCSVSeparator: ','
+    Spreadsheet_LocalCSVEncoding: utf-8
+    Spreadsheet_SpecializationAsRows: 1
+    Spreadsheet_SortRows: 1

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "338741962644",
+    "project_id": "burger-restaurant-simulator-3d",
+    "storage_bucket": "burger-restaurant-simulator-3d.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:338741962644:android:5a26b5d6eb06f95f311181",
+        "android_client_info": {
+          "package_name": "com.LIfeFrame.FastFoodSim"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCMv77wpE8ZSZB_GjQHBVy5g9An3c5HH2I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

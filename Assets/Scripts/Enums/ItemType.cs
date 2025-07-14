@@ -1,0 +1,40 @@
+
+namespace Enums
+{
+  public enum ItemType 
+  {
+    Empty=0,
+    Cutlet,
+    Cheese,
+    Bun,
+    BunTop,
+    BunLow,
+    Tomato,
+    Onion,
+    Cabbage,
+    PackageBurgerPaper,
+    RawCutlet,
+    FinishSmallBurger,
+    FinishCheeseburger,
+    FinishMiddleBurger,
+    FinishStarBurger,
+    FinishBigBurger,
+    FinishMegaBurger,
+    Ketchup,
+    Mustard,
+    BurgerItemOrder,
+    DrinkItemOrder,
+    ExtraItemOrder,
+    Coffee,
+    SodaLemon,
+    SodaOrange,
+    SodaBarberry,
+    CupSodaEmpty,
+    CupCoffeeEmpty,
+    SodaPlum,
+    FrenchFries,
+    Nuggets,
+    FrenchFriesPackage,
+    NuggetsPackage,
+  }
+}

@@ -1,0 +1,175 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ff8122757aa6aa4c8677605a54c9e8f, type: 3}
+  m_Name: NewWorkerParametersConfig
+  m_EditorClassIdentifier: 
+  _workerTypeConfigs:
+  - _workerType: 1
+    _workerParameterConfigs:
+    - _level: 1
+      _delayWork: 60
+      _delayWorkNext: 69
+      _delayRelax: 100
+      _delayRelaxNext: 90
+      _speed: 1
+      _speedNext: 1.15
+      _efficiency: 100
+      _efficiencyNext: 115
+      _startSecondsEfficiency: 3
+      _priceUpgrade:
+        dollars: 35
+        cents: 0
+    - _level: 2
+      _delayWork: 69
+      _delayWorkNext: 78
+      _delayRelax: 90
+      _delayRelaxNext: 75
+      _speed: 1.15
+      _speedNext: 1.25
+      _efficiency: 115
+      _efficiencyNext: 130
+      _startSecondsEfficiency: 3
+      _priceUpgrade:
+        dollars: 60
+        cents: 0
+    - _level: 3
+      _delayWork: 78
+      _delayWorkNext: 90
+      _delayRelax: 75
+      _delayRelaxNext: 55
+      _speed: 1.25
+      _speedNext: 1.35
+      _efficiency: 130
+      _efficiencyNext: 150
+      _startSecondsEfficiency: 3
+      _priceUpgrade:
+        dollars: 135
+        cents: 0
+    - _level: 4
+      _delayWork: 90
+      _delayWorkNext: 105
+      _delayRelax: 55
+      _delayRelaxNext: 30
+      _speed: 1.35
+      _speedNext: 1.45
+      _efficiency: 150
+      _efficiencyNext: 175
+      _startSecondsEfficiency: 3
+      _priceUpgrade:
+        dollars: 250
+        cents: 0
+    - _level: 5
+      _delayWork: 105
+      _delayWorkNext: 120
+      _delayRelax: 30
+      _delayRelaxNext: 15
+      _speed: 1.45
+      _speedNext: 1.55
+      _efficiency: 175
+      _efficiencyNext: 200
+      _startSecondsEfficiency: 3
+      _priceUpgrade:
+        dollars: 300
+        cents: 0
+    - _level: 6
+      _delayWork: 120
+      _delayWorkNext: 120
+      _delayRelax: 15
+      _delayRelaxNext: 15
+      _speed: 1.55
+      _speedNext: 1.55
+      _efficiency: 200
+      _efficiencyNext: 200
+      _startSecondsEfficiency: 3
+      _priceUpgrade:
+        dollars: 0
+        cents: 0
+  - _workerType: 2
+    _workerParameterConfigs:
+    - _level: 1
+      _delayWork: 60
+      _delayWorkNext: 69
+      _delayRelax: 100
+      _delayRelaxNext: 90
+      _speed: 1
+      _speedNext: 1.15
+      _efficiency: 100
+      _efficiencyNext: 115
+      _startSecondsEfficiency: 5
+      _priceUpgrade:
+        dollars: 35
+        cents: 0
+    - _level: 2
+      _delayWork: 69
+      _delayWorkNext: 78
+      _delayRelax: 90
+      _delayRelaxNext: 75
+      _speed: 1.15
+      _speedNext: 1.25
+      _efficiency: 115
+      _efficiencyNext: 130
+      _startSecondsEfficiency: 5
+      _priceUpgrade:
+        dollars: 60
+        cents: 0
+    - _level: 3
+      _delayWork: 78
+      _delayWorkNext: 90
+      _delayRelax: 75
+      _delayRelaxNext: 55
+      _speed: 1.25
+      _speedNext: 1.35
+      _efficiency: 130
+      _efficiencyNext: 150
+      _startSecondsEfficiency: 5
+      _priceUpgrade:
+        dollars: 135
+        cents: 0
+    - _level: 4
+      _delayWork: 90
+      _delayWorkNext: 105
+      _delayRelax: 55
+      _delayRelaxNext: 30
+      _speed: 1.35
+      _speedNext: 1.45
+      _efficiency: 150
+      _efficiencyNext: 175
+      _startSecondsEfficiency: 5
+      _priceUpgrade:
+        dollars: 250
+        cents: 0
+    - _level: 5
+      _delayWork: 105
+      _delayWorkNext: 120
+      _delayRelax: 30
+      _delayRelaxNext: 15
+      _speed: 1.45
+      _speedNext: 1.55
+      _efficiency: 175
+      _efficiencyNext: 200
+      _startSecondsEfficiency: 5
+      _priceUpgrade:
+        dollars: 300
+        cents: 0
+    - _level: 6
+      _delayWork: 120
+      _delayWorkNext: 120
+      _delayRelax: 15
+      _delayRelaxNext: 15
+      _speed: 1.55
+      _speedNext: 1.55
+      _efficiency: 200
+      _efficiencyNext: 200
+      _startSecondsEfficiency: 5
+      _priceUpgrade:
+        dollars: 0
+        cents: 0

@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1db462dbf4cd58749b9d2649cdb3b8b8, type: 3}
+  m_Name: FortuneSpriteConfig
+  m_EditorClassIdentifier: 
+  _fortunePrizes:
+  - Type: 0
+    _sprite: {fileID: 21300000, guid: 8c5fb1dc62034b64886009a6c6d17def, type: 3}
+  - Type: 1
+    _sprite: {fileID: 21300000, guid: f20554888bbd3ab4fa7ff2aa45e64b2e, type: 3}
+  - Type: 2
+    _sprite: {fileID: 21300000, guid: 45c369479ff1405419930ea4dfcc4c30, type: 3}
+  - Type: 3
+    _sprite: {fileID: 21300000, guid: b07f8d79305d36c48820c7554bb816bb, type: 3}
