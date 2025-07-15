@@ -1,6 +1,5 @@
 using System;
 using Enums;
-using Io.AppMetrica;
 using SoContent;
 using UnityEngine;
 using WorkerContent.FSM;
@@ -104,7 +103,7 @@ namespace WorkerContent
                 return;
 
             Level++;
-            AppMetrica.ReportEvent(_workerType.ToString() + " Levels", "{\"" + Level.ToString() + "\":null}");
+            // AppMetrica.ReportEvent(_workerType.ToString() + " Levels", "{\"" + Level.ToString() + "\":null}");
             PlayerPrefs.SetInt(_workerType + "LevelWorker", Level);
             _workerMover.SetSpeed(Level);
             Efficiecy = _workerParametersConfig.GetConfig(_workerType, Level).Efficiency;

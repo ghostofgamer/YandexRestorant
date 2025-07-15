@@ -1,6 +1,5 @@
 using System;
 using Enums;
-using Io.AppMetrica;
 using PlayerContent.LevelContent;
 using SettingsContent.SoundContent;
 using SoContent;
@@ -104,7 +103,7 @@ namespace UI.Screens.ShopContent.WorkersContent
             if (_wallet.DollarValue.ToTotalCents() < Price.ToTotalCents())
                 Debug.Log("недостаточно денег");
 
-            AppMetrica.ReportEvent("WorkerBuyed", "{\"" + _workerType.ToString() + "\":null}");
+            // AppMetrica.ReportEvent("WorkerBuyed", "{\"" + _workerType.ToString() + "\":null}");
             SoundPlayer.Instance.PlayPayment();
             WorkerBuyed?.Invoke(_workerType);
             _wallet.Subtract(Price);

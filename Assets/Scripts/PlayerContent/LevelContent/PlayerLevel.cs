@@ -1,6 +1,5 @@
 using System;
 using System.Collections.Generic;
-using Io.AppMetrica;
 using SettingsContent.SoundContent;
 using UI;
 using UnityEngine;
@@ -65,7 +64,7 @@ namespace PlayerContent.LevelContent
         {
            SoundPlayer.Instance.PlayLevelUp();
             CurrentLevel++;
-            AppMetrica.ReportEvent("LevelUp", "{\"" + CurrentLevel.ToString() + "\":null}");
+            // AppMetrica.ReportEvent("LevelUp", "{\"" + CurrentLevel.ToString() + "\":null}");
             
             PlayerPrefs.SetInt("Level", CurrentLevel);
             _targetExp = GetExpForLevel(CurrentLevel);

@@ -31,7 +31,7 @@ namespace ADSContent
 
         private void Update()
         {
-            if (_temporaryStopInters)
+            /*if (_temporaryStopInters)
                 return;
             
             if (!_showInter)
@@ -44,7 +44,7 @@ namespace ADSContent
 
             if (timer >= interval)
             {
-                /*if (_ads.IsInterstitialReady)
+                if (_ads.IsInterstitialReady)
                 {
                     ShowInterstitial();
                     ResetTimer();
@@ -53,8 +53,8 @@ namespace ADSContent
                 {
                     CheckAdReadiness();
                     _nextCheckTime = Time.time + 5f; // Следующая проверка через 5 сек
-                }*/
-            }
+                }
+            }*/
         }
 
         private void OnApplicationPause(bool pauseStatus)
@@ -75,7 +75,7 @@ namespace ADSContent
 
         private void ShowInterstitial()
         {
-            // _ads.ShowInterstitial();
+            _ads.ShowInterstitial();
 
             adShowCount++;
 

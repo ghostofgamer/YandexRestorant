@@ -1,9 +1,7 @@
-using Io.AppMetrica;
-using UnityEngine;
 
 public static class AppMetricaActivator
 {
-    private static readonly string _playerPrefsKey = "AppMetricaActivator-IsFirstLaunch";
+    /*private static readonly string _playerPrefsKey = "AppMetricaActivator-IsFirstLaunch";
 
     [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]
     private static void ActivateAppMetrica()
@@ -42,6 +40,6 @@ public static class AppMetricaActivator
         }
 
         PlayerPrefs.SetString(_playerPrefsKey, string.Empty);
-        return false;*/
-    }
+        return false;#1#
+    }*/
 }

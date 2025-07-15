@@ -5,7 +5,6 @@ using CoppraGames;
 using DailyTimerContent;
 using EnergyContent;
 using I2.Loc;
-using Io.AppMetrica;
 using PlayerContent.LevelContent;
 using SettingsContent.SoundContent;
 using SoContent;
@@ -113,7 +112,7 @@ namespace FortuneContent
         {
             if (!_isFreeButtonUsed)
             {
-                AppMetrica.ReportEvent("TaskFortuna");
+                // AppMetrica.ReportEvent("TaskFortuna");
                 FreeSpinUsed?.Invoke();
                 PlayerPrefs.SetInt("FreeSpinUsed", 1);
                 _isFreeButtonUsed = true;
@@ -170,11 +169,11 @@ namespace FortuneContent
             _touchTaskFreeSpin.SetActive(false);
             SoundPlayer.Instance.PlayButtonClick();
             _dailyTimerADSFortune.StartButtonClick();
-            /*_ads.ShowRewarded(() =>
+            _ads.ShowRewarded(() =>
             {
-                AppMetrica.ReportEvent("RewardAD", "{\"" + "FortuneSpinADS" + "\":null}");
+                // AppMetrica.ReportEvent("RewardAD", "{\"" + "FortuneSpinADS" + "\":null}");
                 Spin();
-            });*/
+            });
         }
 
         private void AnimateButton()

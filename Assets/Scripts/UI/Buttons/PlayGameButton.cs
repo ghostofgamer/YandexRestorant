@@ -1,4 +1,3 @@
-using Io.AppMetrica;
 using UnityEngine;
 
 namespace UI.Buttons
@@ -10,7 +9,7 @@ namespace UI.Buttons
         public override void OnClick()
         {
             _loadScreen.SetActive(false);
-            AppMetrica.ReportEvent("StartGame");
+            // AppMetrica.ReportEvent("StartGame");
         }
     }
 }

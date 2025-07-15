@@ -1,6 +1,5 @@
 using Enums;
 using I2.Loc;
-using Io.AppMetrica;
 using SettingsContent;
 using SettingsContent.SoundContent;
 using TMPro;
@@ -68,7 +67,7 @@ namespace UI.Screens.EquipmentContent
             }
 
 
-            AppMetrica.ReportEvent("Equipment", "{\"" + _equipmentType.ToString() + "\":null}");
+            // AppMetrica.ReportEvent("Equipment", "{\"" + _equipmentType.ToString() + "\":null}");
             SoundPlayer.Instance.PlayPayment();
             _wallet.Subtract(CurrentPrice);
             _shopScreen.MakePurchase();

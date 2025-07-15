@@ -2,14 +2,11 @@ using ADSContent;
 using DeliveryContent;
 using EnergyContent;
 using Enums;
-using Io.AppMetrica;
 using RestaurantContent;
 using SoContent;
 using UI.Screens.AdsScreens;
-using Unity.VisualScripting;
 using UnityEngine;
 using WalletContent;
-using Product = UnityEngine.Purchasing.Product;
 
 namespace IAP
 {
@@ -30,9 +27,9 @@ namespace IAP
         [SerializeField] private ShelfConfigs _shelfConfigs;
         [SerializeField] private GameObject[] _shelfes;
 
-        public void OnPurchaseCompleted(Product product)
+        public void OnPurchaseCompleted()
         {
-            switch (product.definition.id)
+            /*switch (product.definition.id)
             {
                 case "com.serbull.iaptutorial.money100":
                     AddMoney(100);
@@ -89,20 +86,20 @@ namespace IAP
                 case "com.serbull.iaptutorial.storagepack":
                     PayStoragePack();
                     break;
-            }
+            }*/
         }
 
         private void RemoveAds()
         {
             PlayerPrefs.SetInt("removeADS", 1);
             Debug.Log("On Purchase RemoveAds Completed");
-            AppMetrica.ReportEvent("In_App", "{\"" + "RemoveADS" + "\":null}");
+            // AppMetrica.ReportEvent("In_App", "{\"" + "RemoveADS" + "\":null}");
             
             if (_interstitialTimer != null)
                 _interstitialTimer.SetValue(false);
 
-            /*if (_ads != null)
-                _ads.SetValue(false);*/
+            if (_ads != null)
+                _ads.SetValue(false);
 
             if (_uiInfo != null)
                 _uiInfo.UpdateRemoveAdsButton();
@@ -115,7 +112,7 @@ namespace IAP
         {
             PlayerPrefs.SetInt("StarterPack", 1);
             AddMoney(150);
-            AppMetrica.ReportEvent("In_App", "{\"" + "StarterPack" + "\":null}");
+            // AppMetrica.ReportEvent("In_App", "{\"" + "StarterPack" + "\":null}");
             _delivery.SpawnPrize(ItemType.Bun, 3);
             _delivery.SpawnPrize(ItemType.RawCutlet, 3);
 
@@ -143,7 +140,7 @@ namespace IAP
         public void PayStoragePack()
         {
             PlayerPrefs.SetInt("StoragePack", 1);
-            AppMetrica.ReportEvent("In_App", "{\"" + "StoragePack" + "\":null}");
+            // AppMetrica.ReportEvent("In_App", "{\"" + "StoragePack" + "\":null}");
             AddMoney(300);
 
             _delivery.SpawnPrize(ItemType.Bun, 4);

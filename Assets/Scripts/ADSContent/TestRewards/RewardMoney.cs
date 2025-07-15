@@ -10,6 +10,6 @@ public class RewardMoney : AbstractButton
 
     public override void OnClick()
     {
-        // _ads.ShowRewarded(() => _wallet.Add(new DollarValue(35, 16)));
+        _ads.ShowRewarded(() => _wallet.Add(new DollarValue(35, 16)));
     }
 }

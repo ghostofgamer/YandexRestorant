@@ -2,7 +2,6 @@ using System.Collections.Generic;
 using ADSContent;
 using DeliveryContent;
 using Enums;
-using Io.AppMetrica;
 using PlayerContent.LevelContent;
 using SettingsContent.SoundContent;
 using UI.Screens;
@@ -37,16 +36,16 @@ namespace MysteryGiftContent
 
         public void GivePrizeADS()
         {
-            /*if (_randomPrize != null)
+            if (_randomPrize != null)
                 _ads.ShowRewarded(() =>
                 {
                     SoundPlayer.Instance.PlayMysteryBoxPrize();
-                    AppMetrica.ReportEvent("RewardAD", "{\"" + "MysteryPrize" + "\":null}");
+                    // AppMetrica.ReportEvent("RewardAD", "{\"" + "MysteryPrize" + "\":null}");
                     GetPrize(_randomPrize);
                     _mysteryBoxScreen.CloseScreen();
                     _congratulationMysteryBoxScreen.OpenScreen();
                     _congratulationMysteryBoxScreen.Init(_randomPrize.SpriteIcon, _randomPrize.Value);
-                });*/
+                });
         }
 
         private void SelectRandomPrize()

@@ -1,7 +1,6 @@
 using System;
 using System.Collections.Generic;
 using Enums;
-using Io.AppMetrica;
 using SettingsContent.SoundContent;
 using SoContent;
 using TutorialContent;

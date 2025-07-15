@@ -1,7 +1,6 @@
 using ADSContent;
 using DeliveryContent;
 using EnergyContent;
-using Io.AppMetrica;
 using SettingsContent.SoundContent;
 using UnityEngine;
 
@@ -23,8 +22,8 @@ namespace UI.Buttons
             if (_isAdButton)
             {
                 Debug.Log("РЕВАРД КНОПКА");
-                // _ads.ShowRewarded(() => _delivery.SpawnAllItems());
-                AppMetrica.ReportEvent("RewardAD", "{\"" + "SkipDeliveryADS" + "\":null}");
+                _ads.ShowRewarded(() => _delivery.SpawnAllItems());
+                // AppMetrica.ReportEvent("RewardAD", "{\"" + "SkipDeliveryADS" + "\":null}");
             }
             else if (_isEnergyButton)
             {
@@ -36,13 +35,13 @@ namespace UI.Buttons
                     return;
 
                 _energy.DecreaseEnergy(_delivery.AmountDeliveries);
-                AppMetrica.ReportEvent("SkipDeliveryEnergy");
+                // AppMetrica.ReportEvent("SkipDeliveryEnergy");
                 _delivery.SpawnAllItems();
             }
             else
             {
                 Debug.Log("КНОПКА КНОПКА КНОПКА КНОПКА");
-                AppMetrica.ReportEvent("SkipDeliveryFreeButton");
+                // AppMetrica.ReportEvent("SkipDeliveryFreeButton");
                 _delivery.SpawnAllItems();
                 _skipCounter.SkipFirstActivate();
             }

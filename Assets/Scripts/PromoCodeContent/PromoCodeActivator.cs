@@ -1,7 +1,6 @@
 using DeliveryContent;
 using EnergyContent;
 using Enums;
-using Io.AppMetrica;
 using PlayerContent.LevelContent;
 using UnityEngine;
 using WalletContent;
@@ -17,7 +16,7 @@ namespace PromoCodeContent
 
         public void ActivatePrizePromo()
         {
-            AppMetrica.ReportEvent("ActivatePrizePromo");
+            // AppMetrica.ReportEvent("ActivatePrizePromo");
             _wallet.Add(new DollarValue(50, 0));
             _delivery.SpawnPrize(ItemType.SodaBarberry, 1);
             _delivery.SpawnPrize(ItemType.SodaLemon, 1);

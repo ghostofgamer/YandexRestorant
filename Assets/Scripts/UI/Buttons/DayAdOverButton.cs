@@ -1,6 +1,5 @@
 using ADSContent;
 using DayNightContent;
-using Io.AppMetrica;
 using SettingsContent.SoundContent;
 using StatisticContent;
 using UI.Screens;
@@ -23,15 +22,15 @@ namespace UI.Buttons
         {
             SoundPlayer.Instance.PlayButtonClick();
             
-            /*_ads.ShowRewarded(() =>
+            _ads.ShowRewarded(() =>
             {
-                AppMetrica.ReportEvent("RewardAD", "{\"" + "ExperienceOverDay" + "\":null}");
+                // AppMetrica.ReportEvent("RewardAD", "{\"" + "ExperienceOverDay" + "\":null}");
                 _wallet.Add(new DollarValue(25, 0));
                 _dayNightCycle.ResetDay();
                 _statisticCounter.ClearData();
                 _workers.PaySalary();
                 _statisticsScreen.CloseScreen();
-            });*/
+            });
         }
     }
 }

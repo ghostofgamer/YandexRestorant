@@ -92,7 +92,7 @@ namespace ADSContent
         {
             if (CanShowAd())
             {
-                // _ads.ShowInterstitial();
+                _ads.ShowInterstitial();
                 // Debug.Log("$$$Showing Ad");
                 PlayerPrefs.SetString(LastADKey, DateTime.UtcNow.Ticks.ToString());
                 PlayerPrefs.Save();

@@ -1,6 +1,5 @@
 using System;
 using Enums;
-using Io.AppMetrica;
 using UnityEngine;
 
 namespace TutorialContent
@@ -75,7 +74,7 @@ namespace TutorialContent
             {
                 TutorialType nextType = GetNextTutorialType(CurrentType);
 
-                AppMetrica.ReportEvent(completedType.ToString());
+                // AppMetrica.ReportEvent(completedType.ToString());
 
                 if (nextType != CurrentType)
                 {
@@ -89,7 +88,7 @@ namespace TutorialContent
 
                     if (CurrentType == TutorialType.TutorCompleted)
                     {
-                        AppMetrica.ReportEvent("TutorCompleted");
+                        // AppMetrica.ReportEvent("TutorCompleted");
 
                         PlayerPrefs.SetInt("TutorCompleted", 1);
                         PlayerPrefs.SetInt("CurrentTutorialStage", (int)CurrentType);

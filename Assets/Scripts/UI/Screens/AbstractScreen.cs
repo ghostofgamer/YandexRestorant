@@ -18,7 +18,7 @@ namespace UI.Screens
 
         public virtual void CloseScreen()
         {
-            InterstitialActivator.Instance.ShowAd();
+            // InterstitialActivator.Instance.ShowAd();
             gameObject.SetActive(false);
 
             if (_playerInput != null)

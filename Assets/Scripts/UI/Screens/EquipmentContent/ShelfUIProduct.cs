@@ -1,7 +1,4 @@
-using Enums;
 using I2.Loc;
-using Io.AppMetrica;
-using SettingsContent;
 using SettingsContent.SoundContent;
 using SoContent;
 using StorageContent;
@@ -50,7 +47,7 @@ namespace UI.Screens.EquipmentContent
                     return;
                 }
 
-                AppMetrica.ReportEvent("Equipment", "{\"" + "Shelf" + "\":null}");
+                // AppMetrica.ReportEvent("Equipment", "{\"" + "Shelf" + "\":null}");
                 SoundPlayer.Instance.PlayPayment();
                 _wallet.Subtract(CurrentPrice);
                 _shopScreen.MakePurchase();

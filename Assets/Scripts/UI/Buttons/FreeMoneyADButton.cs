@@ -1,5 +1,4 @@
 using ADSContent;
-using Io.AppMetrica;
 using UnityEngine;
 using WalletContent;
 
@@ -12,11 +11,11 @@ namespace UI.Buttons
 
         public override void OnClick()
         {
-            /*_ads.ShowRewarded(() =>
+            _ads.ShowRewarded(() =>
             {
-                AppMetrica.ReportEvent("RewardAD", "{\"" + "FreeMoneyAD" + "\":null}");
+                // AppMetrica.ReportEvent("RewardAD", "{\"" + "FreeMoneyAD" + "\":null}");
                 _wallet.Add(new DollarValue(10, 0));
-            });*/
+            });
         }
     }
 }

@@ -32,11 +32,11 @@ namespace PlayerContent
             if (_controller.enabled == false)
                 return;
             
-            if ((int)_tutorial.CurrentType < (int)_tutorialType)
+            /*if ((int)_tutorial.CurrentType < (int)_tutorialType)
             {
                 Debug.Log("(int)_tutorial.CurrentType < (int)_tutorialType");
                 return;
-            }
+            }*/
             
             _moveDirection = new Vector3(horizontal, 0, vertical);
             _moveDirection = transform.TransformDirection(_moveDirection);

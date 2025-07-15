@@ -1,5 +1,4 @@
 using Enums;
-using Io.AppMetrica;
 using TMPro;
 using UI.Screens.TutorialScreens;
 using UnityEngine;

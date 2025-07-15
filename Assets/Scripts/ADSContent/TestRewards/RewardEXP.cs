@@ -10,6 +10,6 @@ public class RewardEXP : AbstractButton
 
     public override void OnClick()
     {
-        // _ads.ShowRewarded(() => _playerLevel.AddExp(135));
+        _ads.ShowRewarded(() => _playerLevel.AddExp(135));
     }
 }

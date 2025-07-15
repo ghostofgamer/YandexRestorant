@@ -1,7 +1,5 @@
 using System;
-using System.Text;
 using ADSContent;
-using Io.AppMetrica;
 using PlayerContent.LevelContent;
 using UI.Buttons;
 using UnityEngine;
@@ -51,7 +49,7 @@ namespace DisableInterContent
 
         public void GetReward()
         {
-            /*_ads.ShowRewarded(() =>
+            _ads.ShowRewarded(() =>
             {
                 _currentValueShowReward++;
 
@@ -60,7 +58,7 @@ namespace DisableInterContent
 
                 Save();
                 CurrentValueChanged?.Invoke(_currentValueShowReward);
-                AppMetrica.ReportEvent("RewardAD", "{\"" + "RewardAD_removeInter" + "\":null}");
+                // AppMetrica.ReportEvent("RewardAD", "{\"" + "RewardAD_removeInter" + "\":null}");
 
                 if (_currentValueShowReward > 2)
                 {
@@ -69,9 +67,9 @@ namespace DisableInterContent
                     _isActivateDisableInter = true;
                     _openScreenButton.enabled = !_isActivateDisableInter;
                     _disableInterScreen.CloseScreen();
-                    AppMetrica.ReportEvent("RemoveInter_6h");
+                    // AppMetrica.ReportEvent("RemoveInter_6h");
                 }
-            });*/
+            });
         }
 
         public void Reset()

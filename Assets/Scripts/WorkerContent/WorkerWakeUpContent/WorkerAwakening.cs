@@ -2,7 +2,6 @@ using ADSContent;
 using AttentionHintContent;
 using EnergyContent;
 using Enums;
-using Io.AppMetrica;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -44,14 +43,14 @@ namespace WorkerContent.WorkerWakeUpContent
         {
             if (adsValue)
             {
-                /*if (_worker.CurrentWorkerStateType == WorkerStateType.Relax)
+                if (_worker.CurrentWorkerStateType == WorkerStateType.Relax)
                     _ads.ShowRewarded(() =>
                     {
-                        AppMetrica.ReportEvent("RewardAD", "{\"" + "WakeUpWorkerADS" + "\":null}");
+                        // AppMetrica.ReportEvent("RewardAD", "{\"" + "WakeUpWorkerADS" + "\":null}");
                         _worker.WakeUp();
                     });
                 else
-                    Debug.Log("Он и так в состоянии работы");*/
+                    Debug.Log("Он и так в состоянии работы");
             }
             else
             {
@@ -68,7 +67,7 @@ namespace WorkerContent.WorkerWakeUpContent
                     return;
                 }
 
-                AppMetrica.ReportEvent("Energy", "{\"" + "WakeUpWorkerEnergy" + "\":null}");
+                // AppMetrica.ReportEvent("Energy", "{\"" + "WakeUpWorkerEnergy" + "\":null}");
                 _energy.DecreaseEnergy(_energyPrice);
                 _worker.WakeUp();
             }
