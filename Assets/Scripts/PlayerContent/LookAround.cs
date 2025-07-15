@@ -34,11 +34,11 @@ namespace PlayerContent
 
         public void Looking(float x, float y)
         {
-            if ((int)_tutorial.CurrentType < (int)_tutorialType)
+            /*if ((int)_tutorial.CurrentType < (int)_tutorialType)
             {
                 Debug.Log("(int)_tutorial.CurrentType < (int)_tutorialType");
                 return;
-            }
+            }*/
 
             if ((int)_tutorial.CurrentType == (int)_tutorialType)
             {
