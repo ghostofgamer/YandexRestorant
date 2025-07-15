@@ -1,0 +1,7 @@
+{
+    "platformName": "UniversalWeb",
+    "deploymentName": "Web",
+    "dataContainerTags": [
+        "json-data"
+    ]
+}
