@@ -6,17 +6,19 @@ namespace UI.Screens
     {
         private bool _isFirstTime;
 
-        private void Start()
+        public override void OpenScreen()
         {
             _isFirstTime = PlayerPrefs.GetInt("IsFirstLanguageChange", 0) == 0;
 
             if (_isFirstTime)
             {
-                OpenScreen();
+                base.OpenScreen();
                 PlayerPrefs.SetInt("IsFirstLanguageChange", 1);
             }
             else
+            {
                 CloseScreen();
+            }
         }
     }
 }

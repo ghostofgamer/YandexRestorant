@@ -63,7 +63,7 @@ namespace UI.Screens.ShopContent.ItemUIProductContent
             _icon.sprite = _ingredient.shopItemSprite;
             // Name = _ingredient.name;
             Name = _ingredient.term;
-            Debug.Log("ItemTERM " + _ingredient.term);
+            // Debug.Log("ItemTERM " + _ingredient.term);
             _nameItemUIProduct.text = LocalizationManager.GetTermTranslation(_ingredient.term);
             // _nameItemUIProduct.text = Name;
             TotalPrice = PricePerUnit;
@@ -74,7 +74,7 @@ namespace UI.Screens.ShopContent.ItemUIProductContent
         private void ChangeLocalization()
         {
             _nameItemUIProduct.text = LocalizationManager.GetTermTranslation(_ingredient.term);
-            Debug.Log("ItemTERM " + _ingredient.term);
+            // Debug.Log("ItemTERM " + _ingredient.term);
             _levelRequiredText.text =
                 $"{LocalizationManager.GetTermTranslation("Level to unlock")} {_minLevelToUnlock}";
         }

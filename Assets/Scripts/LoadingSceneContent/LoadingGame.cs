@@ -1,4 +1,5 @@
 using System.Collections;
+using MirraGames.SDK;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -28,9 +29,13 @@ namespace LoadingSceneContent
                 _loadingBar.fillAmount = fillAmount;
                 yield return null;
             }
-            
-            _playButton.SetActive(true);
-            _sliderLoader.gameObject.SetActive(false);
+
+            MirraSDK.WaitForProviders(() =>
+            {
+                MirraSDK.Analytics.GameIsReady();
+                _sliderLoader.gameObject.SetActive(false);
+                _playButton.SetActive(true);
+            });
         }
     }
 }

@@ -13,8 +13,8 @@ namespace SettingsContent
         [SerializeField] private Slider _sensitivitySlider;
         
         private float _minSensitivity = 0.5f;
-        private float _maxSensitivity = 600f;
-        private float _defaultSensitivity = 300f;
+        private float _maxSensitivity = 1000f;
+        private float _defaultSensitivity = 400f;
         private float _min = 0.5f;
         private float _max = 5f;
 

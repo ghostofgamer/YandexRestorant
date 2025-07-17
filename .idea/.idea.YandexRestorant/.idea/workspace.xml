@@ -6,113 +6,52 @@
   <component name="ChangeListManager">
     <list default="true" id="11e15f27-66b8-446e-8e38-f8f60d18b8aa" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.YandexRestorant/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.YandexRestorant/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/1_A_PREFAB_GAME/rim 2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/1_A_PREFAB_GAME/rim 2.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/1_A_PREFAB_GAME/rim 3.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/1_A_PREFAB_GAME/rim 3.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/1_A_PREFAB_GAME/rim.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/1_A_PREFAB_GAME/rim.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/1_cars/traffic-rider-npc-vehicles/source/BMW_4_Series_2014 1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/1_cars/traffic-rider-npc-vehicles/source/BMW_4_Series_2014 1.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/1_cars/traffic-rider-npc-vehicles/source/BMW_4_Series_2014 2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/1_cars/traffic-rider-npc-vehicles/source/BMW_4_Series_2014 2.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/1_cars/traffic-rider-npc-vehicles/source/BMW_4_Series_2014.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/1_cars/traffic-rider-npc-vehicles/source/BMW_4_Series_2014.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/1_cars/traffic-rider-npc-vehicles/source/New Material.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/1_cars/traffic-rider-npc-vehicles/source/New Material.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/Citizens PRO/Models/People 1.0/Female/Materials/Girl_66 1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/Citizens PRO/Models/People 1.0/Female/Materials/Girl_66 1.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/Citizens PRO/Models/People 1.0/Female/Materials/Girl_66 10.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/Citizens PRO/Models/People 1.0/Female/Materials/Girl_66 10.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/Citizens PRO/Models/People 1.0/Female/Materials/Girl_66 2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/Citizens PRO/Models/People 1.0/Female/Materials/Girl_66 2.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/Citizens PRO/Models/People 1.0/Female/Materials/Girl_66 3.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/Citizens PRO/Models/People 1.0/Female/Materials/Girl_66 3.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/Citizens PRO/Models/People 1.0/Female/Materials/Girl_66 4.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/Citizens PRO/Models/People 1.0/Female/Materials/Girl_66 4.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/Citizens PRO/Models/People 1.0/Female/Materials/Girl_66 5.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/Citizens PRO/Models/People 1.0/Female/Materials/Girl_66 5.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/Citizens PRO/Models/People 1.0/Female/Materials/Girl_66 6.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/Citizens PRO/Models/People 1.0/Female/Materials/Girl_66 6.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/Citizens PRO/Models/People 1.0/Female/Materials/Girl_66 7.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/Citizens PRO/Models/People 1.0/Female/Materials/Girl_66 7.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/Citizens PRO/Models/People 1.0/Female/Materials/Girl_66 8.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/Citizens PRO/Models/People 1.0/Female/Materials/Girl_66 8.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/Citizens PRO/Models/People 1.0/Female/Materials/Girl_66 9.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/Citizens PRO/Models/People 1.0/Female/Materials/Girl_66 9.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/Citizens PRO/Models/People 1.0/Female/Materials/Girl_66.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/Citizens PRO/Models/People 1.0/Female/Materials/Girl_66.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/Citizens PRO/Models/People 1.0/Female/Materials/Girl_66_hair 1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/Citizens PRO/Models/People 1.0/Female/Materials/Girl_66_hair 1.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/Citizens PRO/Models/People 1.0/Female/Materials/Girl_66_hair 2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/Citizens PRO/Models/People 1.0/Female/Materials/Girl_66_hair 2.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/Citizens PRO/Models/People 1.0/Female/Materials/Girl_66_hair.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/Citizens PRO/Models/People 1.0/Female/Materials/Girl_66_hair.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/Citizens PRO/Models/People 1.0/Male/Materials/Man_33 CLEANER.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/Citizens PRO/Models/People 1.0/Male/Materials/Man_33 CLEANER.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/Citizens PRO/Models/People 1.0/Male/Materials/Man_33.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/Citizens PRO/Models/People 1.0/Male/Materials/Man_33.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/Citizens PRO/Models/People 1.0/Male/Materials/Man_99.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/Citizens PRO/Models/People 1.0/Male/Materials/Man_99.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/Citizens PRO/Models/People 1.0/Male/Textures/New Material 1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/Citizens PRO/Models/People 1.0/Male/Textures/New Material 1.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/Citizens PRO/Models/People 1.0/Male/Textures/New Material.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/Citizens PRO/Models/People 1.0/Male/Textures/New Material.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/Citizens PRO/Models/People 2.0/Female/used_casual22_f+/Girl_66 2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/Citizens PRO/Models/People 2.0/Female/used_casual22_f+/Girl_66 2.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/Citizens PRO/Models/People 2.0/Female/used_casual22_f+/Girl_66_hair.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/Citizens PRO/Models/People 2.0/Female/used_casual22_f+/Girl_66_hair.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/Citizens PRO/Models/People 2.0/Female/used_casual22_f+/Materials/casual22_f_25.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/Citizens PRO/Models/People 2.0/Female/used_casual22_f+/Materials/casual22_f_25.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/Citizens PRO/Models/People 2.0/Female/used_casual22_f+/Materials/casual22_f_25_hair 1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/Citizens PRO/Models/People 2.0/Female/used_casual22_f+/Materials/casual22_f_25_hair 1.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/Citizens PRO/Models/People 2.0/Female/used_casual22_f+/Materials/casual22_f_25_hair.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/Citizens PRO/Models/People 2.0/Female/used_casual22_f+/Materials/casual22_f_25_hair.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/Citizens PRO/Models/People 2.0/Female/used_sportive05_f/Materials/sportive05_f_25 1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/Citizens PRO/Models/People 2.0/Female/used_sportive05_f/Materials/sportive05_f_25 1.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/Citizens PRO/Models/People 2.0/Female/used_sportive05_f/Materials/sportive05_f_25 2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/Citizens PRO/Models/People 2.0/Female/used_sportive05_f/Materials/sportive05_f_25 2.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/Citizens PRO/Models/People 2.0/Female/used_sportive05_f/Materials/sportive05_f_25 3.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/Citizens PRO/Models/People 2.0/Female/used_sportive05_f/Materials/sportive05_f_25 3.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/Citizens PRO/Models/People 2.0/Female/used_sportive05_f/Materials/sportive05_f_25 4.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/Citizens PRO/Models/People 2.0/Female/used_sportive05_f/Materials/sportive05_f_25 4.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/Citizens PRO/Models/People 2.0/Female/used_sportive05_f/Materials/sportive05_f_25 5.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/Citizens PRO/Models/People 2.0/Female/used_sportive05_f/Materials/sportive05_f_25 5.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/Citizens PRO/Models/People 2.0/Female/used_sportive05_f/Materials/sportive05_f_25 6.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/Citizens PRO/Models/People 2.0/Female/used_sportive05_f/Materials/sportive05_f_25 6.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/Citizens PRO/Models/People 2.0/Female/used_sportive05_f/Materials/sportive05_f_25 7.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/Citizens PRO/Models/People 2.0/Female/used_sportive05_f/Materials/sportive05_f_25 7.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/Citizens PRO/Models/People 2.0/Female/used_sportive05_f/Materials/sportive05_f_25.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/Citizens PRO/Models/People 2.0/Female/used_sportive05_f/Materials/sportive05_f_25.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/Citizens PRO/Models/People 2.0/Female/used_sportive05_f/Materials/sportive05_f_25_hair 1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/Citizens PRO/Models/People 2.0/Female/used_sportive05_f/Materials/sportive05_f_25_hair 1.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/Citizens PRO/Models/People 2.0/Female/used_sportive05_f/Materials/sportive05_f_25_hair 2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/Citizens PRO/Models/People 2.0/Female/used_sportive05_f/Materials/sportive05_f_25_hair 2.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/Citizens PRO/Models/People 2.0/Female/used_sportive05_f/Materials/sportive05_f_25_hair 3.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/Citizens PRO/Models/People 2.0/Female/used_sportive05_f/Materials/sportive05_f_25_hair 3.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/Citizens PRO/Models/People 2.0/Female/used_sportive05_f/Materials/sportive05_f_25_hair 4.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/Citizens PRO/Models/People 2.0/Female/used_sportive05_f/Materials/sportive05_f_25_hair 4.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/Citizens PRO/Models/People 2.0/Female/used_sportive05_f/Materials/sportive05_f_25_hair 5.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/Citizens PRO/Models/People 2.0/Female/used_sportive05_f/Materials/sportive05_f_25_hair 5.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/Citizens PRO/Models/People 2.0/Female/used_sportive05_f/Materials/sportive05_f_25_hair.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/Citizens PRO/Models/People 2.0/Female/used_sportive05_f/Materials/sportive05_f_25_hair.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/Citizens PRO/Models/People 2.0/Male/used_sportive01_m/Materials/sportive01_m_20.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/Citizens PRO/Models/People 2.0/Male/used_sportive01_m/Materials/sportive01_m_20.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/Citizens PRO/Models/People 2.0/Male/used_sportive04_m/Materials/sportive04_m_25 1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/Citizens PRO/Models/People 2.0/Male/used_sportive04_m/Materials/sportive04_m_25 1.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/Citizens PRO/Models/People 2.0/Male/used_sportive04_m/Materials/sportive04_m_25 2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/Citizens PRO/Models/People 2.0/Male/used_sportive04_m/Materials/sportive04_m_25 2.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/Citizens PRO/Models/People 2.0/Male/used_sportive04_m/Materials/sportive04_m_25 3.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/Citizens PRO/Models/People 2.0/Male/used_sportive04_m/Materials/sportive04_m_25 3.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/Citizens PRO/Models/People 2.0/Male/used_sportive04_m/Materials/sportive04_m_25 4.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/Citizens PRO/Models/People 2.0/Male/used_sportive04_m/Materials/sportive04_m_25 4.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/Citizens PRO/Models/People 2.0/Male/used_sportive04_m/Materials/sportive04_m_25 5.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/Citizens PRO/Models/People 2.0/Male/used_sportive04_m/Materials/sportive04_m_25 5.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/Citizens PRO/Models/People 2.0/Male/used_sportive04_m/Materials/sportive04_m_25 6.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/Citizens PRO/Models/People 2.0/Male/used_sportive04_m/Materials/sportive04_m_25 6.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/Citizens PRO/Models/People 2.0/Male/used_sportive04_m/Materials/sportive04_m_25 7.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/Citizens PRO/Models/People 2.0/Male/used_sportive04_m/Materials/sportive04_m_25 7.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/Citizens PRO/Models/People 2.0/Male/used_sportive04_m/Materials/sportive04_m_25.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/Citizens PRO/Models/People 2.0/Male/used_sportive04_m/Materials/sportive04_m_25.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/Fast_food/Mod/Materials/Metal_grey.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/Fast_food/Mod/Materials/Metal_grey.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/Fast_food/Mod/Materials/brushed_alu.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/Fast_food/Mod/Materials/brushed_alu.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/Fast_food/Mod/Materials/plastic_black_02.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/Fast_food/Mod/Materials/plastic_black_02.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/Material.009.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/Material.009.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/Polytope Studio/Lowpoly_Environments/Sources/Materials/PT_Skybox_mat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/Polytope Studio/Lowpoly_Environments/Sources/Materials/PT_Skybox_mat.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/Toon City/Models/Materials/Advertising_1A_D.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/Toon City/Models/Materials/Advertising_1A_D.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/Toon City/Models/Materials/Plane_D 1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/Toon City/Models/Materials/Plane_D 1.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/Toon City/Models/Materials/Road_1A_D.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/Toon City/Models/Materials/Road_1A_D.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/Toon City/Models/Materials/Road_2A_D.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/Toon City/Models/Materials/Road_2A_D.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/Toon City/Models/Materials/Tree_1A_D.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/Toon City/Models/Materials/Tree_1A_D.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/Toon City/Models/Materials/Tree_3A_D.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/Toon City/Models/Materials/Tree_3A_D.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/Toon City/Models/Update/Materials/Brownstone_1A_D.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/Toon City/Models/Update/Materials/Brownstone_1A_D.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/Toon City/Models/Update/Materials/Brownstone_2A_D.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/Toon City/Models/Update/Materials/Brownstone_2A_D.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/Toon City/Models/Update/Materials/Brownstone_3A_D.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/Toon City/Models/Update/Materials/Brownstone_3A_D.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/Toon City/Models/Update/Materials/Brownstone_4A_D.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/Toon City/Models/Update/Materials/Brownstone_4A_D.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/Toon City/Models/Update/Materials/Brownstone_5A_D.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/Toon City/Models/Update/Materials/Brownstone_5A_D.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/Toon City/Models/Update/Materials/Building_18A_D.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/Toon City/Models/Update/Materials/Building_18A_D.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/Toon City/Models/Update/Materials/Scooter_1A_D.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/Toon City/Models/Update/Materials/Scooter_1A_D.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/Toon City/Models/Update/Materials/Tree_5A_D.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/Toon City/Models/Update/Materials/Tree_5A_D.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/Toon City/Textures/FOR_CARS/Car_7D_D 2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/Toon City/Textures/FOR_CARS/Car_7D_D 2.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/Toon City/ToonShading/Shaders/CustomToon.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/Toon City/ToonShading/Shaders/CustomToon.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/Toon City/ToonShading/Shaders/CustomToonOutline.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/Toon City/ToonShading/Shaders/CustomToonOutline.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/Toon City/ToonShading/Shaders/CustomToonOutlineRim.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/Toon City/ToonShading/Shaders/CustomToonOutlineRim.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/_1_POST/lodbillboard-summer-trees-pack/textures/New Material.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/_1_POST/lodbillboard-summer-trees-pack/textures/New Material.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/initialShadingGroup1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/initialShadingGroup1.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/stylized-low-poly-christmas-gift/textures/New Material.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/stylized-low-poly-christmas-gift/textures/New Material.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Bild1-1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Bild1-1.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Bild1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Bild1.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/BushMat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/BushMat.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/TreeMat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/TreeMat.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/fastfood_medium_WellDone.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/fastfood_medium_WellDone.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Boxes/CoffeeItemPackage.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Boxes/CoffeeItemPackage.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Boxes/ItemBunsBox.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Boxes/ItemBunsBox.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Screens/SettingsScreen.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Screens/SettingsScreen.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/DeepFryer/New Material 1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/DeepFryer/New Material 1.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/DeepFryer/New Material.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/DeepFryer/New Material.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bild/Build.zip" beforeDir="false" afterPath="$PROJECT_DIR$/Bild/Build.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bild/Build/097f9faa11165075b4fa97c3c09dc094.framework.js.unityweb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bild/Build/7a9b0a32f9b92721655a9b80e006311e.data.unityweb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bild/Build/7b936f8a8c92873543b1ae436be4c247.wasm.unityweb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bild/Build/e34fe271c76858c975d9cb3871554bb7.loader.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bild/TemplateData/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/Bild/TemplateData/favicon.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bild/TemplateData/progress-bar-empty-dark.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bild/TemplateData/progress-bar-empty-light.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bild/TemplateData/progress-bar-full-dark.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bild/TemplateData/progress-bar-full-light.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bild/TemplateData/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Bild/TemplateData/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bild/TemplateData/unity-logo-title-footer.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bild/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Bild/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ADSContent/ADS.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ADSContent/ADS.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ADSContent/InterstitialActivator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ADSContent/InterstitialActivator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/IAP/Purchaser.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/IAP/Purchaser.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LoadingSceneContent/LoadingGame.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LoadingSceneContent/LoadingGame.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SettingsContent/SensitivitySettings.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SettingsContent/SensitivitySettings.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SettingsContent/SoundContent/Sound.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SettingsContent/SoundContent/Sound.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SettingsContent/SoundContent/SoundChanger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SettingsContent/SoundContent/SoundChanger.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Buttons/PlayGameButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Buttons/PlayGameButton.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Screens/AbstractScreen.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Screens/AbstractScreen.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Screens/FirstLanguageScreen.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Screens/FirstLanguageScreen.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Screens/ShopContent/ItemUIProductContent/ItemUIProduct.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Screens/ShopContent/ItemUIProductContent/ItemUIProduct.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bild/Build.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bild/Build/0eb4b62f12d3aabe61f93b3a25f10ff9.loader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bild/Build/3b0fe60f4c4ff94f209200a30891b673.framework.js.unityweb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bild/Build/9c14402ae1b3a24016d23247e2b0acc2.wasm.unityweb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bild/Build/c296249383bca90f17b46646632c3f20.data.unityweb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bild/StreamingAssets/aa/AddressablesLink/link.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bild/StreamingAssets/aa/catalog.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bild/StreamingAssets/aa/catalog.hash" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bild/StreamingAssets/aa/settings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bild/TemplateData/MemoryProfiler.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bild/TemplateData/diagnostics.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bild/TemplateData/diagnostics.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bild/TemplateData/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bild/TemplateData/fullscreen-button.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bild/TemplateData/icons/unity-logo-dark.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bild/TemplateData/icons/unity-logo-light.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bild/TemplateData/landscape-only.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bild/TemplateData/portrait-only.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bild/TemplateData/progress_empty_128.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bild/TemplateData/progress_empty_256.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bild/TemplateData/progress_full_128.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bild/TemplateData/progress_full_256.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bild/TemplateData/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bild/TemplateData/unity-logo-dark.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bild/TemplateData/unity-logo-light.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bild/TemplateData/webmemd-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bild/gameBackground.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bild/gameIcon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bild/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bild/manifest.webmanifest" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bild/unityApp.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,6 +60,16 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/CursorActivator.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enums/PurchaseType.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/Buttons/PurchaseInapButon.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.romanlee17.mirrasdk/Runtime/Common/Interfaces/Analytics/Components/IGameplayReporter.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.romanlee17.mirrasdk/Runtime/Common/Interfaces/Platform/Types/PlatformType.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.romanlee17.mirrasdk/Runtime/SDK/MirraSDK.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.collections/Unity.Collections/NativeSort.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.collections/Unity.Collections/UnsafeUtilityEx.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
@@ -140,6 +89,7 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -191,6 +141,11 @@
       <updated>1752503508730</updated>
       <workItem from="1752503511412" duration="7050000" />
       <workItem from="1752563022638" duration="5656000" />
+      <workItem from="1752652138658" duration="11382000" />
+      <workItem from="1752672014007" duration="195000" />
+      <workItem from="1752672238767" duration="219000" />
+      <workItem from="1752672473621" duration="8719000" />
+      <workItem from="1752733201815" duration="8125000" />
     </task>
     <servers />
   </component>

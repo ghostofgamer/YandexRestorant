@@ -1,8 +1,7 @@
-using System;
 using UnityEngine;
 using UnityEngine.Audio;
 
-namespace SettingsContent
+namespace SettingsContent.SoundContent
 {
     public class Sound : MonoBehaviour
     {
@@ -12,6 +11,7 @@ namespace SettingsContent
         [SerializeField] private AudioMixerGroup _audioMixerGroup;
         [SerializeField] private string _volumeParameter = "Sound";
         [SerializeField] private string _sfxParameter = "SFX";
+        [SerializeField] private SoundChanger _soundChanger;
 
         private bool _isSoundOn = true;
         private bool _isSFXOn = true;
@@ -72,6 +72,7 @@ namespace SettingsContent
 
             SetSound(_isSoundOn);
             SetSFX(_isSFXOn);
+            _soundChanger.Init(_isSoundOn,_isSFXOn);
         }
     }
 }

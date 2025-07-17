@@ -1,7 +1,9 @@
+using System;
 using ADSContent;
 using DeliveryContent;
 using EnergyContent;
 using Enums;
+using MirraGames.SDK;
 using RestaurantContent;
 using SoContent;
 using UI.Screens.AdsScreens;
@@ -27,8 +29,86 @@ namespace IAP
         [SerializeField] private ShelfConfigs _shelfConfigs;
         [SerializeField] private GameObject[] _shelfes;
 
-        public void OnPurchaseCompleted()
+
+        public void ClickPurchaser(PurchaseType purchaseType)
         {
+            MirraSDK.Payments.Purchase(
+                productTag: purchaseType.ToString(),
+                onSuccess: () =>
+                {
+                    Debug.Log("Товар успешно куплен");
+                    // Выдать товар игроку
+                    OnPurchaseCompleted(purchaseType);
+                },
+                onError: () => Debug.Log("Товар не был куплен")
+            );
+        }
+
+        public void OnPurchaseCompleted(PurchaseType purchaseType)
+        {
+            switch (purchaseType)
+            {
+                case PurchaseType.Money100:
+                    AddMoney(100);
+                    break;
+
+                case PurchaseType.Money1100:
+                    AddMoney(1100);
+                    break;
+
+                case PurchaseType.Money2750:
+                    AddMoney(2750);
+                    break;
+
+                case PurchaseType.Money8000:
+                    AddMoney(8000);
+                    break;
+
+                case PurchaseType.Money500:
+                    AddMoney(500);
+                    break;
+
+                case PurchaseType.Money20000:
+                    AddMoney(20000);
+                    break;
+
+                case PurchaseType.Energy30:
+                    AddEnergy(30);
+                    break;
+
+                case PurchaseType.Energy150:
+                    AddEnergy(150);
+                    break;
+
+                case PurchaseType.Energy450:
+                    AddEnergy(450);
+                    break;
+
+                case PurchaseType.Energy1850:
+                    AddEnergy(1850);
+                    break;
+
+                case PurchaseType.Energy5000:
+                    AddEnergy(5000);
+                    break;
+                
+                case PurchaseType.RemoveAds:
+                    RemoveAds();
+                    break;
+                
+                case PurchaseType.StarterPack:
+                    StarterPack();
+                    break;
+                
+                case PurchaseType.StoragePack:
+                    PayStoragePack();
+                    break;
+                
+                default:
+                    throw new ArgumentOutOfRangeException(nameof(purchaseType), purchaseType, null);
+            }
+
+
             /*switch (product.definition.id)
             {
                 case "com.serbull.iaptutorial.money100":
@@ -94,7 +174,7 @@ namespace IAP
             PlayerPrefs.SetInt("removeADS", 1);
             Debug.Log("On Purchase RemoveAds Completed");
             // AppMetrica.ReportEvent("In_App", "{\"" + "RemoveADS" + "\":null}");
-            
+
             if (_interstitialTimer != null)
                 _interstitialTimer.SetValue(false);
 

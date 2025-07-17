@@ -8,10 +8,10 @@ namespace ADSContent
         private static InterstitialActivator _instance;
         private const string LastADKey = "LastAdInterShow";
         private const string FirstLaunchKey = "FirstLaunchTime";
-        
+
         [SerializeField] private ADS _ads;
-        [SerializeField] private float _duration; 
-        
+        [SerializeField] private float _duration;
+
         private TimeSpan adCooldown;
         private DateTime _sessionStartTime;
 
@@ -29,6 +29,7 @@ namespace ADSContent
                         DontDestroyOnLoad(obj);
                     }
                 }
+
                 return _instance;
             }
         }
@@ -48,42 +49,11 @@ namespace ADSContent
 
             adCooldown = TimeSpan.FromMinutes(_duration);
         }
-        
-        /*public static InterstitialActivator Instance
-        {
-            get
-            {
-                if (_instance == null)
-                {
-                    GameObject obj = new GameObject("AdManager");
-                    _instance = obj.AddComponent<InterstitialActivator>();
-                    DontDestroyOnLoad(obj);
-                }
-
-                return _instance;
-            }
-        }
-
-        void Awake()
-        {
-            adCooldown = TimeSpan.FromMinutes(_duration);
-            
-            if (_instance == null)
-            {
-                _instance = this;
-                DontDestroyOnLoad(gameObject);
-                InitializeSession();
-            }
-            else if (_instance != this)
-            {
-                Destroy(gameObject);
-            }
-        }*/
 
         private void InitializeSession()
         {
             _sessionStartTime = DateTime.UtcNow;
-            
+
             if (!PlayerPrefs.HasKey(FirstLaunchKey))
                 PlayerPrefs.SetString(FirstLaunchKey, _sessionStartTime.Ticks.ToString());
         }
@@ -106,7 +76,7 @@ namespace ADSContent
         private bool CanShowAd()
         {
             DateTime currentTime = DateTime.UtcNow;
-            
+
             if (PlayerPrefs.HasKey(FirstLaunchKey))
             {
                 long firstLaunchTicks = long.Parse(PlayerPrefs.GetString(FirstLaunchKey));
@@ -118,7 +88,7 @@ namespace ADSContent
                     return false;
                 }
             }
-            
+
             if ((currentTime - _sessionStartTime) < adCooldown)
             {
                 Debug.Log("Ad not ready: session cooldown");
@@ -129,6 +99,12 @@ namespace ADSContent
             {
                 long lastAdTicks = long.Parse(PlayerPrefs.GetString(LastADKey));
                 DateTime lastAdTime = new DateTime(lastAdTicks, DateTimeKind.Utc);
+
+                Debug.Log("currentTime " + currentTime);
+                Debug.Log("lastAdTime " + lastAdTime);
+                Debug.Log("currentTime - lastAdTime " + (currentTime - lastAdTime));
+                Debug.Log("adCooldown " + (adCooldown));
+
 
                 if ((currentTime - lastAdTime) < adCooldown)
                 {
