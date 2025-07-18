@@ -5,87 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="11e15f27-66b8-446e-8e38-f8f60d18b8aa" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.YandexRestorant/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.YandexRestorant/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/Burgers/Material.014.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/Burgers/Material.014.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/Burgers/Material.016.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/Burgers/Material.016.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/Clients/source/Material.002 1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/Clients/source/Material.002 1.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/Clients/source/Material.002 2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/Clients/source/Material.002 2.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/Clients/source/Material.002.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/Clients/source/Material.002.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/DeepFryerContent/Packing_French_fries.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/DeepFryerContent/Packing_French_fries.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/Fast_food/Mod/food/Materials/fastfood_rare.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/Fast_food/Mod/food/Materials/fastfood_rare.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/Fast_food/Mod/food/Materials/fastfood_well_done.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/Fast_food/Mod/food/Materials/fastfood_well_done.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/Garbages/Parts/Can/Cans.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/Garbages/Parts/Can/Cans.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/Garbages/Parts/Can/New Material.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/Garbages/Parts/Can/New Material.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/Garbages/Parts/Eat/New Material.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/Garbages/Parts/Eat/New Material.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/Garbages/Parts/Eat/Organic_Waste.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/Garbages/Parts/Eat/Organic_Waste.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/Garbages/Parts/Paper/New Material.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/Garbages/Parts/Paper/New Material.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/Garbages/Parts/Paper/Random_Pieces_Of_Paper.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/Garbages/Parts/Paper/Random_Pieces_Of_Paper.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/Garbages/Parts/PlasticBottle/New Material.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/Garbages/Parts/PlasticBottle/New Material.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/Garbages/Parts/PlasticBottle/Plastic_Bottles.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/Garbages/Parts/PlasticBottle/Plastic_Bottles.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/Garbages/Parts/Puddle/New Material.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/Garbages/Parts/Puddle/New Material.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/NewItems/New Material.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/NewItems/New Material.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/Polytope Studio/Lowpoly_Environments/Sources/Materials/PT_Skybox_mat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/Polytope Studio/Lowpoly_Environments/Sources/Materials/PT_Skybox_mat.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Boxes/CanistraBarberryItem.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Boxes/CanistraBarberryItem.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Boxes/CanistraLemonItem .prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Boxes/CanistraLemonItem .prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Boxes/CanistraOrangeItem.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Boxes/CanistraOrangeItem.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Boxes/CanistraPlumItem.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Boxes/CanistraPlumItem.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Boxes/CoffeeItemPackage.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Boxes/CoffeeItemPackage.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Boxes/ItemBunsBox.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Boxes/ItemBunsBox.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Boxes/ItemBurgerPackingBox.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Boxes/ItemBurgerPackingBox.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Boxes/ItemCabbageBox.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Boxes/ItemCabbageBox.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Boxes/ItemCheeseBox.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Boxes/ItemCheeseBox.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Boxes/ItemCupCoffeeBox.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Boxes/ItemCupCoffeeBox.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Boxes/ItemCupSodaBox.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Boxes/ItemCupSodaBox.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Boxes/ItemFrenchFriesBox.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Boxes/ItemFrenchFriesBox.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Boxes/ItemFrenchFriesPackageBox.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Boxes/ItemFrenchFriesPackageBox.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Boxes/ItemNuggetsBox.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Boxes/ItemNuggetsBox.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Boxes/ItemNuggetsPackageBox.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Boxes/ItemNuggetsPackageBox.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Boxes/ItemOnionBox.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Boxes/ItemOnionBox.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Boxes/ItemRawCutletBox.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Boxes/ItemRawCutletBox.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Boxes/ItemTomatoeBox.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Boxes/ItemTomatoeBox.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Containers/CutletContainer.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Containers/CutletContainer.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/GarbageContent/Garbages.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/GarbageContent/Garbages.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/NPC/Cars/CarNPC.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/NPC/Cars/CarNPC.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/OurGames/Picture.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/OurGames/Picture.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/DeepFryer/FastFoodWell.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/DeepFryer/FastFoodWell.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/DeepFryer/FrozenFrenchFry.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/DeepFryer/FrozenFrenchFry.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/DeepFryer/Materials/nagget_pacage.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/DeepFryer/Materials/nagget_pacage.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/DeepFryer/NaggetPackage.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/DeepFryer/NaggetPackage.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/DeepFryer/NuggetsFrozenMat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/DeepFryer/NuggetsFrozenMat.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/DeepFryer/NuggetsWellMat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/DeepFryer/NuggetsWellMat.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/DeepFryer/WellFrenchFry.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/DeepFryer/WellFrenchFry.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bild/Build/3b0fe60f4c4ff94f209200a30891b673.framework.js.unityweb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bild/Build/4167cd2fbdc639d8fa2f6e21047d1639.data.unityweb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bild/Build/481bd1c8022e29daecc35a92790d477d.loader.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bild/Build/9fe0beecb9528441c0fc30500e77bc35.wasm.unityweb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bild/StreamingAssets/aa/AddressablesLink/link.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bild/StreamingAssets/aa/catalog.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bild/StreamingAssets/aa/catalog.hash" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bild/StreamingAssets/aa/settings.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bild/TemplateData/MemoryProfiler.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bild/TemplateData/diagnostics.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bild/TemplateData/diagnostics.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bild/TemplateData/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bild/TemplateData/fullscreen-button.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bild/TemplateData/icons/unity-logo-dark.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bild/TemplateData/icons/unity-logo-light.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bild/TemplateData/landscape-only.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bild/TemplateData/portrait-only.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bild/TemplateData/progress_empty_128.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bild/TemplateData/progress_empty_256.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bild/TemplateData/progress_full_128.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bild/TemplateData/progress_full_256.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bild/TemplateData/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bild/TemplateData/unity-logo-dark.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bild/TemplateData/unity-logo-light.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bild/TemplateData/webmemd-icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bild/gameBackground.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bild/gameIcon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bild/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bild/manifest.webmanifest" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bild/unityApp.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bild/unityApp.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/InteractableContent/InteractableObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/InteractableContent/InteractableObject.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -181,7 +101,7 @@
       <workItem from="1752672238767" duration="219000" />
       <workItem from="1752672473621" duration="8719000" />
       <workItem from="1752733201815" duration="13126000" />
-      <workItem from="1752826237837" duration="1298000" />
+      <workItem from="1752826237837" duration="2208000" />
     </task>
     <servers />
   </component>

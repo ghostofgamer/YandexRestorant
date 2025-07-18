@@ -194,12 +194,12 @@ const unityApp = {
         const progressBarFull = document.querySelector("#unity-progress-bar-full");
 
         const buildUrl = "Build";
-        const loaderUrl = buildUrl + "/481bd1c8022e29daecc35a92790d477d.loader.js";
+        const loaderUrl = buildUrl + "/81418cd4eb8ef18e84c16a8604b0cc3c.loader.js";
         const config = {
             arguments: [],
-            dataUrl: buildUrl + "/2c285cbda27e8cdbaaa43dac2de09297.data.unityweb",
-            frameworkUrl: buildUrl + "/3b0fe60f4c4ff94f209200a30891b673.framework.js.unityweb",
-            codeUrl: buildUrl + "/10b5eb14661ddd0e0ac5bda7eaeea3c3.wasm.unityweb",
+            dataUrl: buildUrl + "/e93353c95384658ef7619b8af7428987.data.unityweb",
+            frameworkUrl: buildUrl + "/498f5e04608603639e662a52820faede.framework.js.unityweb",
+            codeUrl: buildUrl + "/008a8b15898939c8d0e48db117c5b019.wasm.unityweb",
             streamingAssetsUrl: "StreamingAssets",
             companyName: "DefaultCompany",
             productName: "Burger Restaurant",
