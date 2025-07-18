@@ -13,6 +13,7 @@ namespace ItemContent
         [SerializeField] private Delivery _delivery;
         [SerializeField] private DeliveryConfig _deliveryConfig;
         [SerializeField] private BoxSaver _boxSaver;
+        // [SerializeField ] private Transform _container;
 
         private List<ItemBasket> _itemBaskets = new List<ItemBasket>();
         private List<ItemDrinkPackage> _itemDrinkPackages = new List<ItemDrinkPackage>();
@@ -73,7 +74,7 @@ namespace ItemContent
 
                 if (prefab != null)
                 {
-                    GameObject box = Instantiate(prefab, boxData.position, Quaternion.identity);
+                    GameObject box = Instantiate(prefab, boxData.position, Quaternion.identity,this.transform);
                     LoadBox(box, boxData);
                 }
             }

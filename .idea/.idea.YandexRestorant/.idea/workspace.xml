@@ -5,7 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="11e15f27-66b8-446e-8e38-f8f60d18b8aa" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/InteractableContent/InteractableObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/InteractableContent/InteractableObject.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.YandexRestorant/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.YandexRestorant/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/Polytope Studio/Lowpoly_Environments/Sources/Materials/PT_Skybox_mat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/Polytope Studio/Lowpoly_Environments/Sources/Materials/PT_Skybox_mat.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DeliveryContent/Delivery.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DeliveryContent/Delivery.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ItemContent/BoxesCounter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ItemContent/BoxesCounter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityTechnologies/ParticlePack/EffectExamples/Smoke &amp; Steam Effects/Materials/SmokeySteam01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UnityTechnologies/ParticlePack/EffectExamples/Smoke &amp; Steam Effects/Materials/SmokeySteam01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bild/Build.zip" beforeDir="false" afterPath="$PROJECT_DIR$/Bild/Build.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bild/Build/008a8b15898939c8d0e48db117c5b019.wasm.unityweb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bild/Build/81418cd4eb8ef18e84c16a8604b0cc3c.loader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bild/Build/e93353c95384658ef7619b8af7428987.data.unityweb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bild/unityApp.js" beforeDir="false" afterPath="$PROJECT_DIR$/Bild/unityApp.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +111,7 @@
       <workItem from="1752672238767" duration="219000" />
       <workItem from="1752672473621" duration="8719000" />
       <workItem from="1752733201815" duration="13126000" />
-      <workItem from="1752826237837" duration="2208000" />
+      <workItem from="1752826237837" duration="3933000" />
     </task>
     <servers />
   </component>
