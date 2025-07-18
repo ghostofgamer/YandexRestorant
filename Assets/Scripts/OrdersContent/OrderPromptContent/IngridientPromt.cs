@@ -17,7 +17,7 @@ public class IngridientPromt : MonoBehaviour
     [SerializeField] private IngredientsConfig _ingredientsConfig;
     [SerializeField] private ElementSelector _elementSelector;
     [SerializeField] private IngredientsViewer[] _ingredientsViewers;
-    [SerializeField]private Sprite _burgerPackageSprite;
+    [SerializeField] private Sprite _burgerPackageSprite;
 
     private Recipes _recipes;
     private Order _order;
@@ -83,7 +83,7 @@ public class IngridientPromt : MonoBehaviour
                 if (!_order.IsDrinkCompleted)
                 {
                     _elementSelector.ReturnDefaultSpacing();
-                    
+
                     _ingredientsViewers[0].SetDefault(_ingredientsConfig.GetSprite(_order.DrinkItemOrder));
                     _ingredientsViewers[0].gameObject.SetActive(true);
                     _ingredientsViewers[0].SetDefaultColor(Color.white);
@@ -101,7 +101,7 @@ public class IngridientPromt : MonoBehaviour
 
             _elementSelector.ReturnDefaultSpacing();
         }
-        
+
         if (_assemblyBurger.IngredientStack.Count == 0)
         {
             _elementSelector.SetSpacing(_recipes.ItemTypes.Count);
@@ -130,7 +130,16 @@ public class IngridientPromt : MonoBehaviour
 
             if (i >= stackItems.Count)
             {
-                Debug.LogError($"{i}). Индекс выходит за пределы стека");
+                Debug.Log($"{i}). Индекс выходит за пределы стека");
+
+                /*
+                foreach (var items in stackItems)
+                {
+                    Debug.Log("items" + items.ToString());
+                }
+                */
+
+
                 continue;
             }
 
