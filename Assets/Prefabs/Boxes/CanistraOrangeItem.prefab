@@ -540,8 +540,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0e8dc0cfbc853e459854bf7ec18eb32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _outline: {fileID: 6691650843283401464}
-  _highlightEffects: []
+  _outlines:
+  - {fileID: 6691650843283401464}
 --- !u!23 &8631665229909841938 stripped
 MeshRenderer:
   m_CorrespondingSourceObject: {fileID: 1455340800637393158, guid: bd792df03245cfd4ba17ea67bf481b24, type: 3}

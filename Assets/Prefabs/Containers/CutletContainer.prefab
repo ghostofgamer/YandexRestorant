@@ -320,7 +320,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0e8dc0cfbc853e459854bf7ec18eb32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _outline: {fileID: 6892139178788248607}
+  _outlines: []
 --- !u!114 &8953172387988338889
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -333,6 +333,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9b1b97610584af44b4d4638bff10286, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _itemContainerSaver: {fileID: 0}
   _interactableObject: {fileID: 2979533990053914425}
   _items:
   - {fileID: 5521012460059115743}

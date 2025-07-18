@@ -535,8 +535,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0e8dc0cfbc853e459854bf7ec18eb32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _outline: {fileID: 1793089560357226286}
-  _highlightEffects: []
+  _outlines:
+  - {fileID: 1793089560357226286}
 --- !u!4 &4489857946347051658 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: bd792df03245cfd4ba17ea67bf481b24, type: 3}
