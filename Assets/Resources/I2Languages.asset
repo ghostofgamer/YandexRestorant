@@ -5388,6 +5388,40 @@ MonoBehaviour:
       - Melayani orang di kasir
       Flags: 0000000000000000000000
       Languages_Touch: []
+    - Term: ADSBreak
+      TermType: 0
+      Description: 
+      Languages:
+      - Commercial break
+      - Werbepause
+      - Pause publicitaire
+      - "\u0420\u0435\u043A\u043B\u0430\u043C\u043D\u044B\u0439 \u043F\u0435\u0440\u0435\u0440\u044B\u0432"
+      - "Reklam aras\u0131"
+      - "\u30B3\u30DE\u30FC\u30B7\u30E3\u30EB"
+      - Pausa comercial
+      - Przerwa reklamowa
+      - Pausa pubblicitaria
+      - Intervalo comercial
+      - Jeda iklan
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: Rub
+      TermType: 0
+      Description: 
+      Languages:
+      - Rub
+      - Reiben
+      - Frotter
+      - "\u0420\u0443\u0431"
+      - Ovmak
+      - "\u3053\u3059\u308B"
+      - Frotar
+      - "Pociera\u0107"
+      - Strofinare
+      - Esfregar
+      - Menggosok
+      Flags: 0000000000000000000000
+      Languages_Touch: []
     CaseInsensitiveTerms: 0
     OnMissingTranslation: 1
     mTerm_AppName: 
