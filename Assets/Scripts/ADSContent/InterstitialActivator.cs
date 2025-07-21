@@ -1,4 +1,8 @@
 using System;
+using System.Collections;
+using InputContent;
+using MirraGames.SDK;
+using TMPro;
 using UnityEngine;
 
 namespace ADSContent
@@ -11,6 +15,9 @@ namespace ADSContent
 
         [SerializeField] private ADS _ads;
         [SerializeField] private float _duration;
+        [SerializeField] private GameObject countdownUI; // UI панель для таймера
+        [SerializeField] private TMP_Text countdownText;
+        [SerializeField] private PlayerInput _playerInput;
 
         private TimeSpan adCooldown;
         private DateTime _sessionStartTime;
@@ -73,6 +80,68 @@ namespace ADSContent
             }
         }
 
+        public void ShowAd(bool breakADCooldown)
+        {
+            if (breakADCooldown)
+            {
+                if (MirraSDK.Ads.IsInterstitialReady && !MirraSDK.Ads.IsInterstitialVisible &&
+                    MirraSDK.Ads.IsInterstitialAvailable)
+                    StartCoroutine(ShowAdWithCountdown(2f));
+            }
+            else
+            {
+                if (CanShowAd())
+                {
+                    _ads.ShowInterstitial();
+                    Debug.Log("$$$Showing Ad");
+                    PlayerPrefs.SetString(LastADKey, DateTime.UtcNow.Ticks.ToString());
+                    PlayerPrefs.Save();
+                }
+                else
+                {
+                    Debug.Log("$$$TRABLA");
+                }
+            }
+        }
+
+        private IEnumerator ShowAdWithCountdown(float countdownSeconds)
+        {
+            if (!CanShowAd())
+            {
+                // Debug.Log("$$$Ad cooldown active");
+                yield break;
+            }
+
+            if (_playerInput != null)
+                _playerInput.enabled = false;
+
+            if (countdownUI != null) // Нужно создать UI элемент в Unity
+            {
+                countdownUI.gameObject.SetActive(true);
+
+                float timer = countdownSeconds;
+
+                while (timer > 0)
+                {
+                    if (countdownText != null)
+                        countdownText.text = $"{Mathf.CeilToInt(timer)}";
+
+                    yield return new WaitForSeconds(1f);
+                    timer -= 1f;
+                }
+
+                countdownUI.gameObject.SetActive(false);
+            }
+
+            _ads.ShowInterstitial();
+
+            if (_playerInput != null)
+                _playerInput.enabled = true;
+
+            PlayerPrefs.SetString(LastADKey, DateTime.UtcNow.Ticks.ToString());
+            PlayerPrefs.Save();
+        }
+
         private bool CanShowAd()
         {
             DateTime currentTime = DateTime.UtcNow;
@@ -100,11 +169,7 @@ namespace ADSContent
                 long lastAdTicks = long.Parse(PlayerPrefs.GetString(LastADKey));
                 DateTime lastAdTime = new DateTime(lastAdTicks, DateTimeKind.Utc);
 
-                Debug.Log("currentTime " + currentTime);
-                Debug.Log("lastAdTime " + lastAdTime);
                 Debug.Log("currentTime - lastAdTime " + (currentTime - lastAdTime));
-                Debug.Log("adCooldown " + (adCooldown));
-
 
                 if ((currentTime - lastAdTime) < adCooldown)
                 {

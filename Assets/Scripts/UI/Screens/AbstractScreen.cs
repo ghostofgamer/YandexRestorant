@@ -8,10 +8,13 @@ namespace UI.Screens
     {
         [SerializeField] private PlayerInput _playerInput;
         [SerializeField] private CursorActivator _cursorActivator;
+        [SerializeField] private bool _breakADCooldown;
 
         public virtual void OpenScreen()
         {
             gameObject.SetActive(true);
+            // InterstitialActivator.Instance.ShowAd();
+            InterstitialActivator.Instance.ShowAd(_breakADCooldown);
             
             if (_playerInput != null)
                 _playerInput.enabled = false;
@@ -22,7 +25,7 @@ namespace UI.Screens
 
         public virtual void CloseScreen()
         {
-            InterstitialActivator.Instance.ShowAd();
+            // InterstitialActivator.Instance.ShowAd();
             gameObject.SetActive(false);
 
             if (_playerInput != null)
