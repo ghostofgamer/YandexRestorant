@@ -3,6 +3,7 @@ using System.Collections;
 using InputContent;
 using MirraGames.SDK;
 using TMPro;
+using UI.Screens.AdsScreens;
 using UnityEngine;
 
 namespace ADSContent
@@ -18,10 +19,12 @@ namespace ADSContent
         [SerializeField] private GameObject countdownUI; // UI панель для таймера
         [SerializeField] private TMP_Text countdownText;
         [SerializeField] private PlayerInput _playerInput;
-
-        private TimeSpan adCooldown;
+        [SerializeField] private RemoveAdScreen _removeAdScreen;
+        
+        private TimeSpan _adCooldown;
         private DateTime _sessionStartTime;
-
+        private int _adShowCount = 0;
+        
         public static InterstitialActivator Instance
         {
             get
@@ -54,7 +57,7 @@ namespace ADSContent
                 Destroy(gameObject);
             }
 
-            adCooldown = TimeSpan.FromMinutes(_duration);
+            _adCooldown = TimeSpan.FromMinutes(_duration);
         }
 
         private void InitializeSession()
@@ -92,10 +95,12 @@ namespace ADSContent
             {
                 if (CanShowAd())
                 {
-                    _ads.ShowInterstitial();
+                    ShowInter();
+                    
+                    /*_ads.ShowInterstitial();
                     Debug.Log("$$$Showing Ad");
                     PlayerPrefs.SetString(LastADKey, DateTime.UtcNow.Ticks.ToString());
-                    PlayerPrefs.Save();
+                    PlayerPrefs.Save();*/
                 }
                 else
                 {
@@ -133,13 +138,13 @@ namespace ADSContent
                 countdownUI.gameObject.SetActive(false);
             }
 
-            _ads.ShowInterstitial();
+            ShowInter();
+            /*_ads.ShowInterstitial();
+            PlayerPrefs.SetString(LastADKey, DateTime.UtcNow.Ticks.ToString());
+            PlayerPrefs.Save();*/
 
             if (_playerInput != null)
                 _playerInput.enabled = true;
-
-            PlayerPrefs.SetString(LastADKey, DateTime.UtcNow.Ticks.ToString());
-            PlayerPrefs.Save();
         }
 
         private bool CanShowAd()
@@ -151,14 +156,14 @@ namespace ADSContent
                 long firstLaunchTicks = long.Parse(PlayerPrefs.GetString(FirstLaunchKey));
                 DateTime firstLaunchTime = new DateTime(firstLaunchTicks, DateTimeKind.Utc);
 
-                if ((currentTime - firstLaunchTime) < adCooldown)
+                if ((currentTime - firstLaunchTime) < _adCooldown)
                 {
                     Debug.Log("Ad not ready: first launch cooldown");
                     return false;
                 }
             }
 
-            if ((currentTime - _sessionStartTime) < adCooldown)
+            if ((currentTime - _sessionStartTime) < _adCooldown)
             {
                 Debug.Log("Ad not ready: session cooldown");
                 return false;
@@ -171,7 +176,7 @@ namespace ADSContent
 
                 Debug.Log("currentTime - lastAdTime " + (currentTime - lastAdTime));
 
-                if ((currentTime - lastAdTime) < adCooldown)
+                if ((currentTime - lastAdTime) < _adCooldown)
                 {
                     Debug.Log("Ad not ready: interval cooldown");
                     return false;
@@ -179,6 +184,13 @@ namespace ADSContent
             }
 
             return true;
+        }
+
+        private void ShowInter()
+        {
+            _ads.ShowInterstitial();
+            PlayerPrefs.SetString(LastADKey, DateTime.UtcNow.Ticks.ToString());
+            PlayerPrefs.Save();
         }
     }
 }

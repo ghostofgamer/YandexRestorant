@@ -13,17 +13,18 @@ namespace ADSContent
         private int _interstitialRetryAttempt = 0;
         private bool _showInter = true;
         private bool _temporaryStopInters = false;
+        private int _adShowCount = 0;
 
         public delegate void RewardCallback();
 
         public event Action _interHidden;
 
+        public event Action RemoveAdsScreenOpening;
+
         private void Awake()
         {
             bool removeAds = PlayerPrefs.GetInt("removeADS") == 1;
             SetValue(!removeAds);
-            /*bool isSDKInitialized = MirraSDK.IsInitialized;
-            Debug.Log("isSDKInitialized " + isSDKInitialized);*/
         }
 
         /*private void Start()
@@ -87,8 +88,18 @@ namespace ADSContent
 
             MirraSDK.Ads.InvokeInterstitial(
                 onOpen: () => Debug.Log("Межстраничная реклама открыта"),
-                onClose: (isSuccess) => Debug.Log("Межстраничная реклама закрыта")
-            );
+                onClose: (isSuccess) =>
+                {
+                    _adShowCount++;
+
+                    if (_adShowCount >= 2)
+                    {
+                        RemoveAdsScreenOpening?.Invoke();
+                        _adShowCount = 0;
+                    }
+
+                    Debug.Log("Межстраничная реклама закрыта");
+                });
         }
 
 

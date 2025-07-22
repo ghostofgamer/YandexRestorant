@@ -7,6 +7,7 @@ using MirraGames.SDK;
 using RestaurantContent;
 using SoContent;
 using UI.Screens.AdsScreens;
+using UI.Screens.AdsScreens.StoragePackContent;
 using UnityEngine;
 using WalletContent;
 

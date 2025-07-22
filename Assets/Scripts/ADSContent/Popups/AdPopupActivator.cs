@@ -3,6 +3,7 @@ using Enums;
 using PlayerContent.LevelContent;
 using TutorialContent;
 using UI.Screens.AdsScreens;
+using UI.Screens.AdsScreens.StoragePackContent;
 using UnityEngine;
 
 namespace ADSContent.Popups
@@ -15,6 +16,8 @@ namespace ADSContent.Popups
         [SerializeField] private GameObject _starterPackButton;
         [SerializeField] private GameObject _storagePackButton;
         [SerializeField] private PlayerLevel _playerLevel;
+        [SerializeField] private RemoveAdScreen _removeAdScreen;
+        [SerializeField]private ADS _ads;
 
         private Coroutine _starterPackCoroutine;
         private WaitForSeconds _waitForSecondsStarterPack = new WaitForSeconds(6f);
@@ -23,12 +26,14 @@ namespace ADSContent.Popups
         {
             _tutorial.TutorCompleted += ShowStarterPack;
             _playerLevel.LevelChanged += ChangeValue;
+            _ads.RemoveAdsScreenOpening += RemoveAdsScreenOpen;
         }
 
         private void OnDisable()
         {
             _tutorial.TutorCompleted -= ShowStarterPack;
             _playerLevel.LevelChanged -= ChangeValue;
+            _ads.RemoveAdsScreenOpening -= RemoveAdsScreenOpen;
         }
 
         private void Start()
@@ -80,6 +85,11 @@ namespace ADSContent.Popups
 
             _starterPackButton.SetActive(level < 4 && PlayerPrefs.GetInt("StarterPack", 0) <= 0);
             _storagePackButton.SetActive(level >= 4 && PlayerPrefs.GetInt("StoragePack", 0) <= 0);
+        }
+
+        private void RemoveAdsScreenOpen()
+        {
+            _removeAdScreen.OpenScreen();
         }
     }
 }
