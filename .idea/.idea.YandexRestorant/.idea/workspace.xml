@@ -5,21 +5,37 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="11e15f27-66b8-446e-8e38-f8f60d18b8aa" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.YandexRestorant/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.YandexRestorant/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ADSContent/ADS.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ADSContent/ADS.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ADSContent/InterstitialActivator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ADSContent/InterstitialActivator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ADSContent/Popups/AdPopupActivator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ADSContent/Popups/AdPopupActivator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/IAP/Purchaser.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/IAP/Purchaser.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Buttons/PurchaseInapButon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Buttons/PurchaseInapButon.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Screens/AdsScreens/RemoveAdScreen.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Screens/AdsScreens/RemoveAdScreen.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Screens/AdsScreens/StarterPackScreen.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Screens/AdsScreens/StarterPackScreen.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Screens/AdsScreens/StoragePackContent/StoragePackScreen.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Screens/AdsScreens/StoragePackContent/StoragePackScreen.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bild/Build.zip" beforeDir="false" afterPath="$PROJECT_DIR$/Bild/Build.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bild/Build/105f4c45442cf5a600d83c9e8263ec39.loader.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bild/Build/6a5c6391edea61532300fd163236d946.data.unityweb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bild/Build/d7ee7fd73d618a604a0d282c8313669a.wasm.unityweb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bild/unityApp.js" beforeDir="false" afterPath="$PROJECT_DIR$/Bild/unityApp.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bild/Build.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bild/Build/2e1319441fa35af0e08028e8c75b5cd6.data.unityweb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bild/Build/498f5e04608603639e662a52820faede.framework.js.unityweb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bild/Build/644a2a44436179523058bc9dd542e63d.loader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bild/Build/d754ff3a031a8a9360d64bea97483b00.wasm.unityweb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bild/StreamingAssets/aa/AddressablesLink/link.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bild/StreamingAssets/aa/catalog.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bild/StreamingAssets/aa/catalog.hash" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bild/StreamingAssets/aa/settings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bild/TemplateData/MemoryProfiler.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bild/TemplateData/diagnostics.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bild/TemplateData/diagnostics.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bild/TemplateData/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bild/TemplateData/fullscreen-button.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bild/TemplateData/icons/unity-logo-dark.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bild/TemplateData/icons/unity-logo-light.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bild/TemplateData/landscape-only.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bild/TemplateData/portrait-only.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bild/TemplateData/progress_empty_128.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bild/TemplateData/progress_empty_256.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bild/TemplateData/progress_full_128.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bild/TemplateData/progress_full_256.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bild/TemplateData/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bild/TemplateData/unity-logo-dark.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bild/TemplateData/unity-logo-light.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bild/TemplateData/webmemd-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bild/gameBackground.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bild/gameIcon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bild/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bild/manifest.webmanifest" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bild/unityApp.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,7 +133,7 @@
       <workItem from="1752733201815" duration="13126000" />
       <workItem from="1752826237837" duration="3933000" />
       <workItem from="1753086065884" duration="6822000" />
-      <workItem from="1753164538140" duration="5294000" />
+      <workItem from="1753164538140" duration="5946000" />
     </task>
     <servers />
   </component>
