@@ -12,7 +12,7 @@ namespace NewsUpdateContent
 
         private void Start()
         {
-            int value = PlayerPrefs.GetInt("Update2.0.9", 0);
+            int value = PlayerPrefs.GetInt("Update1.0.0", 0);
 
             if (value == 0 && (int)_tutorial.CurrentType >= (int)TutorialType.TutorCompleted)
                 OpenScreen();
@@ -21,7 +21,7 @@ namespace NewsUpdateContent
         private void OpenScreen()
         {
             _newsScreen.OpenScreen();
-            PlayerPrefs.SetInt("Update2.0.9", 1);
+            PlayerPrefs.SetInt("Update1.0.0", 1);
         }
     }
 }
