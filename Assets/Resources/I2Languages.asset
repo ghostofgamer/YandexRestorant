@@ -3829,134 +3829,139 @@ MonoBehaviour:
       TermType: 0
       Description: 
       Languages:
-      - "Update 2.0.9\r\n- New Cashier employee! Forget about the queues of guests,
-        concentrate on cooking burgers!\r\n- Worker leveling - Workers can now be
-        improved!\r\n- Warning hints for a pleasant game!\r\n- New promo code: \"Cashier2025\"
-        (Plum Soda \u04451, orange soda \u04451, lemon soda \u04451, barberry soda
-        \u04451, 50$)\r\n- PROMO CODE INSTRUCTIONS: TAP SETTINGS -> TAP ON THE GIFT
-        ICON -> ENTER THE PROMO CODE -> RECEIVE GIFTS IN THE DELIVERY AREA!\r\n-
-        We will definitely add even more employees! Stay tuned!"
-      - "Update 2.0.9\n- Neuer Kassierer! Vergesst die Warteschlangen, konzentriert
-        euch aufs Burger-Braten!\n- Mitarbeiter-Leveling \u2013 Mitarbeiter k\xF6nnen
-        jetzt verbessert werden!\n- Warnhinweise f\xFCr ein angenehmes Spiel!\n-
-        Neuer Promo-Code: \u201ECashier2025\u201C (Pflaumenlimonade 1 x, Orangenlimonade
-        1 x, Zitronenlimonade 1 x, Berberitzenlimonade 1 x, 50 $)\n- ANLEITUNG ZUM
-        PROMO-CODE: TIPPEN SIE AUF EINSTELLUNGEN -> TIPPEN SIE AUF DAS GESCHENK-SYMBOL
-        -> GEBEN SIE DEN PROMO-CODE EIN -> ERHALTEN SIE GESCHENKE IM LIEFERBEREICH!\n-
-        Wir werden definitiv noch mehr Mitarbeiter einstellen! Bleiben Sie dran!"
-      - "Mise \xE0 jour 2.0.9\n- Nouveau caissier\_! Oubliez les files d'attente
-        et concentrez-vous sur la pr\xE9paration des burgers\_!\n- Mont\xE9e en niveau
-        des ouvriers\_: les ouvriers peuvent d\xE9sormais \xEAtre am\xE9lior\xE9s\_!\n-
-        Conseils pour un jeu agr\xE9able\_!\n- Nouveau code promo\_: \xAB\_Cashier2025\_\xBB
-        (soda \xE0 la prune x1, soda \xE0 l'orange x1, soda au citron x1, soda \xE0
-        l'\xE9pine-vinette x1, 50\_$)\n- INSTRUCTIONS POUR LE CODE PROMO\_: APPUYEZ
-        SUR \xAB\_PARAMETRES\_\xBB -> APPUYEZ SUR L'IC\xD4NE CADEAU -> SAISISSEZ
-        LE CODE PROMO -> RECEVEZ DES CADEAUX DANS LA ZONE DE LIVRAISON\_!\n- Nous
-        ajouterons certainement encore plus d'employ\xE9s\_! Restez connect\xE9s\_!"
-      - "\u041E\u0431\u043D\u043E\u0432\u043B\u0435\u043D\u0438\u0435 2.0.9\n- \u041D\u043E\u0432\u044B\u0439
-        \u043A\u0430\u0441\u0441\u0438\u0440! \u0417\u0430\u0431\u0443\u0434\u044C\u0442\u0435
-        \u043E\u0431 \u043E\u0447\u0435\u0440\u0435\u0434\u044F\u0445 \u0433\u043E\u0441\u0442\u0435\u0439,
-        \u0441\u043E\u0441\u0440\u0435\u0434\u043E\u0442\u043E\u0447\u044C\u0442\u0435\u0441\u044C
-        \u043D\u0430 \u043F\u0440\u0438\u0433\u043E\u0442\u043E\u0432\u043B\u0435\u043D\u0438\u0438
-        \u0431\u0443\u0440\u0433\u0435\u0440\u043E\u0432!\n- \u041F\u043E\u0432\u044B\u0448\u0435\u043D\u0438\u0435
-        \u0443\u0440\u043E\u0432\u043D\u044F \u0441\u043E\u0442\u0440\u0443\u0434\u043D\u0438\u043A\u043E\u0432
-        - \u0422\u0435\u043F\u0435\u0440\u044C \u0441\u043E\u0442\u0440\u0443\u0434\u043D\u0438\u043A\u043E\u0432
-        \u043C\u043E\u0436\u043D\u043E \u0443\u043B\u0443\u0447\u0448\u0430\u0442\u044C!\n-
-        \u041F\u0440\u0435\u0434\u0443\u043F\u0440\u0435\u0436\u0434\u0430\u044E\u0449\u0438\u0435
-        \u043F\u043E\u0434\u0441\u043A\u0430\u0437\u043A\u0438 \u0434\u043B\u044F
-        \u043F\u0440\u0438\u044F\u0442\u043D\u043E\u0439 \u0438\u0433\u0440\u044B!\n-
+      - "REALISE!\r\n- Welcome to our game! Cook burgers, serve customers, purchase
+        new equipment, employees, expand the menu - an exciting adventure awaits
+        you in the world of fast food! \r\n- New promo code: \"SuperBurger\" (A box
+        of buns \u04452, A box of  patties \u04452, 50$)\r\n- PROMO CODE INSTRUCTIONS:
+        TAP SETTINGS -> TAP ON THE GIFT ICON -> ENTER THE PROMO CODE -> RECEIVE GIFTS
+        IN THE DELIVERY AREA!\r\n- We will definitely add even more employees! Stay
+        tuned!\r\nHave a nice game! Wait for updates, send feedback!"
+      - "REALISIEREN!\n\n- Willkommen in unserem Spiel! Braten Sie Burger, bedienen
+        Sie Kunden, kaufen Sie neue Ger\xE4te, Mitarbeiter und erweitern Sie die
+        Speisekarte \u2013 ein spannendes Abenteuer in der Welt des Fast Foods erwartet
+        Sie!\n\n- Neuer Promo-Code: \u201ESuperBurger\u201C (2 x Br\xF6tchen, 2 x
+        Patties, 50 $)\n\n- ANLEITUNG ZUM PROMO-CODE: TIPPEN SIE AUF EINSTELLUNGEN
+        -> TIPPEN SIE AUF DAS GESCHENK-SYMBOL -> GEBEN SIE DEN PROMO-CODE EIN ->
+        ERHALTEN SIE GESCHENKE IM LIEFERBEREICH!\n\n- Wir werden definitiv noch mehr
+        Mitarbeiter hinzuf\xFCgen! Bleiben Sie dran!\n\nViel Spa\xDF beim Spielen!
+        Warten Sie auf Updates und geben Sie Feedback!"
+      - "R\xC9ALISEZ\_!\n- Bienvenue dans notre jeu\_! Cuisinez des burgers, servez
+        vos clients, achetez du mat\xE9riel et des employ\xE9s, enrichissez votre
+        menu\_: une aventure palpitante vous attend dans le monde de la restauration
+        rapide\_!\n- Nouveau code promo\_: \xAB\_SuperBurger\_\xBB (2\_bo\xEEtes
+        de pains, 2\_bo\xEEtes de steaks hach\xE9s, 50\_$)\n- INSTRUCTIONS POUR LE
+        CODE PROMO\_: APPUYEZ SUR \xAB\_PARAMETRES\_\xBB -> APPUYEZ SUR L'IC\xD4NE
+        CADEAU -> SAISISSEZ LE CODE PROMO -> RECEVEZ DES CADEAUX DANS LA ZONE DE
+        LIVRAISON\_!\n- Nous allons certainement recruter encore plus d'employ\xE9s\_!
+        Restez connect\xE9s\_!\nBon jeu\_! Attendez les mises \xE0 jour et n'h\xE9sitez
+        pas \xE0 nous faire part de vos commentaires\_!"
+      - "\u0420\u0435\u043B\u0438\u0437!\n\n\u2014 \u0414\u043E\u0431\u0440\u043E
+        \u043F\u043E\u0436\u0430\u043B\u043E\u0432\u0430\u0442\u044C \u0432 \u043D\u0430\u0448\u0443
+        \u0438\u0433\u0440\u0443! \u0413\u043E\u0442\u043E\u0432\u044C\u0442\u0435
+        \u0431\u0443\u0440\u0433\u0435\u0440\u044B, \u043E\u0431\u0441\u043B\u0443\u0436\u0438\u0432\u0430\u0439\u0442\u0435
+        \u043A\u043B\u0438\u0435\u043D\u0442\u043E\u0432, \u043F\u0440\u0438\u043E\u0431\u0440\u0435\u0442\u0430\u0439\u0442\u0435
+        \u043D\u043E\u0432\u043E\u0435 \u043E\u0431\u043E\u0440\u0443\u0434\u043E\u0432\u0430\u043D\u0438\u0435,
+        \u0441\u043E\u0442\u0440\u0443\u0434\u043D\u0438\u043A\u043E\u0432, \u0440\u0430\u0441\u0448\u0438\u0440\u044F\u0439\u0442\u0435
+        \u043C\u0435\u043D\u044E \u2014 \u0432\u0430\u0441 \u0436\u0434\u0451\u0442
+        \u0443\u0432\u043B\u0435\u043A\u0430\u0442\u0435\u043B\u044C\u043D\u043E\u0435
+        \u043F\u0440\u0438\u043A\u043B\u044E\u0447\u0435\u043D\u0438\u0435 \u0432
+        \u043C\u0438\u0440\u0435 \u0444\u0430\u0441\u0442\u0444\u0443\u0434\u0430!\n\n\u2014
         \u041D\u043E\u0432\u044B\u0439 \u043F\u0440\u043E\u043C\u043E\u043A\u043E\u0434:
-        \xABCashier2025\xBB (\u0421\u043B\u0438\u0432\u043E\u0432\u0430\u044F \u0433\u0430\u0437\u0438\u0440\u043E\u0432\u043A\u0430
-        \u04451, \u0410\u043F\u0435\u043B\u044C\u0441\u0438\u043D\u043E\u0432\u0430\u044F
-        \u0433\u0430\u0437\u0438\u0440\u043E\u0432\u043A\u0430 \u04451, \u041B\u0438\u043C\u043E\u043D\u043D\u0430\u044F
-        \u0433\u0430\u0437\u0438\u0440\u043E\u0432\u043A\u0430 \u04451, \u0411\u0430\u0440\u0431\u0430\u0440\u0438\u0441\u043E\u0432\u0430\u044F
-        \u0433\u0430\u0437\u0438\u0440\u043E\u0432\u043A\u0430 \u04451, 50$)\n- \u0418\u041D\u0421\u0422\u0420\u0423\u041A\u0426\u0418\u042F
-        \u041F\u041E \u041F\u0420\u041E\u041C\u041E\u041A\u041E\u0414\u0423: \u041D\u0410\u0416\u041C\u0418\u0422\u0415
-        \u041D\u0410 \u041D\u0410\u0421\u0422\u0420\u041E\u0419\u041A\u0418 -> \u041D\u0410\u0416\u041C\u0418\u0422\u0415
-        \u041D\u0410 \u0417\u041D\u0410\u0427\u041E\u041A \u041F\u041E\u0414\u0410\u0420\u041A\u0410
-        -> \u0412\u0412\u0415\u0414\u0418\u0422\u0415 \u041F\u0420\u041E\u041C\u041E\u041A\u041E\u0414
-        -> \u041F\u041E\u041B\u0423\u0427\u0410\u0419\u0422\u0415 \u041F\u041E\u0414\u0410\u0420\u041A\u0418
-        \u0412 \u0417\u041E\u041D\u0415 \u0414\u041E\u0421\u0422\u0410\u0412\u041A\u0418!\n-
-        \u041C\u044B \u043E\u0431\u044F\u0437\u0430\u0442\u0435\u043B\u044C\u043D\u043E
-        \u0434\u043E\u0431\u0430\u0432\u0438\u043C \u0435\u0449\u0451 \u0431\u043E\u043B\u044C\u0448\u0435
-        \u0441\u043E\u0442\u0440\u0443\u0434\u043D\u0438\u043A\u043E\u0432! \u0421\u043B\u0435\u0434\u0438\u0442\u0435
-        \u0437\u0430 \u043D\u043E\u0432\u043E\u0441\u0442\u044F\u043C\u0438!"
-      - "2.0.9 G\xFCncellemesi\n- Yeni Kasiyer \xE7al\u0131\u015Fan\u0131! M\xFC\u015Fteri
-        kuyruklar\u0131n\u0131 unutun, hamburger pi\u015Firmeye odaklan\u0131n!\n-
-        \xC7al\u0131\u015Fan seviyelendirme - \xC7al\u0131\u015Fanlar art\u0131k
-        geli\u015Ftirilebilir!\n- Keyifli bir oyun i\xE7in uyar\u0131 ipu\xE7lar\u0131!\n-
-        Yeni promosyon kodu: \"Cashier2025\" (Erik Gazozu 1 x, portakal gazozu 1
-        x, limon gazozu 1 x, k\u0131z\u0131lc\u0131k gazozu 1 x, 50$)\n- PROMOSYON
-        KODU TAL\u0130MATLARI: AYARLAR'A DOKUNUN -> HED\u0130YE S\u0130MGES\u0130NE
-        DOKUNUN -> PROMOSYON KODUNU G\u0130R\u0130N -> TESL\u0130MAT ALANINDA HED\u0130YELER
-        ALIN!\n- Kesinlikle daha fazla \xE7al\u0131\u015Fan ekleyece\u011Fiz! Bizi
-        takip edin!"
-      - "\u30A2\u30C3\u30D7\u30C7\u30FC\u30C8 2.0.9\n- \u65B0\u3057\u3044\u30EC\u30B8\u4FC2\u54E1\uFF01\u304A\u5BA2\u69D8\u306E\u5217\u306B\u4E26\u3076\u306E\u306F\u3082\u3046\u5FD8\u308C\u3066\u3001\u30CF\u30F3\u30D0\u30FC\u30AC\u30FC\u4F5C\u308A\u306B\u96C6\u4E2D\u3057\u307E\u3057\u3087\u3046\uFF01\n-
-        \u5F93\u696D\u54E1\u306E\u30EC\u30D9\u30EB\u30A2\u30C3\u30D7 - \u5F93\u696D\u54E1\u306E\u30EC\u30D9\u30EB\u30A2\u30C3\u30D7\u304C\u53EF\u80FD\u306B\u306A\u308A\u307E\u3057\u305F\uFF01\n-
-        \u697D\u3057\u3044\u30B2\u30FC\u30E0\u306E\u305F\u3081\u306E\u30D2\u30F3\u30C8\uFF01\n-
-        \u65B0\u3057\u3044\u30D7\u30ED\u30E2\u30FC\u30B7\u30E7\u30F3\u30B3\u30FC\u30C9\uFF1A\u300CCashier2025\u300D\uFF08\u30D7\u30E9\u30E0\u30BD\u30FC\u30C0
-        1\u500B\u3001\u30AA\u30EC\u30F3\u30B8\u30BD\u30FC\u30C0 1\u500B\u3001\u30EC\u30E2\u30F3\u30BD\u30FC\u30C0
-        1\u500B\u3001\u30D0\u30FC\u30D9\u30EA\u30FC\u30BD\u30FC\u30C0 1\u500B\u300150\u30C9\u30EB\uFF09\n-
+        \xABSuperBurger\xBB (\u041A\u043E\u0440\u043E\u0431\u043A\u0430 \u0431\u0443\u043B\u043E\u0447\u0435\u043A
+        \u04452, \u041A\u043E\u0440\u043E\u0431\u043A\u0430 \u043A\u043E\u0442\u043B\u0435\u0442
+        \u04452, 50$)\n\u2014 \u0418\u041D\u0421\u0422\u0420\u0423\u041A\u0426\u0418\u042F
+        \u041F\u041E \u0412\u0412\u041E\u0414\u0423 \u041F\u0420\u041E\u041C\u041E\u041A\u041E\u0414\u0410:
+        \u041D\u0410\u0416\u041C\u0418\u0422\u0415 \xAB\u041D\u0410\u0421\u0422\u0420\u041E\u0419\u041A\u0418\xBB
+        -> \u041D\u0410\u0416\u041C\u0418\u0422\u0415 \u041D\u0410 \u0417\u041D\u0410\u0427\u041E\u041A
+        \u041F\u041E\u0414\u0410\u0420\u041A\u0410 -> \u0412\u0412\u0415\u0414\u0418\u0422\u0415
+        \u041F\u0420\u041E\u041C\u041E\u041A\u041E\u0414 -> \u041F\u041E\u041B\u0423\u0427\u0410\u0419\u0422\u0415
+        \u041F\u041E\u0414\u0410\u0420\u041A\u0418 \u0412 \u0417\u041E\u041D\u0415
+        \u0414\u041E\u0421\u0422\u0410\u0412\u041A\u0418!\n\n\u2014 \u041C\u044B
+        \u043E\u0431\u044F\u0437\u0430\u0442\u0435\u043B\u044C\u043D\u043E \u0434\u043E\u0431\u0430\u0432\u0438\u043C
+        \u0435\u0449\u0451 \u0431\u043E\u043B\u044C\u0448\u0435 \u0441\u043E\u0442\u0440\u0443\u0434\u043D\u0438\u043A\u043E\u0432!
+        \u0421\u043B\u0435\u0434\u0438\u0442\u0435 \u0437\u0430 \u043D\u043E\u0432\u043E\u0441\u0442\u044F\u043C\u0438!\n\n\u041F\u0440\u0438\u044F\u0442\u043D\u043E\u0439
+        \u0438\u0433\u0440\u044B! \u0416\u0434\u0438\u0442\u0435 \u043E\u0431\u043D\u043E\u0432\u043B\u0435\u043D\u0438\u0439,
+        \u043E\u0441\u0442\u0430\u0432\u043B\u044F\u0439\u0442\u0435 \u043E\u0442\u0437\u044B\u0432\u044B!"
+      - "GER\xC7EKLE\u015ET\u0130R!\n- Oyunumuza ho\u015F geldiniz! Burger pi\u015Firin,
+        m\xFC\u015Fterilere servis yap\u0131n, yeni ekipmanlar ve \xE7al\u0131\u015Fanlar
+        sat\u0131n al\u0131n, men\xFCy\xFC geni\u015Fletin - fast food d\xFCnyas\u0131nda
+        heyecan verici bir macera sizi bekliyor!\n- Yeni promosyon kodu: \"SuperBurger\"
+        (Bir kutu ekmek x2, Bir kutu k\xF6fte x2, 50$)\n- PROMOSYON KODU TAL\u0130MATLARI:
+        AYARLAR'A DOKUNUN -> HED\u0130YE S\u0130MGES\u0130NE DOKUNUN -> PROMOSYON
+        KODUNU G\u0130R\u0130N -> TESL\u0130MAT ALANINDA HED\u0130YELER\u0130 ALIN!\n-
+        Kesinlikle daha fazla \xE7al\u0131\u015Fan ekleyece\u011Fiz! Bizi takip etmeye
+        devam edin!\n\u0130yi oyunlar! G\xFCncellemeleri bekleyin, geri bildirim
+        g\xF6nderin!"
+      - "\u5B9F\u73FE\uFF01\n- \u3053\u306E\u30B2\u30FC\u30E0\u3078\u3088\u3046\u3053\u305D\uFF01\u30CF\u30F3\u30D0\u30FC\u30AC\u30FC\u3092\u8ABF\u7406\u3057\u3001\u304A\u5BA2\u69D8\u306B\u30B5\u30FC\u30D3\u30B9\u3092\u63D0\u4F9B\u3057\u3001\u65B0\u3057\u3044\u8A2D\u5099\u3084\u5F93\u696D\u54E1\u3092\u8CFC\u5165\u3057\u3001\u30E1\u30CB\u30E5\u30FC\u3092\u62E1\u5145\u3057\u307E\u3057\u3087\u3046\u3002\u30D5\u30A1\u30B9\u30C8\u30D5\u30FC\u30C9\u306E\u4E16\u754C\u3067\u30A8\u30AD\u30B5\u30A4\u30C6\u30A3\u30F3\u30B0\u306A\u5192\u967A\u304C\u3042\u306A\u305F\u3092\u5F85\u3063\u3066\u3044\u307E\u3059\uFF01\n-
+        \u65B0\u3057\u3044\u30D7\u30ED\u30E2\u30FC\u30B7\u30E7\u30F3\u30B3\u30FC\u30C9\uFF1A\"SuperBurger\"\uFF08\u30D0\u30F3\u30BA2\u500B\u3001\u30D1\u30C6\u30A32\u500B\u300150\u30C9\u30EB\uFF09\n-
         \u30D7\u30ED\u30E2\u30FC\u30B7\u30E7\u30F3\u30B3\u30FC\u30C9\u306E\u4F7F\u3044\u65B9\uFF1A\u8A2D\u5B9A\u3092\u30BF\u30C3\u30D7
         -> \u30AE\u30D5\u30C8\u30A2\u30A4\u30B3\u30F3\u3092\u30BF\u30C3\u30D7 ->
         \u30D7\u30ED\u30E2\u30FC\u30B7\u30E7\u30F3\u30B3\u30FC\u30C9\u3092\u5165\u529B
         -> \u914D\u9054\u30A8\u30EA\u30A2\u3067\u30AE\u30D5\u30C8\u3092\u53D7\u3051\u53D6\u308C\u307E\u3059\uFF01\n-
-        \u4ECA\u5F8C\u3082\u5F93\u696D\u54E1\u3092\u968F\u6642\u8FFD\u52A0\u4E88\u5B9A\u3067\u3059\uFF01\u304A\u697D\u3057\u307F\u306B\uFF01"
-      - "Actualizaci\xF3n 2.0.9\n- \xA1Nuevo cajero! \xA1Olv\xEDdate de las colas
-        de clientes y conc\xE9ntrate en cocinar hamburguesas!\n- Subida de nivel
-        de los trabajadores: \xA1Ahora puedes mejorarlos!\n- \xA1Consejos para disfrutar
-        del juego!\n- Nuevo c\xF3digo promocional: \"Cashier2025\" (Refresco de ciruela
-        x1, refresco de naranja x1, refresco de lim\xF3n x1, refresco de agracejo
-        x1, 50 $)\n- INSTRUCCIONES PARA EL C\xD3DIGO PROMOCIONAL: TOCA AJUSTES ->
-        TOCA EL ICONO DE REGALO -> INTRODUCE EL C\xD3DIGO PROMOCIONAL -> \xA1RECIBE
-        REGALOS EN LA ZONA DE ENTREGA!\n- \xA1Seguro que a\xF1adiremos m\xE1s empleados!
-        \xA1No te lo pierdas!"
-      - "Aktualizacja 2.0.9\n- Nowy pracownik na stanowisku kasjera! Zapomnij o kolejkach
-        go\u015Bci, skup si\u0119 na sma\u017Ceniu burger\xF3w!\n- Awans pracownik\xF3w
-        - Teraz mo\u017Cna rozwija\u0107 pracownik\xF3w!\n- Ostrzegawcze wskaz\xF3wki
-        dla przyjemnej gry!\n- Nowy kod promocyjny: \u201EKasjer2025\u201D (Nap\xF3j
-        \u015Bliwkowy x1, nap\xF3j pomara\u0144czowy x1, nap\xF3j cytrynowy x1, nap\xF3j
-        berberysowy x1, 50$)\n- INSTRUKCJA WPISU KODU PROMOCYJNEGO: DOTKNIJ USTAWIENIA
-        -> DOTKNIJ IKON\u0118 PREZENTU -> WPISZ KOD PROMOCYJNY -> ODBIERZ PREZENTY
-        W OBSZARZE DOSTAWY!\n- Z pewno\u015Bci\u0105 dodamy jeszcze wi\u0119cej pracownik\xF3w!
-        B\u0105d\u017Acie czujni!"
-      - "Aggiornamento 2.0.9\n- Nuovo cassiere! Dimentica le code per i clienti,
-        concentrati sulla preparazione degli hamburger!\n- Aumento di livello dei
-        lavoratori - Ora \xE8 possibile migliorare i lavoratori!\n- Consigli di avvertimento
-        per un gioco piacevole!\n- Nuovo codice promozionale: \"Cashier2025\" (Plum
-        Soda x1, Aranciata x1, Limonata x1, Crespino x1, 50$)\n- ISTRUZIONI PER IL
-        CODICE PROMOZIONALE: TOCCA IMPOSTAZIONI -> TOCCA L'ICONA REGALO -> INSERISCI
-        IL CODICE PROMOZIONALE -> RICEVI I REGALI NELL'AREA DI CONSEGNA!\n- Aggiungeremo
-        sicuramente altri dipendenti! Restate sintonizzati!"
-      - "Atualiza\xE7\xE3o 2.0.9\n- Novo funcion\xE1rio Caixa! Esque\xE7a as filas
-        de clientes e concentre-se em preparar hamb\xFArgueres!\n- Evolu\xE7\xE3o
-        dos funcion\xE1rios - Agora \xE9 poss\xEDvel aprimorar os funcion\xE1rios!\n-
-        Dicas de alerta para um jogo agrad\xE1vel!\n- Novo c\xF3digo promocional:
-        \"Cashier2025\" (Refrigerante de Ameixa x1, Refrigerante de Laranja x1, Refrigerante
-        de Lim\xE3o x1, Refrigerante de B\xE9rberis x1, R$ 50)\n- INSTRU\xC7\xD5ES
-        DO C\xD3DIGO PROMOCIONAL: TOQUE EM CONFIGURA\xC7\xD5ES -> TOQUE NO \xCDCONE
-        DE PRESENTE -> DIGITE O C\xD3DIGO PROMOCIONAL -> RECEBA PRESENTES NA \xC1REA
-        DE ENTREGA!\n- Com certeza adicionaremos ainda mais funcion\xE1rios! Fique
-        ligado!"
-      - 'Pembaruan 2.0.9
+        \u5F93\u696D\u54E1\u306F\u4ECA\u5F8C\u3082\u8FFD\u52A0\u4E88\u5B9A\u3067\u3059\uFF01\u304A\u697D\u3057\u307F\u306B\uFF01\n\u697D\u3057\u3044\u30B2\u30FC\u30E0\u3092\uFF01\u30A2\u30C3\u30D7\u30C7\u30FC\u30C8\u3092\u304A\u5F85\u3061\u304F\u3060\u3055\u3044\u3002\u30D5\u30A3\u30FC\u30C9\u30D0\u30C3\u30AF\u3082\u304A\u5BC4\u305B\u304F\u3060\u3055\u3044\uFF01"
+      - "\xA1DATE CUENTA!\n- \xA1Bienvenido a nuestro juego! Cocina hamburguesas,
+        atiende a los clientes, compra equipo nuevo, nuevos empleados, ampl\xEDa
+        el men\xFA... \xA1Te espera una emocionante aventura en el mundo de la comida
+        r\xE1pida!\n- Nuevo c\xF3digo promocional: \"SuperBurger\" (Una caja de panecillos
+        x2, Una caja de hamburguesas x2, 50 $)\n- INSTRUCCIONES PARA USAR EL C\xD3DIGO
+        PROMOCIONAL: TOCA AJUSTES -> TOCA EL ICONO DE REGALO -> INTRODUCE EL C\xD3DIGO
+        PROMOCIONAL -> \xA1RECIBE REGALOS EN LA ZONA DE ENTREGA!\n- \xA1Seguro que
+        a\xF1adiremos m\xE1s empleados! \xA1Mantente al tanto!\n\n\xA1Que tengas
+        un buen juego! Espera las actualizaciones y env\xEDa tus comentarios."
+      - "U\u015AWIADOMIJ SI\u0118!\n- Witamy w naszej grze! Sma\u017C burgery, obs\u0142uguj
+        klient\xF3w, kupuj nowy sprz\u0119t, zatrudniaj pracownik\xF3w, rozbudowuj
+        menu \u2013 czeka na Ciebie ekscytuj\u0105ca przygoda w \u015Bwiecie fast
+        food\xF3w!\n- Nowy kod promocyjny: \u201ESuperBurger\u201D (Pude\u0142ko
+        bu\u0142ek x2, Pude\u0142ko kotlet\xF3w x2, 50$)\n- INSTRUKCJA WPISU KODU
+        PROMOCYJNEGO: DOTKNIJ USTAWIENIA -> DOTKNIJ IKON\u0118 PREZENTU -> WPISZ
+        KOD PROMOCYJNY -> ODBIERZ PREZENTY W OBSZARZE DOSTAWY!\n- Z pewno\u015Bci\u0105
+        dodamy jeszcze wi\u0119cej pracownik\xF3w! B\u0105d\u017A na bie\u017C\u0105co!\nMi\u0142ej
+        gry! Czekaj na aktualizacje, wy\u015Blij opini\u0119!"
+      - 'REALIZZA!
 
-        - Karyawan Kasir Baru! Lupakan antrean tamu, fokuslah
-        memasak burger!
-
-        - Leveling Pekerja - Pekerja sekarang bisa ditingkatkan!
+        - Benvenuto nel nostro gioco! Prepara hamburger, servi
+        i clienti, acquista nuove attrezzature, nuovi dipendenti, amplia il menu:
+        ti aspetta un''avventura entusiasmante nel mondo del fast food!
 
         -
-        Petunjuk peringatan untuk permainan yang menyenangkan!
+        Nuovo codice promozionale: "SuperBurger" (Una scatola di panini x2, Una scatola
+        di hamburger x2, 50$)
 
-        - Kode promo
-        baru: "Cashier2025" (Plum Soda x1, Orange Soda x1, Lemon Soda x1, Barberry
-        Soda x1, 50$)
+        - ISTRUZIONI PER IL CODICE PROMOZIONALE: TOCCA
+        IMPOSTAZIONI -> TOCCA L''ICONA REGALO -> INSERISCI IL CODICE PROMOZIONALE
+        -> RICEVI REGALI NELL''AREA DI CONSEGNA!
 
-        - PETUNJUK KODE PROMO: KETUK PENGATURAN -> KETUK IKON
-        HADIAH -> MASUKKAN KODE PROMO -> TERIMA HADIAH DI AREA PENGANTARAN!
+        - Aggiungeremo sicuramente
+        altri dipendenti! Restate sintonizzati!
 
-        -
-        Kami pasti akan menambah lebih banyak karyawan! Nantikan terus!'
+        Buon gioco! Attendi gli
+        aggiornamenti, inviaci un feedback!'
+      - "REALIZE!\n- Bem-vindo ao nosso jogo! Prepare hamb\xFArgueres, sirva clientes,
+        compre novos equipamentos, funcion\xE1rios, expanda o card\xE1pio - uma aventura
+        emocionante espera por voc\xEA no mundo do fast food!\n- Novo c\xF3digo promocional:
+        \"SuperBurger\" (Uma caixa de p\xE3es \u04452, Uma caixa de hamb\xFArgueres
+        \u04452, 50$)\n- INSTRU\xC7\xD5ES DO C\xD3DIGO PROMOCIONAL: TOQUE EM CONFIGURA\xC7\xD5ES
+        -> TOQUE NO \xCDCONE DE PRESENTE -> DIGITE O C\xD3DIGO PROMOCIONAL -> RECEBA
+        PRESENTES NA \xC1REA DE ENTREGA!\n- Com certeza adicionaremos ainda mais
+        funcion\xE1rios! Fique ligado!\nBom jogo! Aguarde atualiza\xE7\xF5es e envie
+        feedback!"
+      - 'SADARI!
+
+        - Selamat datang di game kami! Masak burger, layani pelanggan,
+        beli peralatan baru, karyawan baru, perluas menu - petualangan seru menanti
+        Anda di dunia makanan cepat saji!
+
+        - Kode promo baru: "SuperBurger"
+        (Sekotak roti x2, Sekotak roti x2, 50$)
+
+        - PETUNJUK KODE PROMO: KETUK
+        PENGATURAN -> KETUK IKON HADIAH -> MASUKKAN KODE PROMO -> TERIMA HADIAH DI
+        AREA PENGANTARAN!
+
+        - Kami pasti akan menambah lebih banyak karyawan!
+        Nantikan terus!
+
+        Selamat bermain! Nantikan pembaruan dan kirim masukan!'
       Flags: 0000000000000000000000
       Languages_Touch: []
     - Term: RewardX2

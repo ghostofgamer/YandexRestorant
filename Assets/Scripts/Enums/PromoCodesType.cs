@@ -8,5 +8,6 @@ namespace Enums
         NewTown2025,
         Coffee2025, 
         Cashier2025,
+        SuperBurger,
     }
 }
