@@ -277,6 +277,7 @@ namespace ClientsContent
         {
             // _meshObstacle.enabled = true;
             _meshObstacle.enabled = false;
+            
             yield return null;
 
             if (!_navMeshAgent.enabled)
@@ -301,8 +302,8 @@ namespace ClientsContent
                 yield return null;
 
             // _meshObstacle.enabled = false;
-            _meshObstacle.enabled = true;
             _navMeshAgent.enabled = false;
+            _meshObstacle.enabled = true;
 
             _animator.SetBool(_currentState == ClientState.Eat ? "WalkTray" : "Walking", false);
             callback.Invoke();
