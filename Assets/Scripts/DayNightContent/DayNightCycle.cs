@@ -219,8 +219,8 @@ namespace DayNightContent
             Color currentAmbientColor = Color.Lerp(startAmbientColor, endAmbientColor, duration);
             RenderSettings.ambientSkyColor = currentAmbientColor * currentAmbientIntensity;
 
-            /*Color currentEquatorColor = Color.Lerp(startEquatorColor, endEquatorColor, duration);
-            RenderSettings.ambientEquatorColor = currentEquatorColor;*/
+            Color currentEquatorColor = Color.Lerp(startEquatorColor, endEquatorColor, duration);
+            RenderSettings.ambientEquatorColor = currentEquatorColor;
             Color currentLightColor = Color.Lerp(startLightColor, endLightColor, duration);
             sceneLight.color = currentLightColor;
         }
