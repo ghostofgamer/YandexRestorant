@@ -41,6 +41,7 @@ Material:
     - _ReceiveShadows: 1
     - _Smoothness: 0.712
     - _SmoothnessTextureChannel: 1
+    - _SpecularHighlights: 1
     - _WorkflowMode: 1
     m_Colors:
     - _BaseColor: {r: 0.4339623, g: 0.4339623, b: 0.4339623, a: 1}
