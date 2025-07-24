@@ -7,6 +7,7 @@ using RestaurantContent;
 using TMPro;
 using UI.Screens;
 using UnityEngine;
+using UnityEngine.Serialization;
 using WorkerContent;
 
 namespace DayNightContent
@@ -36,6 +37,8 @@ namespace DayNightContent
         [SerializeField] private Color _nightLightColor;
         [SerializeField] private Energy _energy;
         [SerializeField] private EnergyNewDayScreen _energyNewDayScreen;
+        [SerializeField] private float _dayAmbientIntensity;
+        [SerializeField] private float _nightAmbientIntensity;
 
         // [SerializeField] private BuyersCounter _buyersCounter;
         [SerializeField] private Light sceneLight;
@@ -79,7 +82,7 @@ namespace DayNightContent
             // _isNight = PlayerPrefs.GetInt(IS_NIGHT_KEY, 0) == 1;
             _isNight = !_isDay;
 
-             timeOfDay = PlayerPrefs.GetFloat(TIME_OF_DAY_KEY, 0f);
+            timeOfDay = PlayerPrefs.GetFloat(TIME_OF_DAY_KEY, 0f);
 
             if (timeOfDay == 0f)
                 timeOfDay = (START_HOUR - 9f) / (END_HOUR - 9f);
@@ -96,7 +99,9 @@ namespace DayNightContent
             {
                 UpdateTimeText(START_HOUR, END_HOUR, timeOfDay);
                 UpdateSkyboxColor(dayColor, nightColor, timeOfDay, maxExposure, minExposure, _dayAmbientColor,
-                    _nightAmbientColor, _dayEquatorColor, _nightEquatorColor, _dayLightColor, _nightLightColor);
+                    _nightAmbientColor, _dayEquatorColor, _nightEquatorColor, _dayLightColor, _nightLightColor,
+                    _dayAmbientIntensity,
+                    _nightAmbientIntensity);
             }
         }
 
@@ -118,7 +123,9 @@ namespace DayNightContent
                 UpdateDayCycle(dayDuration, false, true);
 
                 UpdateSkyboxColor(dayColor, nightColor, timeOfDay, maxExposure, minExposure, _dayAmbientColor,
-                    _nightAmbientColor, _dayEquatorColor, _nightEquatorColor, _dayLightColor, _nightLightColor);
+                    _nightAmbientColor, _dayEquatorColor, _nightEquatorColor, _dayLightColor, _nightLightColor,
+                    _dayAmbientIntensity,
+                    _nightAmbientIntensity);
 
                 UpdateTimeText(START_HOUR, END_HOUR, timeOfDay);
             }
@@ -128,7 +135,9 @@ namespace DayNightContent
                 UpdateDayCycle(_nightDuration, true, false);
 
                 UpdateSkyboxColor(nightColor, dayColor, timeOfDay, minExposure, maxExposure, _nightAmbientColor,
-                    _dayAmbientColor, _nightEquatorColor, _dayEquatorColor, _nightLightColor, _dayLightColor);
+                    _dayAmbientColor, _nightEquatorColor, _dayEquatorColor, _nightLightColor, _dayLightColor,
+                    _nightAmbientIntensity,
+                    _dayAmbientIntensity);
 
                 UpdateTimeText(END_HOUR, START_HOUR, timeOfDay);
             }
@@ -169,7 +178,7 @@ namespace DayNightContent
                     _isNight = isNight;
                 }
             }
-            
+
             if (RenderSettings.skybox != null)
             {
                 RenderSettings.skybox.SetFloat("_Rotation", timeOfDay * 360f);
@@ -180,7 +189,7 @@ namespace DayNightContent
         {
             skyboxMaterial.SetColor("_Tint", nightColor);
             skyboxMaterial.SetFloat("_Exposure", minExposure);
-            RenderSettings.ambientSkyColor = _nightAmbientColor;
+            RenderSettings.ambientSkyColor = _nightAmbientColor * _nightAmbientIntensity;
             RenderSettings.ambientEquatorColor = _nightEquatorColor;
             sceneLight.color = _nightLightColor;
         }
@@ -189,7 +198,7 @@ namespace DayNightContent
         {
             skyboxMaterial.SetColor("_Tint", dayColor);
             skyboxMaterial.SetFloat("_Exposure", maxExposure);
-            RenderSettings.ambientSkyColor = _dayAmbientColor;
+            RenderSettings.ambientSkyColor = _dayAmbientColor * _dayAmbientIntensity;
             RenderSettings.ambientEquatorColor = _dayEquatorColor;
             sceneLight.color = _dayLightColor;
             UpdateTimeText(START_HOUR, END_HOUR, 0);
@@ -197,16 +206,21 @@ namespace DayNightContent
 
         private void UpdateSkyboxColor(Color currentTintColor, Color targetTintColor, float duration,
             float currentExposure, float targetExposure, Color startAmbientColor, Color endAmbientColor,
-            Color startEquatorColor, Color endEquatorColor, Color startLightColor, Color endLightColor)
+            Color startEquatorColor, Color endEquatorColor, Color startLightColor, Color endLightColor,
+            float startAmbientIntensity, float endAmbientIntensity)
         {
             Color currentColor = Color.Lerp(currentTintColor, targetTintColor, duration);
             skyboxMaterial.SetColor("_Tint", currentColor);
             float exposure = Mathf.Lerp(currentExposure, targetExposure, duration);
             skyboxMaterial.SetFloat("_Exposure", exposure);
+
+            float currentAmbientIntensity = Mathf.Lerp(startAmbientIntensity, endAmbientIntensity, duration);
+            Debug.Log(currentAmbientIntensity);
             Color currentAmbientColor = Color.Lerp(startAmbientColor, endAmbientColor, duration);
-            RenderSettings.ambientSkyColor = currentAmbientColor;
-            Color currentEquatorColor = Color.Lerp(startEquatorColor, endEquatorColor, duration);
-            RenderSettings.ambientEquatorColor = currentEquatorColor;
+            RenderSettings.ambientSkyColor = currentAmbientColor * currentAmbientIntensity;
+
+            /*Color currentEquatorColor = Color.Lerp(startEquatorColor, endEquatorColor, duration);
+            RenderSettings.ambientEquatorColor = currentEquatorColor;*/
             Color currentLightColor = Color.Lerp(startLightColor, endLightColor, duration);
             sceneLight.color = currentLightColor;
         }
