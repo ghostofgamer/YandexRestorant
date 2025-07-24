@@ -5,7 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="11e15f27-66b8-446e-8e38-f8f60d18b8aa" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DayNightContent/DayNightCycle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DayNightContent/DayNightCycle.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.YandexRestorant/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.YandexRestorant/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/Polytope Studio/Lowpoly_Environments/Sources/Materials/PT_Skybox_mat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/Polytope Studio/Lowpoly_Environments/Sources/Materials/PT_Skybox_mat.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GuidanceLine/Materials/_LineMaterial.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GuidanceLine/Materials/_LineMaterial.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/I2Languages.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/I2Languages.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Screens/TutorialScreens/LookAroundScreen.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Screens/TutorialScreens/LookAroundScreen.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Screens/TutorialScreens/MoveScreen.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Screens/TutorialScreens/MoveScreen.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +112,7 @@
       <workItem from="1753086065884" duration="6822000" />
       <workItem from="1753164538140" duration="8922000" />
       <workItem from="1753256735124" duration="4623000" />
-      <workItem from="1753346965773" duration="2287000" />
+      <workItem from="1753346965773" duration="4167000" />
     </task>
     <servers />
   </component>
