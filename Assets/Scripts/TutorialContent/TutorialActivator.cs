@@ -39,6 +39,10 @@ namespace TutorialContent
         [SerializeField] private GameObject _blackScreen;
         [SerializeField] private ActionButtonActivator _actionButtonActivator;
         [SerializeField] private PlayerRotator _playerRotator;
+        
+        [SerializeField]private NameRestaurant _nameRestaurant;
+        
+        
 
         [Header("Guidance Lines")] [SerializeField]
         private GuidanceLine.GuidanceLine _guidanceLine;
@@ -57,9 +61,16 @@ namespace TutorialContent
 
         public void ActivateNameRestaurant()
         {
-            _counter++;
+            Debug.Log("!!!!!!!!!!!!!!!!!!!ActivateNameRestaurant");
+            
+            
+            _nameRestaurant.Save();
+            
+            
+            
+            /*_counter++;
             SetValueButtonTopUI(false);
-            _nameRestaurantScreen.OpenScreen();
+            _nameRestaurantScreen.OpenScreen();*/
         }
 
         public void ActivateLookAround()

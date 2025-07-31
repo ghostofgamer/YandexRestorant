@@ -28,9 +28,20 @@ namespace TutorialContent
 
         public void Save()
         {
-            string restaurantName = _nameInputField.text;
-
-            if (!string.IsNullOrEmpty(restaurantName) && restaurantName.Length <= 13)
+            string restaurantName = "Burger Restaurant";
+            
+            if ((int)_tutorial.CurrentType == (int)_tutorialType)
+                _tutorial.SetCurrentTutorialStage(_tutorialType);
+            
+            _nameRestaurantScreen.CloseScreen();
+            _nameText.text = restaurantName;
+            PlayerPrefs.SetString("RestaurantName", restaurantName);
+            PlayerPrefs.Save();
+            
+            // string restaurantName = _nameInputField.text;
+            
+            
+            /*if (!string.IsNullOrEmpty(restaurantName) && restaurantName.Length <= 13)
             {
                 if ((int)_tutorial.CurrentType == (int)_tutorialType)
                 {
@@ -45,7 +56,7 @@ namespace TutorialContent
             else
             {
                 Debug.LogError("Invalid restaurant name length. Name must be between 1 and 13 characters.");
-            }
+            }*/
         }
     }
 }
