@@ -23,7 +23,6 @@ namespace TutorialContent
 
         public void OnNameChanged(string name)
         {
-            // Проверяем, что длина имени находится в пределах от 1 до 13 символов
             _saveButton.interactable = name.Length >= 1 && name.Length <= 13;
         }
 
