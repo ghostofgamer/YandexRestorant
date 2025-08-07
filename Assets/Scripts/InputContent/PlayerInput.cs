@@ -33,7 +33,7 @@ namespace InputContent
         
         private void Update()
         {
-            if (Input.GetKeyDown(KeyCode.E))
+            if (Input.GetKeyDown(KeyCode.E)||Input.GetMouseButtonDown(0))
                 ActionEvent?.Invoke();
             
             if (Input.GetKeyDown(KeyCode.F))

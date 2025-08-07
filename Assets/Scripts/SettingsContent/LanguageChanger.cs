@@ -1,6 +1,8 @@
 using System;
 using System.Collections.Generic;
 using I2.Loc;
+using MirraGames.SDK;
+using MirraGames.SDK.Common;
 using UnityEngine;
 
 namespace SettingsContent
@@ -8,7 +10,7 @@ namespace SettingsContent
     public class LanguageChanger : MonoBehaviour
     {
         public event Action LanguageChanged;
-        
+
         private List<string> _languages = new List<string>
         {
             "English", "Spanish", "French", "German", "Italian", "Russian", "Japanese", "Turkish", "Polish",
@@ -17,12 +19,33 @@ namespace SettingsContent
 
         private int currentIndex = 0;
 
-        private void Start()
+        public void SetStartLanguage()
         {
-            if (PlayerPrefs.HasKey("LanguageIndex"))
-                currentIndex = PlayerPrefs.GetInt("LanguageIndex");
+            LanguageType languageType = MirraSDK.Language.Current;
+            string currentLanguage = languageType.ToString();
 
-            UpdateLanguageText();
+            currentIndex = _languages.IndexOf(currentLanguage);
+
+            if (PlayerPrefs.HasKey("LanguageIndex"))
+            {
+                currentIndex = PlayerPrefs.GetInt("LanguageIndex");
+                LocalizationManager.CurrentLanguage = _languages[currentIndex];
+                LanguageChanged?.Invoke();
+            }
+            else
+            {
+                if (currentIndex != -1 && LocalizationManager.HasLanguage(currentLanguage))
+                {
+                    LocalizationManager.CurrentLanguage = currentLanguage;
+                    LanguageChanged?.Invoke();
+                }
+                else
+                {
+                    currentIndex = 0;
+                    LocalizationManager.CurrentLanguage = _languages[currentIndex];
+                    LanguageChanged?.Invoke();
+                }
+            }
         }
 
         public void PrevLanguage()
@@ -45,6 +68,8 @@ namespace SettingsContent
         {
             if (LocalizationManager.HasLanguage(_languages[currentIndex]))
                 LocalizationManager.CurrentLanguage = _languages[currentIndex];
+
+            LanguageChanged?.Invoke();
         }
 
         private void SaveIndex()

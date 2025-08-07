@@ -1,5 +1,6 @@
 using System.Collections;
 using MirraGames.SDK;
+using SettingsContent;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -11,6 +12,7 @@ namespace LoadingSceneContent
         [SerializeField] private GameObject _sliderLoader;
         [SerializeField] private Image _loadingBar;
         [SerializeField] private float _loadingTime = 3f;
+        [SerializeField] private LanguageChanger _languageChanger;
 
         void Start()
         {
@@ -35,6 +37,7 @@ namespace LoadingSceneContent
                 MirraSDK.Analytics.GameIsReady();
                 _sliderLoader.gameObject.SetActive(false);
                 _playButton.SetActive(true);
+                _languageChanger.SetStartLanguage();
             });
         }
     }

@@ -1,9 +1,12 @@
+using SettingsContent;
 using UnityEngine;
 
 namespace UI.Screens
 {
     public class FirstLanguageScreen : AbstractScreen
     {
+        [SerializeField] private LanguageChanger _languageChanger;
+        
         private bool _isFirstTime;
 
         public override void OpenScreen()

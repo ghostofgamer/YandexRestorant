@@ -5406,6 +5406,74 @@ MonoBehaviour:
       - Mouse
       Flags: 0000000000000000000000
       Languages_Touch: []
+    - Term: EAction
+      TermType: 0
+      Description: 
+      Languages:
+      - E->Action
+      - E->Aktion
+      - E->Action
+      - "E->\u0414\u0435\u0439\u0441\u0442\u0432\u0438\u0435"
+      - E->Aksiyon
+      - "E->\u30A2\u30AF\u30B7\u30E7\u30F3"
+      - "E->Acci\xF3n"
+      - "E->Dzia\u0142anie"
+      - E->Azione
+      - "E->A\xE7\xE3o"
+      - E->Tindakan
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: NotActiveWorkers
+      TermType: 0
+      Description: 
+      Languages:
+      - No active workers
+      - Keine aktiven Arbeiter
+      - Aucun travailleur actif
+      - "\u041D\u0435\u0442 \u0430\u043A\u0442\u0438\u0432\u043D\u044B\u0445 \u0440\u0430\u0431\u043E\u0442\u043D\u0438\u043A\u043E\u0432"
+      - "Aktif \xE7al\u0131\u015Fan yok"
+      - "\u30A2\u30AF\u30C6\u30A3\u30D6\u306A\u52B4\u50CD\u8005\u306A\u3057"
+      - No hay trabajadores activos
+      - "Brak aktywnych pracownik\xF3w"
+      - Nessun lavoratore attivo
+      - Nenhum trabalhador ativo
+      - Tidak ada pekerja aktif
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: ActionPC
+      TermType: 0
+      Description: 
+      Languages:
+      - ' - Action'
+      - ' - Aktion'
+      - ' - Action'
+      - " - \u0414\u0435\u0439\u0441\u0442\u0432\u0438\u0435"
+      - ' - Aksiyon'
+      - " - \u30A2\u30AF\u30B7\u30E7\u30F3"
+      - " - Acci\xF3n"
+      - " - Dzia\u0142anie"
+      - '- Azione'
+      - " - A\xE7\xE3o"
+      - ' - Tindakan'
+      Flags: 0000000000000000000000
+      Languages_Touch: []
+    - Term: ThrowPC
+      TermType: 0
+      Description: 
+      Languages:
+      - ' - Throw'
+      - ' - Werfen'
+      - ' - Lancer'
+      - " - \u0411\u0440\u043E\u0441\u0430\u0442\u044C"
+      - " - F\u0131rlatmak"
+      - " - \u6295\u3052\u308B"
+      - ' - Tirar'
+      - " - Rzuci\u0107"
+      - ' - Gettare'
+      - " - Lan\xE7ar"
+      - ' - Melemparkan'
+      Flags: 0000000000000000000000
+      Languages_Touch: []
     CaseInsensitiveTerms: 0
     OnMissingTranslation: 1
     mTerm_AppName: 
