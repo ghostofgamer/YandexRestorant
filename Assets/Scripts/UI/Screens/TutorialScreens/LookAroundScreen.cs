@@ -22,7 +22,6 @@ namespace UI.Screens.TutorialScreens
             _languageChanger.LanguageChanged -= LanguageChange;
         }
 
-
         private void Start()
         {
             LanguageChange();

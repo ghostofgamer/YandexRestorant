@@ -39,6 +39,16 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/SettingsContent/LanguageChanger.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/Screens/FirstLanguageScreen.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/InputContent/PlayerInput.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/Screens/AssemblyScreens/AssemblyCoffeeScreen.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/Screens/AssemblyScreens/AssemblyCardRegisterOrderScreen.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/Screens/AssemblyScreens/AssemblyCashRegisterOrderScreen.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/Screens/AssemblyScreens/AssemblyFryerScreen.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/Screens/AssemblyScreens/AssemblySodaScreen.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/Screens/AssemblyScreens/AssemblyBurgerScreen.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/DayNightContent/DayNightCycle.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/FortuneContent/Fortune.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/TutorialContent/TutorialActivator.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/Screens/TutorialScreens/LookAroundScreen.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CursorActivator.cs" />
       </list>
     </option>
@@ -113,7 +123,7 @@
       <workItem from="1753428274769" duration="6384000" />
       <workItem from="1754033227480" duration="2471000" />
       <workItem from="1754551405998" duration="12270000" />
-      <workItem from="1754641885224" duration="3795000" />
+      <workItem from="1754641885224" duration="7351000" />
     </task>
     <servers />
   </component>

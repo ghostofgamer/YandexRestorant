@@ -213,7 +213,6 @@ namespace DayNightContent
             skyboxMaterial.SetFloat("_Exposure", exposure);
 
             float currentAmbientIntensity = Mathf.Lerp(startAmbientIntensity, endAmbientIntensity, duration);
-            Debug.Log(currentAmbientIntensity);
             Color currentAmbientColor = Color.Lerp(startAmbientColor, endAmbientColor, duration);
             RenderSettings.ambientSkyColor = currentAmbientColor * currentAmbientIntensity;
 

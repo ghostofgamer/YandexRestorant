@@ -205,7 +205,9 @@ namespace FortuneContent
 
         private void ActivateOpenFortuneButton(int playerLevel)
         {
-            _openFortuneButton.interactable = playerLevel >= 3;
+            // _openFortuneButton.interactable = playerLevel >= 3;
+            
+            _openFortuneButton.gameObject.SetActive(playerLevel >= 3);
         }
 
         private void ActiveOtherSpinButton()

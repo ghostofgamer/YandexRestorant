@@ -271,16 +271,16 @@ MonoBehaviour:
       TermType: 0
       Description: 
       Languages:
-      - Sensiv
-      - Empfind
-      - Sensibil
-      - "\u0421\u0435\u043D\u0441\u0430"
-      - "Duyarl\u0131l\u0131k"
+      - Sensitivity
+      - Empfindlichkeit
+      - "Sensibilit\xE9"
+      - "\u0427\u0443\u0432\u0441\u0442\u0432\u0438\u0442\u0435\u043B\u044C\u043D\u043E\u0441\u0442\u044C"
+      - Hassasiyet
       - "\u611F\u5EA6"
-      - Sensibil
+      - Sensibilidad
       - "Wra\u017Cliwo\u015B\u0107"
-      - Sensibil
-      - Sensibil
+      - "Sensibilit\xE0"
+      - Sensibilidade
       - Kepekaan
       Flags: 0000000000000000000000
       Languages_Touch: []

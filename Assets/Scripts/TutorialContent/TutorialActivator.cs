@@ -295,6 +295,7 @@ namespace TutorialContent
 
         public void LetsMakeFirstBurger()
         {
+            Debug.Log("!!!!!!!!!!!!!!LetsMakeFirstBurger");
             SetValueButtonTopUI(false);
             _assemblyTable.ActivateTutorPoint();
             _playerRotator.RotateToTarget(_assemblyTable.LookPosition);
@@ -303,6 +304,7 @@ namespace TutorialContent
 
         public void LetsSetPrice()
         {
+            Debug.Log("!!!!!!!!!!!!!!LetsSetPrice");
             _assemblyBurgerScreen.CloseScreen();
             SetValueButtonTopUI(false);
             _shopButton.interactable = true;
@@ -375,7 +377,8 @@ namespace TutorialContent
         private void SetValueButtonTopUI(bool value)
         {
             _shopButton.interactable = value;
-            _dailyReward.interactable = value;
+            // _dailyReward.interactable = value;
+            _dailyReward.gameObject.SetActive(value);
             // _fortune.interactable = value;
         }
     }

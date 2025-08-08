@@ -15,6 +15,9 @@ public class CursorActivator : MonoBehaviour
 
     public void SetValueCursor(bool value)
     {
+        Debug.Log("SetValueCursor" + value);
+        
+        
         if (Application.isMobilePlatform)
         {
             Debug.Log("Application.isMobilePlatform");

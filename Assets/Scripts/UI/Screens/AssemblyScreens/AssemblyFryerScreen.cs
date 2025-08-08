@@ -9,7 +9,7 @@ namespace UI.Screens.AssemblyScreens
         [SerializeField] private GameObject _input;
         [SerializeField] private CameraPositionChanger _cameraPositionChanger;
         [SerializeField] private AssemblyFryerTable _assemblyTable;
-        
+
         public override void OpenScreen()
         {
             Debug.Log("OPENASSEMBLYSCREEN");
@@ -22,7 +22,9 @@ namespace UI.Screens.AssemblyScreens
             _cameraPositionChanger.ReturnDefaultPosition();
             base.CloseScreen();
             _assemblyTable.SetValueCollider(true);
-            _input.SetActive(true);
+
+            if (Application.isMobilePlatform)
+                _input.SetActive(true);
         }
     }
 }

@@ -23,7 +23,10 @@ namespace UI.Screens.AssemblyScreens
         {
             _cameraPositionChanger.ReturnDefaultPosition();
             base.CloseScreen();
-            _input.SetActive(true);
+
+            if (Application.isMobilePlatform)
+                _input.SetActive(true);
+
             _cashRegisterViewer.SetValuePanels(false);
             _cashRegister.SetPlayerValue(false);
         }
