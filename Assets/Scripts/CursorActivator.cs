@@ -1,16 +1,18 @@
-using System;
+using InputContent;
 using MirraGames.SDK;
 using UnityEngine;
 
 public class CursorActivator : MonoBehaviour
 {
+    [SerializeField] private PlayerInput _playerInput;
+
     private bool _isCursorActive = true;
 
     public void SetValue()
     {
         SetValueCursor(!_isCursorActive);
     }
-    
+
     public void SetValueCursor(bool value)
     {
         if (Application.isMobilePlatform)
@@ -19,6 +21,8 @@ public class CursorActivator : MonoBehaviour
             return;
         }
 
+        _playerInput.enabled = !value;
+        
         _isCursorActive = value;
         MirraSDK.Device.CursorVisible = value;
         MirraSDK.Device.CursorLock = value ? CursorLockMode.None : CursorLockMode.Locked;

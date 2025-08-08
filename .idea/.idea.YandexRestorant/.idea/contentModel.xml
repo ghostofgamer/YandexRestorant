@@ -128,6 +128,9 @@
             </e>
           </e>
         </e>
+        <e p="AddressableAssetsData" t="Include">
+          <e p="link.xml" t="Include" />
+        </e>
         <e p="ExternalDependencyManager" t="Include">
           <e p="Editor" t="Include">
             <e p="external-dependency-manager_version-1.2.182_manifest.txt" t="Include" />
@@ -588,6 +591,8 @@
         <e p="Resources" t="Include">
           <e p="BillingMode.json" t="Include" />
           <e p="IAPProductCatalog.json" t="Include" />
+          <e p="PerformanceTestRunInfo.json" t="Include" />
+          <e p="PerformanceTestRunSettings.json" t="Include" />
         </e>
         <e p="Scripts" t="Include">
           <e p="ActionButtonActivator.cs" t="Include" />

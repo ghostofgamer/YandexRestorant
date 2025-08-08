@@ -38,8 +38,8 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/LoadingSceneContent/LoadingGame.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SettingsContent/LanguageChanger.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/Screens/FirstLanguageScreen.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/CursorActivator.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/InputContent/PlayerInput.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CursorActivator.cs" />
       </list>
     </option>
   </component>
@@ -113,7 +113,7 @@
       <workItem from="1753428274769" duration="6384000" />
       <workItem from="1754033227480" duration="2471000" />
       <workItem from="1754551405998" duration="12270000" />
-      <workItem from="1754641885224" duration="1609000" />
+      <workItem from="1754641885224" duration="3795000" />
     </task>
     <servers />
   </component>
