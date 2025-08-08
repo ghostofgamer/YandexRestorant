@@ -20,6 +20,7 @@ namespace InputContent
         private bool _isRotating;
         private Vector2 _lastPointerPosition;
         private bool _isTouchActive;
+        private bool _isFocus;
 
         public event Action ActionEvent;
         public event Action ThrowEvent;
@@ -33,6 +34,9 @@ namespace InputContent
         
         private void Update()
         {
+            if (!_isFocus)
+                return;
+
             if (Input.GetKeyDown(KeyCode.E)||Input.GetMouseButtonDown(0))
                 ActionEvent?.Invoke();
             
@@ -46,6 +50,11 @@ namespace InputContent
             }
 
             _playerMovement.MovePlayer(_joystick.Horizontal, _joystick.Vertical);
+        }
+
+        private void OnApplicationFocus(bool hasFocus)
+        {
+            _isFocus = hasFocus;
         }
 
         private void HandleMouseInput()

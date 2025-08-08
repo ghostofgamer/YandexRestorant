@@ -1,9 +1,15 @@
+using System;
 using MirraGames.SDK;
 using UnityEngine;
 
 public class CursorActivator : MonoBehaviour
 {
     private bool _isCursorActive = true;
+
+    public void SetValue()
+    {
+        SetValueCursor(!_isCursorActive);
+    }
     
     public void SetValueCursor(bool value)
     {
@@ -20,7 +26,7 @@ public class CursorActivator : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyUp(KeyCode.Escape))
+        if (Input.GetKeyUp(KeyCode.Tab))
             SetValueCursor(!_isCursorActive);
     }
 }

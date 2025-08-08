@@ -38,6 +38,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/LoadingSceneContent/LoadingGame.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SettingsContent/LanguageChanger.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/Screens/FirstLanguageScreen.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CursorActivator.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/InputContent/PlayerInput.cs" />
       </list>
     </option>
@@ -111,7 +112,8 @@
       <workItem from="1753346965773" duration="9512000" />
       <workItem from="1753428274769" duration="6384000" />
       <workItem from="1754033227480" duration="2471000" />
-      <workItem from="1754551405998" duration="11538000" />
+      <workItem from="1754551405998" duration="12270000" />
+      <workItem from="1754641885224" duration="1609000" />
     </task>
     <servers />
   </component>
@@ -127,5 +129,11 @@
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="743" y="231" width="725" height="534" key="find.popup" timestamp="1754580091199">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state x="743" y="231" width="725" height="534" key="find.popup/0.0.1920.1032@0.0.1920.1032" timestamp="1754580091199" />
   </component>
 </project>
