@@ -35,7 +35,7 @@ namespace WalletContent
 
             LoadDollarValue();
             // DollarValue = new DollarValue(100, 10);
-            DollarValueChanged.Invoke(DollarValue);
+            DollarValueChanged?.Invoke(DollarValue);
         }
 
         public void AddTest()
@@ -52,7 +52,7 @@ namespace WalletContent
         {
             int totalCents = ToTotalCents(DollarValue) + ToTotalCents(other);
             DollarValue = FromTotalCents(totalCents);
-            DollarValueChanged.Invoke(DollarValue);
+            DollarValueChanged?.Invoke(DollarValue);
             _flyValue.ShowFly(other, true);
             IncomeChanged?.Invoke(ToTotalCents(other));
             SaveDollarValue();

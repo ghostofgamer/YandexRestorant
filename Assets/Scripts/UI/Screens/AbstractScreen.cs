@@ -9,13 +9,17 @@ namespace UI.Screens
         [SerializeField] private PlayerInput _playerInput;
         [SerializeField] private CursorActivator _cursorActivator;
         [SerializeField] private bool _breakADCooldown;
+        [SerializeField] private WindowsCounter _windowsCounter;
 
         public virtual void OpenScreen()
         {
             gameObject.SetActive(true);
             // InterstitialActivator.Instance.ShowAd();
             InterstitialActivator.Instance.ShowAd(_breakADCooldown);
-            
+
+            if (_windowsCounter != null)
+                _windowsCounter.IncreaseValue();
+
             if (_playerInput != null)
                 _playerInput.enabled = false;
 
@@ -28,8 +32,21 @@ namespace UI.Screens
             // InterstitialActivator.Instance.ShowAd();
             gameObject.SetActive(false);
 
-            if (_playerInput != null)
-                _playerInput.enabled = true;
+            if (_windowsCounter != null)
+            {
+                _windowsCounter.DecreaseValue();
+                
+                if (_playerInput != null && _windowsCounter.CurrentValue <= 0)
+                    _playerInput.enabled = true;
+            }
+            else
+            {
+                if (_playerInput != null)
+                    _playerInput.enabled = true;
+            }
+            
+            /*if (_playerInput != null)
+                _playerInput.enabled = true;*/
 
             if (_cursorActivator != null)
                 _cursorActivator.SetValueCursor(false);

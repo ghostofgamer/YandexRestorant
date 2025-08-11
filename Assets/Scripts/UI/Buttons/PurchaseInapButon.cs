@@ -1,8 +1,10 @@
 using Enums;
 using IAP;
+using LoadingSceneContent;
 using MirraGames.SDK;
 using MirraGames.SDK.Common;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 
 namespace UI.Buttons
@@ -12,9 +14,19 @@ namespace UI.Buttons
         [SerializeField] private Purchaser _purchaser;
         [SerializeField] private PurchaseType _purchaseType;
         [SerializeField] private TMP_Text _priceText;
+        [SerializeField]private LoadingGame _loadingGame;
 
-        private void Start()
+        /*private void Start()
         {
+            ProductData productData = MirraSDK.Payments.GetProductData(_purchaseType.ToString());
+            _priceText.text = $"{productData.PriceInteger} {productData.Currency}";
+        }*/
+
+        public void GetProductPrice()
+        {
+            Debug.Log("================================ GetProductPrice");
+            Debug.Log("================================ GetProductPrice");
+            Debug.Log("================================ GetProductPrice");
             ProductData productData = MirraSDK.Payments.GetProductData(_purchaseType.ToString());
             _priceText.text = $"{productData.PriceInteger} {productData.Currency}";
         }

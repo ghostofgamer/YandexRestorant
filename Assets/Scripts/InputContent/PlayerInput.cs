@@ -31,15 +31,15 @@ namespace InputContent
             _actionEventTrigger.InitPointer(Action);
             _throwEventTrigger.InitPointer(Throw);
         }
-        
+
         private void Update()
         {
             if (!_isFocus)
                 return;
 
-            if (Input.GetKeyDown(KeyCode.E)||Input.GetMouseButtonDown(0))
+            if (Input.GetKeyDown(KeyCode.E) || (Input.GetMouseButtonDown(0) && !Application.isMobilePlatform))
                 ActionEvent?.Invoke();
-            
+
             if (Input.GetKeyDown(KeyCode.F))
                 ThrowEvent?.Invoke();
 

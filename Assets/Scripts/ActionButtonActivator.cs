@@ -3,7 +3,6 @@ using Interfaces;
 using PlayerContent;
 using TutorialContent;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class ActionButtonActivator : MonoBehaviour
 {

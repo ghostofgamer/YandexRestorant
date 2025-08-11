@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using MirraGames.SDK;
 using SettingsContent;
@@ -13,6 +14,8 @@ namespace LoadingSceneContent
         [SerializeField] private Image _loadingBar;
         [SerializeField] private float _loadingTime = 3f;
         [SerializeField] private LanguageChanger _languageChanger;
+
+        public event Action MirraSDKInitialization;
 
         void Start()
         {
@@ -34,7 +37,10 @@ namespace LoadingSceneContent
 
             MirraSDK.WaitForProviders(() =>
             {
+                Debug.Log("MirraSDK is ready");
+                
                 MirraSDK.Analytics.GameIsReady();
+                MirraSDKInitialization?.Invoke();
                 _sliderLoader.gameObject.SetActive(false);
                 _playButton.SetActive(true);
                 _languageChanger.SetStartLanguage();

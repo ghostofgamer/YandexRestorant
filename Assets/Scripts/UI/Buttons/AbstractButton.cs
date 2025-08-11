@@ -12,12 +12,12 @@ namespace UI.Buttons
             Button = GetComponent<Button>();
         }
 
-        private void OnEnable()
+        protected virtual void OnEnable()
         {
             Button.onClick.AddListener(OnClick); 
         }
 
-        private void OnDisable()
+        protected virtual void OnDisable()
         {
             Button.onClick.RemoveListener(OnClick); 
         }
