@@ -5,19 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="11e15f27-66b8-446e-8e38-f8f60d18b8aa" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.YandexRestorant/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.YandexRestorant/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/FortuneScreen.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/FortuneScreen.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Screens/SettingsScreen.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Screens/SettingsScreen.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/I2Languages.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/I2Languages.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Screens/Shop.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Screens/Shop.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Screens/WorkersScreen.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Screens/WorkersScreen.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/WorkersUIContent/Worker.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/WorkersUIContent/Worker.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/IAP/Purchaser.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/IAP/Purchaser.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ItemContent/ItemBasket.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ItemContent/ItemBasket.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MysteryGiftContent/MysteryGiftActivator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MysteryGiftContent/MysteryGiftActivator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/OrdersContent/OrderPromptContent/IngridientPromt.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/OrdersContent/OrderPromptContent/IngridientPromt.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Buttons/PurchaseInapButon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Buttons/PurchaseInapButon.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Buttons/SkipDeliveryButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Buttons/SkipDeliveryButton.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Screens/MysteryBoxScreen.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Screens/MysteryBoxScreen.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Fonts/MPLUSRounded1c-Medium SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Fonts/MPLUSRounded1c-Medium SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -155,7 +147,7 @@
       <workItem from="1754900929066" duration="11461000" />
       <workItem from="1754992682768" duration="1299000" />
       <workItem from="1755521810407" duration="2666000" />
-      <workItem from="1755586855318" duration="5606000" />
+      <workItem from="1755586855318" duration="6201000" />
     </task>
     <servers />
   </component>

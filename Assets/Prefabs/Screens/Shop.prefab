@@ -51,6 +51,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _playerInput: {fileID: 0}
+  _cursorActivator: {fileID: 0}
+  _breakADCooldown: 0
+  _windowsCounter: {fileID: 0}
   _zoneUIProducts:
   - {fileID: 2570211310272996135}
   - {fileID: 4759017047966212059}
@@ -939,6 +942,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _playerInput: {fileID: 0}
+  _cursorActivator: {fileID: 0}
+  _breakADCooldown: 0
+  _windowsCounter: {fileID: 0}
   _equipmentUIProducts:
   - {fileID: 7107201792587940226}
   - {fileID: 598233734988558399}
@@ -1283,6 +1289,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _playerInput: {fileID: 0}
+  _cursorActivator: {fileID: 0}
+  _breakADCooldown: 0
+  _windowsCounter: {fileID: 0}
   _placeUIProducts:
   - {fileID: 3220369076555900756}
   - {fileID: 4916720066631436417}
@@ -1638,6 +1647,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _playerInput: {fileID: 0}
+  _cursorActivator: {fileID: 0}
+  _breakADCooldown: 0
+  _windowsCounter: {fileID: 0}
 --- !u!114 &7678172636748424856
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3450,6 +3462,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _playerInput: {fileID: 0}
+  _cursorActivator: {fileID: 0}
+  _breakADCooldown: 0
+  _windowsCounter: {fileID: 0}
   _scrollRect: {fileID: 8924214367851667839}
   _itemCartScroll: {fileID: 4244588841802754445}
   _products:
@@ -5897,6 +5912,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _playerInput: {fileID: 0}
+  _cursorActivator: {fileID: 0}
+  _breakADCooldown: 0
+  _windowsCounter: {fileID: 0}
 --- !u!114 &5163764246567666046
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8052,6 +8070,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _playerInput: {fileID: 0}
+  _cursorActivator: {fileID: 0}
+  _breakADCooldown: 0
+  _windowsCounter: {fileID: 0}
   _workerUIProducts:
   - {fileID: 1721444486541800547}
   _workersConfig: {fileID: 11400000, guid: dbe9c7ecf300e0942b336a20fbbe9ae4, type: 2}
@@ -8871,6 +8892,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _playerInput: {fileID: 0}
+  _cursorActivator: {fileID: 0}
+  _breakADCooldown: 0
+  _windowsCounter: {fileID: 0}
   _menuCounter: {fileID: 0}
   _dishesUIItems:
   - {fileID: 5648273711143309056}
@@ -9487,7 +9511,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &7747852614719960675
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9522,6 +9546,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _playerInput: {fileID: 0}
+  _cursorActivator: {fileID: 0}
+  _breakADCooldown: 0
+  _windowsCounter: {fileID: 0}
   _tutorDeactivateButton:
   - {fileID: 3710110841623117090}
   - {fileID: 5588050136111853633}
@@ -11479,7 +11506,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -31, y: -3}
+  m_AnchoredPosition: {x: -28.599976, y: -32.5}
   m_SizeDelta: {x: 65, y: 65}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8611174224300610472
@@ -12314,6 +12341,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _playerInput: {fileID: 0}
+  _cursorActivator: {fileID: 0}
+  _breakADCooldown: 0
+  _windowsCounter: {fileID: 0}
 --- !u!114 &3187378027494060017
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12600,6 +12630,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _playerInput: {fileID: 0}
+  _cursorActivator: {fileID: 0}
+  _breakADCooldown: 0
+  _windowsCounter: {fileID: 0}
 --- !u!114 &6066165986711154758
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16263,9 +16296,6 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 3763074018344627200}
     m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 5562994741911892830, guid: b1b9e06c74094424eb82ac6282f05967, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 173689685721606465}
     - targetCorrespondingSourceObject: {fileID: 5874405675058782271, guid: b1b9e06c74094424eb82ac6282f05967, type: 3}
       insertIndex: -1
       addedObject: {fileID: 8496500223024572606}
@@ -16280,38 +16310,6 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 4956510384023085455, guid: b1b9e06c74094424eb82ac6282f05967, type: 3}
   m_PrefabInstance: {fileID: 545428569365758059}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &5377995435092964149 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5562994741911892830, guid: b1b9e06c74094424eb82ac6282f05967, type: 3}
-  m_PrefabInstance: {fileID: 545428569365758059}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &173689685721606465
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5377995435092964149}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 36a5f511b0d8142cba0aeb92d0b264c9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  productId: com.serbull.iaptutorial.energy30
-  buttonType: 0
-  consumePurchase: 1
-  onTransactionsRestored:
-    m_PersistentCalls:
-      m_Calls: []
-  onPurchaseComplete:
-    m_PersistentCalls:
-      m_Calls: []
-  onPurchaseFailed:
-    m_PersistentCalls:
-      m_Calls: []
-  titleText: {fileID: 0}
-  descriptionText: {fileID: 0}
-  priceText: {fileID: 0}
 --- !u!1 &6203660875766669396 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5874405675058782271, guid: b1b9e06c74094424eb82ac6282f05967, type: 3}
@@ -16934,9 +16932,6 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1248507094461340312}
     m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 5562994741911892830, guid: b1b9e06c74094424eb82ac6282f05967, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2540369641789023592}
     - targetCorrespondingSourceObject: {fileID: 5874405675058782271, guid: b1b9e06c74094424eb82ac6282f05967, type: 3}
       insertIndex: -1
       addedObject: {fileID: 5752356579014844}
@@ -16946,38 +16941,6 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 3593731640812263461, guid: b1b9e06c74094424eb82ac6282f05967, type: 3}
   m_PrefabInstance: {fileID: 698228463714060444}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &4936826076383443906 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5562994741911892830, guid: b1b9e06c74094424eb82ac6282f05967, type: 3}
-  m_PrefabInstance: {fileID: 698228463714060444}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2540369641789023592
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4936826076383443906}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 36a5f511b0d8142cba0aeb92d0b264c9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  productId: com.serbull.iaptutorial.energy1850
-  buttonType: 0
-  consumePurchase: 1
-  onTransactionsRestored:
-    m_PersistentCalls:
-      m_Calls: []
-  onPurchaseComplete:
-    m_PersistentCalls:
-      m_Calls: []
-  onPurchaseFailed:
-    m_PersistentCalls:
-      m_Calls: []
-  titleText: {fileID: 0}
-  descriptionText: {fileID: 0}
-  priceText: {fileID: 0}
 --- !u!224 &5582657007628151059 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 4956510384023085455, guid: b1b9e06c74094424eb82ac6282f05967, type: 3}
@@ -18914,9 +18877,6 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 976308674438925024}
     m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 5562994741911892830, guid: b1b9e06c74094424eb82ac6282f05967, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 6915499499681463244}
     - targetCorrespondingSourceObject: {fileID: 5874405675058782271, guid: b1b9e06c74094424eb82ac6282f05967, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1330383970794504914}
@@ -18977,38 +18937,6 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 4956510384023085455, guid: b1b9e06c74094424eb82ac6282f05967, type: 3}
   m_PrefabInstance: {fileID: 1631756550277584200}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &6599624832033252886 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5562994741911892830, guid: b1b9e06c74094424eb82ac6282f05967, type: 3}
-  m_PrefabInstance: {fileID: 1631756550277584200}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &6915499499681463244
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6599624832033252886}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 36a5f511b0d8142cba0aeb92d0b264c9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  productId: com.serbull.iaptutorial.energy450
-  buttonType: 0
-  consumePurchase: 1
-  onTransactionsRestored:
-    m_PersistentCalls:
-      m_Calls: []
-  onPurchaseComplete:
-    m_PersistentCalls:
-      m_Calls: []
-  onPurchaseFailed:
-    m_PersistentCalls:
-      m_Calls: []
-  titleText: {fileID: 0}
-  descriptionText: {fileID: 0}
-  priceText: {fileID: 0}
 --- !u!1001 &1734158367394292613
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20603,9 +20531,6 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 5562994741911892830, guid: b1b9e06c74094424eb82ac6282f05967, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 5882277296381144380}
     - targetCorrespondingSourceObject: {fileID: 5874405675058782271, guid: b1b9e06c74094424eb82ac6282f05967, type: 3}
       insertIndex: -1
       addedObject: {fileID: 7025450223618616739}
@@ -20615,38 +20540,6 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 3593731640812263461, guid: b1b9e06c74094424eb82ac6282f05967, type: 3}
   m_PrefabInstance: {fileID: 3344755340905702377}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &7158840478895460535 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5562994741911892830, guid: b1b9e06c74094424eb82ac6282f05967, type: 3}
-  m_PrefabInstance: {fileID: 3344755340905702377}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &5882277296381144380
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7158840478895460535}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 36a5f511b0d8142cba0aeb92d0b264c9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  productId: com.serbull.iaptutorial.money2750
-  buttonType: 0
-  consumePurchase: 1
-  onTransactionsRestored:
-    m_PersistentCalls:
-      m_Calls: []
-  onPurchaseComplete:
-    m_PersistentCalls:
-      m_Calls: []
-  onPurchaseFailed:
-    m_PersistentCalls:
-      m_Calls: []
-  titleText: {fileID: 0}
-  descriptionText: {fileID: 0}
-  priceText: {fileID: 0}
 --- !u!1 &9217990565426922454 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5874405675058782271, guid: b1b9e06c74094424eb82ac6282f05967, type: 3}
@@ -21272,9 +21165,6 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 5562994741911892830, guid: b1b9e06c74094424eb82ac6282f05967, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 7028336221049691250}
     - targetCorrespondingSourceObject: {fileID: 5874405675058782271, guid: b1b9e06c74094424eb82ac6282f05967, type: 3}
       insertIndex: -1
       addedObject: {fileID: 27572772430000993}
@@ -21330,38 +21220,6 @@ MonoBehaviour:
   mGUI_ShowCallback: 0
   mLocalizeTarget: {fileID: 0}
   mLocalizeTargetName: I2.Loc.LocalizeTarget_TextMeshPro_UGUI
---- !u!1 &9207137087493154926 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5562994741911892830, guid: b1b9e06c74094424eb82ac6282f05967, type: 3}
-  m_PrefabInstance: {fileID: 3672096536606317360}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &7028336221049691250
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9207137087493154926}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 36a5f511b0d8142cba0aeb92d0b264c9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  productId: com.serbull.iaptutorial.money500
-  buttonType: 0
-  consumePurchase: 1
-  onTransactionsRestored:
-    m_PersistentCalls:
-      m_Calls: []
-  onPurchaseComplete:
-    m_PersistentCalls:
-      m_Calls: []
-  onPurchaseFailed:
-    m_PersistentCalls:
-      m_Calls: []
-  titleText: {fileID: 0}
-  descriptionText: {fileID: 0}
-  priceText: {fileID: 0}
 --- !u!1001 &3758809907481095906
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21848,9 +21706,6 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 5562994741911892830, guid: b1b9e06c74094424eb82ac6282f05967, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 350171560228117960}
     - targetCorrespondingSourceObject: {fileID: 5874405675058782271, guid: b1b9e06c74094424eb82ac6282f05967, type: 3}
       insertIndex: -1
       addedObject: {fileID: 8446417018064905466}
@@ -21906,38 +21761,6 @@ MonoBehaviour:
   mGUI_ShowCallback: 0
   mLocalizeTarget: {fileID: 0}
   mLocalizeTargetName: I2.Loc.LocalizeTarget_TextMeshPro_UGUI
---- !u!1 &8706402539221335965 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5562994741911892830, guid: b1b9e06c74094424eb82ac6282f05967, type: 3}
-  m_PrefabInstance: {fileID: 3882350017567952067}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &350171560228117960
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8706402539221335965}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 36a5f511b0d8142cba0aeb92d0b264c9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  productId: com.serbull.iaptutorial.money1100
-  buttonType: 0
-  consumePurchase: 1
-  onTransactionsRestored:
-    m_PersistentCalls:
-      m_Calls: []
-  onPurchaseComplete:
-    m_PersistentCalls:
-      m_Calls: []
-  onPurchaseFailed:
-    m_PersistentCalls:
-      m_Calls: []
-  titleText: {fileID: 0}
-  descriptionText: {fileID: 0}
-  priceText: {fileID: 0}
 --- !u!1001 &4034140760144479009
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22764,9 +22587,6 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 2961407944288389358}
     m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 5562994741911892830, guid: b1b9e06c74094424eb82ac6282f05967, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 4945080200350359100}
     - targetCorrespondingSourceObject: {fileID: 5874405675058782271, guid: b1b9e06c74094424eb82ac6282f05967, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2246874647585977331}
@@ -22822,38 +22642,6 @@ MonoBehaviour:
   mGUI_ShowCallback: 0
   mLocalizeTarget: {fileID: 0}
   mLocalizeTargetName: I2.Loc.LocalizeTarget_TextMeshPro_UGUI
---- !u!1 &8152170726994625450 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5562994741911892830, guid: b1b9e06c74094424eb82ac6282f05967, type: 3}
-  m_PrefabInstance: {fileID: 4328502589321408756}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &4945080200350359100
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8152170726994625450}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 36a5f511b0d8142cba0aeb92d0b264c9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  productId: com.serbull.iaptutorial.energy5000
-  buttonType: 0
-  consumePurchase: 1
-  onTransactionsRestored:
-    m_PersistentCalls:
-      m_Calls: []
-  onPurchaseComplete:
-    m_PersistentCalls:
-      m_Calls: []
-  onPurchaseFailed:
-    m_PersistentCalls:
-      m_Calls: []
-  titleText: {fileID: 0}
-  descriptionText: {fileID: 0}
-  priceText: {fileID: 0}
 --- !u!224 &8707958116029256059 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 4956510384023085455, guid: b1b9e06c74094424eb82ac6282f05967, type: 3}
@@ -23180,9 +22968,6 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 5562994741911892830, guid: b1b9e06c74094424eb82ac6282f05967, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 8495316471304898363}
     - targetCorrespondingSourceObject: {fileID: 5874405675058782271, guid: b1b9e06c74094424eb82ac6282f05967, type: 3}
       insertIndex: -1
       addedObject: {fileID: 5555987396800548148}
@@ -23238,38 +23023,6 @@ MonoBehaviour:
   mGUI_ShowCallback: 0
   mLocalizeTarget: {fileID: 0}
   mLocalizeTargetName: I2.Loc.LocalizeTarget_TextMeshPro_UGUI
---- !u!1 &8083274706441618469 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5562994741911892830, guid: b1b9e06c74094424eb82ac6282f05967, type: 3}
-  m_PrefabInstance: {fileID: 4404016562292160379}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &8495316471304898363
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8083274706441618469}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 36a5f511b0d8142cba0aeb92d0b264c9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  productId: com.serbull.iaptutorial.money8000
-  buttonType: 0
-  consumePurchase: 1
-  onTransactionsRestored:
-    m_PersistentCalls:
-      m_Calls: []
-  onPurchaseComplete:
-    m_PersistentCalls:
-      m_Calls: []
-  onPurchaseFailed:
-    m_PersistentCalls:
-      m_Calls: []
-  titleText: {fileID: 0}
-  descriptionText: {fileID: 0}
-  priceText: {fileID: 0}
 --- !u!1001 &4435364692796494356
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23434,9 +23187,6 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 5562994741911892830, guid: b1b9e06c74094424eb82ac6282f05967, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 5702894832244869431}
     - targetCorrespondingSourceObject: {fileID: 5874405675058782271, guid: b1b9e06c74094424eb82ac6282f05967, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2374323685401902983}
@@ -23492,38 +23242,6 @@ MonoBehaviour:
   mGUI_ShowCallback: 0
   mLocalizeTarget: {fileID: 0}
   mLocalizeTargetName: I2.Loc.LocalizeTarget_TextMeshPro_UGUI
---- !u!1 &8123981965855023434 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5562994741911892830, guid: b1b9e06c74094424eb82ac6282f05967, type: 3}
-  m_PrefabInstance: {fileID: 4435364692796494356}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &5702894832244869431
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8123981965855023434}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 36a5f511b0d8142cba0aeb92d0b264c9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  productId: com.serbull.iaptutorial.money20000
-  buttonType: 0
-  consumePurchase: 1
-  onTransactionsRestored:
-    m_PersistentCalls:
-      m_Calls: []
-  onPurchaseComplete:
-    m_PersistentCalls:
-      m_Calls: []
-  onPurchaseFailed:
-    m_PersistentCalls:
-      m_Calls: []
-  titleText: {fileID: 0}
-  descriptionText: {fileID: 0}
-  priceText: {fileID: 0}
 --- !u!1001 &4449569268617143127
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25727,9 +25445,6 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 2366583861391754001, guid: c18ec51653812c744be49e37e90829d1, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 7195721920369184341}
     - targetCorrespondingSourceObject: {fileID: 772994458121405780, guid: c18ec51653812c744be49e37e90829d1, type: 3}
       insertIndex: -1
       addedObject: {fileID: 8147679436983457461}
@@ -25834,38 +25549,6 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 825236982868630419, guid: c18ec51653812c744be49e37e90829d1, type: 3}
   m_PrefabInstance: {fileID: 5495418663250853859}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &7823998656812678386 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2366583861391754001, guid: c18ec51653812c744be49e37e90829d1, type: 3}
-  m_PrefabInstance: {fileID: 5495418663250853859}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &7195721920369184341
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7823998656812678386}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 36a5f511b0d8142cba0aeb92d0b264c9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  productId: com.serbull.iaptutorial.removeads
-  buttonType: 0
-  consumePurchase: 1
-  onTransactionsRestored:
-    m_PersistentCalls:
-      m_Calls: []
-  onPurchaseComplete:
-    m_PersistentCalls:
-      m_Calls: []
-  onPurchaseFailed:
-    m_PersistentCalls:
-      m_Calls: []
-  titleText: {fileID: 0}
-  descriptionText: {fileID: 0}
-  priceText: {fileID: 0}
 --- !u!1001 &5531127656094980993
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26234,7 +25917,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7188238058251067142, guid: 5dbd38115aeb93942ab68b587902a00f, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7188238058251067142, guid: 5dbd38115aeb93942ab68b587902a00f, type: 3}
       propertyPath: m_AnchorMin.x
@@ -26242,11 +25925,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7188238058251067142, guid: 5dbd38115aeb93942ab68b587902a00f, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7188238058251067142, guid: 5dbd38115aeb93942ab68b587902a00f, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 400
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7188238058251067142, guid: 5dbd38115aeb93942ab68b587902a00f, type: 3}
       propertyPath: m_SizeDelta.y
@@ -29309,45 +28992,10 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 8550854133566844149}
     m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 5562994741911892830, guid: b1b9e06c74094424eb82ac6282f05967, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1520895793747596210}
     - targetCorrespondingSourceObject: {fileID: 5874405675058782271, guid: b1b9e06c74094424eb82ac6282f05967, type: 3}
       insertIndex: -1
       addedObject: {fileID: 4586524968623991230}
   m_SourcePrefab: {fileID: 100100000, guid: b1b9e06c74094424eb82ac6282f05967, type: 3}
---- !u!1 &2549231100249667251 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5562994741911892830, guid: b1b9e06c74094424eb82ac6282f05967, type: 3}
-  m_PrefabInstance: {fileID: 7949708846170392045}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1520895793747596210
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2549231100249667251}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 36a5f511b0d8142cba0aeb92d0b264c9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  productId: com.serbull.iaptutorial.energy150
-  buttonType: 0
-  consumePurchase: 1
-  onTransactionsRestored:
-    m_PersistentCalls:
-      m_Calls: []
-  onPurchaseComplete:
-    m_PersistentCalls:
-      m_Calls: []
-  onPurchaseFailed:
-    m_PersistentCalls:
-      m_Calls: []
-  titleText: {fileID: 0}
-  descriptionText: {fileID: 0}
-  priceText: {fileID: 0}
 --- !u!224 &3069772682321945698 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 4956510384023085455, guid: b1b9e06c74094424eb82ac6282f05967, type: 3}
@@ -29816,9 +29464,6 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 5562994741911892830, guid: b1b9e06c74094424eb82ac6282f05967, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2902310849440714092}
     - targetCorrespondingSourceObject: {fileID: 5874405675058782271, guid: b1b9e06c74094424eb82ac6282f05967, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2852062067772604983}
@@ -29869,38 +29514,6 @@ MonoBehaviour:
   mGUI_ShowCallback: 0
   mLocalizeTarget: {fileID: 0}
   mLocalizeTargetName: I2.Loc.LocalizeTarget_TextMeshPro_UGUI
---- !u!1 &4365762966781814090 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5562994741911892830, guid: b1b9e06c74094424eb82ac6282f05967, type: 3}
-  m_PrefabInstance: {fileID: 8189220293669279252}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2902310849440714092
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4365762966781814090}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 36a5f511b0d8142cba0aeb92d0b264c9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  productId: com.serbull.iaptutorial.money100
-  buttonType: 0
-  consumePurchase: 1
-  onTransactionsRestored:
-    m_PersistentCalls:
-      m_Calls: []
-  onPurchaseComplete:
-    m_PersistentCalls:
-      m_Calls: []
-  onPurchaseFailed:
-    m_PersistentCalls:
-      m_Calls: []
-  titleText: {fileID: 0}
-  descriptionText: {fileID: 0}
-  priceText: {fileID: 0}
 --- !u!224 &4646179437436571185 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 3593731640812263461, guid: b1b9e06c74094424eb82ac6282f05967, type: 3}
