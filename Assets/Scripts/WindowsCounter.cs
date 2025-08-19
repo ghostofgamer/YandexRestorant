@@ -1,8 +1,16 @@
+using TMPro;
 using UnityEngine;
 
 public class WindowsCounter : MonoBehaviour
 {
+    [SerializeField]private TMP_Text _valueText;
+    
     public int CurrentValue { get; private set; }
+
+    private void Start()
+    {
+        ShowValue();
+    }
 
     public void IncreaseValue()
     {
@@ -18,6 +26,7 @@ public class WindowsCounter : MonoBehaviour
 
     private void ShowValue()
     {
+        _valueText.text = CurrentValue.ToString();
         Debug.Log("Колличество открытых окон: " + CurrentValue);
     }
 }

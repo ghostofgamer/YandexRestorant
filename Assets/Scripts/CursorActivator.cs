@@ -20,7 +20,7 @@ public class CursorActivator : MonoBehaviour
 
         if (!value && _windowsCounter.CurrentValue > 0)
         {
-            Debug.Log("Колличество открытых окон больше 0" + _windowsCounter.CurrentValue);
+            Debug.Log("Есть открытые окна " + _windowsCounter.CurrentValue);
             return;
         }
 
