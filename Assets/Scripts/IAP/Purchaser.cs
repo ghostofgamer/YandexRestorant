@@ -3,6 +3,7 @@ using ADSContent;
 using DeliveryContent;
 using EnergyContent;
 using Enums;
+using LoadingSceneContent;
 using MirraGames.SDK;
 using RestaurantContent;
 using SoContent;
@@ -29,7 +30,131 @@ namespace IAP
         [SerializeField] private ZoneWall _storageZoneWall;
         [SerializeField] private ShelfConfigs _shelfConfigs;
         [SerializeField] private GameObject[] _shelfes;
+        [SerializeField] private LoadingGame _loadingGame;
 
+        private void OnEnable()
+        {
+            _loadingGame.MirraSDKInitialization += RecoveryPurchases;
+        }
+
+        private void OnDisable()
+        {
+            _loadingGame.MirraSDKInitialization -= RecoveryPurchases;
+        }
+
+        public void RecoveryPurchases()
+        {
+            MirraSDK.Payments.RestorePurchases((restoreData) =>
+            {
+                try
+                {
+                    // Проверка на null
+                    if (restoreData == null)
+                    {
+                        Debug.LogError("Ошибка: данные восстановления покупок отсутствуют (restoreData = null).");
+                        return;
+                    }
+
+                    if (restoreData.AllPurchases == null || restoreData.PendingProducts == null)
+                    {
+                        Debug.LogError("Ошибка: данные о покупках отсутствуют.");
+                        return;
+                    }
+
+                    // Логирование всех покупок
+                    Debug.Log($"Игрок совершил '{restoreData.AllPurchases.Length}' успешных покупок");
+
+                    // Логирование невыданных товаров
+                    string[] pendingProducts = restoreData.PendingProducts;
+                    Debug.Log(
+                        $"Игрок не получил '{pendingProducts.Length}' разных товаров: [{string.Join(", ", pendingProducts)}]");
+
+                    // Перебор невыданных товаров
+                    foreach (string productTag in pendingProducts)
+                    {
+                        if (string.IsNullOrEmpty(productTag))
+                        {
+                            Debug.LogError("Ошибка: идентификатор товара пуст.");
+                            continue;
+                        }
+
+                        if (!IsValidPurchaseType(productTag))
+                        {
+                            Debug.LogError($"Неизвестный товар: {productTag}");
+                            continue;
+                        }
+
+                        // Восстановление товара
+                        restoreData.RestoreProduct(
+                            productTag,
+                            onProductRestore: () =>
+                            {
+                                try
+                                {
+                                    PurchaseType purchaseType = ParseProductTagToPurchaseType(productTag);
+                                    OnPurchaseCompleted(purchaseType);
+                                    Debug.Log($"Товар '{productTag}' успешно восстановлен.");
+                                }
+                                catch (Exception e)
+                                {
+                                    Debug.LogError($"Ошибка при восстановлении товара {productTag}: {e.Message}");
+                                }
+                            }
+                        );
+                    }
+                }
+                catch (Exception e)
+                {
+                    Debug.LogError($"Общая ошибка при восстановлении покупок: {e.Message}");
+                }
+            });
+        }
+
+        /*public void RecoveryPurchases()
+        {
+            MirraSDK.Payments.RestorePurchases((restoreData) => {
+                string[] allPurchases = restoreData.AllPurchases;
+                Debug.Log($"Игрок совершил '{allPurchases.Length}' успешных покупок");
+
+                string[] pendingProducts = restoreData.PendingProducts;
+                Debug.Log($"Игрок не получил '{pendingProducts.Length}' разных товаров: [{string.Join(", ", pendingProducts)}]");
+
+                foreach(string productTag in pendingProducts)
+                {
+                    if (IsValidPurchaseType(productTag))
+                    {
+                        restoreData.RestoreProduct(productTag, onProductRestore: () => {
+                            PurchaseType purchaseType = ParseProductTagToPurchaseType(productTag);
+                            OnPurchaseCompleted(purchaseType);
+                            Debug.Log($"Товар '{productTag}' восстановлен");
+                        });
+                    }
+                    else
+                    {
+                        Debug.LogError($"Неизвестный товар: {productTag}");
+                    }
+                }
+            });
+        }
+        */
+
+        private bool IsValidPurchaseType(string productTag)
+        {
+            return !string.IsNullOrEmpty(productTag) && Enum.TryParse(productTag, out PurchaseType _);
+        }
+
+        private PurchaseType ParseProductTagToPurchaseType(string productTag)
+        {
+            if (Enum.TryParse(productTag, out PurchaseType purchaseType))
+            {
+                return purchaseType;
+            }
+            else
+            {
+                Debug.LogError($"Неизвестный товар: {productTag}");
+                return default;
+            }
+        }
 
         public void ClickPurchaser(PurchaseType purchaseType)
         {
@@ -92,82 +217,22 @@ namespace IAP
                 case PurchaseType.Energy5000:
                     AddEnergy(5000);
                     break;
-                
+
                 case PurchaseType.RemoveAds:
                     RemoveAds();
                     break;
-                
+
                 case PurchaseType.StarterPack:
                     StarterPack();
                     break;
-                
+
                 case PurchaseType.StoragePack:
                     PayStoragePack();
                     break;
-                
+
                 default:
                     throw new ArgumentOutOfRangeException(nameof(purchaseType), purchaseType, null);
             }
-
-
-            /*switch (product.definition.id)
-            {
-                case "com.serbull.iaptutorial.money100":
-                    AddMoney(100);
-                    break;
-
-                case "com.serbull.iaptutorial.removeads":
-                    RemoveAds();
-                    break;
-
-                case "com.serbull.iaptutorial.money500":
-                    AddMoney(500);
-                    break;
-
-                case "com.serbull.iaptutorial.money1100":
-                    AddMoney(1100);
-                    break;
-
-                case "com.serbull.iaptutorial.money2750":
-                    AddMoney(2750);
-                    break;
-
-                case "com.serbull.iaptutorial.money8000":
-                    AddMoney(8000);
-                    break;
-
-                case "com.serbull.iaptutorial.money20000":
-                    AddMoney(20000);
-                    break;
-
-                case "com.serbull.iaptutorial.starterpack":
-                    StarterPack();
-                    break;
-
-                case "com.serbull.iaptutorial.energy30":
-                    AddEnergy(30);
-                    break;
-
-                case "com.serbull.iaptutorial.energy150":
-                    AddEnergy(150);
-                    break;
-
-                case "com.serbull.iaptutorial.energy450":
-                    AddEnergy(450);
-                    break;
-
-                case "com.serbull.iaptutorial.energy1850":
-                    AddEnergy(1850);
-                    break;
-
-                case "com.serbull.iaptutorial.energy5000":
-                    AddEnergy(5000);
-                    break;
-
-                case "com.serbull.iaptutorial.storagepack":
-                    PayStoragePack();
-                    break;
-            }*/
         }
 
         private void RemoveAds()

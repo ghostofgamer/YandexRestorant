@@ -27,9 +27,9 @@ namespace UI.Buttons
             }
             else if (_isEnergyButton)
             {
-                Debug.Log("ЕНЕРГИЯ КНОПКА КНОПКА КНОПКА");
+                /*Debug.Log("ЕНЕРГИЯ КНОПКА КНОПКА КНОПКА");
                 Debug.Log("_energy.EnergyValue" + _energy.EnergyValue);
-                Debug.Log("_delivery.AmountDeliveries" + _delivery.AmountDeliveries);
+                Debug.Log("_delivery.AmountDeliveries" + _delivery.AmountDeliveries);*/
 
                 if (_energy.EnergyValue < _delivery.AmountDeliveries)
                     return;

@@ -24,9 +24,6 @@ namespace UI.Buttons
 
         public void GetProductPrice()
         {
-            Debug.Log("================================ GetProductPrice");
-            Debug.Log("================================ GetProductPrice");
-            Debug.Log("================================ GetProductPrice");
             ProductData productData = MirraSDK.Payments.GetProductData(_purchaseType.ToString());
             _priceText.text = $"{productData.PriceInteger} {productData.Currency}";
         }

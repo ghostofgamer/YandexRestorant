@@ -9,6 +9,8 @@ namespace MysteryGiftContent
     {
         [SerializeField] private List<Transform> _positions;
         [SerializeField] private MysteryGift _mysteryGift;
+        [SerializeField]private float _activationDuration = 180f;
+        [SerializeField]private float _deactivationDuration = 60f;
 
         private float _elapsedTime;
         private float _duration = 10f;
@@ -16,8 +18,6 @@ namespace MysteryGiftContent
         private bool _isPaused = false;
         private Coroutine _coroutine;
         private WaitForSeconds _waitForSeconds = new WaitForSeconds(10f);
-        private float _activationDuration = 180f;
-        private float _deactivationDuration = 60f;
         
         private void Start()
         {

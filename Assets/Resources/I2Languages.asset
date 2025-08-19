@@ -5474,6 +5474,23 @@ MonoBehaviour:
       - ' - Melemparkan'
       Flags: 0000000000000000000000
       Languages_Touch: []
+    - Term: Show mouse
+      TermType: 0
+      Description: 
+      Languages:
+      - Show mouse
+      - Maus anzeigen
+      - Afficher la souris
+      - "\u041F\u043E\u043A\u0430\u0437\u0430\u0442\u044C \u043C\u044B\u0448\u044C"
+      - "Fareyi g\xF6ster"
+      - "\u30DE\u30A6\u30B9\u3092\u8868\u793A"
+      - "Mostrar el rat\xF3n"
+      - "Poka\u017C mysz"
+      - Mostra mouse
+      - Mostrar mouse
+      - Tampilkan mouse
+      Flags: 0000000000000000000000
+      Languages_Touch: []
     CaseInsensitiveTerms: 0
     OnMissingTranslation: 1
     mTerm_AppName: 

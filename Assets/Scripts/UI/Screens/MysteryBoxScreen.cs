@@ -7,18 +7,22 @@ namespace UI.Screens
     {
         [SerializeField] private GameObject _input;
         [SerializeField] private MysteryGift _mysteryGift;
-    
+
         public override void OpenScreen()
         {
             base.OpenScreen();
-            _input.SetActive(false);
+
+            if (Application.isMobilePlatform)
+                _input.SetActive(false);
         }
 
         public override void CloseScreen()
         {
             base.CloseScreen();
             _mysteryGift.DeactivateBox();
-            _input.SetActive(true);
+
+            if (Application.isMobilePlatform)
+                _input.SetActive(true);
         }
     }
 }

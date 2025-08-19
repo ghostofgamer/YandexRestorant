@@ -145,7 +145,7 @@ public class ItemBasket : MonoBehaviour
 
         for (int i = inactiveItems.Count - 1; i >= inactiveItems.Count - value; i--)
         {
-            Debug.Log("ААА " + i);
+            /*Debug.Log("ААА " + i);*/
             inactiveItems[i].SetValue(false);
             // inactiveItems[i].gameObject.SetActive(false);
         }
