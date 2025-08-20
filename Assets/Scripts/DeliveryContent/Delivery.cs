@@ -18,7 +18,6 @@ namespace DeliveryContent
         [SerializeField] private DeliveryViewer _deliveryViewer;
         [SerializeField] private DeliverySaver _deliverySaver;
         [SerializeField] private Tutorial _tutorial;
-        [SerializeField] private Transform _container;
 
         private List<ItemDeliveryInfo> _items = new List<ItemDeliveryInfo>();
         private bool _isSpawning = false;
@@ -145,7 +144,7 @@ namespace DeliveryContent
 
                 if (prefab != null)
                 {
-                    GameObject newBox = Instantiate(prefab, GetPosition().position, Quaternion.identity,_container);
+                    GameObject newBox = Instantiate(prefab, GetPosition().position, Quaternion.identity);
                     SpawnCompleted?.Invoke(newBox);
                 }
 
@@ -197,7 +196,7 @@ namespace DeliveryContent
 
                 if (prefab != null)
                 {
-                    GameObject newBox = Instantiate(prefab, GetPosition().position, Quaternion.identity,_container);
+                    GameObject newBox = Instantiate(prefab, GetPosition().position, Quaternion.identity);
                     SpawnCompleted?.Invoke(newBox);
                 }
 
@@ -224,7 +223,7 @@ namespace DeliveryContent
 
                 if (prefab != null)
                 {
-                    GameObject box = Instantiate(prefab, GetPosition().position, Quaternion.identity,_container);
+                    GameObject box = Instantiate(prefab, GetPosition().position, Quaternion.identity);
                     SpawnCompleted?.Invoke(box);
                 }
             }

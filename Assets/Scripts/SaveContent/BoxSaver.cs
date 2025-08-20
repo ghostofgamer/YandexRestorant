@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -15,7 +16,13 @@ namespace SaveContent
             LoadData();
         }
 
-        private void OnApplicationPause(bool pauseStatus)
+        /*private void OnApplicationPause(bool pauseStatus)
+        {
+            if (pauseStatus)
+                SaveData();
+        }*/
+
+        private void  OnApplicationFocus(bool pauseStatus)
         {
             if (pauseStatus)
                 SaveData();
@@ -26,6 +33,7 @@ namespace SaveContent
             SaveData();
         }
 
+        /*
         public void SaveData()
         {
             // Преобразуем данные коробок в формат для сохранения
@@ -41,6 +49,34 @@ namespace SaveContent
             string jsonData = JsonUtility.ToJson(new BoxDataWrapper(boxesToSave));
             string path = Application.persistentDataPath + "/boxData.json";
             File.WriteAllText(path, jsonData);
+        }
+        */
+        
+         public async void SaveData()
+        {
+            try
+            {
+                // Преобразуем данные коробок в формат для сохранения
+                List<BoxData> boxesToSave = _boxesCounter.ItemBaskets
+                    .Select(item => new BoxData((int)item.ItemType, item.transform.position, item.GetActiveValueItems(),
+                        item.IsAdditionalItemsBasket, item.GetActiveValueArrayItems().ToList()))
+                    .Concat(_boxesCounter.ItemDrinkPackages
+                        .Select(item => new BoxData((int)item.ItemType, item.transform.position, item.CurrentFullness,
+                            false, null)))
+                    .ToList();
+
+                // Сериализуем данные в JSON
+                string jsonData = JsonUtility.ToJson(new BoxDataWrapper(boxesToSave));
+                string path = Path.Combine(Application.persistentDataPath, "boxData.json");
+
+                // Асинхронная запись в файл
+                await File.WriteAllTextAsync(path, jsonData);
+                Debug.Log($"Data saved successfully to {path}");
+            }
+            catch (Exception ex)
+            {
+                Debug.LogError($"Failed to save data: {ex.Message}");
+            }
         }
 
 

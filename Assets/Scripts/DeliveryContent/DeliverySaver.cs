@@ -15,6 +15,8 @@ namespace DeliveryContent
         [SerializeField] private DeliveryViewer _deliveryViewer;
         [SerializeField] private Delivery _delivery;
         
+        private bool _isWork = false;
+        
         private void OnApplicationQuit()
         {
             Debug.Log("сохраняем при выходе");
@@ -24,6 +26,8 @@ namespace DeliveryContent
         
         private void OnApplicationFocus(bool hasFocus)
         {
+            if(!_isWork) return; 
+            
             if (hasFocus)
             {
                 LoadDeliveryData();
@@ -40,7 +44,6 @@ namespace DeliveryContent
             PlayerPrefs.SetString(LastExitTimeKey, DateTime.UtcNow.ToString("O"));
             PlayerPrefs.SetFloat(RemainingTimeKey, _delivery.RemainingTime);
             PlayerPrefs.Save();
-           
         }
     
         public void SaveDeliveryData()
@@ -80,8 +83,9 @@ namespace DeliveryContent
             catch
             {
                 _delivery.SetItemsList(new List<ItemDeliveryInfo>());
-               
             }
+
+            _isWork = true;
         }
     
         private List<ItemDeliveryInfo> ConvertFromSaveData(DeliverySaveData saveData)

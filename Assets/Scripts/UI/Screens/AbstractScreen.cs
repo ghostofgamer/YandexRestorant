@@ -18,7 +18,11 @@ namespace UI.Screens
             InterstitialActivator.Instance.ShowAd(_breakADCooldown);
 
             if (_windowsCounter != null)
-                _windowsCounter.IncreaseValue();
+            {
+                Debug.Log("Открывается окно " + this.name);
+                // _windowsCounter.IncreaseValue();
+                _windowsCounter.TryAddWindow(this);
+            }
 
             if (_playerInput != null)
                 _playerInput.enabled = false;
@@ -34,7 +38,9 @@ namespace UI.Screens
 
             if (_windowsCounter != null)
             {
-                _windowsCounter.DecreaseValue();
+                Debug.Log("Закрывается окно " + this.name);
+                // _windowsCounter.DecreaseValue();
+                _windowsCounter.TryRemoveWindow(this);
                 
                 if (_playerInput != null && _windowsCounter.CurrentValue <= 0)
                     _playerInput.enabled = true;

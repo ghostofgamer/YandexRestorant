@@ -22,7 +22,6 @@ namespace I2.Loc
         {
             get
             { 
-                Debug.Log("TERM " + gameObject.name + " "+ mTerm);
                 return mTerm;
             }
             set { SetTerm(value); }
