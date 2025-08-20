@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using ItemContent;
+using MirraGames.SDK;
 using UnityEngine;
 
 namespace SaveContent
@@ -11,30 +12,29 @@ namespace SaveContent
     {
         [SerializeField] private BoxesCounter _boxesCounter;
 
-        private void Start()
+        /*private void Start()
         {
             LoadData();
-        }
+        }*/
 
         /*private void OnApplicationPause(bool pauseStatus)
         {
             if (pauseStatus)
                 SaveData();
-        }*/
+        }
 
         private void  OnApplicationFocus(bool pauseStatus)
         {
-            if (pauseStatus)
+            if (!pauseStatus)
                 SaveData();
-        }
+        }*/
 
-        private void OnApplicationQuit()
+        /*private void OnApplicationQuit()
         {
             SaveData();
-        }
-
-        /*
-        public void SaveData()
+        }*/
+        
+        /*public void SaveData()
         {
             // Преобразуем данные коробок в формат для сохранения
             List<BoxData> boxesToSave = _boxesCounter.ItemBaskets
@@ -47,12 +47,35 @@ namespace SaveContent
 
             // Сохраняем данные в JSON файл
             string jsonData = JsonUtility.ToJson(new BoxDataWrapper(boxesToSave));
-            string path = Application.persistentDataPath + "/boxData.json";
+            string path = Path.Combine(Application.persistentDataPath, "boxData.json");
             File.WriteAllText(path, jsonData);
-        }
-        */
+        }*/
         
-         public async void SaveData()
+        public void SaveData()
+        {
+            if (_boxesCounter == null || _boxesCounter.ItemBaskets == null || _boxesCounter.ItemDrinkPackages == null)
+            {
+                Debug.LogError("BoxesCounter or its lists are null!");
+                return;
+            }
+
+            List<BoxData> boxesToSave = _boxesCounter.ItemBaskets
+                .Where(item => item != null)
+                .Select(item => new BoxData((int)item.ItemType, item.transform.position, item.GetActiveValueItems(),
+                    item.IsAdditionalItemsBasket, item.GetActiveValueArrayItems().ToList()))
+                .Concat(_boxesCounter.ItemDrinkPackages
+                    .Where(item => item != null)
+                    .Select(item => new BoxData((int)item.ItemType, item.transform.position, item.CurrentFullness,
+                        false, null)))
+                .ToList();
+
+            string jsonData = JsonUtility.ToJson(new BoxDataWrapper(boxesToSave));
+
+            // Сохраняем JSON-строку через MirraSDK
+            MirraSDK.Data.SetString("boxData", jsonData);
+        }
+        
+         /*public async void SaveData()
         {
             try
             {
@@ -77,10 +100,10 @@ namespace SaveContent
             {
                 Debug.LogError($"Failed to save data: {ex.Message}");
             }
-        }
+        }*/
 
 
-        public List<BoxData> LoadData()
+        /*public List<BoxData> LoadData()
         {
             // Загружаем данные из JSON файла
             string path = Application.persistentDataPath + "/boxData.json";
@@ -107,14 +130,45 @@ namespace SaveContent
             }
 
             return new List<BoxData>();
+        }*/
+        
+        public List<BoxData> LoadData()
+        {
+            // Проверяем, есть ли сохранённые данные
+            if (!MirraSDK.Data.HasKey("boxData"))
+            {
+                Debug.Log("No saved box data found.");
+                return new List<BoxData>();
+            }
+
+            // Получаем JSON-строку
+            string jsonData = MirraSDK.Data.GetString("boxData");
+
+            if (string.IsNullOrEmpty(jsonData))
+            {
+                Debug.LogError("Saved box data is empty or corrupted.");
+                return new List<BoxData>();
+            }
+
+            // Десериализуем данные
+            BoxDataWrapper wrapper = JsonUtility.FromJson<BoxDataWrapper>(jsonData);
+
+            if (wrapper != null && wrapper.boxes != null)
+            {
+                return wrapper.boxes;
+            }
+
+            Debug.LogError("Failed to deserialize box data.");
+            return new List<BoxData>();
         }
 
         [ContextMenu("ClearSavedData")]
         public void ClearSavedData()
         {
             _boxesCounter.Clear();
+            MirraSDK.Data.DeleteAll();
 
-            string path = Application.persistentDataPath + "/boxData.json";
+            /*string path = Application.persistentDataPath + "/boxData.json";
             if (File.Exists(path))
             {
                 File.Delete(path);
@@ -123,7 +177,7 @@ namespace SaveContent
             else
             {
                 Debug.Log("No saved data found.");
-            }
+            }*/
         }
     }
 

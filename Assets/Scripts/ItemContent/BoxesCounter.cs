@@ -1,7 +1,9 @@
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using DeliveryContent;
 using Enums;
+using LoadingSceneContent;
 using SaveContent;
 using SoContent;
 using UnityEngine;
@@ -13,26 +15,40 @@ namespace ItemContent
         [SerializeField] private Delivery _delivery;
         [SerializeField] private DeliveryConfig _deliveryConfig;
         [SerializeField] private BoxSaver _boxSaver;
-        // [SerializeField ] private Transform _container;
+        [SerializeField]private LoadingGame _loadingGame;
 
         private List<ItemBasket> _itemBaskets = new List<ItemBasket>();
         private List<ItemDrinkPackage> _itemDrinkPackages = new List<ItemDrinkPackage>();
 
         public List<ItemBasket> ItemBaskets => _itemBaskets;
         public List<ItemDrinkPackage> ItemDrinkPackages => _itemDrinkPackages;
+        
+        private Coroutine _coroutine;
 
         private void OnEnable()
         {
             _delivery.SpawnCompleted += AddBox;
+            _loadingGame.MirraSDKInitialization += Initialize;
+            // _delivery.SpawnAllCompleted += SaveBoxValue;
         }
 
         private void OnDisable()
         {
             _delivery.SpawnCompleted -= AddBox;
+            _loadingGame.MirraSDKInitialization -= Initialize;
+            // _delivery.SpawnAllCompleted -= SaveBoxValue;
         }
 
+        /*
         private void Start()
         {
+            Load();
+        }
+        */
+        
+        public void Initialize()
+        {
+            _boxSaver.LoadData();
             Load();
         }
 
@@ -43,8 +59,9 @@ namespace ItemContent
 
             if (box.TryGetComponent(out ItemDrinkPackage itemDrinkPackage))
                 _itemDrinkPackages.Remove(itemDrinkPackage);
-            
-            // _boxSaver.SaveData();
+
+            Debug.Log("RemoveBox");
+            _boxSaver.SaveData();
         }
 
         public void AddBox(GameObject box)
@@ -55,14 +72,30 @@ namespace ItemContent
             if (box.TryGetComponent(out ItemDrinkPackage itemDrinkPackage))
                 _itemDrinkPackages.Add(itemDrinkPackage);
             
+            Debug.Log("AddBox");
+            SaveBoxValue();
             // _boxSaver.SaveData();
+        }
+
+        private IEnumerator Save()
+        {
+            yield return new WaitForSeconds(0.1f);
+            _boxSaver.SaveData();
+        }
+        
+        private void SaveBoxValue()
+        {
+            if(_coroutine!=null)
+                StopCoroutine(_coroutine);
+            
+            _coroutine =  StartCoroutine(Save());
         }
 
         public ItemBasket GetItemBasketByType(ItemType itemType)
         {
             return ItemBaskets.FirstOrDefault(item => item.ItemType == itemType);
         }
-        
+
         private void Load()
         {
             List<BoxData> loadedBoxes = _boxSaver.LoadData();
@@ -74,10 +107,12 @@ namespace ItemContent
 
                 if (prefab != null)
                 {
-                    GameObject box = Instantiate(prefab, boxData.position, Quaternion.identity,this.transform);
+                    GameObject box = Instantiate(prefab, boxData.position, Quaternion.identity, this.transform);
                     LoadBox(box, boxData);
                 }
             }
+
+            SaveBoxValue();
         }
 
         private void LoadBox(GameObject box, BoxData boxData)
@@ -89,12 +124,12 @@ namespace ItemContent
                 if (boxData.additional)
                 {
                     Debug.Log("Additional BOX " + boxData.itemType);
-                    itemBasket.LoadItems(true,boxData.amount,boxData.additionalAmountItems);
-                    Debug.Log("16" );
+                    itemBasket.LoadItems(true, boxData.amount, boxData.additionalAmountItems);
+                    Debug.Log("16");
                 }
                 else
                 {
-                    itemBasket.LoadItems(false,boxData.amount,boxData.additionalAmountItems);
+                    itemBasket.LoadItems(false, boxData.amount, boxData.additionalAmountItems);
                 }
             }
 

@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using ItemContent;
 using MirraGames.SDK;
 using SettingsContent;
 using UnityEngine;

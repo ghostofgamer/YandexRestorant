@@ -30,6 +30,8 @@ namespace DeliveryContent
         public event Action<float> TimeChanged;
 
         public event Action<GameObject> SpawnCompleted;
+        
+        public event Action SpawnAllCompleted;
 
         public float RemainingTime { get; private set; }
 
@@ -149,7 +151,6 @@ namespace DeliveryContent
                 }
 
                 item.Amount--;
-
                 UpdateAmountDeliveries();
 
                 if (item.Amount <= 0)
@@ -161,6 +162,7 @@ namespace DeliveryContent
                 _tutorial.SetCurrentTutorialStage(TutorialType.SkipDelivery);
             }
 
+            SpawnAllCompleted?.Invoke();
             SoundPlayer.Instance.PlayDostavka();
             RemainingTime = 0;
             TimeChanged?.Invoke(RemainingTime);
