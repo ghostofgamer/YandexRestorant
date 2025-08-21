@@ -31,6 +31,10 @@ namespace UI.Screens.EquipmentContent
         {
             _currentBuyShelfIndex = PlayerPrefs.GetInt("ShelfBuyed" + _equipmentType, -1);
             Initialization(levelPlayer);
+            
+            _buyButtonImage.color = _wallet.DollarValue.ToTotalCents() >= CurrentPrice.ToTotalCents()
+                ? _activeButtonColor
+                : _notActiveButtonColor;
         }
 
         public override void Buy()

@@ -9,12 +9,14 @@ namespace UI.Screens.AssemblyScreens
         [SerializeField] private GameObject _input;
         [SerializeField] private CameraPositionChanger _cameraPositionChanger;
         [SerializeField] private AssemblyFryerTable _assemblyTable;
-
+        [SerializeField] private GameObject[] _deactivateContent;
+        
         public override void OpenScreen()
         {
             Debug.Log("OPENASSEMBLYSCREEN");
             base.OpenScreen();
             _input.SetActive(false);
+            SetValue(false);
         }
 
         public override void CloseScreen()
@@ -25,6 +27,14 @@ namespace UI.Screens.AssemblyScreens
 
             if (Application.isMobilePlatform)
                 _input.SetActive(true);
+            
+            SetValue(true);
+        }
+        
+        private void SetValue(bool value)
+        {
+            foreach (var deactivateObject in _deactivateContent)
+                deactivateObject.SetActive(value);
         }
     }
 }

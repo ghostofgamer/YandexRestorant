@@ -25,9 +25,9 @@ namespace UI.Screens.EquipmentContent
         [SerializeField] private int _centPrice;
         [SerializeField] protected ShopScreen _shopScreen;
         [SerializeField] protected Wallet _wallet;
-        [SerializeField] private Color _activeButtonColor;
-        [SerializeField] private Color _notActiveButtonColor;
-        [SerializeField] private Image _buyButtonImage;
+        [SerializeField] protected Color _activeButtonColor;
+        [SerializeField] protected Color _notActiveButtonColor;
+        [SerializeField] protected Image _buyButtonImage;
         [SerializeField] private bool _dependsOnZone;
         [SerializeField] private ZoneUIProduct _zoneUIProduct;
         [SerializeField] protected EquipmentType _equipmentType;

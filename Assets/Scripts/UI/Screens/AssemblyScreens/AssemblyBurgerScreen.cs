@@ -10,7 +10,7 @@ namespace UI.Screens
         [SerializeField] private CameraPositionChanger _cameraPositionChanger;
         [SerializeField] private AssemblyTable _assemblyTable;
         [SerializeField] private GameObject[] _UIElements;
-
+        
         public override void OpenScreen()
         {
             Debug.Log("OPENASSEMBLYSCREEN");
