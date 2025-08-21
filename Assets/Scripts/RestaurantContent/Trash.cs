@@ -1,3 +1,4 @@
+using System;
 using AttentionHintContent;
 using Enums;
 using I2.Loc;
@@ -15,6 +16,8 @@ namespace RestaurantContent
         [SerializeField] private Tutorial _tutorial;
         [SerializeField] private BoxesCounter _boxesCounter;
 
+        public event Action BasketDeleted;
+        
         private void OnEnable()
         {
             _interactableObject.OnAction += Action;
@@ -69,6 +72,7 @@ namespace RestaurantContent
             {
                 _boxesCounter.RemoveBox(draggable.gameObject);
                 draggable.gameObject.SetActive(false);
+                BasketDeleted?.Invoke();
 
                 if (_tutorial.CurrentType == TutorialType.ThrowEmptyBoxInTrash)
                     _tutorial.SetCurrentTutorialStage(TutorialType.ThrowEmptyBoxInTrash);

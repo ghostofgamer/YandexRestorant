@@ -2,7 +2,6 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using AssemblyBurgerContent;
 using AttentionHintContent;
 using CameraContent;
 using Enums;
@@ -14,252 +13,257 @@ using SettingsContent.SoundContent;
 using TutorialContent;
 using UnityEngine;
 
-public class AssemblyTable : MonoBehaviour
+namespace AssemblyBurgerContent
 {
-    [SerializeField] private Tutorial _tutorial;
-    [SerializeField] private ItemContainer[] _itemContainers;
-    [SerializeField] private BurgerIngridientSpawner _burgerIngridientSpawner;
-    [SerializeField] private InteractableObject _interactableObject;
-    [SerializeField] private Collider _collider;
-    [SerializeField] private Collider[] _containerColliders;
-    [SerializeField] private AssemblyBurger _assemblyBurger;
-    [SerializeField] private TutorialAssemblyBurger _tutorialAssemblyBurger;
-
-    [SerializeField] private Transform _cameraCurrentPosition;
-    [SerializeField] private CameraPositionChanger _cameraPositionChanger;
-    [SerializeField] private BurgersSaver _burgersSaver;
-
-    private Dictionary<ItemType, ItemContainer> _containersByItemType;
-
-    public event Action BurgerAssemblyBeginig;
-
-    private void Awake()
+    public class AssemblyTable : MonoBehaviour
     {
-        _containersByItemType = new Dictionary<ItemType, ItemContainer>();
+        [SerializeField] private Tutorial _tutorial;
+        [SerializeField] private ItemContainer[] _itemContainers;
+        [SerializeField] private BurgerIngridientSpawner _burgerIngridientSpawner;
+        [SerializeField] private InteractableObject _interactableObject;
+        [SerializeField] private Collider _collider;
+        [SerializeField] private Collider[] _containerColliders;
+        [SerializeField] private AssemblyBurger _assemblyBurger;
+        [SerializeField] private TutorialAssemblyBurger _tutorialAssemblyBurger;
+        [SerializeField] private Transform _cameraCurrentPosition;
+        [SerializeField] private CameraPositionChanger _cameraPositionChanger;
+        [SerializeField] private BurgersSaver _burgersSaver;
 
-        foreach (var container in _itemContainers)
+        private Dictionary<ItemType, ItemContainer> _containersByItemType;
+
+        public event Action BurgerAssemblyBeginig;
+        
+        public event Action IngredientsAdded;
+
+        private void Awake()
         {
-            _containersByItemType[container.CurrentItemContainer] = container;
+            _containersByItemType = new Dictionary<ItemType, ItemContainer>();
+
+            foreach (var container in _itemContainers)
+                _containersByItemType[container.CurrentItemContainer] = container;
         }
-    }
 
-    private void OnEnable()
-    {
-        _interactableObject.OnAction += HandlePlayerInteraction;
-    }
-
-    private void OnDisable()
-    {
-        _interactableObject.OnAction -= HandlePlayerInteraction;
-    }
-
-    private void Start()
-    {
-        List<ItemType> itemTypes = _burgersSaver.LoadItemTypesFromIndices();
-
-        if (itemTypes.Count > 0)
-            LoadWellBurgers(itemTypes.Count, itemTypes);
-    }
-
-    public void HandlePlayerInteraction(PlayerInteraction playerInteraction)
-    {
-        if (playerInteraction.CurrentDraggable != null)
+        private void OnEnable()
         {
-            ItemBasket basket = playerInteraction.CurrentDraggable.GetComponent<ItemBasket>();
+            _interactableObject.OnAction += HandlePlayerInteraction;
+        }
 
-            if (basket != null)
+        private void OnDisable()
+        {
+            _interactableObject.OnAction -= HandlePlayerInteraction;
+        }
+
+        private void Start()
+        {
+            List<ItemType> itemTypes = _burgersSaver.LoadItemTypesFromIndices();
+
+            if (itemTypes.Count > 0)
+                LoadWellBurgers(itemTypes.Count, itemTypes);
+        }
+
+        public void HandlePlayerInteraction(PlayerInteraction playerInteraction)
+        {
+            if (playerInteraction.CurrentDraggable != null)
             {
-                ItemContainer targetContainer = GetContainerForItemType(basket.ItemType);
+                ItemBasket basket = playerInteraction.CurrentDraggable.GetComponent<ItemBasket>();
 
-                if (targetContainer != null)
+                if (basket != null)
                 {
-                    if (targetContainer.IsAdditionalItemsContainer && basket.IsAdditionalItemsBasket)
+                    ItemContainer targetContainer = GetContainerForItemType(basket.ItemType);
+
+                    if (targetContainer != null)
                     {
-                        int[] emptyPositions = targetContainer.GetEmptyPositions();
-                        int[] activeItems = basket.GetActiveValueArrayItems();
-
-                        bool hasEmptyPosition = emptyPositions != null && emptyPositions.Any(pos => pos > 0);
-                        bool hasActiveItems = activeItems != null && activeItems.Any(item => item > 0);
-
-                        if (!hasEmptyPosition)
-                            AttentionHintActivator.Instance.ShowHint(
-                                LocalizationManager.GetTermTranslation("No place"));
-                        else if (!hasActiveItems)
-                            AttentionHintActivator.Instance.ShowHint(
-                                LocalizationManager.GetTermTranslation("The box is empty"));
-
-                        if (emptyPositions.Length == activeItems.Length)
+                        if (targetContainer.IsAdditionalItemsContainer && basket.IsAdditionalItemsBasket)
                         {
-                            Debug.Log("Одинаковое коолличество видов продуктов ");
+                            int[] emptyPositions = targetContainer.GetEmptyPositions();
+                            int[] activeItems = basket.GetActiveValueArrayItems();
 
-                            for (int i = 0; i < emptyPositions.Length; i++)
+                            bool hasEmptyPosition = emptyPositions != null && emptyPositions.Any(pos => pos > 0);
+                            bool hasActiveItems = activeItems != null && activeItems.Any(item => item > 0);
+
+                            if (!hasEmptyPosition)
+                                AttentionHintActivator.Instance.ShowHint(
+                                    LocalizationManager.GetTermTranslation("No place"));
+                            else if (!hasActiveItems)
+                                AttentionHintActivator.Instance.ShowHint(
+                                    LocalizationManager.GetTermTranslation("The box is empty"));
+
+                            if (emptyPositions.Length == activeItems.Length)
                             {
-                                if (emptyPositions[i] > 0 && activeItems[i] > 0)
+                                Debug.Log("Одинаковое коолличество видов продуктов ");
+
+                                for (int i = 0; i < emptyPositions.Length; i++)
                                 {
-                                    int itemsToPlace = Mathf.Min(emptyPositions[i], activeItems[i]);
-                                    Debug.Log("itemsToPlace " + itemsToPlace);
-                                    Debug.Log("emptyPositions[i] " + emptyPositions[i]);
-                                    Debug.Log("activeItems[i] " + activeItems[i]);
+                                    if (emptyPositions[i] > 0 && activeItems[i] > 0)
+                                    {
+                                        int itemsToPlace = Mathf.Min(emptyPositions[i], activeItems[i]);
+                                        Debug.Log("itemsToPlace " + itemsToPlace);
+                                        Debug.Log("emptyPositions[i] " + emptyPositions[i]);
+                                        Debug.Log("activeItems[i] " + activeItems[i]);
 
 
-                                    if (_tutorial.CurrentType == TutorialType.PutBunsAssemblyTable)
-                                        _tutorial.SetCurrentTutorialStage(TutorialType.PutBunsAssemblyTable);
+                                        if (_tutorial.CurrentType == TutorialType.PutBunsAssemblyTable)
+                                            _tutorial.SetCurrentTutorialStage(TutorialType.PutBunsAssemblyTable);
 
-                                    SoundPlayer.Instance.PlayPutTray();
-                                    // basket.RemoveItem(itemsToPlace, i);
-                                    basket.TransferProduct(itemsToPlace, i, targetContainer.AdditionalArrayPositions);
-                                    targetContainer.ActivateItems(itemsToPlace, i);
-                                }
-                                else
-                                {
-                                    Debug.Log(" ЛИБо нету места или активных продуктов");
-                                }
-                            }
-                        }
-                    }
-                    else
-                    {
-                        int emptyPosition = targetContainer.GetEmptyPosition();
-                        int activeItems = basket.GetActiveValueItems();
-
-                        if (emptyPosition <= 0)
-                            AttentionHintActivator.Instance.ShowHint(
-                                LocalizationManager.GetTermTranslation("No place"));
-                        else if (activeItems <= 0)
-                            AttentionHintActivator.Instance.ShowHint(
-                                LocalizationManager.GetTermTranslation("The box is empty"));
-
-
-                        if (emptyPosition > 0 && activeItems > 0)
-                        {
-                            SoundPlayer.Instance.PlayPutTray();
-                            int itemsToPlace = Mathf.Min(emptyPosition, activeItems);
-                            basket.TransferProduct(itemsToPlace, targetContainer.Positions);
-                            targetContainer.ActivateItems(itemsToPlace);
-                            Debug.Log($"Placed {itemsToPlace} items in container for {basket.ItemType}");
-
-                            if (_tutorial.CurrentType == TutorialType.PutPackagesAssemblyTable)
-                                _tutorial.SetCurrentTutorialStage(TutorialType.PutPackagesAssemblyTable);
-
-                            if (_tutorial.CurrentType == TutorialType.PutWellCutletToContainer)
-                            {
-                                Debug.Log("!!!!!!_tutorial.CurrentType " + _tutorial.CurrentType);
-                                Debug.Log("!!!!!!basket.ItemType " + basket.ItemType);
-
-                                if (basket.ItemType == ItemType.Cutlet)
-                                {
-                                    Debug.Log("!!!!!!ItemType.CutletItemType.CutletItemType.Cutlet");
-                                    _tutorial.SetCurrentTutorialStage(TutorialType.PutWellCutletToContainer);
+                                        SoundPlayer.Instance.PlayPutTray();
+                                        // basket.RemoveItem(itemsToPlace, i);
+                                        basket.TransferProduct(itemsToPlace, i, targetContainer.AdditionalArrayPositions);
+                                        targetContainer.ActivateItems(itemsToPlace, i);
+                                        
+                                        IngredientsAdded?.Invoke();
+                                    }
+                                    else
+                                    {
+                                        Debug.Log(" ЛИБо нету места или активных продуктов");
+                                    }
                                 }
                             }
                         }
                         else
                         {
-                            Debug.Log(
-                                $"No space in container or no active items in basket. Container empty positions: {emptyPosition}, Basket active items: {activeItems}");
+                            int emptyPosition = targetContainer.GetEmptyPosition();
+                            int activeItems = basket.GetActiveValueItems();
+
+                            if (emptyPosition <= 0)
+                                AttentionHintActivator.Instance.ShowHint(
+                                    LocalizationManager.GetTermTranslation("No place"));
+                            else if (activeItems <= 0)
+                                AttentionHintActivator.Instance.ShowHint(
+                                    LocalizationManager.GetTermTranslation("The box is empty"));
+
+
+                            if (emptyPosition > 0 && activeItems > 0)
+                            {
+                                SoundPlayer.Instance.PlayPutTray();
+                                int itemsToPlace = Mathf.Min(emptyPosition, activeItems);
+                                basket.TransferProduct(itemsToPlace, targetContainer.Positions);
+                                targetContainer.ActivateItems(itemsToPlace);
+                                Debug.Log($"Placed {itemsToPlace} items in container for {basket.ItemType}");
+
+                                if (_tutorial.CurrentType == TutorialType.PutPackagesAssemblyTable)
+                                    _tutorial.SetCurrentTutorialStage(TutorialType.PutPackagesAssemblyTable);
+
+                                if (_tutorial.CurrentType == TutorialType.PutWellCutletToContainer)
+                                {
+                                    Debug.Log("!!!!!!_tutorial.CurrentType " + _tutorial.CurrentType);
+                                    Debug.Log("!!!!!!basket.ItemType " + basket.ItemType);
+
+                                    if (basket.ItemType == ItemType.Cutlet)
+                                    {
+                                        Debug.Log("!!!!!!ItemType.CutletItemType.CutletItemType.Cutlet");
+                                        _tutorial.SetCurrentTutorialStage(TutorialType.PutWellCutletToContainer);
+                                    }
+                                }
+                                
+                                IngredientsAdded?.Invoke();
+                            }
+                            else
+                            {
+                                Debug.Log(
+                                    $"No space in container or no active items in basket. Container empty positions: {emptyPosition}, Basket active items: {activeItems}");
+                            }
                         }
+                    }
+                    else
+                    {
+                        Debug.Log($"No container found for item type: {basket.ItemType}");
                     }
                 }
                 else
                 {
-                    Debug.LogError($"No container found for item type: {basket.ItemType}");
+                    Debug.Log("The draggable object is not an ItemBasket.");
+                }
+            }
+            else if (playerInteraction.PlayerTray.IsActive)
+            {
+                ItemContainer targetContainer = GetContainerForItemType(playerInteraction.PlayerTray.CurrentType);
+
+                if (targetContainer != null)
+                {
+                    int emptyPosition = targetContainer.GetEmptyPosition();
+                    int activeItems =
+                        playerInteraction.PlayerTray.GetActivePositionValue(playerInteraction.PlayerTray.CurrentType);
+
+                    if (emptyPosition > 0 && activeItems > 0)
+                    {
+                        if (_tutorial.CurrentType == TutorialType.PutWellCutletToContainer)
+                        {
+                            Debug.Log("!!!!!!basket.ItemType " + playerInteraction.PlayerTray.CurrentType);
+
+                            if (playerInteraction.PlayerTray.CurrentType == ItemType.Cutlet)
+                                _tutorial.SetCurrentTutorialStage(TutorialType.PutWellCutletToContainer);
+                        }
+
+                        int itemsToPlace = Mathf.Min(emptyPosition, activeItems);
+                        SoundPlayer.Instance.PlayPutTray();
+                        // basket.TransferProduct(itemsToPlace, targetContainer.Positions);
+                        playerInteraction.PlayerTray.PutAway(playerInteraction.PlayerTray.CurrentType, itemsToPlace);
+                        targetContainer.ActivateItems(itemsToPlace);
+                    }
+                    else
+                    {
+                        Debug.Log(
+                            $"No space in container or no active items in basket. Container empty positions: {emptyPosition}, Basket active items: {activeItems}");
+                    }
                 }
             }
             else
             {
-                Debug.LogError("The draggable object is not an ItemBasket.");
-            }
-        }
-        else if (playerInteraction.PlayerTray.IsActive)
-        {
-            ItemContainer targetContainer = GetContainerForItemType(playerInteraction.PlayerTray.CurrentType);
-
-            if (targetContainer != null)
-            {
-                int emptyPosition = targetContainer.GetEmptyPosition();
-                int activeItems =
-                    playerInteraction.PlayerTray.GetActivePositionValue(playerInteraction.PlayerTray.CurrentType);
-
-                if (emptyPosition > 0 && activeItems > 0)
+                if ((int)_tutorial.CurrentType < (int)TutorialType.LetsMakeFirstBurger)
                 {
-                    if (_tutorial.CurrentType == TutorialType.PutWellCutletToContainer)
-                    {
-                        Debug.Log("!!!!!!basket.ItemType " + playerInteraction.PlayerTray.CurrentType);
-
-                        if (playerInteraction.PlayerTray.CurrentType == ItemType.Cutlet)
-                            _tutorial.SetCurrentTutorialStage(TutorialType.PutWellCutletToContainer);
-                    }
-
-                    int itemsToPlace = Mathf.Min(emptyPosition, activeItems);
-                    SoundPlayer.Instance.PlayPutTray();
-                    // basket.TransferProduct(itemsToPlace, targetContainer.Positions);
-                    playerInteraction.PlayerTray.PutAway(playerInteraction.PlayerTray.CurrentType, itemsToPlace);
-                    targetContainer.ActivateItems(itemsToPlace);
+                    Debug.Log("рано тебе еще ");
+                    return;
                 }
-                else
+
+                if (_tutorial.CurrentType == TutorialType.LetsMakeFirstBurger)
                 {
-                    Debug.Log(
-                        $"No space in container or no active items in basket. Container empty positions: {emptyPosition}, Basket active items: {activeItems}");
+                    _tutorialAssemblyBurger.StartTutorAssemblyBurger();
                 }
+
+                SoundPlayer.Instance.PlayButtonClick();
+                BurgerAssemblyBeginig?.Invoke();
+                SetValueCollider(false);
+                _cameraPositionChanger.ChangePosition(_cameraCurrentPosition);
+                Debug.Log("No draggable object in player's hands.");
             }
         }
-        else
+
+        public void SetValueCollider(bool value)
         {
-            if ((int)_tutorial.CurrentType < (int)TutorialType.LetsMakeFirstBurger)
+            _collider.enabled = value;
+            _assemblyBurger.enabled = !value;
+
+            foreach (var containerCollidder in _containerColliders)
             {
-                Debug.Log("рано тебе еще ");
-                return;
+                containerCollidder.enabled = !value;
+                Debug.Log("value " + !value);
             }
+        }
 
-            if (_tutorial.CurrentType == TutorialType.LetsMakeFirstBurger)
+        private ItemContainer GetContainerForItemType(ItemType itemType)
+        {
+            if (_containersByItemType.TryGetValue(itemType, out var container))
             {
-                _tutorialAssemblyBurger.StartTutorAssemblyBurger();
+                return container;
             }
 
-            SoundPlayer.Instance.PlayButtonClick();
-            BurgerAssemblyBeginig?.Invoke();
-            SetValueCollider(false);
-            _cameraPositionChanger.ChangePosition(_cameraCurrentPosition);
-            Debug.Log("No draggable object in player's hands.");
-        }
-    }
-
-    public void SetValueCollider(bool value)
-    {
-        _collider.enabled = value;
-        _assemblyBurger.enabled = !value;
-
-        foreach (var containerCollidder in _containerColliders)
-        {
-            containerCollidder.enabled = !value;
-            Debug.Log("value " + !value);
-        }
-    }
-
-    private ItemContainer GetContainerForItemType(ItemType itemType)
-    {
-        if (_containersByItemType.TryGetValue(itemType, out var container))
-        {
-            return container;
+            return null;
         }
 
-        return null;
-    }
-
-    private void LoadWellBurgers(int value, List<ItemType> itemType)
-    {
-        StartCoroutine(StartLoad(value, itemType));
-    }
-
-    private IEnumerator StartLoad(int value, List<ItemType> itemType)
-    {
-        yield return new WaitForSeconds(1f);
-
-        for (int i = 0; i < value; i++)
+        private void LoadWellBurgers(int value, List<ItemType> itemType)
         {
-            _assemblyBurger.SimpleCreateStartBurgers(itemType[i]);
+            StartCoroutine(StartLoad(value, itemType));
+        }
 
-            /*
+        private IEnumerator StartLoad(int value, List<ItemType> itemType)
+        {
+            yield return new WaitForSeconds(1f);
+
+            for (int i = 0; i < value; i++)
+            {
+                _assemblyBurger.SimpleCreateStartBurgers(itemType[i]);
+
+                /*
             Transform availablePosition = _wellPositions.FirstOrDefault(position => position.childCount == 0);
             Item sodaInstance = _burgerIngridientSpawner.SpawnItem(itemType[i]);
             sodaInstance.gameObject.SetActive(true);
@@ -267,6 +271,7 @@ public class AssemblyTable : MonoBehaviour
             sodaInstance.transform.localScale = _assemblyBurgerItemConfig.GetScale(itemType[i]);
             sodaInstance.transform.position = availablePosition.position;
             _sodaCounter.AddSoda(sodaInstance);*/
+            }
         }
     }
 }

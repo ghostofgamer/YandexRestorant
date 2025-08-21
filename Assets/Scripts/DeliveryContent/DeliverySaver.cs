@@ -17,12 +17,25 @@ namespace DeliveryContent
         
         private bool _isWork = false;
         
-        private void OnApplicationQuit()
+        private float _saveInterval = 5f;
+        private float _lastSaveTime;
+
+        private void Update()
+        {
+            if (_isWork && Time.time - _lastSaveTime > _saveInterval)
+            {
+                SaveDeliveryData();
+                SaveLastExitTime();
+                _lastSaveTime = Time.time;
+            }
+        }
+        
+        /*private void OnApplicationQuit()
         {
             Debug.Log("сохраняем при выходе");
             SaveLastExitTime();
             SaveDeliveryData();
-        }
+        }*/
         
         private void OnApplicationFocus(bool hasFocus)
         {

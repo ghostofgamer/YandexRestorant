@@ -1,3 +1,4 @@
+using AssemblyBurgerContent;
 using KitchenEquipmentContent;
 using KitchenEquipmentContent.FryerContent;
 using MysteryGiftContent;

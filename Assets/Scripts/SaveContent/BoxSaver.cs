@@ -34,24 +34,58 @@ namespace SaveContent
             SaveData();
         }*/
         
-        /*public void SaveData()
+        public void SaveData()
         {
-            // Преобразуем данные коробок в формат для сохранения
+            List<BoxData> boxesToSave = _boxesCounter.ItemBaskets
+                .Select(item =>
+                {
+                    Debug.Log($"ItemBasket: Type = {(int)item.ItemType}, ActiveValueItems = {item.GetActiveValueItems()}");
+                    return new BoxData(
+                        (int)item.ItemType,
+                        item.transform.position,
+                        item.GetActiveValueItems(),
+                        item.IsAdditionalItemsBasket,
+                        item.GetActiveValueArrayItems().ToList()
+                    );
+                })
+                .Concat(_boxesCounter.ItemDrinkPackages
+                    .Select(item =>
+                    {
+                        Debug.Log($"ItemDrinkPackage: Type = {(int)item.ItemType}, CurrentFullness = {item.CurrentFullness}");
+                        return new BoxData(
+                            (int)item.ItemType,
+                            item.transform.position,
+                            item.CurrentFullness,
+                            false,
+                            null
+                        );
+                    }))
+                .ToList();
+            
+            
+            
+            
+            
+            
+            
+            
+            /*// Преобразуем данные коробок в формат для сохранения
             List<BoxData> boxesToSave = _boxesCounter.ItemBaskets
                 .Select(item => new BoxData((int)item.ItemType, item.transform.position, item.GetActiveValueItems(),
                     item.IsAdditionalItemsBasket, item.GetActiveValueArrayItems().ToList()))
                 .Concat(_boxesCounter.ItemDrinkPackages
                     .Select(item => new BoxData((int)item.ItemType, item.transform.position, item.CurrentFullness,
                         false, null)))
-                .ToList();
-
+                .ToList();*/
+            
+            
             // Сохраняем данные в JSON файл
             string jsonData = JsonUtility.ToJson(new BoxDataWrapper(boxesToSave));
             string path = Path.Combine(Application.persistentDataPath, "boxData.json");
             File.WriteAllText(path, jsonData);
-        }*/
+        }
         
-        public void SaveData()
+        /*public void SaveData()
         {
             if (_boxesCounter == null || _boxesCounter.ItemBaskets == null || _boxesCounter.ItemDrinkPackages == null)
             {
@@ -73,7 +107,7 @@ namespace SaveContent
 
             // Сохраняем JSON-строку через MirraSDK
             MirraSDK.Data.SetString("boxData", jsonData);
-        }
+        }*/
         
          /*public async void SaveData()
         {
@@ -103,7 +137,7 @@ namespace SaveContent
         }*/
 
 
-        /*public List<BoxData> LoadData()
+        public List<BoxData> LoadData()
         {
             // Загружаем данные из JSON файла
             string path = Application.persistentDataPath + "/boxData.json";
@@ -130,9 +164,9 @@ namespace SaveContent
             }
 
             return new List<BoxData>();
-        }*/
+        }
         
-        public List<BoxData> LoadData()
+        /*public List<BoxData> LoadData()
         {
             // Проверяем, есть ли сохранённые данные
             if (!MirraSDK.Data.HasKey("boxData"))
@@ -160,15 +194,15 @@ namespace SaveContent
 
             Debug.LogError("Failed to deserialize box data.");
             return new List<BoxData>();
-        }
+        }*/
 
         [ContextMenu("ClearSavedData")]
         public void ClearSavedData()
         {
             _boxesCounter.Clear();
-            MirraSDK.Data.DeleteAll();
+            // MirraSDK.Data.DeleteAll();
 
-            /*string path = Application.persistentDataPath + "/boxData.json";
+            string path = Application.persistentDataPath + "/boxData.json";
             if (File.Exists(path))
             {
                 File.Delete(path);
@@ -177,7 +211,7 @@ namespace SaveContent
             else
             {
                 Debug.Log("No saved data found.");
-            }*/
+            }
         }
     }
 

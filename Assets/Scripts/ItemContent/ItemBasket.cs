@@ -13,29 +13,24 @@ public class ItemBasket : MonoBehaviour
     [SerializeField] private ItemType _itemType;
     [SerializeField] private Item[] _items;
     [SerializeField] private ActivityItem[] _itemsActivity;
-
     [SerializeField] private Item[] _additionalItems;
     [SerializeField] private ActivityItem[] _additionalItemsActivity;
-
     [SerializeField] private bool _isAdditionalItemsBasket;
     [SerializeField] private ItemType[] _currentItemsType;
-
     [SerializeField] private Transform[] _positions;
-
-    public Shelf Shelf { get; private set; }
-    
-    public Transform[] Positions => _positions;
-
-    public ItemType ItemType => _itemType;
-
-    public bool IsAdditionalItemsBasket => _isAdditionalItemsBasket;
-
-    public ItemType[] CurrentItemsTypes => _currentItemsType;
 
     [SerializeField] private Item[][] _itemsAdditionalArray;
     [SerializeField] private ActivityItem[][] _itemsActivityAdditionalArray;
 
     private bool _firstLoad = true;
+
+    public Shelf Shelf { get; private set; }
+    public Transform[] Positions => _positions;
+    public ItemType ItemType => _itemType;
+    public bool IsAdditionalItemsBasket => _isAdditionalItemsBasket;
+    public ItemType[] CurrentItemsTypes => _currentItemsType;
+
+    public event Action TransferProductsEnded;
 
     private void OnEnable()
     {
@@ -55,7 +50,7 @@ public class ItemBasket : MonoBehaviour
     {
         if (!_firstLoad)
             return;
-        
+
         _itemsAdditionalArray = new Item[][] { _items, _additionalItems };
         _itemsActivityAdditionalArray = new ActivityItem[][] { _itemsActivity, _additionalItemsActivity };
         DeactivateItems();
@@ -65,26 +60,19 @@ public class ItemBasket : MonoBehaviour
     {
         int activeCount = 0;
 
-        /*foreach (var item in _items)
-        {
-            if (item != null && item.gameObject.activeSelf)
-                activeCount++;
-        }*/
-
         foreach (var item in _itemsActivity)
         {
             if (item != null && item.IsActive)
                 activeCount++;
         }
 
-        // Debug.Log("ActiveCount " + activeCount);
         return activeCount;
     }
 
     public int[] GetActiveValueArrayItems()
     {
         int[] activeCounts = new int[_itemsActivityAdditionalArray.Length];
-   
+
         for (int i = 0; i < _itemsActivityAdditionalArray.Length; i++)
         {
             int rowActiveCount = 0;
@@ -97,33 +85,9 @@ public class ItemBasket : MonoBehaviour
             }
 
             activeCounts[i] = rowActiveCount;
-            // Debug.Log("ActiveCount in row " + i + ": " + rowActiveCount);
         }
-     
-        // Debug.Log("Total ActiveCounts: " + string.Join(", ", activeCounts));
+
         return activeCounts;
-
-        /*int[] activeCounts = new int[_itemsAdditionalArray.Length];
-
-        for (int i = 0; i < _itemsAdditionalArray.Length; i++)
-        {
-            int rowActiveCount = 0;
-            var itemsRow = _itemsAdditionalArray[i];
-
-            foreach (var item in itemsRow)
-            {
-                if (item != null && item.gameObject.activeSelf)
-                {
-                    rowActiveCount++;
-                }
-            }
-
-            activeCounts[i] = rowActiveCount;
-            Debug.Log("ActiveCount in row " + i + ": " + rowActiveCount);
-        }
-
-        Debug.Log("Total ActiveCounts: " + string.Join(", ", activeCounts));
-        return activeCounts;*/
     }
 
     public void RemoveItem(int value)
@@ -134,21 +98,13 @@ public class ItemBasket : MonoBehaviour
             return;
         }
 
-        // List<Item> inactiveItems = _items.Where(p => p.gameObject.activeSelf).ToList();
         List<ActivityItem> inactiveItems = _itemsActivity.Where(p => p.IsActive).ToList();
 
         if (value > inactiveItems.Count)
             value = inactiveItems.Count;
 
-        /*for (int i = 0; i < value; i++)
-            inactiveItems[i].gameObject.SetActive(false);*/
-
         for (int i = inactiveItems.Count - 1; i >= inactiveItems.Count - value; i--)
-        {
-            /*Debug.Log("ААА " + i);*/
             inactiveItems[i].SetValue(false);
-            // inactiveItems[i].gameObject.SetActive(false);
-        }
     }
 
     public void TransferProduct(int value, Transform[] positions)
@@ -164,11 +120,12 @@ public class ItemBasket : MonoBehaviour
         if (value > inactiveItems.Count)
             value = inactiveItems.Count;
 
+        int completedAnimations = 0;
+        int totalAnimations = value;
+
         for (int i = inactiveItems.Count - 1; i >= inactiveItems.Count - value; i--)
         {
-            Debug.Log("ААА " + i);
-
-            int index = i; // Создаем локальную переменную для индекса
+            int index = i;
 
             inactiveItems[index].transform.DOMove(positions[index].transform.position, 0.15f)
                 .SetEase(Ease.InOutQuad)
@@ -176,6 +133,11 @@ public class ItemBasket : MonoBehaviour
                 {
                     inactiveItems[index].transform.localPosition = Vector3.zero;
                     inactiveItems[index].SetValue(false);
+
+                    completedAnimations++;
+
+                    if (completedAnimations == totalAnimations)
+                        TransferProductsEnded?.Invoke();
                 });
         }
     }
@@ -193,11 +155,14 @@ public class ItemBasket : MonoBehaviour
         if (value > inactiveItems.Count)
             value = inactiveItems.Count;
 
+        int completedAnimations = 0;
+        int totalAnimations = value;
+
         for (int i = inactiveItems.Count - 1; i >= inactiveItems.Count - value; i--)
         {
             Debug.Log("ААА " + i);
 
-            int itemIndex = i; // Создаем локальную переменную для индекса
+            int itemIndex = i;
 
             inactiveItems[itemIndex].transform.DOMove(positions[index][itemIndex].transform.position, 0.15f)
                 .SetEase(Ease.InOutQuad)
@@ -205,6 +170,13 @@ public class ItemBasket : MonoBehaviour
                 {
                     inactiveItems[itemIndex].transform.localPosition = Vector3.zero;
                     inactiveItems[itemIndex].SetValue(false);
+
+                    completedAnimations++;
+
+                    if (completedAnimations == totalAnimations)
+                    {
+                        TransferProductsEnded?.Invoke();
+                    }
                 });
         }
     }
@@ -224,29 +196,8 @@ public class ItemBasket : MonoBehaviour
 
         for (int i = inactiveItems.Count - 1; i >= inactiveItems.Count - value; i--)
         {
-            Debug.Log("ААА " + i);
             inactiveItems[i].SetValue(false);
         }
-
-        /*if (_itemsAdditionalArray[index] == null)
-        {
-            Debug.LogError("_items array is not initialized.");
-            return;
-        }
-
-        List<Item> inactiveItems = _itemsAdditionalArray[index].Where(p => p.gameObject.activeSelf).ToList();
-
-        if (value > inactiveItems.Count)
-            value = inactiveItems.Count;
-
-        /*for (int i = 0; i < value; i++)
-            inactiveItems[i].gameObject.SetActive(false);#1#
-
-        for (int i = inactiveItems.Count - 1; i >= inactiveItems.Count - value; i--)
-        {
-            Debug.Log("ААА " + i);
-            inactiveItems[i].gameObject.SetActive(false);
-        }*/
     }
 
     public void SetActiveValue(bool value)
@@ -263,7 +214,7 @@ public class ItemBasket : MonoBehaviour
     private void ActivateItems()
     {
         SetActiveValue(true);
-        
+
         if (Shelf != null)
         {
             Shelf.Remove(this);
@@ -276,14 +227,10 @@ public class ItemBasket : MonoBehaviour
         SetActiveValue(false);
     }
 
-    public void LoadItems(bool additional , int amountItems, List<int> additionalAmountItems)
+    public void LoadItems(bool additional, int amountItems, List<int> additionalAmountItems)
     {
-        Debug.Log("17" );
-        
-        
         if (!additional)
         {
-            Debug.Log("18" );
             foreach (var item in _itemsActivity)
                 item.SetValue(false);
 
@@ -296,52 +243,25 @@ public class ItemBasket : MonoBehaviour
             _itemsAdditionalArray = new Item[][] { _items, _additionalItems };
             _itemsActivityAdditionalArray = new ActivityItem[][] { _itemsActivity, _additionalItemsActivity };
             DeactivateItems();
-            Debug.Log("19" );
-            // Сбрасываем все элементы в _itemsActivityAdditionalArray в false
+
             foreach (var row in _itemsActivityAdditionalArray)
             {
                 foreach (var item in row)
                     item.SetValue(false);
             }
-            Debug.Log("20" );
-            // Устанавливаем элементы в true в соответствии с additionalAmountItems
-            
+
             for (int i = 0; i < additionalAmountItems.Count; i++)
             {
                 if (i < _itemsActivityAdditionalArray.Length)
                 {
                     int count = additionalAmountItems[i];
-                    
+
                     for (int j = 0; j < count && j < _itemsActivityAdditionalArray[i].Length; j++)
-                    {
                         _itemsActivityAdditionalArray[i][j].SetValue(true);
-                    }
                 }
             }
-            
+
             DeactivateItems();
-            
-            
-            
-            /*for (int i = 0; i < additionalAmountItems.Count; i++)
-            {
-                Debug.Log("++++++++++ " + additionalAmountItems[i]);
-                Debug.Log("21" );
-
-                for (int j = 0; j < additionalAmountItems[i]; j++)
-                {
-                    _itemsActivityAdditionalArray[i]
-                }
-                
-                if (i < _itemsActivityAdditionalArray.Length)
-                {
-                    int rowIndex = i;
-                    int colIndex = additionalAmountItems[i];
-
-                    if (rowIndex < _itemsActivityAdditionalArray.Length && colIndex < _itemsActivityAdditionalArray[rowIndex].Length)
-                        _itemsActivityAdditionalArray[rowIndex][colIndex].SetValue(true);
-                }
-            }*/
         }
     }
 

@@ -166,6 +166,7 @@ namespace DeliveryContent
             SoundPlayer.Instance.PlayDostavka();
             RemainingTime = 0;
             TimeChanged?.Invoke(RemainingTime);
+            _deliverySaver.SaveDeliveryData();
         }
 
         public void AddItemsCart(List<ItemCart> items)
@@ -214,6 +215,8 @@ namespace DeliveryContent
                 if (item.Amount <= 0)
                     _items.RemoveAt(0);
             }
+            
+            _deliverySaver.SaveDeliveryData();
         }
 
         public void SpawnPrize(ItemType itemType, int value)

@@ -22,6 +22,8 @@ namespace ItemContent
         public ItemType ItemType => _itemType;
 
         private bool _firstFullness=true;
+        
+        public event Action FullnessChanged;
 
         private void OnEnable()
         {
@@ -52,7 +54,8 @@ namespace ItemContent
 
             if (CurrentFullness <= 0)
                 CurrentFullness = 0;
-
+            
+            FullnessChanged?.Invoke();
             UpdateFullUI();
         }
 

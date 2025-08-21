@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using System.Linq;
 using System.Runtime.CompilerServices;
+using AssemblyBurgerContent;
 using Enums;
 using PlayerContent;
 using SaveContent;
