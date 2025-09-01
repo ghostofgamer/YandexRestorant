@@ -11,7 +11,9 @@ namespace SaveContent
     public class BoxSaver : MonoBehaviour
     {
         [SerializeField] private BoxesCounter _boxesCounter;
-
+        
+        private const string BoxDataKey = "BoxData";
+        
         /*private void Start()
         {
             LoadData();
@@ -36,6 +38,36 @@ namespace SaveContent
         
         public void SaveData()
         {
+            /*List<BoxData> boxesToSave = _boxesCounter.ItemBaskets
+                .Select(item =>
+                {
+                    Debug.Log($"ItemBasket: Type = {(int)item.ItemType}, ActiveValueItems = {item.GetActiveValueItems()}");
+                    return new BoxData(
+                        (int)item.ItemType,
+                        item.transform.position,
+                        item.GetActiveValueItems(),
+                        item.IsAdditionalItemsBasket,
+                        item.GetActiveValueArrayItems().ToList()
+                    );
+                })
+                .Concat(_boxesCounter.ItemDrinkPackages
+                    .Select(item =>
+                    {
+                        Debug.Log($"ItemDrinkPackage: Type = {(int)item.ItemType}, CurrentFullness = {item.CurrentFullness}");
+                        return new BoxData(
+                            (int)item.ItemType,
+                            item.transform.position,
+                            item.CurrentFullness,
+                            false,
+                            null
+                        );
+                    }))
+                .ToList();
+            string jsonData = JsonUtility.ToJson(new BoxDataWrapper(boxesToSave));
+            string path = Path.Combine(Application.persistentDataPath, "boxData.json");
+            File.WriteAllText(path, jsonData);*/
+            
+            
             List<BoxData> boxesToSave = _boxesCounter.ItemBaskets
                 .Select(item =>
                 {
@@ -61,28 +93,15 @@ namespace SaveContent
                         );
                     }))
                 .ToList();
-            
-            
-            
-            
-            
-            
-            
-            
-            /*// Преобразуем данные коробок в формат для сохранения
-            List<BoxData> boxesToSave = _boxesCounter.ItemBaskets
-                .Select(item => new BoxData((int)item.ItemType, item.transform.position, item.GetActiveValueItems(),
-                    item.IsAdditionalItemsBasket, item.GetActiveValueArrayItems().ToList()))
-                .Concat(_boxesCounter.ItemDrinkPackages
-                    .Select(item => new BoxData((int)item.ItemType, item.transform.position, item.CurrentFullness,
-                        false, null)))
-                .ToList();*/
-            
-            
-            // Сохраняем данные в JSON файл
-            string jsonData = JsonUtility.ToJson(new BoxDataWrapper(boxesToSave));
-            string path = Path.Combine(Application.persistentDataPath, "boxData.json");
-            File.WriteAllText(path, jsonData);
+
+            // Оборачиваем в wrapper
+            BoxDataWrapper wrapper = new BoxDataWrapper(boxesToSave);
+
+            // Сохраняем в MirraSDK
+            MirraSDK.Data.SetObject(BoxDataKey, wrapper, true);
+            MirraSDK.Data.Save();
+
+            Debug.Log("Box data saved to Mirra SDK storage.");
         }
         
         /*public void SaveData()
@@ -139,7 +158,7 @@ namespace SaveContent
 
         public List<BoxData> LoadData()
         {
-            // Загружаем данные из JSON файла
+            /*// Загружаем данные из JSON файла
             string path = Application.persistentDataPath + "/boxData.json";
 
             string persistentDataPath = Application.persistentDataPath;
@@ -163,6 +182,16 @@ namespace SaveContent
                 return wrapper.boxes;
             }
 
+            return new List<BoxData>();*/
+            
+            if (MirraSDK.Data.HasKey(BoxDataKey))
+            {
+                BoxDataWrapper wrapper = MirraSDK.Data.GetObject<BoxDataWrapper>(BoxDataKey);
+                Debug.Log($"Loaded {wrapper.boxes.Count} boxes from Mirra SDK storage.");
+                return wrapper.boxes;
+            }
+
+            Debug.Log("No saved box data found.");
             return new List<BoxData>();
         }
         
@@ -199,7 +228,7 @@ namespace SaveContent
         [ContextMenu("ClearSavedData")]
         public void ClearSavedData()
         {
-            _boxesCounter.Clear();
+            /*_boxesCounter.Clear();
             // MirraSDK.Data.DeleteAll();
 
             string path = Application.persistentDataPath + "/boxData.json";
@@ -207,6 +236,19 @@ namespace SaveContent
             {
                 File.Delete(path);
                 Debug.Log("Saved data cleared.");
+            }
+            else
+            {
+                Debug.Log("No saved data found.");
+            }*/
+            
+            _boxesCounter.Clear();
+
+            if (MirraSDK.Data.HasKey(BoxDataKey))
+            {
+                MirraSDK.Data.DeleteKey(BoxDataKey);
+                MirraSDK.Data.Save();
+                Debug.Log("Box data cleared from Mirra SDK storage.");
             }
             else
             {

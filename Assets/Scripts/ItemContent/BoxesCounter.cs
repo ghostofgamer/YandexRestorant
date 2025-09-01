@@ -38,7 +38,7 @@ namespace ItemContent
             _trash.BasketDeleted += SaveBoxValue;
             // _assemblyTable.IngredientsAdded += SaveBoxValue;
 
-            // _loadingGame.MirraSDKInitialization += Initialize;
+            _loadingGame.MirraSDKInitialization += Initialize;
             // _delivery.SpawnAllCompleted += SaveBoxValue;
         }
 
@@ -49,20 +49,20 @@ namespace ItemContent
             _trash.BasketDeleted -= SaveBoxValue;
             // _assemblyTable.IngredientsAdded -= SaveBoxValue;
 
-            // _loadingGame.MirraSDKInitialization -= Initialize;
+             _loadingGame.MirraSDKInitialization -= Initialize;
             // _delivery.SpawnAllCompleted -= SaveBoxValue;
         }
 
-        private void Start()
+        /*private void Start()
         {
             Load();
-        }
+        }*/
 
-        /*public void Initialize()
+        public void Initialize()
         {
             _boxSaver.LoadData();
             Load();
-        }*/
+        }
 
         public void RemoveBox(GameObject box)
         {

@@ -5,14 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="11e15f27-66b8-446e-8e38-f8f60d18b8aa" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.YandexRestorant/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.YandexRestorant/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/Polytope Studio/Lowpoly_Environments/Sources/Materials/PT_Skybox_mat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/Polytope Studio/Lowpoly_Environments/Sources/Materials/PT_Skybox_mat.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ADSContent/ADS.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ADSContent/ADS.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ADSContent/InterstitialActivator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ADSContent/InterstitialActivator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TutorialContent/TutorialActivator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TutorialContent/TutorialActivator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Screens/AssemblyScreens/AssemblyBurgerScreen.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Screens/AssemblyScreens/AssemblyBurgerScreen.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/WalletContent/Wallet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/WalletContent/Wallet.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ItemContent/BoxesCounter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ItemContent/BoxesCounter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SaveContent/BoxSaver.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SaveContent/BoxSaver.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TutorialContent/Tutorial.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TutorialContent/Tutorial.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Screens/FirstLanguageScreen.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Screens/FirstLanguageScreen.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +23,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CursorActivator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enums/PurchaseType.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PurchasePriceInitializer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Test/ClearDataAll.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/Buttons/PurchaseInapButon.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/Screens/ADSBreakScreen.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/WindowsCounter.cs" root0="FORCE_HIGHLIGHTING" />
@@ -156,7 +154,7 @@
       <workItem from="1755586855318" duration="11095000" />
       <workItem from="1755674386450" duration="11533000" />
       <workItem from="1755753714563" duration="13334000" />
-      <workItem from="1756716011131" duration="7564000" />
+      <workItem from="1756716011131" duration="11427000" />
     </task>
     <servers />
   </component>

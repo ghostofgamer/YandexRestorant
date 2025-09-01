@@ -168,6 +168,23 @@ namespace TutorialContent
 
             return currentType;
         }
+        
+        public void ClearSaveData()
+        {
+            // Сбрасываем ключи
+            MirraSDK.Data.SetInt(TutorCompletedKey, 0, true);
+            MirraSDK.Data.SetInt(CurrentStageKey, 0, true);
+
+            // Сохраняем изменения
+            MirraSDK.Data.Save();
+
+            // Возвращаемся к начальному этапу
+            CurrentType = TutorialType.NameRestaurant;
+            Debug.Log("Tutorial progress cleared. Starting from the beginning.");
+
+            // Запускаем первый этап
+            CheckCurrentTutorialStage();
+        }
 
         private void CheckCurrentTutorialStage()
         {
