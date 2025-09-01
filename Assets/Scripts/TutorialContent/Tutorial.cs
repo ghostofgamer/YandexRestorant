@@ -1,5 +1,7 @@
 using System;
 using Enums;
+using LoadingSceneContent;
+using MirraGames.SDK;
 using UnityEngine;
 
 namespace TutorialContent
@@ -9,14 +11,17 @@ namespace TutorialContent
         [SerializeField] private TutorialData _tutorialData;
         [SerializeField] private TutorialActivator _tutorialActivator;
         [SerializeField] private TutorDescriptionUI _tutorialDescriptionUI;
-
         [SerializeField] private bool _isCheatCodeTutorCompleted;
+        [SerializeField] private LoadingGame _loadingGame;
 
         public TutorialType CurrentType { get; private set; }
 
         public event Action TutorCompleted;
 
-        private void Awake()
+        private const string TutorCompletedKey = "TutorCompleted";
+        private const string CurrentStageKey = "CurrentTutorialStage";
+
+        /*private void Awake()
         {
             int value = PlayerPrefs.GetInt("TutorCompleted", 0);
 
@@ -33,10 +38,40 @@ namespace TutorialContent
             int savedTutorialStage = PlayerPrefs.GetInt("CurrentTutorialStage", 0);
             CurrentType = (TutorialType)savedTutorialStage;
 
-            /*// CurrentType = TutorialType.OrderBurgerPatties;
+            /#1#/ CurrentType = TutorialType.OrderBurgerPatties;
             // CurrentType = TutorialType.LetsMakeFirstBurger;
             // CurrentType = TutorialType.LetsSetPrice;
-            CurrentType = TutorialType.OpenRestaurant;*/
+            CurrentType = TutorialType.OpenRestaurant;#1#
+
+            CheckCurrentTutorialStage();
+        }*/
+
+        private void OnEnable()
+        {
+            _loadingGame.MirraSDKInitialization += Init;
+        }
+
+        private void OnDisable()
+        {
+            _loadingGame.MirraSDKInitialization -= Init;
+        }
+
+        private void Init()
+        {
+            int value = MirraSDK.Data.GetInt(TutorCompletedKey, 0);
+
+            if (_isCheatCodeTutorCompleted)
+                value = 1;
+
+            if (value > 0)
+            {
+                CurrentType = TutorialType.TutorCompleted;
+                TutorCompleted?.Invoke();
+                return;
+            }
+
+            int savedTutorialStage = MirraSDK.Data.GetInt(CurrentStageKey, 0);
+            CurrentType = (TutorialType)savedTutorialStage;
 
             CheckCurrentTutorialStage();
         }
@@ -52,9 +87,9 @@ namespace TutorialContent
                 if (nextType != CurrentType)
                 {
                     CurrentType = nextType;
-                    PlayerPrefs.SetInt("CurrentTutorialStage", (int)CurrentType);
-                    PlayerPrefs.Save();
-
+                    /*PlayerPrefs.SetInt("CurrentTutorialStage", (int)CurrentType);
+                    PlayerPrefs.Save();*/
+                    SaveCurrentStage();
                     CheckCurrentTutorialStage();
                 }
                 else
@@ -82,17 +117,24 @@ namespace TutorialContent
 
                     if ((int)CurrentType < (int)TutorialType.TakeFirstOrder)
                     {
-                        PlayerPrefs.SetInt("CurrentTutorialStage", (int)CurrentType);
-                        PlayerPrefs.Save();
+                        /*PlayerPrefs.SetInt("CurrentTutorialStage", (int)CurrentType);
+                        PlayerPrefs.Save();*/
+                        
+                        SaveCurrentStage();
                     }
 
                     if (CurrentType == TutorialType.TutorCompleted)
                     {
                         // AppMetrica.ReportEvent("TutorCompleted");
 
-                        PlayerPrefs.SetInt("TutorCompleted", 1);
+                        /*PlayerPrefs.SetInt("TutorCompleted", 1);
                         PlayerPrefs.SetInt("CurrentTutorialStage", (int)CurrentType);
-                        PlayerPrefs.Save();
+                        PlayerPrefs.Save();*/
+                        
+                        
+                        
+                        MirraSDK.Data.SetInt(TutorCompletedKey, 1, true);
+                        SaveCurrentStage();
                     }
 
                     Debug.Log("NewStage ." + CurrentType);
@@ -107,6 +149,12 @@ namespace TutorialContent
             {
                 Debug.LogError("Completed tutorial stage does not match the current stage.");
             }
+        }
+        
+        private void SaveCurrentStage()
+        {
+            MirraSDK.Data.SetInt(CurrentStageKey, (int)CurrentType, true);
+            MirraSDK.Data.Save();
         }
 
         private TutorialType GetNextTutorialType(TutorialType currentType)

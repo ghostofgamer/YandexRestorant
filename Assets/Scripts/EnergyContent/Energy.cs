@@ -1,4 +1,6 @@
 using System;
+using LoadingSceneContent;
+using MirraGames.SDK;
 using UI;
 using UnityEngine;
 
@@ -6,15 +8,35 @@ namespace EnergyContent
 {
     public class Energy : MonoBehaviour
     {
+        private const string EnergyKey = "EnergyValue";
+
         [SerializeField] private FlyValue _flyValue;
-        
+        [SerializeField] private LoadingGame _loadingGame;
+
         public int EnergyValue { get; private set; }
 
         public event Action<int> EnergyValueChanged;
 
-        private void Start()
+        private void OnEnable()
         {
-            EnergyValue = PlayerPrefs.GetInt("EnergyValue", 10);
+            _loadingGame.MirraSDKInitialization += Init;
+        }
+
+        private void OnDisable()
+        {
+            _loadingGame.MirraSDKInitialization -= Init;
+        }
+
+        /*private void Start()
+        {
+            /*EnergyValue = PlayerPrefs.GetInt("EnergyValue", 10);
+            SaveEnergy();
+            EnergyValueChanged?.Invoke(EnergyValue);#1#
+        }*/
+
+        private void Init()
+        {
+            EnergyValue = MirraSDK.Data.GetInt(EnergyKey, 10);
             SaveEnergy();
             EnergyValueChanged?.Invoke(EnergyValue);
         }
@@ -23,7 +45,7 @@ namespace EnergyContent
         {
             if (value <= 0)
                 return;
-            
+
             _flyValue.ShowFly(value);
             EnergyValue += value;
             SaveEnergy();
@@ -40,7 +62,10 @@ namespace EnergyContent
 
         private void SaveEnergy()
         {
-            PlayerPrefs.SetInt("EnergyValue", EnergyValue);
+            MirraSDK.Data.SetInt(EnergyKey, EnergyValue, true);
+            MirraSDK.Data.Save();
+
+            // PlayerPrefs.SetInt("EnergyValue", EnergyValue);
         }
     }
 }

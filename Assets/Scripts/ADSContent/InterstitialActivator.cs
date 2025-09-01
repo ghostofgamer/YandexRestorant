@@ -20,11 +20,11 @@ namespace ADSContent
         [SerializeField] private TMP_Text countdownText;
         [SerializeField] private PlayerInput _playerInput;
         [SerializeField] private RemoveAdScreen _removeAdScreen;
-        
+
         private TimeSpan _adCooldown;
         private DateTime _sessionStartTime;
         private int _adShowCount = 0;
-        
+
         public static InterstitialActivator Instance
         {
             get
@@ -85,6 +85,12 @@ namespace ADSContent
 
         public void ShowAd(bool breakADCooldown)
         {
+            if (!_ads.IsCanShowInter || _ads.IsTemporaryStopInters)
+            {
+                Debug.Log("Реклама не показывается или куплена отключение ");
+                return;
+            }
+
             if (breakADCooldown)
             {
                 if (MirraSDK.Ads.IsInterstitialReady && !MirraSDK.Ads.IsInterstitialVisible &&
@@ -96,7 +102,7 @@ namespace ADSContent
                 if (CanShowAd())
                 {
                     ShowInter();
-                    
+
                     /*_ads.ShowInterstitial();
                     Debug.Log("$$$Showing Ad");
                     PlayerPrefs.SetString(LastADKey, DateTime.UtcNow.Ticks.ToString());

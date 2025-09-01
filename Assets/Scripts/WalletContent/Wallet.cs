@@ -1,5 +1,7 @@
 using System;
 using I2.Loc;
+using LoadingSceneContent;
+using MirraGames.SDK;
 using TutorialContent;
 using UI;
 using UnityEngine;
@@ -10,6 +12,7 @@ namespace WalletContent
     {
         [SerializeField] private FlyValue _flyValue;
         [SerializeField] private TutorDescriptionUI _tutorDescriptionUI;
+        [SerializeField]private LoadingGame _loadingGame;
 
         public DollarValue DollarValue { get; private set; }
 
@@ -21,11 +24,13 @@ namespace WalletContent
         private void OnEnable()
         {
             _tutorDescriptionUI.TutorialCompleted += AddPrizeTutorialMoney;
+            _loadingGame.MirraSDKInitialization += StartInit;
         }
 
         private void OnDisable()
         {
             _tutorDescriptionUI.TutorialCompleted -= AddPrizeTutorialMoney;
+            _loadingGame.MirraSDKInitialization -= StartInit;
         }
 
         private void Start()
@@ -33,8 +38,13 @@ namespace WalletContent
             var localis = LocalizationManager.CurrentLanguage;
             Debug.Log("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!localis " + localis);
 
+            /*LoadDollarValue();
+            DollarValueChanged?.Invoke(DollarValue);*/
+        }
+
+        public void StartInit()
+        {
             LoadDollarValue();
-            // DollarValue = new DollarValue(100, 10);
             DollarValueChanged?.Invoke(DollarValue);
         }
 
@@ -86,14 +96,39 @@ namespace WalletContent
 
         private void SaveDollarValue()
         {
-            PlayerPrefs.SetInt("DollarValue_Dollars", DollarValue.Dollars);
+            /*PlayerPrefs.SetInt("DollarValue_Dollars", DollarValue.Dollars);
             PlayerPrefs.SetInt("DollarValue_Cents", DollarValue.Cents);
-            PlayerPrefs.Save();
+            PlayerPrefs.Save();*/
+            
+            
+            
+            MirraSDK.Data.SetInt("DollarValue_Dollars", DollarValue.Dollars);
+            MirraSDK.Data.SetInt("DollarValue_Cents", DollarValue.Cents);
+            MirraSDK.Data.Save(); // аналог PlayerPrefs.Save()
         }
 
         private void LoadDollarValue()
         {
-            if (PlayerPrefs.HasKey("DollarValue_Dollars") && PlayerPrefs.HasKey("DollarValue_Cents"))
+            if (MirraSDK.Data.HasKey("DollarValue_Dollars") && MirraSDK.Data.HasKey("DollarValue_Cents"))
+            {
+                int dollars = MirraSDK.Data.GetInt("DollarValue_Dollars");
+                int cents = MirraSDK.Data.GetInt("DollarValue_Cents");
+
+                if (dollars <= 0)
+                    dollars = 0;
+
+                if (cents <= 0)
+                    cents = 0;
+
+                DollarValue = new DollarValue(dollars, cents);
+            }
+            else
+            {
+                DollarValue = new DollarValue(25, 0); // начальное значение
+            }
+            
+            
+            /*if (PlayerPrefs.HasKey("DollarValue_Dollars") && PlayerPrefs.HasKey("DollarValue_Cents"))
             {
                 int dollars = PlayerPrefs.GetInt("DollarValue_Dollars");
                 int cents = PlayerPrefs.GetInt("DollarValue_Cents");
@@ -109,7 +144,7 @@ namespace WalletContent
             else
             {
                 DollarValue = new DollarValue(25, 00);
-            }
+            }*/
         }
 
         private void AddPrizeTutorialMoney()

@@ -5,6 +5,7 @@ using InputContent;
 using ItemContent;
 using SoContent;
 using UI.Screens;
+using UI.Screens.AssemblyScreens;
 using UI.Screens.TutorialScreens;
 using UnityEngine;
 using UnityEngine.UI;
@@ -63,9 +64,7 @@ namespace TutorialContent
         {
             Debug.Log("!!!!!!!!!!!!!!!!!!!ActivateNameRestaurant");
             
-            
             _nameRestaurant.Save();
-            
             
             
             /*_counter++;

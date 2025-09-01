@@ -2,7 +2,7 @@ using AssemblyBurgerContent;
 using CameraContent;
 using UnityEngine;
 
-namespace UI.Screens
+namespace UI.Screens.AssemblyScreens
 {
     public class AssemblyBurgerScreen : AbstractScreen
     {
