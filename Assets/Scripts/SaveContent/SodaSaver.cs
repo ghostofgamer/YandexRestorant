@@ -12,6 +12,9 @@ namespace SaveContent
         [SerializeField] private SodaFullnessCounter[] _sodaFullnessCounters;
         [SerializeField] private SodaCounter _sodaCounter;
 
+        private const string SodaFullnessKeyPrefix = "SodaFullness";
+        private const string SodaItemsKey = "SodaItemTypeIndices";
+        
         private void OnEnable()
         {
             foreach (var sodaFullnessCounter in _sodaFullnessCounters)
@@ -30,21 +33,41 @@ namespace SaveContent
 
         private void SaveFullnessSoda(ItemType itemType, int value)
         {
-            PlayerPrefs.SetInt("SodaFullness" + itemType, value);
+            // PlayerPrefs.SetInt("SodaFullness" + itemType, value);
+            StorageHelper.SetInt($"{SodaFullnessKeyPrefix}{itemType}", value);
         }
 
         private void SaveWellSoda(List<Item> items)
         {
-            int[] itemTypeIndices = items.Select(item => (int)item.ItemType).ToArray();
+            var wrapper = new SodaWrapper
+            {
+                itemTypeIndices = items.Select(item => (int)item.ItemType).ToArray()
+            };
+            StorageHelper.SetObject(SodaItemsKey, wrapper);
+            
+            
+            
+            /*int[] itemTypeIndices = items.Select(item => (int)item.ItemType).ToArray();
             
             string indicesString = string.Join(",", itemTypeIndices);
             PlayerPrefs.SetString("SodaItemTypeIndices", indicesString);
-            PlayerPrefs.Save();
+            PlayerPrefs.Save();*/
         }
 
         public List<ItemType> LoadItemTypesFromIndices()
         {
-            string indicesString = PlayerPrefs.GetString("SodaItemTypeIndices", "");
+            if (!StorageHelper.HasKey(SodaItemsKey))
+                return new List<ItemType>();
+
+            var wrapper = StorageHelper.GetObject<SodaWrapper>(SodaItemsKey);
+
+            return wrapper?.itemTypeIndices
+                       .Select(index => (ItemType)index)
+                       .ToList()
+                   ?? new List<ItemType>();
+            
+            
+            /*string indicesString = PlayerPrefs.GetString("SodaItemTypeIndices", "");
             
             int[] itemTypeIndices = indicesString.Split(',')
                 .Where(s => !string.IsNullOrEmpty(s))
@@ -53,7 +76,13 @@ namespace SaveContent
             
             List<ItemType> itemTypes = itemTypeIndices.Select(index => (ItemType)index).ToList();
 
-            return itemTypes;
+            return itemTypes;*/
         }
+    }
+    
+    [Serializable]
+    public class SodaWrapper
+    {
+        public int[] itemTypeIndices;
     }
 }

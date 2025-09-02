@@ -1,5 +1,6 @@
 using Enums;
 using I2.Loc;
+using SaveContent;
 using SettingsContent;
 using SettingsContent.SoundContent;
 using TMPro;
@@ -65,8 +66,7 @@ namespace UI.Screens.EquipmentContent
                 Debug.Log("Не хватает денег ");
                 return;
             }
-
-
+            
             // AppMetrica.ReportEvent("Equipment", "{\"" + _equipmentType.ToString() + "\":null}");
             SoundPlayer.Instance.PlayPayment();
             _wallet.Subtract(CurrentPrice);
@@ -75,6 +75,7 @@ namespace UI.Screens.EquipmentContent
             _ownedObjectInfo.SetActive(true);
             _buyObjectInfo.SetActive(false);
             _equipment.gameObject.SetActive(true);
+            // StorageHelper.SetInt($"{Equipment}{_levelOpened}", 1);
             PlayerPrefs.SetInt(Equipment + _levelOpened, 1);
             _shopScreen.CloseScreen();
         }
@@ -82,6 +83,7 @@ namespace UI.Screens.EquipmentContent
         public virtual bool IsBuyed()
         {
             return PlayerPrefs.GetInt(Equipment + _levelOpened, 0) > 0;
+            // return StorageHelper.GetInt($"{Equipment}{_levelOpened}", 0) > 0;
         }
 
         public virtual void Initialization(int levelPlayer)

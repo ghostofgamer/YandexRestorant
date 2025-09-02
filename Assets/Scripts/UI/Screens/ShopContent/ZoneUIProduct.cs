@@ -2,6 +2,7 @@ using System;
 using Enums;
 using I2.Loc;
 using RestaurantContent;
+using SaveContent;
 using SettingsContent;
 using SettingsContent.SoundContent;
 using TMPro;
@@ -76,6 +77,7 @@ namespace UI.Screens.ShopContent
         public bool IsBuyed()
         {
             return PlayerPrefs.GetInt("Zona" + _zoneType, 0) > 0;
+            // return StorageHelper.GetInt("Zona" + _zoneType, 0) > 0;
         }
 
         public void Buy()
@@ -95,6 +97,7 @@ namespace UI.Screens.ShopContent
             _buyObjectInfo.SetActive(false);
             // _wallZone.gameObject.SetActive(false);
             PlayerPrefs.SetInt("Zona" + _zoneType, 1);
+            // StorageHelper.SetInt("Zona" + _zoneType, 1);
             _shopScreen.CloseScreen();
             _zoneWall.Activate();
         }

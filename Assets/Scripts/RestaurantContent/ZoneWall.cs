@@ -1,4 +1,5 @@
 using System;
+using LoadingSceneContent;
 using UI.Screens.ShopContent;
 using UnityEngine;
 
@@ -11,10 +12,26 @@ namespace RestaurantContent
         [SerializeField] private GameObject _openDoor;
         [SerializeField] private GameObject _zoneEnvironment;
         [SerializeField] private bool _isDoor;
+        [SerializeField] private LoadingGame _loadingGame;
 
         public event Action<bool> ActivityDoorChanged;
 
-        private void Start()
+        private void OnEnable()
+        {
+            _loadingGame.MirraSDKInitialization += Init;
+        }
+
+        private void OnDisable()
+        {
+            _loadingGame.MirraSDKInitialization -= Init;
+        }
+
+        /*private void Start()
+        {
+            Activate();
+        }*/
+
+        private void Init()
         {
             Activate();
         }

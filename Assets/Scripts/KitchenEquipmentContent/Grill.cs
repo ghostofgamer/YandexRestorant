@@ -6,6 +6,7 @@ using DG.Tweening;
 using Enums;
 using I2.Loc;
 using InteractableContent;
+using LoadingSceneContent;
 using PlayerContent;
 using SettingsContent.SoundContent;
 using SoContent.AssemblyBurger;
@@ -30,6 +31,7 @@ namespace KitchenEquipmentContent
         [SerializeField] private AudioSource _audioSource;
         [SerializeField] private Tutorial _tutorial;
         [SerializeField] private GameObject _fryEffect;
+        [SerializeField]private LoadingGame _loadingGame;
 
         public TMP_Text grillText;
         public Image fillImage;
@@ -41,14 +43,44 @@ namespace KitchenEquipmentContent
         private void OnEnable()
         {
             _interactableObject.OnAction += Action;
+            _loadingGame.MirraSDKInitialization += Init;
         }
 
         private void OnDisable()
         {
             _interactableObject.OnAction -= Action;
+            _loadingGame.MirraSDKInitialization -= Init;
         }
 
-        private void Start()
+        /*private void Start()
+        {
+            foreach (var rawCutlet in _rawCutletItems)
+                rawCutlet.gameObject.SetActive(false);
+
+            foreach (var readyCutlet in _readyCutletItems)
+                readyCutlet.gameObject.SetActive(false);
+
+            int rawValue = PlayerPrefs.GetInt("RawCutletGrill", 0);
+            int readyValue = PlayerPrefs.GetInt("WellCutletGrill", 0);
+
+            if (rawValue > 0)
+            {
+                _currentType = ItemType.RawCutlet;
+
+                for (int i = 0; i < rawValue; i++)
+                    _rawCutletItems[i].gameObject.SetActive(true);
+            }
+
+            if (readyValue > 0)
+            {
+                _currentType = ItemType.Cutlet;
+
+                for (int i = 0; i < readyValue; i++)
+                    _readyCutletItems[i].gameObject.SetActive(true);
+            }
+        }*/
+
+        private void Init()
         {
             foreach (var rawCutlet in _rawCutletItems)
                 rawCutlet.gameObject.SetActive(false);

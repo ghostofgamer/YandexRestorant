@@ -1,4 +1,5 @@
 using System;
+using SaveContent;
 using UnityEngine;
 
 namespace CalendarContent
@@ -15,14 +16,16 @@ namespace CalendarContent
 
         private void Start()
         {
-            CurrentDay = PlayerPrefs.GetInt(CurrentDayString, _minDay);
+            // CurrentDay = PlayerPrefs.GetInt(CurrentDayString, _minDay);
+            CurrentDay = StorageHelper.GetInt(CurrentDayString, _minDay);
             DayChanged?.Invoke();
         }
 
         public void NextDay()
         {
             CurrentDay++;
-            PlayerPrefs.SetInt(CurrentDayString, CurrentDay);
+            // PlayerPrefs.SetInt(CurrentDayString, CurrentDay);
+            StorageHelper.SetInt(CurrentDayString, CurrentDay);
             DayChanged?.Invoke();
         }
     }

@@ -1,6 +1,7 @@
 using System;
 using LoadingSceneContent;
 using MirraGames.SDK;
+using SaveContent;
 using UI;
 using UnityEngine;
 
@@ -36,7 +37,7 @@ namespace EnergyContent
 
         private void Init()
         {
-            EnergyValue = MirraSDK.Data.GetInt(EnergyKey, 10);
+            EnergyValue = StorageHelper.GetInt(EnergyKey, 10);
             SaveEnergy();
             EnergyValueChanged?.Invoke(EnergyValue);
         }
@@ -62,10 +63,7 @@ namespace EnergyContent
 
         private void SaveEnergy()
         {
-            MirraSDK.Data.SetInt(EnergyKey, EnergyValue, true);
-            MirraSDK.Data.Save();
-
-            // PlayerPrefs.SetInt("EnergyValue", EnergyValue);
+            StorageHelper.SetInt("EnergyValue", EnergyValue);
         }
     }
 }

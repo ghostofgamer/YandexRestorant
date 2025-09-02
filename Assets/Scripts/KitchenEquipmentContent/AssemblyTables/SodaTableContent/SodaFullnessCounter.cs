@@ -1,6 +1,8 @@
-using System;
+    using System;
 using Enums;
 using ItemContent;
+using LoadingSceneContent;
+using SaveContent;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -10,6 +12,7 @@ namespace KitchenEquipmentContent.AssemblyTables.SodaTableContent
     {
         [SerializeField] private ItemType _itemType;
         [SerializeField] private Image _imageFullness;
+        [SerializeField]private LoadingGame _loadingGame;
 
         private int _maxFullness = 100;
 
@@ -18,10 +21,27 @@ namespace KitchenEquipmentContent.AssemblyTables.SodaTableContent
         public ItemType ItemType => _itemType;
         public int CurrentFullness { get; private set; }
 
-        private void Start()
+        private void OnEnable()
+        {
+            _loadingGame.MirraSDKInitialization += Init;
+        }
+
+        private void OnDisable()
+        {
+            _loadingGame.MirraSDKInitialization -= Init;
+        }
+
+        /*private void Start()
         {
             int value = PlayerPrefs.GetInt("SodaFullness" + _itemType, 0);
             CurrentFullness = value;
+            UpdateFillAmount();
+        }
+        */
+
+        private void Init()
+        {
+            CurrentFullness = StorageHelper.GetInt($"SodaFullness{_itemType}", 0);
             UpdateFillAmount();
         }
 

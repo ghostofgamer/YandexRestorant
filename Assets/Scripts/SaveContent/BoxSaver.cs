@@ -95,12 +95,9 @@ namespace SaveContent
                 .ToList();
 
             // Оборачиваем в wrapper
-            BoxDataWrapper wrapper = new BoxDataWrapper(boxesToSave);
-
-            // Сохраняем в MirraSDK
-            MirraSDK.Data.SetObject(BoxDataKey, wrapper, true);
-            MirraSDK.Data.Save();
-
+            /*BoxDataWrapper wrapper = new BoxDataWrapper(boxesToSave);*/
+            
+            StorageHelper.SetObject(BoxDataKey, new BoxDataWrapper(boxesToSave));
             Debug.Log("Box data saved to Mirra SDK storage.");
         }
         
@@ -184,7 +181,14 @@ namespace SaveContent
 
             return new List<BoxData>();*/
             
-            if (MirraSDK.Data.HasKey(BoxDataKey))
+            
+            
+            return StorageHelper.HasKey(BoxDataKey) 
+                ? StorageHelper.GetObject<BoxDataWrapper>(BoxDataKey).boxes 
+                : new List<BoxData>();
+            
+            
+            /*if (MirraSDK.Data.HasKey(BoxDataKey))
             {
                 BoxDataWrapper wrapper = MirraSDK.Data.GetObject<BoxDataWrapper>(BoxDataKey);
                 Debug.Log($"Loaded {wrapper.boxes.Count} boxes from Mirra SDK storage.");
@@ -192,7 +196,7 @@ namespace SaveContent
             }
 
             Debug.Log("No saved box data found.");
-            return new List<BoxData>();
+            return new List<BoxData>();*/
         }
         
         /*public List<BoxData> LoadData()
@@ -243,17 +247,7 @@ namespace SaveContent
             }*/
             
             _boxesCounter.Clear();
-
-            if (MirraSDK.Data.HasKey(BoxDataKey))
-            {
-                MirraSDK.Data.DeleteKey(BoxDataKey);
-                MirraSDK.Data.Save();
-                Debug.Log("Box data cleared from Mirra SDK storage.");
-            }
-            else
-            {
-                Debug.Log("No saved data found.");
-            }
+            StorageHelper.DeleteKey(BoxDataKey);
         }
     }
 

@@ -21,8 +21,8 @@ namespace UI.Screens.ShopContent.ShopPages.PageContents.ProductsPage
         
         public override void Init()
         {
+            Debug.Log("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!GasmeObj " + gameObject.name);
             Initialization(_playerLevel.CurrentLevel);
-            Debug.Log("GasmeObj " + gameObject.name);
         }
         
         private void Initialization(int level)

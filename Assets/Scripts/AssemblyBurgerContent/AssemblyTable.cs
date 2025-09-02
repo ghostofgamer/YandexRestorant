@@ -7,6 +7,7 @@ using CameraContent;
 using Enums;
 using I2.Loc;
 using InteractableContent;
+using LoadingSceneContent;
 using PlayerContent;
 using SaveContent;
 using SettingsContent.SoundContent;
@@ -28,6 +29,7 @@ namespace AssemblyBurgerContent
         [SerializeField] private Transform _cameraCurrentPosition;
         [SerializeField] private CameraPositionChanger _cameraPositionChanger;
         [SerializeField] private BurgersSaver _burgersSaver;
+        [SerializeField]private LoadingGame _loadingGame;
 
         private Dictionary<ItemType, ItemContainer> _containersByItemType;
 
@@ -46,14 +48,24 @@ namespace AssemblyBurgerContent
         private void OnEnable()
         {
             _interactableObject.OnAction += HandlePlayerInteraction;
+            _loadingGame.MirraSDKInitialization += Init;
         }
 
         private void OnDisable()
         {
             _interactableObject.OnAction -= HandlePlayerInteraction;
+            _loadingGame.MirraSDKInitialization -= Init;
         }
 
-        private void Start()
+        /*private void Start()
+        {
+            List<ItemType> itemTypes = _burgersSaver.LoadItemTypesFromIndices();
+
+            if (itemTypes.Count > 0)
+                LoadWellBurgers(itemTypes.Count, itemTypes);
+        }*/
+
+        private void Init()
         {
             List<ItemType> itemTypes = _burgersSaver.LoadItemTypesFromIndices();
 

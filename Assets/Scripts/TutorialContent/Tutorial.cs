@@ -2,6 +2,7 @@ using System;
 using Enums;
 using LoadingSceneContent;
 using MirraGames.SDK;
+using SaveContent;
 using UnityEngine;
 
 namespace TutorialContent
@@ -58,7 +59,7 @@ namespace TutorialContent
 
         private void Init()
         {
-            int value = MirraSDK.Data.GetInt(TutorCompletedKey, 0);
+            int value = StorageHelper.GetInt(TutorCompletedKey, 0);
 
             if (_isCheatCodeTutorCompleted)
                 value = 1;
@@ -70,9 +71,8 @@ namespace TutorialContent
                 return;
             }
 
-            int savedTutorialStage = MirraSDK.Data.GetInt(CurrentStageKey, 0);
+            int savedTutorialStage = StorageHelper.GetInt(CurrentStageKey, 0);
             CurrentType = (TutorialType)savedTutorialStage;
-
             CheckCurrentTutorialStage();
         }
 
@@ -119,7 +119,7 @@ namespace TutorialContent
                     {
                         /*PlayerPrefs.SetInt("CurrentTutorialStage", (int)CurrentType);
                         PlayerPrefs.Save();*/
-                        
+
                         SaveCurrentStage();
                     }
 
@@ -131,10 +131,9 @@ namespace TutorialContent
                         PlayerPrefs.SetInt("CurrentTutorialStage", (int)CurrentType);
                         PlayerPrefs.Save();*/
                         
-                        
-                        
-                        MirraSDK.Data.SetInt(TutorCompletedKey, 1, true);
+                        StorageHelper.SetInt(TutorCompletedKey, 1);
                         SaveCurrentStage();
+                        
                     }
 
                     Debug.Log("NewStage ." + CurrentType);
@@ -150,11 +149,10 @@ namespace TutorialContent
                 Debug.LogError("Completed tutorial stage does not match the current stage.");
             }
         }
-        
+
         private void SaveCurrentStage()
         {
-            MirraSDK.Data.SetInt(CurrentStageKey, (int)CurrentType, true);
-            MirraSDK.Data.Save();
+            StorageHelper.SetInt(CurrentStageKey, (int)CurrentType);
         }
 
         private TutorialType GetNextTutorialType(TutorialType currentType)
@@ -167,23 +165,6 @@ namespace TutorialContent
                 return allTypes[currentIndex + 1];
 
             return currentType;
-        }
-        
-        public void ClearSaveData()
-        {
-            // Сбрасываем ключи
-            MirraSDK.Data.SetInt(TutorCompletedKey, 0, true);
-            MirraSDK.Data.SetInt(CurrentStageKey, 0, true);
-
-            // Сохраняем изменения
-            MirraSDK.Data.Save();
-
-            // Возвращаемся к начальному этапу
-            CurrentType = TutorialType.NameRestaurant;
-            Debug.Log("Tutorial progress cleared. Starting from the beginning.");
-
-            // Запускаем первый этап
-            CheckCurrentTutorialStage();
         }
 
         private void CheckCurrentTutorialStage()

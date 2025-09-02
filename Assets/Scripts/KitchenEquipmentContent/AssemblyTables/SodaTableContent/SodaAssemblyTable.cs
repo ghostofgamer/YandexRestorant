@@ -5,6 +5,7 @@ using DG.Tweening;
 using Enums;
 using ItemContent;
 using KitchenEquipmentContent.AssemblyTables.SodaTableContent;
+using LoadingSceneContent;
 using PlayerContent.LevelContent;
 using RestaurantContent;
 using RestaurantContent.TrayContent;
@@ -31,17 +32,39 @@ namespace KitchenEquipmentContent
         [SerializeField] private SodaFullnessCounter[] _sodaFullnessCounters;
         [SerializeField] private EquipmentUIProduct _equipmentUIProduct;
         [SerializeField] private SodaSaver _sodaSaver;
+        [SerializeField]private LoadingGame _loadingGame;
         
         private Coroutine _coroutine;
         private bool _isWorking = false;
 
-        private void Start()
+        public override void OnEnable()
+        {
+            base.OnEnable();
+            _loadingGame.MirraSDKInitialization += Init;
+        }
+
+        public override void OnDisable()
+        {
+            base.OnDisable();
+            _loadingGame.MirraSDKInitialization -= Init;
+        }
+
+        /*private void Start()
         {
             List<ItemType> itemTypes = _sodaSaver.LoadItemTypesFromIndices();
             
             if (itemTypes.Count > 0)
                 LoadWellCups(itemTypes.Count,itemTypes);
             
+            gameObject.SetActive(_equipmentUIProduct.IsBuyed());
+        }*/
+
+        private void Init()
+        {
+            List<ItemType> itemTypes = _sodaSaver.LoadItemTypesFromIndices();
+            if (itemTypes.Count > 0)
+                LoadWellCups(itemTypes.Count, itemTypes);
+
             gameObject.SetActive(_equipmentUIProduct.IsBuyed());
         }
         

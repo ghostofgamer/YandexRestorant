@@ -9,6 +9,10 @@ namespace SaveContent
         private Grill _grill;
         private int _rawCutletActiveValue;
         private int _wellCutletActiveValue;
+        
+        private const string RawCutletKey = "RawCutletGrill";
+        private const string WellCutletKey = "WellCutletGrill";
+        
 
         private void Awake()
         {
@@ -27,8 +31,11 @@ namespace SaveContent
 
         private void SaveDate(int rawValue, int wellValue)
         {
-            PlayerPrefs.SetInt("RawCutletGrill", rawValue);
-            PlayerPrefs.SetInt("WellCutletGrill", wellValue);
+            /*PlayerPrefs.SetInt("RawCutletGrill", rawValue);
+            PlayerPrefs.SetInt("WellCutletGrill", wellValue);*/
+            
+            StorageHelper.SetInt(RawCutletKey, rawValue);
+            StorageHelper.SetInt(WellCutletKey, wellValue);
         }
     }
 }

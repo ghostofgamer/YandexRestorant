@@ -20,12 +20,12 @@ namespace KitchenEquipmentContent
 
         public ItemContainer ItemContainer => _itemContainer;
 
-        private void OnEnable()
+        public virtual void OnEnable()
         {
             _interactableObject.OnAction += Action;
         }
 
-        private void OnDisable()
+        public virtual void OnDisable()
         {
             _interactableObject.OnAction -= Action;
         }

@@ -10,6 +10,9 @@ namespace SaveContent
 
         private FullnessCoffeeCounter _fullnessCoffeeCounter;
         private int _coffeeFullnessValue;
+        
+        private const string CoffeeFullnessKey = "CoffeeFullness";
+        private const string CoffeeWellCupsKey = "CoffeeWellCups";
 
         private void Awake()
         {
@@ -30,12 +33,14 @@ namespace SaveContent
 
         private void SaveFullnessCoffee(int value)
         {
-            PlayerPrefs.SetInt("CoffeeFullness", value);
+            // PlayerPrefs.SetInt("CoffeeFullness", value);
+            StorageHelper.SetInt(CoffeeFullnessKey, value);
         }
 
         private void SaveWellCoffee(int value)
         {
-            PlayerPrefs.SetInt("CoffeeWellCups", value);
+            StorageHelper.SetInt(CoffeeWellCupsKey, value);
+            // PlayerPrefs.SetInt("CoffeeWellCups", value);
         }
     }
 }

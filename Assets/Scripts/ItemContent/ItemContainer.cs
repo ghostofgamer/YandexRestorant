@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using System.Linq;
-using System.Runtime.CompilerServices;
 using AssemblyBurgerContent;
 using Enums;
+using LoadingSceneContent;
 using PlayerContent;
 using SaveContent;
 
@@ -13,6 +13,7 @@ namespace InteractableContent
 {
     public class ItemContainer : MonoBehaviour, IPointerClickHandler
     {
+        [SerializeField] private LoadingGame _loadingGame;
         [SerializeField] private ItemContainerSaver _itemContainerSaver;
         [SerializeField] private InteractableObject _interactableObject;
         [SerializeField] private Item[] _items;
@@ -29,8 +30,8 @@ namespace InteractableContent
         [SerializeField] private Item[][] _itemsAdditionalArray;
 
         public event Action<int> ItemsActiveCountChanged;
-        
-        public event Action<int,int> ItemsAdditionalActiveCountChanged;
+
+        public event Action<int, int> ItemsAdditionalActiveCountChanged;
 
         public Transform[][] AdditionalArrayPositions { get; private set; }
 
@@ -46,35 +47,67 @@ namespace InteractableContent
         {
             if (_interactableObject != null)
                 _interactableObject.OnAction += ActionContainer;
+
+            _loadingGame.MirraSDKInitialization += Init;
         }
 
         private void OnDisable()
         {
             if (_interactableObject != null)
                 _interactableObject.OnAction -= ActionContainer;
+
+            _loadingGame.MirraSDKInitialization -= Init;
         }
 
-        private void Start()
+        /*private void Start()
         {
             _itemsAdditionalArray = new Item[][] { _items, _additionalItems };
             AdditionalArrayPositions = new Transform[][] { _positions, _additioanlPositions };
-            
+
             if (!_isAdditionalItemsContainer)
             {
-                int value = PlayerPrefs.GetInt("ItemContainer" + CurrentItemContainer, 0);
+                // int value = PlayerPrefs.GetInt("ItemContainer" + CurrentItemContainer, 0);
+                int value = StorageHelper.GetInt("ItemContainer" + CurrentItemContainer, 0);
                 DeactivateAllItem();
                 Debug.Log("Value "+ value);
                 ActivateItems(value);
             }
             else
             {
-                int firstValue = PlayerPrefs.GetInt("ItemContainer_FirstItemsValue" + CurrentItemContainer, 0);
-                int secondValue = PlayerPrefs.GetInt("ItemContainer_AdditionalItemsValue" + CurrentItemContainer, 0);
+                int firstValue = StorageHelper.GetInt("ItemContainer_FirstItemsValue" + CurrentItemContainer, 0);
+                int secondValue = StorageHelper.GetInt("ItemContainer_AdditionalItemsValue" + CurrentItemContainer, 0);
+                /*int firstValue = PlayerPrefs.GetInt("ItemContainer_FirstItemsValue" + CurrentItemContainer, 0);
+                int secondValue = PlayerPrefs.GetInt("ItemContainer_AdditionalItemsValue" + CurrentItemContainer, 0);#1#
                 DeactivateAllItem();
                 ActivateItems(firstValue,0);
                 ActivateItems(secondValue,1);
             }
 
+        }*/
+
+        private void Init()
+        {
+            _itemsAdditionalArray = new Item[][] { _items, _additionalItems };
+            AdditionalArrayPositions = new Transform[][] { _positions, _additioanlPositions };
+
+            if (!_isAdditionalItemsContainer)
+            {
+                // int value = PlayerPrefs.GetInt("ItemContainer" + CurrentItemContainer, 0);
+                int value = StorageHelper.GetInt("ItemContainer" + CurrentItemContainer, 0);
+                DeactivateAllItem();
+                Debug.Log("Value " + value);
+                ActivateItems(value);
+            }
+            else
+            {
+                int firstValue = StorageHelper.GetInt("ItemContainer_FirstItemsValue" + CurrentItemContainer, 0);
+                int secondValue = StorageHelper.GetInt("ItemContainer_AdditionalItemsValue" + CurrentItemContainer, 0);
+                /*int firstValue = PlayerPrefs.GetInt("ItemContainer_FirstItemsValue" + CurrentItemContainer, 0);
+                int secondValue = PlayerPrefs.GetInt("ItemContainer_AdditionalItemsValue" + CurrentItemContainer, 0);*/
+                DeactivateAllItem();
+                ActivateItems(firstValue, 0);
+                ActivateItems(secondValue, 1);
+            }
         }
 
         public virtual void ActionContainer(PlayerInteraction playerInteraction)
@@ -195,11 +228,11 @@ namespace InteractableContent
             {
                 inactiveItems[i].gameObject.SetActive(true);
             }
-            
+
             int firstItemsAmountValue = _itemsAdditionalArray[0].Where(p => p.gameObject.activeSelf).Count();
             int secondItemsAmountValue = _itemsAdditionalArray[1].Where(p => p.gameObject.activeSelf).Count();
-            
-            ItemsAdditionalActiveCountChanged?.Invoke(firstItemsAmountValue,secondItemsAmountValue);
+
+            ItemsAdditionalActiveCountChanged?.Invoke(firstItemsAmountValue, secondItemsAmountValue);
         }
 
         public void DeactivateItems(int value)
@@ -236,11 +269,11 @@ namespace InteractableContent
             {
                 inactiveItems[i].gameObject.SetActive(false);
             }
-            
+
             int firstItemsAmountValue = _itemsAdditionalArray[0].Where(p => p.gameObject.activeSelf).Count();
             int secondItemsAmountValue = _itemsAdditionalArray[1].Where(p => p.gameObject.activeSelf).Count();
-            
-            ItemsAdditionalActiveCountChanged?.Invoke(firstItemsAmountValue,secondItemsAmountValue);
+
+            ItemsAdditionalActiveCountChanged?.Invoke(firstItemsAmountValue, secondItemsAmountValue);
         }
 
         private void DeactivateAllItem()

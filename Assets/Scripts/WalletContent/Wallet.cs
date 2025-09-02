@@ -2,6 +2,7 @@ using System;
 using I2.Loc;
 using LoadingSceneContent;
 using MirraGames.SDK;
+using SaveContent;
 using TutorialContent;
 using UI;
 using UnityEngine;
@@ -10,16 +11,19 @@ namespace WalletContent
 {
     public class Wallet : MonoBehaviour
     {
+        private const string DollarDollarsKey = "DollarValue_Dollars";
+        private const string DollarCentsKey = "DollarValue_Cents";
+        
         [SerializeField] private FlyValue _flyValue;
         [SerializeField] private TutorDescriptionUI _tutorDescriptionUI;
         [SerializeField]private LoadingGame _loadingGame;
-
-        public DollarValue DollarValue { get; private set; }
-
+        
         public event Action<DollarValue> DollarValueChanged;
-
         public event Action<int> IncomeChanged;
         public event Action<int> ExpensesChanged;
+        
+        public DollarValue DollarValue { get; private set; }
+        
 
         private void OnEnable()
         {
@@ -102,29 +106,30 @@ namespace WalletContent
             
             
             
-            MirraSDK.Data.SetInt("DollarValue_Dollars", DollarValue.Dollars);
+            /*MirraSDK.Data.SetInt("DollarValue_Dollars", DollarValue.Dollars);
             MirraSDK.Data.SetInt("DollarValue_Cents", DollarValue.Cents);
-            MirraSDK.Data.Save(); // аналог PlayerPrefs.Save()
+            MirraSDK.Data.Save(); // аналог PlayerPrefs.Save()*/
+            
+            
+            StorageHelper.SetInt(DollarDollarsKey, DollarValue.Dollars);
+            StorageHelper.SetInt(DollarCentsKey, DollarValue.Cents);
         }
 
         private void LoadDollarValue()
         {
-            if (MirraSDK.Data.HasKey("DollarValue_Dollars") && MirraSDK.Data.HasKey("DollarValue_Cents"))
+            if (StorageHelper.HasKey(DollarDollarsKey) && StorageHelper.HasKey(DollarCentsKey))
             {
-                int dollars = MirraSDK.Data.GetInt("DollarValue_Dollars");
-                int cents = MirraSDK.Data.GetInt("DollarValue_Cents");
+                int dollars = StorageHelper.GetInt(DollarDollarsKey, 0);
+                int cents = StorageHelper.GetInt(DollarCentsKey, 0);
 
-                if (dollars <= 0)
-                    dollars = 0;
-
-                if (cents <= 0)
-                    cents = 0;
+                if (dollars < 0) dollars = 0;
+                if (cents < 0) cents = 0;
 
                 DollarValue = new DollarValue(dollars, cents);
             }
             else
             {
-                DollarValue = new DollarValue(25, 0); // начальное значение
+                DollarValue = new DollarValue(25, 0); // дефолтное значение
             }
             
             

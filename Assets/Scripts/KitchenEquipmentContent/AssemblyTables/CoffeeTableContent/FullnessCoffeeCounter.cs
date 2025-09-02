@@ -1,6 +1,9 @@
 using System;
 using ItemContent;
+using LoadingSceneContent;
+using SaveContent;
 using SettingsContent.SoundContent;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -8,18 +11,38 @@ namespace KitchenEquipmentContent.AssemblyTables.CoffeeTableContent
 {
     public class FullnessCoffeeCounter : MonoBehaviour
     {
+        private const string CoffeeFullnessKey = "CoffeeFullness";
+        
         [SerializeField] private Image _imageFullness;
-
+        [SerializeField]private LoadingGame _loadingGame;
         private int _maxFullness = 100;
 
         public event Action<int> FullnessCoffeeChanged;
 
         public int CurrentFullness { get; private set; }
 
+        private void OnEnable()
+        {
+            _loadingGame.MirraSDKInitialization += Init;
+        }
+
+        private void OnDisable()
+        {
+            _loadingGame.MirraSDKInitialization -= Init;
+        }
+
+        /*
         private void Start()
         {
             int value = PlayerPrefs.GetInt("CoffeeFullness", 0);
             CurrentFullness = value;
+            UpdateFillAmount();
+        }
+        */
+
+        private void Init()
+        {
+            CurrentFullness = StorageHelper.GetInt(CoffeeFullnessKey, 0);
             UpdateFillAmount();
         }
 

@@ -4,19 +4,25 @@ using System.Linq;
 using DG.Tweening;
 using Enums;
 using ItemContent;
+using LoadingSceneContent;
 using PlayerContent.LevelContent;
 using RestaurantContent;
 using RestaurantContent.TrayContent;
+using SaveContent;
 using SettingsContent.SoundContent;
 using SoContent.AssemblyBurger;
 using UI.Screens;
 using UI.Screens.EquipmentContent;
+using Unity.VisualScripting;
 using UnityEngine;
+using Sequence = DG.Tweening.Sequence;
 
 namespace KitchenEquipmentContent.AssemblyTables.CoffeeTableContent
 {
     public class CoffeeAssemblyTable : AssemblyDrinkTable
     {
+        private const string CoffeeWellCupsKey = "CoffeeWellCups";
+        
         [SerializeField] private GameObject _emptyCup;
         [SerializeField] private BurgerIngridientSpawner _burgerIngridientSpawner;
         [SerializeField] private AssemblyBurgerItemConfig _assemblyBurgerItemConfig;
@@ -26,11 +32,24 @@ namespace KitchenEquipmentContent.AssemblyTables.CoffeeTableContent
         [SerializeField] private FullnessCoffeeCounter _fullnessCoffeeCounter;
         [SerializeField] private EquipmentUIProduct _equipmentUIProduct;
         [SerializeField] private PlayerLevel _playerLevel;
+        [SerializeField]private LoadingGame _loadingGame;
 
         private Coroutine _coroutine;
         private bool _isWorking = false;
 
-        private void Start()
+        public override void OnEnable()
+        {
+            base.OnEnable();
+            _loadingGame.MirraSDKInitialization += Init;
+        }
+
+        public override void OnDisable()
+        {
+            base.OnDisable();
+            _loadingGame.MirraSDKInitialization -= Init;
+        }
+
+        /*private void Start()
         {
             int value = PlayerPrefs.GetInt("CoffeeWellCups", 0);
 
@@ -39,6 +58,18 @@ namespace KitchenEquipmentContent.AssemblyTables.CoffeeTableContent
             if (value > 0)
                 LoadWellCups(value);
             
+            gameObject.SetActive(_equipmentUIProduct.IsBuyed());
+        }*/
+
+        private void Init()
+        {
+            int value = StorageHelper.GetInt(CoffeeWellCupsKey, 0); // изменено вместо PlayerPrefs
+
+            Debug.Log("CoffeeWellCups " + value);
+
+            if (value > 0)
+                LoadWellCups(value);
+
             gameObject.SetActive(_equipmentUIProduct.IsBuyed());
         }
 
