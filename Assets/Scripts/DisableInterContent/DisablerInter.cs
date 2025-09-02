@@ -1,6 +1,9 @@
 using System;
+using System.Collections;
 using ADSContent;
+using LoadingSceneContent;
 using PlayerContent.LevelContent;
+using SaveContent;
 using UI.Buttons;
 using UnityEngine;
 
@@ -8,6 +11,8 @@ namespace DisableInterContent
 {
     public class DisablerInter : MonoBehaviour
     {
+        private const string RewardKey = "currentValueShowRewardDisableInter";
+
         [SerializeField] private PlayerLevel _playerLevel;
         [SerializeField] private GameObject _buttonOpenDisableInterScreen;
         [SerializeField] private ADS _ads;
@@ -16,35 +21,62 @@ namespace DisableInterContent
         [SerializeField] private DisablerInterTimer _disablerInterTimer;
         [SerializeField] private DisableInterViewer _disableInterViewer;
         [SerializeField] private Animator _animator;
+        [SerializeField]private LoadingGame _loadingGame;
 
         private int _currentValueShowReward = 0;
         private bool _isActivateDisableInter = false;
+        private Coroutine _autoSaveCoroutine;
 
         public event Action<int> CurrentValueChanged;
-
         public event Action StartTimerDisableInter;
 
         private void OnEnable()
         {
             _playerLevel.LevelChanged += SetValue;
             _disablerInterTimer.TimerCompleted += Reset;
+            _loadingGame.MirraSDKInitialization += Init;
         }
 
         private void OnDisable()
         {
             _playerLevel.LevelChanged -= SetValue;
             _disablerInterTimer.TimerCompleted -= Reset;
+            _loadingGame.MirraSDKInitialization -= Init;
+            
+            if (_autoSaveCoroutine != null) // ✅ останавливаем корутину при выключении объекта
+                StopCoroutine(_autoSaveCoroutine);
         }
 
-        private void Start()
+        /*private void Start()
         {
             Load();
-        }
+            _autoSaveCoroutine = StartCoroutine(AutoSaveRoutine());
+        }*/
 
-        private void OnApplicationQuit()
+        /*private void OnApplicationQuit()
         {
             Save();
-            PlayerPrefs.Save();
+            // PlayerPrefs.Save();
+        }
+        */
+
+        private void Init()
+        {
+            Load();
+            _autoSaveCoroutine = StartCoroutine(AutoSaveRoutine());
+        }
+
+        private IEnumerator AutoSaveRoutine()
+        {
+            var delay = new WaitForSeconds(60f);
+
+            while (true)
+            {
+                yield return delay;
+
+                if (_isActivateDisableInter)
+                    Save();
+            }
         }
 
         public void GetReward()
@@ -89,12 +121,14 @@ namespace DisableInterContent
 
         private void Save()
         {
-            PlayerPrefs.SetInt("currentValueShowRewardDisableInter", _currentValueShowReward);
+            // PlayerPrefs.SetInt("currentValueShowRewardDisableInter", _currentValueShowReward);
+            StorageHelper.SetInt(RewardKey, _currentValueShowReward);
         }
 
         private void Load()
         {
-            _currentValueShowReward = PlayerPrefs.GetInt("currentValueShowRewardDisableInter", 0);
+            // _currentValueShowReward = PlayerPrefs.GetInt("currentValueShowRewardDisableInter", 0);
+            _currentValueShowReward = StorageHelper.GetInt(RewardKey, 0);
 
             if (_currentValueShowReward > 2)
             {

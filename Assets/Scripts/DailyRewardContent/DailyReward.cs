@@ -1,5 +1,8 @@
 using System;
+using LoadingSceneContent;
+using SaveContent;
 using SettingsContent.SoundContent;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -20,6 +23,7 @@ namespace DailyRewardContent
         [SerializeField] private Color _lastDayDefaultSprite;
         [SerializeField] private Animator _openButtonAnimation;
         [SerializeField] private GameObject[] _prizes;
+        [SerializeField]private LoadingGame _loadingGame;
 
         private int _currentDayIndex;
         private bool _rewardClaimedToday;
@@ -29,9 +33,24 @@ namespace DailyRewardContent
 
         public event Action ClaimTodayCompleted;
 
-        private void Start()
+        private void OnEnable()
+        {
+            _loadingGame.MirraSDKInitialization += Init;
+        }
+
+        private void OnDisable()
+        {
+            _loadingGame.MirraSDKInitialization -= Init;
+        }
+
+        /*private void Start()
         {
             // _decorationSystem = gui.GameWorld.DecorationSystem;
+            InitializeDailyRewards();
+        }*/
+
+        private void Init()
+        {
             InitializeDailyRewards();
         }
 
@@ -50,12 +69,14 @@ namespace DailyRewardContent
             {
                 _currentDayIndex = 0;
                 _rewardClaimedToday = false;
-                PlayerPrefs.SetInt(CurrentDayIndexKey, -1);
+                // PlayerPrefs.SetInt(CurrentDayIndexKey, -1);
+                StorageHelper.SetInt(CurrentDayIndexKey, -1);
             }
             else if ((currentDate - lastClaimDate).TotalDays >= 1)
             {
-                _currentDayIndex = PlayerPrefs.GetInt(CurrentDayIndexKey, 0);
-
+                // _currentDayIndex = PlayerPrefs.GetInt(CurrentDayIndexKey, 0);
+                _currentDayIndex = StorageHelper.GetInt(CurrentDayIndexKey, 0);
+                
                 if (_currentDayIndex >= _dayButtons.Length - 1)
                     _currentDayIndex = 0;
                 else
@@ -65,7 +86,8 @@ namespace DailyRewardContent
             }
             else
             {
-                _currentDayIndex = PlayerPrefs.GetInt(CurrentDayIndexKey, 0);
+                _currentDayIndex = StorageHelper.GetInt(CurrentDayIndexKey, 0);
+                // _currentDayIndex = PlayerPrefs.GetInt(CurrentDayIndexKey, 0);
                 _rewardClaimedToday = true;
             }
 
@@ -74,8 +96,9 @@ namespace DailyRewardContent
 
         private DateTime GetLastClaimDate()
         {
-            string lastClaimDateString = PlayerPrefs.GetString(LastClaimDateKey, string.Empty);
-
+            // string lastClaimDateString = PlayerPrefs.GetString(LastClaimDateKey, string.Empty);
+            string lastClaimDateString = StorageHelper.GetString(LastClaimDateKey, string.Empty);
+            
             if (string.IsNullOrEmpty(lastClaimDateString))
             {
                 return DateTime.MinValue;
@@ -86,8 +109,9 @@ namespace DailyRewardContent
 
         private void UpdateUI()
         {
-            var currentIndex = PlayerPrefs.GetInt(CurrentDayIndexKey, -1);
-
+            // var currentIndex = PlayerPrefs.GetInt(CurrentDayIndexKey, -1);
+            int currentIndex = StorageHelper.GetInt(CurrentDayIndexKey, -1);
+            
             /*SetValueSuperPrizeIcon(
                 _decorationSystem.GetActivationValueDecoration(_decorationSystem.CurrentDailyRewardDecoration));*/
 
@@ -145,12 +169,14 @@ namespace DailyRewardContent
             {
                 _currentDayIndex = 0;
                 _rewardClaimedToday = false;
-                PlayerPrefs.SetInt(CurrentDayIndexKey, -1);
+                // PlayerPrefs.SetInt(CurrentDayIndexKey, -1);
+                StorageHelper.SetInt(CurrentDayIndexKey, -1);
             }
             else if ((currentDate - lastClaimDate).TotalDays >= 1)
             {
-                _currentDayIndex = PlayerPrefs.GetInt(CurrentDayIndexKey, 0);
-
+                // _currentDayIndex = PlayerPrefs.GetInt(CurrentDayIndexKey, 0);
+                _currentDayIndex = StorageHelper.GetInt(CurrentDayIndexKey, 0);
+                
                 if (_currentDayIndex >= _dayButtons.Length - 1)
                     _currentDayIndex = 0;
                 else
@@ -160,7 +186,8 @@ namespace DailyRewardContent
             }
             else
             {
-                _currentDayIndex = PlayerPrefs.GetInt(CurrentDayIndexKey, 0);
+                _currentDayIndex = StorageHelper.GetInt(CurrentDayIndexKey, 0);
+                // _currentDayIndex = PlayerPrefs.GetInt(CurrentDayIndexKey, 0);
                 _rewardClaimedToday = true;
             }
 
@@ -186,8 +213,12 @@ namespace DailyRewardContent
                 {
                     Debug.Log("Награда за день " + (_currentDayIndex + 1) + " получена!");
                     SoundPlayer.Instance.PlayDailyReward();
-                    PlayerPrefs.SetString(LastClaimDateKey, DateTime.Now.ToString());
-                    PlayerPrefs.SetInt(CurrentDayIndexKey, _currentDayIndex);
+                    /*PlayerPrefs.SetString(LastClaimDateKey, DateTime.Now.ToString());
+                    PlayerPrefs.SetInt(CurrentDayIndexKey, _currentDayIndex);*/
+                    
+                    StorageHelper.SetString(LastClaimDateKey, DateTime.Now.ToString("O"));
+                    StorageHelper.SetInt(CurrentDayIndexKey, _currentDayIndex);
+                    
                     _rewardClaimedToday = true;
                     UpdateUI();
                     _dailyReward.Claim(_currentDayIndex);

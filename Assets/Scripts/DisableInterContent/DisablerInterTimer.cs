@@ -1,6 +1,8 @@
 using System;
 using System.Collections;
 using ADSContent;
+using LoadingSceneContent;
+using SaveContent;
 using UnityEngine;
 
 namespace DisableInterContent
@@ -13,47 +15,57 @@ namespace DisableInterContent
         [SerializeField] private float _durationSeconds;
         [SerializeField] private InterstitialTimer _interstitialTimer;
         [SerializeField] private ADS _ads;
+        [SerializeField]private LoadingGame _loadingGame;
 
         private bool _isTimerActive = false;
         private DateTime _endTime;
         private Coroutine _timerCoroutine;
 
         public event Action<TimeSpan> TimeChanged;
-
         public event Action TimerCompleted;
 
         private void OnEnable()
         {
             _disablerInter.StartTimerDisableInter += Activate;
+            _loadingGame.MirraSDKInitialization += Init;
         }
 
         private void OnDisable()
         {
             _disablerInter.StartTimerDisableInter -= Activate;
+            _loadingGame.MirraSDKInitialization -= Init;
         }
 
-        private void Start()
+        /*private void Start()
         {
             LoadTimer();
-        }
+        }*/
 
-        private void OnApplicationQuit()
+        /*private void OnApplicationQuit()
         {
             SaveTimer();
-            PlayerPrefs.Save();
-        }
-        
+            /*PlayerPrefs.Save();#1#
+        }*/
+
         private void OnApplicationFocus(bool hasFocus)
         {
+            if (!MirraGames.SDK.MirraSDK.IsInitialized)
+                return;
+            
             if (!hasFocus)
             {
                 SaveTimer();
-                PlayerPrefs.Save();
+                // PlayerPrefs.Save();
             }
             else
             {
                 LoadTimer();
             }
+        }
+
+        private void Init()
+        {
+            LoadTimer();
         }
 
         private void Activate()
@@ -89,8 +101,11 @@ namespace DisableInterContent
             _ads.SetTemporaryIntersValue(false);
             Debug.Log("TimerCompleted!!!!!!!!!!!!!!!!!!!!");
             TimerCompleted?.Invoke();
-            PlayerPrefs.DeleteKey(TIMER_SAVE_KEY);
-            PlayerPrefs.Save();
+            /*PlayerPrefs.DeleteKey(TIMER_SAVE_KEY);
+            PlayerPrefs.Save();*/
+
+            StorageHelper.DeleteKey(TIMER_SAVE_KEY);
+            StorageHelper.Save();
         }
 
         private void UpdateTimerDisplay()
@@ -102,12 +117,46 @@ namespace DisableInterContent
         private void SaveTimer()
         {
             if (_isTimerActive)
-                PlayerPrefs.SetString(TIMER_SAVE_KEY, _endTime.ToString("O"));
+            {
+                // PlayerPrefs.SetString(TIMER_SAVE_KEY, _endTime.ToString("O"));
+                StorageHelper.SetString(TIMER_SAVE_KEY, _endTime.ToString("O"));
+            }
         }
 
         private void LoadTimer()
         {
-            if (PlayerPrefs.HasKey(TIMER_SAVE_KEY))
+            if (StorageHelper.HasKey(TIMER_SAVE_KEY))
+            {
+                string savedTime = StorageHelper.GetString(TIMER_SAVE_KEY, string.Empty);
+                if (!string.IsNullOrEmpty(savedTime))
+                {
+                    _endTime = DateTime.Parse(savedTime);
+
+                    if (DateTime.Now < _endTime)
+                    {
+                        _isTimerActive = true;
+                        _ads.SetTemporaryIntersValue(true);
+                        UpdateTimerDisplay();
+
+                        if (_timerCoroutine != null)
+                            StopCoroutine(_timerCoroutine);
+
+                        _timerCoroutine = StartCoroutine(TimerCoroutine());
+                    }
+                    else
+                    {
+                        OnTimerComplete();
+                    }
+                }
+            }
+            else
+            {
+                _isTimerActive = false;
+                _ads.SetTemporaryIntersValue(false);
+            }
+
+
+            /*if (PlayerPrefs.HasKey(TIMER_SAVE_KEY))
             {
                 _endTime = DateTime.Parse(PlayerPrefs.GetString(TIMER_SAVE_KEY));
 
@@ -133,7 +182,7 @@ namespace DisableInterContent
                 _isTimerActive = false;
                 _ads.SetTemporaryIntersValue(false);
                 // _interstitialTimer.SetTemporaryIntersValue(false);
-            }
+            }*/
         }
     }
 }

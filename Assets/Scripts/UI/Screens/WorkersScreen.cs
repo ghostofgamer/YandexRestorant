@@ -24,8 +24,7 @@ namespace UI.Screens
                 if (workerAwakening.gameObject.activeSelf)
                     _activeWorkerValue++;
             }
-
-
+            
             _notActiveWorkerText.gameObject.SetActive(_activeWorkerValue <= 0);
         }
 

@@ -70,5 +70,10 @@ namespace SaveContent
             MirraSDK.Data.DeleteAll();
             if (saveImmediately) MirraSDK.Data.Save();
         }
+        
+        public static void Save()
+        {
+            MirraSDK.Data.Save();
+        }
     }
 }

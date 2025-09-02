@@ -1,5 +1,7 @@
 using System;
+using LoadingSceneContent;
 using PlayerContent.LevelContent;
+using SaveContent;
 using UnityEngine;
 
 namespace TaskContent
@@ -8,18 +10,26 @@ namespace TaskContent
     {
         [SerializeField] private PlayerLevel _playerLevel;
         [SerializeField] private FortuneTask fortuneTask;
+        [SerializeField]private LoadingGame _loadingGame;
 
         private void OnEnable()
         {
             _playerLevel.LevelChanged += ActivateTask;
+            _loadingGame.MirraSDKInitialization += Init;
         }
 
         private void OnDisable()
         {
             _playerLevel.LevelChanged -= ActivateTask;
+            _loadingGame.MirraSDKInitialization -= Init;
         }
 
-        private void Start()
+        /*private void Start()
+        {
+            ActivateTask(_playerLevel.CurrentLevel);
+        }*/
+
+        private void Init()
         {
             ActivateTask(_playerLevel.CurrentLevel);
         }
@@ -32,7 +42,10 @@ namespace TaskContent
 
         private void StartFortuneTask()
         {
-            if (PlayerPrefs.GetInt("FreeSpinUsed", 0) > 0)
+            /*if (PlayerPrefs.GetInt("FreeSpinUsed", 0) > 0)
+                return;*/
+            
+            if (StorageHelper.GetInt("FreeSpinUsed", 0) > 0)
                 return;
             
             fortuneTask.ActivateTask();

@@ -7,9 +7,12 @@
     <list default="true" id="11e15f27-66b8-446e-8e38-f8f60d18b8aa" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.YandexRestorant/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.YandexRestorant/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CalendarContent/Calendar.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CalendarContent/Calendar.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FortuneContent/Fortune.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FortuneContent/Fortune.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerContent/LevelContent/PlayerLevel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerContent/LevelContent/PlayerLevel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DailyRewardContent/DailyReward.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DailyRewardContent/DailyReward.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DisableInterContent/DisablerInter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DisableInterContent/DisablerInter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DisableInterContent/DisablerInterTimer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DisableInterContent/DisablerInterTimer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SaveContent/StorageHelper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SaveContent/StorageHelper.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TaskContent/TasksGameActivator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TaskContent/TasksGameActivator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Screens/WorkersScreen.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Screens/WorkersScreen.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -157,7 +160,7 @@
       <workItem from="1755674386450" duration="11533000" />
       <workItem from="1755753714563" duration="13334000" />
       <workItem from="1756716011131" duration="11427000" />
-      <workItem from="1756791051391" duration="16234000" />
+      <workItem from="1756791051391" duration="18499000" />
     </task>
     <servers />
   </component>
