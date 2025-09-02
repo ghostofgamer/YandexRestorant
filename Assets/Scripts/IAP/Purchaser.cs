@@ -6,6 +6,7 @@ using Enums;
 using LoadingSceneContent;
 using MirraGames.SDK;
 using RestaurantContent;
+using SaveContent;
 using SoContent;
 using UI.Screens.AdsScreens;
 using UI.Screens.AdsScreens.StoragePackContent;
@@ -237,7 +238,8 @@ namespace IAP
 
         private void RemoveAds()
         {
-            PlayerPrefs.SetInt("removeADS", 1);
+            // PlayerPrefs.SetInt("removeADS", 1);
+            StorageHelper.SetInt("removeADS", 1);
             Debug.Log("On Purchase RemoveAds Completed");
             // AppMetrica.ReportEvent("In_App", "{\"" + "RemoveADS" + "\":null}");
 
@@ -256,7 +258,8 @@ namespace IAP
 
         private void StarterPack()
         {
-            PlayerPrefs.SetInt("StarterPack", 1);
+            // PlayerPrefs.SetInt("StarterPack", 1);
+            StorageHelper.SetInt("StarterPack", 1);
             AddMoney(150);
             // AppMetrica.ReportEvent("In_App", "{\"" + "StarterPack" + "\":null}");
             _delivery.SpawnPrize(ItemType.Bun, 3);
@@ -285,7 +288,8 @@ namespace IAP
 
         public void PayStoragePack()
         {
-            PlayerPrefs.SetInt("StoragePack", 1);
+            // PlayerPrefs.SetInt("StoragePack", 1);
+            StorageHelper.SetInt("StoragePack", 1);
             // AppMetrica.ReportEvent("In_App", "{\"" + "StoragePack" + "\":null}");
             AddMoney(300);
 
@@ -316,9 +320,10 @@ namespace IAP
             foreach (var shelf in _shelfes)
                 shelf.SetActive(true);
 
-            PlayerPrefs.SetInt("ShelfBuyed" + EquipmentType.Shelf, _shelfConfigs.shelves.Length - 1);
-
-            if (PlayerPrefs.GetInt("Zona" + ZoneType.Storage, 0) > 0)
+            // PlayerPrefs.SetInt("ShelfBuyed" + EquipmentType.Shelf, _shelfConfigs.shelves.Length - 1);
+            StorageHelper.SetInt("ShelfBuyed" + EquipmentType.Shelf, _shelfConfigs.shelves.Length - 1);
+            
+            /*if (PlayerPrefs.GetInt("Zona" + ZoneType.Storage, 0) > 0)
             {
                 amountPrice += new DollarValue(100, 0);
             }
@@ -326,6 +331,16 @@ namespace IAP
             {
                 PlayerPrefs.SetInt("Zona" + ZoneType.Storage, 1);
                 _storageZoneWall.Activate();
+            }*/
+            
+            if (StorageHelper.GetInt("Zona" + ZoneType.Storage, 0) <= 0)
+            {
+                StorageHelper.SetInt("Zona" + ZoneType.Storage, 1);
+                _storageZoneWall.Activate();
+            }
+            else
+            {
+                amountPrice += new DollarValue(100, 0);
             }
 
             Debug.Log("@ amountPrice " + amountPrice);
