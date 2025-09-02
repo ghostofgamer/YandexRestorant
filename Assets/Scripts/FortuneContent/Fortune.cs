@@ -5,7 +5,9 @@ using CoppraGames;
 using DailyTimerContent;
 using EnergyContent;
 using I2.Loc;
+using LoadingSceneContent;
 using PlayerContent.LevelContent;
+using SaveContent;
 using SettingsContent.SoundContent;
 using SoContent;
 using TMPro;
@@ -69,6 +71,7 @@ namespace FortuneContent
             _dailyTimerFortune.TimeNotOverCompleted += ActiveOtherSpinButton;
             _fortuneScreen.FortuneScreenClosed += AnimateButton;
             _playerLevel.LevelChanged += ActivateOpenFortuneButton;
+            _playerLevel.LevelInited += Init;
         }
 
         private void OnDisable()
@@ -78,9 +81,10 @@ namespace FortuneContent
             _dailyTimerFortune.TimeNotOverCompleted -= ActiveOtherSpinButton;
             _fortuneScreen.FortuneScreenClosed -= AnimateButton;
             _playerLevel.LevelChanged -= ActivateOpenFortuneButton;
+            _playerLevel.LevelInited -= Init;
         }
 
-        private void Start()
+        /*private void Start()
         {
             ActivateOpenFortuneButton(_playerLevel.CurrentLevel);
             
@@ -96,21 +100,67 @@ namespace FortuneContent
             LoadSpinData();
             _spinValueText.text=$"{LocalizationManager.GetTermTranslation("BALANCE")}: {_currentValueSpin.ToString()}";
             AnimateButton();
+        }*/
+
+        private void Init()
+        {
+            ActivateOpenFortuneButton(_playerLevel.CurrentLevel);
+            Debug.Log("_isFreeButtonUsed " + _isFreeButtonUsed);
+            _isFreeButtonUsed = StorageHelper.GetInt("FreeSpinUsed", 0) > 0;
+            _currentValueSpin = StorageHelper.GetInt("CurrentSpinValue", 1);
+            _touchTaskFreeSpin.SetActive(!_isFreeButtonUsed);
+            _spinFreeButton.gameObject.SetActive(!_isFreeButtonUsed);
+            _dailyTimerFortune.UpdateInfo();
+            _spinValueText.text = $"{LocalizationManager.GetTermTranslation("BALANCE")}: {_currentValueSpin}";
+            AnimateButton();
         }
 
+        [ContextMenu("AddSpinTest")]
+        public void AddSpinTest()
+        {
+            _currentValueSpin += 1;
+            StorageHelper.SetInt("CurrentSpinValue", _currentValueSpin);
+
+            _dailyTimerFortune.UpdateInfo();
+            _spinValueText.text = $"{LocalizationManager.GetTermTranslation("BALANCE")}: {_currentValueSpin}";
+            _spinValueButton.SetActive(_currentValueSpin > 0);
+        }
+        
         public void AddSpins(int value)
         {
             _currentValueSpin += value;
+
+            // ✅ сохранение количества спинов через StorageHelper
+            StorageHelper.SetInt("CurrentSpinValue", _currentValueSpin);
+
+            _dailyTimerFortune.UpdateInfo();
+            _spinValueText.text = $"{LocalizationManager.GetTermTranslation("BALANCE")}: {_currentValueSpin}";
+            _spinValueButton.SetActive(_currentValueSpin > 0);
+            
+            /*_currentValueSpin += value;
             _dailyTimerFortune.UpdateInfo();
             // _spinValueText.text = $"BALANCE: {_currentValueSpin.ToString()}";
             _spinValueText.text=$"{LocalizationManager.GetTermTranslation("BALANCE")}: {_currentValueSpin.ToString()}";
             _spinValueButton.SetActive(_currentValueSpin > 0);
-            SaveSpinData();
+            SaveSpinData();*/
         }
 
         public void OnShow()
         {
             if (!_isFreeButtonUsed)
+            {
+                FreeSpinUsed?.Invoke();
+
+                // ✅ первый фриспин сохранили через StorageHelper
+                StorageHelper.SetInt("FreeSpinUsed", 1);
+                _isFreeButtonUsed = true;
+            }
+
+            _fortuneScreen.OpenScreen();
+            _spinValueButton.SetActive(_currentValueSpin > 0);
+            _spinValueText.text = $"{LocalizationManager.GetTermTranslation("BALANCE")}: {_currentValueSpin}";
+            
+            /*if (!_isFreeButtonUsed)
             {
                 // AppMetrica.ReportEvent("TaskFortuna");
                 FreeSpinUsed?.Invoke();
@@ -120,12 +170,12 @@ namespace FortuneContent
             
             _fortuneScreen.OpenScreen();
             _spinValueButton.SetActive(_currentValueSpin > 0);
-            _spinValueText.text=$"{LocalizationManager.GetTermTranslation("BALANCE")}: {_currentValueSpin.ToString()}";
+            _spinValueText.text=$"{LocalizationManager.GetTermTranslation("BALANCE")}: {_currentValueSpin.ToString()}";*/
         }
 
         public void SpinWheel()
         {
-            if (_currentValueSpin <= 0)
+            /*if (_currentValueSpin <= 0)
                 return;
 
             if (_spinWheelController.IsStarted)
@@ -136,7 +186,23 @@ namespace FortuneContent
             _currentValueSpin--;
             SaveSpinData();
             Spin();
-            _spinValueText.text=$"{LocalizationManager.GetTermTranslation("BALANCE")}: {_currentValueSpin.ToString()}";
+            _spinValueText.text=$"{LocalizationManager.GetTermTranslation("BALANCE")}: {_currentValueSpin.ToString()}";*/
+            
+            if (_currentValueSpin <= 0)
+                return;
+
+            if (_spinWheelController.IsStarted)
+                return;
+
+            _touchTaskFreeSpin.SetActive(false);
+            SoundPlayer.Instance.PlayButtonClick();
+            _currentValueSpin--;
+
+            // ✅ уменьшение спинов тоже сохраняем
+            StorageHelper.SetInt("CurrentSpinValue", _currentValueSpin);
+
+            Spin();
+            _spinValueText.text = $"{LocalizationManager.GetTermTranslation("BALANCE")}: {_currentValueSpin}";
         }
 
         public void SpinFree()

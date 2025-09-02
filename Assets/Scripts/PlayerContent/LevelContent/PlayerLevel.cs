@@ -27,6 +27,8 @@ namespace PlayerContent.LevelContent
         public event Action<int, int> ExpChanged;
         public event Action<int> ExpAdded;
         public event Action LevelAdded;
+        
+        public event Action LevelInited;
 
         public int CurrentLevel { get; private set; }
 
@@ -57,6 +59,7 @@ namespace PlayerContent.LevelContent
 
             LevelChanged?.Invoke(CurrentLevel);
             ExpChanged?.Invoke(_currentExp, _targetExp);
+            LevelInited?.Invoke();
         }
 
         [ContextMenu("TestAddCurrentExp")]
