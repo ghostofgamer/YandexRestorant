@@ -1,9 +1,13 @@
 using System;
+using System.Collections;
 using CalendarContent;
 using ClientsContent;
 using EnergyContent;
+using LoadingSceneContent;
+using MirraGames.SDK;
 using PlayerContent.LevelContent;
 using RestaurantContent;
+using SaveContent;
 using TMPro;
 using UI.Screens;
 using UnityEngine;
@@ -37,6 +41,7 @@ namespace DayNightContent
         [SerializeField] private EnergyNewDayScreen _energyNewDayScreen;
         [SerializeField] private float _dayAmbientIntensity;
         [SerializeField] private float _nightAmbientIntensity;
+        [SerializeField]private LoadingGame _loadingGame;
 
         // [SerializeField] private BuyersCounter _buyersCounter;
         [SerializeField] private Light sceneLight;
@@ -44,7 +49,8 @@ namespace DayNightContent
         [SerializeField] private TMP_Text _timeText;
 
         [SerializeField] private ClientsCreator _clientsCreator;
-
+        private Coroutine _autoSaveCoroutine;
+        private bool _isWork = false;
         public float minExposure = 0.5f;
         public float maxExposure = 1.65f;
         private float timeOfDay;
@@ -64,14 +70,16 @@ namespace DayNightContent
         private void OnEnable()
         {
             _openCloseRestaurant.OpenedChanged += SetOpenValue;
+            _loadingGame.MirraSDKInitialization += Init;
         }
 
         private void OnDisable()
         {
             _openCloseRestaurant.OpenedChanged -= SetOpenValue;
+            _loadingGame.MirraSDKInitialization -= Init;
         }
 
-        private void Start()
+        /*private void Start()
         {
             _isDay = true;
             _isNight = !_isDay;
@@ -101,10 +109,13 @@ namespace DayNightContent
                     _dayAmbientIntensity,
                     _nightAmbientIntensity);
             }
-        }
+        }*/
 
         private void Update()
         {
+            if (!_isWork)
+                return;
+            
             if (!_isOpen)
                 return;
 
@@ -141,6 +152,41 @@ namespace DayNightContent
             }
         }
 
+        private void Init()
+        {
+            _isDay = true;
+            _isNight = !_isDay;
+
+            _isDay = StorageHelper.GetInt(IS_DAY_KEY, 1) == 1;
+            // _isNight = PlayerPrefs.GetInt(IS_NIGHT_KEY, 0) == 1;
+            _isNight = !_isDay;
+
+            timeOfDay = StorageHelper.GetFloat(TIME_OF_DAY_KEY, 0f);
+
+            if (timeOfDay == 0f)
+                timeOfDay = (START_HOUR - 9f) / (END_HOUR - 9f);
+
+            RenderSettings.skybox = skyboxMaterial;
+
+            if (!_isDay && !_isStatisticDayOpened)
+            {
+                DayOverCompleted?.Invoke();
+                SetNightTime();
+                UpdateTimeText(START_HOUR, END_HOUR, timeOfDay);
+            }
+            else
+            {
+                UpdateTimeText(START_HOUR, END_HOUR, timeOfDay);
+                UpdateSkyboxColor(dayColor, nightColor, timeOfDay, maxExposure, minExposure, _dayAmbientColor,
+                    _nightAmbientColor, _dayEquatorColor, _nightEquatorColor, _dayLightColor, _nightLightColor,
+                    _dayAmbientIntensity,
+                    _nightAmbientIntensity);
+            }
+            
+            _autoSaveCoroutine = StartCoroutine(AutoSaveRoutine());
+            _isWork = true;
+        }
+        
         public void ResetDay()
         {
             _energy.IncreaseEnergy(5);
@@ -151,6 +197,7 @@ namespace DayNightContent
             SetDayTime();
             _calendar.NextDay();
             _energyNewDayScreen.OpenScreen();
+            Save();
         }
 
         public void SetOpenValue(bool value)
@@ -244,12 +291,44 @@ namespace DayNightContent
                     SetNightLighting?.Invoke(false);
             }
         }
+        
+        private IEnumerator AutoSaveRoutine()
+        {
+            var wait = new WaitForSeconds(10f); 
+          
+            while (true)
+            {
+                StorageHelper.SetInt(IS_DAY_KEY, _isDay ? 1 : 0);
+                StorageHelper.SetFloat(TIME_OF_DAY_KEY, timeOfDay);
+                yield return wait;
+            }
+        }
+        
+        private void OnApplicationFocus(bool hasFocus)
+        {
+            if (!_isWork)
+                return;
+            
+            if (!hasFocus)
+            {
+                Save();
+            }
+        }
+
+        private void Save()
+        {
+            StorageHelper.SetInt(IS_DAY_KEY, _isDay ? 1 : 0);
+            StorageHelper.SetFloat(TIME_OF_DAY_KEY, timeOfDay);
+        }
 
         private void OnApplicationQuit()
         {
-            PlayerPrefs.SetInt(IS_DAY_KEY, _isDay ? 1 : 0);
+            /*PlayerPrefs.SetInt(IS_DAY_KEY, _isDay ? 1 : 0);
             PlayerPrefs.SetFloat(TIME_OF_DAY_KEY, timeOfDay);
-            PlayerPrefs.Save();
+            PlayerPrefs.Save();*/
+            
+            StorageHelper.SetInt(IS_DAY_KEY, _isDay ? 1 : 0);
+            StorageHelper.SetFloat(TIME_OF_DAY_KEY, timeOfDay);
         }
     }
 }

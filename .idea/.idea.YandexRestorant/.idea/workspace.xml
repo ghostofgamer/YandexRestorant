@@ -6,9 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="11e15f27-66b8-446e-8e38-f8f60d18b8aa" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.YandexRestorant/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.YandexRestorant/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DeliveryContent/Delivery.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DeliveryContent/Delivery.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DeliveryContent/DeliverySaver.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DeliveryContent/DeliverySaver.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SaveContent/StorageHelper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SaveContent/StorageHelper.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/Polytope Studio/Lowpoly_Environments/Sources/Materials/PT_Skybox_mat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/Polytope Studio/Lowpoly_Environments/Sources/Materials/PT_Skybox_mat.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DayNightContent/DayNightCycle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DayNightContent/DayNightCycle.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -156,7 +156,7 @@
       <workItem from="1755674386450" duration="11533000" />
       <workItem from="1755753714563" duration="13334000" />
       <workItem from="1756716011131" duration="11427000" />
-      <workItem from="1756791051391" duration="19279000" />
+      <workItem from="1756791051391" duration="21386000" />
     </task>
     <servers />
   </component>
