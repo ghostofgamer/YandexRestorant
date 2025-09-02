@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using Enums;
+using LoadingSceneContent;
 using SettingsContent.SoundContent;
 using SoContent;
 using TutorialContent;
@@ -18,6 +19,7 @@ namespace DeliveryContent
         [SerializeField] private DeliveryViewer _deliveryViewer;
         [SerializeField] private DeliverySaver _deliverySaver;
         [SerializeField] private Tutorial _tutorial;
+        [SerializeField]private LoadingGame _loadingGame;
 
         private List<ItemDeliveryInfo> _items = new List<ItemDeliveryInfo>();
         private bool _isSpawning = false;
@@ -41,7 +43,22 @@ namespace DeliveryContent
 
         public float RemainingTimeForNextSpawn => _remainingTimeForNextSpawn;
 
-        private void Start()
+        private void OnEnable()
+        {
+            _loadingGame.MirraSDKInitialization += Init;
+        }
+
+        private void OnDisable()
+        {
+            _loadingGame.MirraSDKInitialization -= Init;
+        }
+
+        /*private void Start()
+        {
+            _deliverySaver.LoadDeliveryData();
+        }*/
+
+        private void Init()
         {
             _deliverySaver.LoadDeliveryData();
         }

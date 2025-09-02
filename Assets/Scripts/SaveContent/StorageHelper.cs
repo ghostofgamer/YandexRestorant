@@ -52,6 +52,24 @@ namespace SaveContent
         {
             return MirraSDK.Data.HasKey(key) ? MirraSDK.Data.GetObject<T>(key) : defaultValue;
         }
+        
+        public static void SetFloat(string key, float value, bool saveImmediately = true)
+        {
+            // Сохраняем float как double через JSON, если MirraSDK не поддерживает float напрямую
+            SetString(key, value.ToString(System.Globalization.CultureInfo.InvariantCulture), saveImmediately);
+        }
+
+// Получаем float
+        public static float GetFloat(string key, float defaultValue = 0f)
+        {
+            if (HasKey(key))
+            {
+                string str = GetString(key, defaultValue.ToString(System.Globalization.CultureInfo.InvariantCulture));
+                if (float.TryParse(str, System.Globalization.NumberStyles.Float, System.Globalization.CultureInfo.InvariantCulture, out float result))
+                    return result;
+            }
+            return defaultValue;
+        }
 
         // Проверка и удаление
         public static bool HasKey(string key) => MirraSDK.Data.HasKey(key);

@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using Enums;
+using MirraGames.SDK;
+using SaveContent;
 using UnityEngine;
 
 namespace DeliveryContent
@@ -22,6 +24,12 @@ namespace DeliveryContent
 
         private void Update()
         {
+            if (!MirraSDK.IsInitialized)
+            {
+                Debug.Log("MirraSDK не инициализирован");
+                return;
+            }
+            
             if (_isWork && Time.time - _lastSaveTime > _saveInterval)
             {
                 SaveDeliveryData();
@@ -39,6 +47,12 @@ namespace DeliveryContent
         
         private void OnApplicationFocus(bool hasFocus)
         {
+            if (!MirraSDK.IsInitialized)
+            {
+                Debug.Log("MirraSDK не инициализирован");
+                return;
+            }
+            
             if(!_isWork) return; 
             
             if (hasFocus)
@@ -54,9 +68,13 @@ namespace DeliveryContent
         
         public void SaveLastExitTime()
         {
-            PlayerPrefs.SetString(LastExitTimeKey, DateTime.UtcNow.ToString("O"));
+            /*PlayerPrefs.SetString(LastExitTimeKey, DateTime.UtcNow.ToString("O"));
             PlayerPrefs.SetFloat(RemainingTimeKey, _delivery.RemainingTime);
-            PlayerPrefs.Save();
+            PlayerPrefs.Save();*/
+            
+            
+            StorageHelper.SetString(LastExitTimeKey, DateTime.UtcNow.ToString("O"));
+            StorageHelper.SetFloat(RemainingTimeKey, _delivery.RemainingTime);
         }
     
         public void SaveDeliveryData()
@@ -70,9 +88,10 @@ namespace DeliveryContent
                     SaveTime = DateTime.UtcNow.ToString("O")
                 };
                 
-                string json = JsonUtility.ToJson(saveData);
-                PlayerPrefs.SetString(SavedItemsKey, json);
-                PlayerPrefs.Save();
+                // string json = JsonUtility.ToJson(saveData);
+                /*PlayerPrefs.SetString(SavedItemsKey, json);
+                PlayerPrefs.Save();*/
+                StorageHelper.SetObject(SavedItemsKey, saveData);
             }
             catch
             {
@@ -84,11 +103,16 @@ namespace DeliveryContent
         {
             try
             {
-                if (!PlayerPrefs.HasKey(SavedItemsKey))
+                /*if (!PlayerPrefs.HasKey(SavedItemsKey))
+                    return;*/
+                
+                if (!StorageHelper.HasKey(SavedItemsKey))
                     return;
 
-                string json = PlayerPrefs.GetString(SavedItemsKey);
-                var saveData = JsonUtility.FromJson<DeliverySaveData>(json);
+                /*string json = PlayerPrefs.GetString(SavedItemsKey);
+                var saveData = JsonUtility.FromJson<DeliverySaveData>(json);*/
+                
+                var saveData = StorageHelper.GetObject<DeliverySaveData>(SavedItemsKey);
                 
                 DateTime saveTime = DateTime.Parse(saveData.SaveTime).ToUniversalTime();
                 _delivery.Init(ConvertFromSaveData(saveData),saveData.RemainingTime,saveTime);
