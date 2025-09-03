@@ -1,4 +1,5 @@
 using I2.Loc;
+using SaveContent;
 using SettingsContent.SoundContent;
 using SoContent;
 using StorageContent;
@@ -29,7 +30,10 @@ namespace UI.Screens.EquipmentContent
 
         public override void Init(int levelPlayer)
         {
-            _currentBuyShelfIndex = PlayerPrefs.GetInt("ShelfBuyed" + _equipmentType, -1);
+            Debug.Log("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+            // _currentBuyShelfIndex = PlayerPrefs.GetInt("ShelfBuyed" + _equipmentType, -1);
+            _currentBuyShelfIndex = StorageHelper.GetInt("ShelfBuyed" + _equipmentType, -1);
+            
             Initialization(levelPlayer);
             
             _buyButtonImage.color = _wallet.DollarValue.ToTotalCents() >= CurrentPrice.ToTotalCents()
@@ -56,7 +60,8 @@ namespace UI.Screens.EquipmentContent
                 _wallet.Subtract(CurrentPrice);
                 _shopScreen.MakePurchase();
                 _currentBuyShelfIndex = nextShelfIndex;
-                PlayerPrefs.SetInt("ShelfBuyed" + _equipmentType, _currentBuyShelfIndex);
+                // PlayerPrefs.SetInt("ShelfBuyed" + _equipmentType, _currentBuyShelfIndex);
+                StorageHelper.SetInt("ShelfBuyed" + _equipmentType, _currentBuyShelfIndex);
                 ActivateShelf(_currentBuyShelfIndex);
                 _shopScreen.CloseScreen();
                 Initialization(_currentBuyShelfIndex);

@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using Enums;
+using SaveContent;
 using UnityEngine;
 
 namespace KitchenEquipmentContent.FryerContent
@@ -24,13 +25,16 @@ namespace KitchenEquipmentContent.FryerContent
             int[] itemTypeIndices = items.Select(item => (int)item.ItemType).ToArray();
             
             string indicesString = string.Join(",", itemTypeIndices);
-            PlayerPrefs.SetString("ItemTypeDeepFryerIndices", indicesString);
-            PlayerPrefs.Save();
+            /*PlayerPrefs.SetString("ItemTypeDeepFryerIndices", indicesString);
+            PlayerPrefs.Save();*/
+            
+            StorageHelper.SetString("ItemTypeDeepFryerIndices", indicesString);
         }
         
         public List<ItemType> LoadItemTypesFromIndices()
         {
-            string indicesString = PlayerPrefs.GetString("ItemTypeDeepFryerIndices", "");
+            // string indicesString = PlayerPrefs.GetString("ItemTypeDeepFryerIndices", "");
+            string indicesString = StorageHelper.GetString("ItemTypeDeepFryerIndices", "");
             
             int[] itemTypeIndices = indicesString.Split(',')
                 .Where(s => !string.IsNullOrEmpty(s))

@@ -1,5 +1,7 @@
+using System.Collections.Generic;
 using Enums;
 using I2.Loc;
+using SaveContent;
 using TMPro;
 using UI.Screens;
 using UnityEngine;
@@ -16,7 +18,7 @@ namespace PromoCodeContent
         [SerializeField] private PromoCodeScreen _promoCodeScreen;
         [SerializeField] private PromoCodeActivator _promoCodeActivator;
 
-        public void AcceptPromoCode()
+        /*public void AcceptPromoCode()
         {
             string enteredCode = _promoCodeInputField.text.Trim().ToUpper();
             PromoCodesType currentPromoCode = PromoCodesType.SuperBurger;
@@ -53,6 +55,42 @@ namespace PromoCodeContent
                 _failTextBackground.SetActive(true);
             }
             
+            _promoCodeInputField.text = "";
+        }*/
+        
+        private readonly HashSet<string> _validPromoCodes = new HashSet<string>
+        {
+            PromoCodesType.SuperBurger.ToString().ToUpper(),
+        };
+        
+        public void AcceptPromoCode()
+        {
+            string enteredCode = _promoCodeInputField.text.Trim().ToUpper();
+
+            if (!_validPromoCodes.Contains(enteredCode))
+            {
+                Debug.Log("Неверный промо-код.");
+                _messageFailedText.text = LocalizationManager.GetTermTranslation("Invalid promo code.");
+                _failTextBackground.SetActive(true);
+                _promoCodeInputField.text = "";
+                return;
+            }
+
+            // Код валидный, проверяем, не использован ли
+            if (StorageHelper.GetInt("AcceptedCode" + enteredCode, 0) == 1)
+            {
+                Debug.Log("Этот промо-код уже был использован.");
+                _messageFailedText.text = LocalizationManager.GetTermTranslation("This promo code has already been used.");
+                _failTextBackground.SetActive(true);
+            }
+            else
+            {
+                _promoCodeActivator.ActivatePrizePromo();
+                StorageHelper.SetInt("AcceptedCode" + enteredCode, 1);
+                _messageWellDoneText.text = LocalizationManager.GetTermTranslation("Right! Get prizes in the delivery area!");
+                _WellDoneTextBackground.SetActive(true);
+            }
+
             _promoCodeInputField.text = "";
         }
     }

@@ -1,5 +1,6 @@
 using System;
 using Enums;
+using SaveContent;
 using TutorialContent;
 using UI.Screens.AdsScreens;
 using UnityEngine;
@@ -21,13 +22,14 @@ namespace ADSContent
         private bool _temporaryStopInters = false;
         private float _nextCheckTime;
         
-        private void Start()
+        /*private void Start()
         {
-            bool removeAds = PlayerPrefs.GetInt("removeADS") == 1;
+            // bool removeAds = PlayerPrefs.GetInt("removeADS") == 1;
+            bool removeAds = StorageHelper.GetInt("removeADS") == 1;
             SetValue(!removeAds);
 
             lastAdTime = DateTime.Now;
-        }
+        }*/
 
         private void Update()
         {

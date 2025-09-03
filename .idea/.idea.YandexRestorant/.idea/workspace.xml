@@ -6,9 +6,23 @@
   <component name="ChangeListManager">
     <list default="true" id="11e15f27-66b8-446e-8e38-f8f60d18b8aa" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.YandexRestorant/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.YandexRestorant/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/Polytope Studio/Lowpoly_Environments/Sources/Materials/PT_Skybox_mat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/Polytope Studio/Lowpoly_Environments/Sources/Materials/PT_Skybox_mat.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SaveContent/ShelfSaver.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SaveContent/ShelfSaver.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/WorkerContent/Workers.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/WorkerContent/Workers.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ADSContent/ADS.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ADSContent/ADS.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ADSContent/InterstitialTimer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ADSContent/InterstitialTimer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/IAP/UIInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/IAP/UIInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/KitchenEquipmentContent/FryerContent/AssemblyFryerTable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/KitchenEquipmentContent/FryerContent/AssemblyFryerTable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/KitchenEquipmentContent/FryerContent/DeepFryerContainerSaver.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/KitchenEquipmentContent/FryerContent/DeepFryerContainerSaver.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/KitchenEquipmentContent/FryerContent/DeepFryerCounterSaver.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/KitchenEquipmentContent/FryerContent/DeepFryerCounterSaver.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/KitchenEquipmentContent/FryerContent/Fryer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/KitchenEquipmentContent/FryerContent/Fryer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/KitchenEquipmentContent/FryerContent/FryerToolSaver.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/KitchenEquipmentContent/FryerContent/FryerToolSaver.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NewsUpdateContent/NewsActivator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/NewsUpdateContent/NewsActivator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PromoCodeContent/PromoCodeViewer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PromoCodeContent/PromoCodeViewer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RestaurantContent/PlaceTable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RestaurantContent/PlaceTable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ShelfCounter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ShelfCounter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Screens/EquipmentContent/EquipmentUIProduct.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Screens/EquipmentContent/EquipmentUIProduct.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Screens/EquipmentContent/ShelfUIProduct.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Screens/EquipmentContent/ShelfUIProduct.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Screens/ShopContent/PlaceUIProduct.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Screens/ShopContent/PlaceUIProduct.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -157,7 +171,7 @@
       <workItem from="1755753714563" duration="13334000" />
       <workItem from="1756716011131" duration="11427000" />
       <workItem from="1756791051391" duration="22767000" />
-      <workItem from="1756885214508" duration="7879000" />
+      <workItem from="1756885214508" duration="16649000" />
     </task>
     <servers />
   </component>

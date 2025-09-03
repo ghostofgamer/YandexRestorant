@@ -1,5 +1,6 @@
 using I2.Loc;
 using RestaurantContent;
+using SaveContent;
 using SettingsContent.SoundContent;
 using TMPro;
 using UI.Screens.ShopContent.ShopPages.PageContents.ProductsPage;
@@ -59,7 +60,8 @@ namespace UI.Screens.ShopContent
 
         public bool IsBuyed()
         {
-            return PlayerPrefs.GetInt("Place" + _index, 0) > 0;
+            // return PlayerPrefs.GetInt("Place" + _index, 0) > 0;
+            return StorageHelper.GetInt("Place" + _index, 0) > 0;
         }
 
         public void Buy()
@@ -78,7 +80,11 @@ namespace UI.Screens.ShopContent
             _ownedObjectInfo.SetActive(true);
             _buyObjectInfo.SetActive(false);
             // _wallZone.gameObject.SetActive(false);
-            PlayerPrefs.SetInt("Place" + _index, 1);
+            
+            // PlayerPrefs.SetInt("Place" + _index, 1);
+            
+            StorageHelper.SetInt("Place" + _index, 1);
+            
             _shopScreen.CloseScreen();
             _placeTable.Activate();
         }

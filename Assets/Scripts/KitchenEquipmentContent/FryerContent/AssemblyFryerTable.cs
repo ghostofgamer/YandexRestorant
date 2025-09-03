@@ -6,6 +6,7 @@ using CameraContent;
 using Enums;
 using I2.Loc;
 using InteractableContent;
+using LoadingSceneContent;
 using PlayerContent;
 using SettingsContent.SoundContent;
 using UnityEngine;
@@ -26,6 +27,7 @@ namespace KitchenEquipmentContent.FryerContent
         [SerializeField] private AssemblyFromDeepFry _assemblyFromDeepFry;
         [SerializeField] private DeepFryerCounterSaver _deepFryerCounterSaver;
         [SerializeField] private TransferItems _transferItems;
+        [SerializeField] private LoadingGame _loadingGame;
 
         public event Action FriersAssemblyBeginig;
 
@@ -33,15 +35,27 @@ namespace KitchenEquipmentContent.FryerContent
         {
             _interactableObject.OnAction += Action;
             _fryerFrying.FryCompleted += FillTable;
+            _loadingGame.MirraSDKInitialization += Init;
         }
 
         private void OnDisable()
         {
             _interactableObject.OnAction -= Action;
             _fryerFrying.FryCompleted -= FillTable;
+            _loadingGame.MirraSDKInitialization -= Init;
         }
 
-        private void Start()
+        /*private void Start()
+        {
+            List<ItemType> itemTypes = _deepFryerCounterSaver.LoadItemTypesFromIndices();
+
+            if (itemTypes.Count > 0)
+                LoadWellItems(itemTypes.Count, itemTypes);
+            else
+                FillTable();
+        }*/
+
+        private void Init()
         {
             List<ItemType> itemTypes = _deepFryerCounterSaver.LoadItemTypesFromIndices();
 

@@ -49,6 +49,7 @@ namespace UI.Screens.EquipmentContent
 
         public virtual void Init(int levelPlayer)
         {
+            Debug.Log("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
             IsOwned = IsBuyed();
             CurrentPrice = new DollarValue(_dollarPrice, _centPrice);
 
@@ -75,15 +76,15 @@ namespace UI.Screens.EquipmentContent
             _ownedObjectInfo.SetActive(true);
             _buyObjectInfo.SetActive(false);
             _equipment.gameObject.SetActive(true);
-            // StorageHelper.SetInt($"{Equipment}{_levelOpened}", 1);
-            PlayerPrefs.SetInt(Equipment + _levelOpened, 1);
+            // PlayerPrefs.SetInt(Equipment + _levelOpened, 1);
+            StorageHelper.SetInt(Equipment + _levelOpened, 1);
             _shopScreen.CloseScreen();
         }
 
         public virtual bool IsBuyed()
         {
-            return PlayerPrefs.GetInt(Equipment + _levelOpened, 0) > 0;
-            // return StorageHelper.GetInt($"{Equipment}{_levelOpened}", 0) > 0;
+            return StorageHelper.GetInt(Equipment + _levelOpened, 0) > 0;
+            // return PlayerPrefs.GetInt(Equipment + _levelOpened, 0) > 0;
         }
 
         public virtual void Initialization(int levelPlayer)

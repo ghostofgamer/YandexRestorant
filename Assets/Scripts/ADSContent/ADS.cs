@@ -1,11 +1,15 @@
 using System;
+using LoadingSceneContent;
 using MirraGames.SDK;
+using SaveContent;
 using UnityEngine;
 
 namespace ADSContent
 {
     public class ADS : MonoBehaviour
     {
+        [SerializeField]private LoadingGame _loadingGame;
+        
         private RewardCallback currentRewardCallback;
         private Coroutine _reloadInterstitialCoroutine;
         private bool _isInterstitialLoading = false;
@@ -21,9 +25,26 @@ namespace ADSContent
 
         public event Action RemoveAdsScreenOpening;
 
-        private void Awake()
+        /*private void Awake()
         {
-            bool removeAds = PlayerPrefs.GetInt("removeADS") == 1;
+            // bool removeAds = PlayerPrefs.GetInt("removeADS") == 1;
+            bool removeAds = StorageHelper.GetInt("removeADS") == 1;
+            SetValue(!removeAds);
+        }*/
+
+        private void OnEnable()
+        {
+            _loadingGame.MirraSDKInitialization += Init;
+        }
+
+        private void OnDisable()
+        {
+            _loadingGame.MirraSDKInitialization -= Init;
+        }
+
+        private void Init()
+        {
+            bool removeAds = StorageHelper.GetInt("removeADS") == 1;
             SetValue(!removeAds);
         }
 
