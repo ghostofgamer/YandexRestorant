@@ -1,3 +1,5 @@
+using LoadingSceneContent;
+using SaveContent;
 using UnityEngine;
 using UnityEngine.Audio;
 
@@ -12,6 +14,7 @@ namespace SettingsContent.SoundContent
         [SerializeField] private string _volumeParameter = "Sound";
         [SerializeField] private string _sfxParameter = "SFX";
         [SerializeField] private SoundChanger _soundChanger;
+        [SerializeField]private LoadingGame _loadingGame;
 
         private bool _isSoundOn = true;
         private bool _isSFXOn = true;
@@ -26,7 +29,7 @@ namespace SettingsContent.SoundContent
             {
                 Instance = this;
                 DontDestroyOnLoad(gameObject);
-                LoadSettings();
+                // LoadSettings();
             }
             else
             {
@@ -34,7 +37,24 @@ namespace SettingsContent.SoundContent
             }
         }
 
+        private void OnEnable()
+        {
+            _loadingGame.MirraSDKInitialization += Init;
+        }
+
+        private void OnDisable()
+        {
+            _loadingGame.MirraSDKInitialization -= Init;
+        }
+
+        /*
         private void Start()
+        {
+            LoadSettings();
+        }
+        */
+
+        private void Init()
         {
             LoadSettings();
         }
@@ -43,16 +63,20 @@ namespace SettingsContent.SoundContent
         {
             _audioMixerGroup.audioMixer.SetFloat(_volumeParameter, enabled ? _valueEnabled : _valueDisabled);
             _isSoundOn = enabled;
-            PlayerPrefs.SetInt(SoundKey, enabled ? 1 : 0);
-            PlayerPrefs.Save();
+            /*PlayerPrefs.SetInt(SoundKey, enabled ? 1 : 0);
+            PlayerPrefs.Save();*/
+            
+            StorageHelper.SetInt(SoundKey, enabled ? 1 : 0);
         }
 
         public void SetSFX(bool enabled)
         {
             _audioMixerGroup.audioMixer.SetFloat(_sfxParameter, enabled ? 0f : -80f);
             _isSFXOn = enabled;
-            PlayerPrefs.SetInt(SFXKey, enabled ? 1 : 0);
-            PlayerPrefs.Save();
+            /*PlayerPrefs.SetInt(SFXKey, enabled ? 1 : 0);
+            PlayerPrefs.Save();*/
+            
+            StorageHelper.SetInt(SFXKey, enabled ? 1 : 0);
         }
 
         public bool IsSoundOn()
@@ -67,9 +91,11 @@ namespace SettingsContent.SoundContent
 
         private void LoadSettings()
         {
-            _isSoundOn = PlayerPrefs.GetInt(SoundKey, 1) == 1;
-            _isSFXOn = PlayerPrefs.GetInt(SFXKey, 1) == 1;
-
+            /*_isSoundOn = PlayerPrefs.GetInt(SoundKey, 1) == 1;
+            _isSFXOn = PlayerPrefs.GetInt(SFXKey, 1) == 1;*/
+            _isSoundOn = StorageHelper.GetInt(SoundKey, 1) == 1;
+            _isSFXOn = StorageHelper.GetInt(SFXKey, 1) == 1;
+            
             SetSound(_isSoundOn);
             SetSFX(_isSFXOn);
             _soundChanger.Init(_isSoundOn,_isSFXOn);

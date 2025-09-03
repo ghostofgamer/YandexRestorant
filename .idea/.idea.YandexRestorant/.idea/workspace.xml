@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="11e15f27-66b8-446e-8e38-f8f60d18b8aa" name="Changes" comment="" />
+    <list default="true" id="11e15f27-66b8-446e-8e38-f8f60d18b8aa" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.YandexRestorant/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.YandexRestorant/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ADSContent/Popups/AdPopupActivator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ADSContent/Popups/AdPopupActivator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/IAP/Purchaser.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/IAP/Purchaser.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SettingsContent/LanguageChanger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SettingsContent/LanguageChanger.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SettingsContent/SensitivitySettings.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SettingsContent/SensitivitySettings.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SettingsContent/SoundContent/Sound.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SettingsContent/SoundContent/Sound.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -151,7 +159,8 @@
       <workItem from="1755674386450" duration="11533000" />
       <workItem from="1755753714563" duration="13334000" />
       <workItem from="1756716011131" duration="11427000" />
-      <workItem from="1756791051391" duration="22031000" />
+      <workItem from="1756791051391" duration="22767000" />
+      <workItem from="1756885214508" duration="5354000" />
     </task>
     <servers />
   </component>

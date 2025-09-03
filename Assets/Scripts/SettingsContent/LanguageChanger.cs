@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using I2.Loc;
 using MirraGames.SDK;
 using MirraGames.SDK.Common;
+using SaveContent;
 using UnityEngine;
 
 namespace SettingsContent
@@ -26,7 +27,29 @@ namespace SettingsContent
 
             currentIndex = _languages.IndexOf(currentLanguage);
 
-            if (PlayerPrefs.HasKey("LanguageIndex"))
+
+            if (StorageHelper.HasKey("LanguageIndex"))
+            {
+                currentIndex = StorageHelper.GetInt("LanguageIndex");
+                LocalizationManager.CurrentLanguage = _languages[currentIndex];
+                LanguageChanged?.Invoke();
+            }
+            else
+            {
+                if (currentIndex != -1 && LocalizationManager.HasLanguage(currentLanguage))
+                {
+                    LocalizationManager.CurrentLanguage = currentLanguage;
+                    LanguageChanged?.Invoke();
+                }
+                else
+                {
+                    currentIndex = 0;
+                    LocalizationManager.CurrentLanguage = _languages[currentIndex];
+                    LanguageChanged?.Invoke();
+                }
+            }
+            
+            /*if (PlayerPrefs.HasKey("LanguageIndex"))
             {
                 currentIndex = PlayerPrefs.GetInt("LanguageIndex");
                 LocalizationManager.CurrentLanguage = _languages[currentIndex];
@@ -45,7 +68,7 @@ namespace SettingsContent
                     LocalizationManager.CurrentLanguage = _languages[currentIndex];
                     LanguageChanged?.Invoke();
                 }
-            }
+            }*/
         }
 
         public void PrevLanguage()
@@ -74,8 +97,10 @@ namespace SettingsContent
 
         private void SaveIndex()
         {
-            PlayerPrefs.SetInt("LanguageIndex", currentIndex);
-            PlayerPrefs.Save();
+            /*PlayerPrefs.SetInt("LanguageIndex", currentIndex);
+            PlayerPrefs.Save();*/
+            
+            StorageHelper.SetInt("LanguageIndex", currentIndex);
         }
     }
 }

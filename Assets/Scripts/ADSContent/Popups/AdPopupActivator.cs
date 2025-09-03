@@ -1,6 +1,7 @@
 using System.Collections;
 using Enums;
 using PlayerContent.LevelContent;
+using SaveContent;
 using TutorialContent;
 using UI.Screens.AdsScreens;
 using UI.Screens.AdsScreens.StoragePackContent;
@@ -17,7 +18,7 @@ namespace ADSContent.Popups
         [SerializeField] private GameObject _storagePackButton;
         [SerializeField] private PlayerLevel _playerLevel;
         [SerializeField] private RemoveAdScreen _removeAdScreen;
-        [SerializeField]private ADS _ads;
+        [SerializeField] private ADS _ads;
 
         private Coroutine _starterPackCoroutine;
         private WaitForSeconds _waitForSecondsStarterPack = new WaitForSeconds(6f);
@@ -49,7 +50,8 @@ namespace ADSContent.Popups
 
         private void ShowStarterPack()
         {
-            int value = PlayerPrefs.GetInt("StarterPack", 0);
+            // int value = PlayerPrefs.GetInt("StarterPack", 0);
+            int value = StorageHelper.GetInt("StarterPack", 0);
 
             if (value > 0)
                 return;
@@ -62,7 +64,9 @@ namespace ADSContent.Popups
 
         private void ShowStoragePack()
         {
-            int value = PlayerPrefs.GetInt("StoragePack", 0);
+            // int value = PlayerPrefs.GetInt("StoragePack", 0);
+            int value = StorageHelper.GetInt("StoragePack", 0);
+
             Debug.Log("value ShowStoragePack" + value);
             if (value > 0)
                 return;
@@ -83,8 +87,10 @@ namespace ADSContent.Popups
             if ((int)_tutorial.CurrentType < (int)TutorialType.TutorCompleted)
                 return;
 
-            _starterPackButton.SetActive(level < 4 && PlayerPrefs.GetInt("StarterPack", 0) <= 0);
-            _storagePackButton.SetActive(level >= 4 && PlayerPrefs.GetInt("StoragePack", 0) <= 0);
+            // _starterPackButton.SetActive(level < 4 && PlayerPrefs.GetInt("StarterPack", 0) <= 0);
+            _starterPackButton.SetActive(level < 4 && StorageHelper.GetInt("StarterPack", 0) <= 0);
+            // _storagePackButton.SetActive(level >= 4 && PlayerPrefs.GetInt("StoragePack", 0) <= 0);
+            _storagePackButton.SetActive(level >= 4 && StorageHelper.GetInt("StoragePack", 0) <= 0);
         }
 
         private void RemoveAdsScreenOpen()

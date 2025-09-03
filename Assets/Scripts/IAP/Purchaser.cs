@@ -256,7 +256,7 @@ namespace IAP
                 _removeAdScreen.CloseScreen();
         }
 
-        private void StarterPack()
+        public void StarterPack()
         {
             // PlayerPrefs.SetInt("StarterPack", 1);
             StorageHelper.SetInt("StarterPack", 1);
