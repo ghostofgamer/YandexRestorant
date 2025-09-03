@@ -1,4 +1,6 @@
 using Enums;
+using LoadingSceneContent;
+using SaveContent;
 using SoContent;
 using UI.Screens;
 using UI.Screens.ShopContent.WorkersContent;
@@ -16,6 +18,7 @@ namespace WorkerContent
         [SerializeField] private Wallet _wallet;
         [SerializeField] private WorkersConfig _workersConfig;
         [SerializeField] private WorkersScreen _workersScreen;
+        [SerializeField]private LoadingGame _loadingGame;
 
         private void OnEnable()
         {
@@ -24,6 +27,8 @@ namespace WorkerContent
                 workerUIProduct.WorkerBuyed += ActivateWorker;
                 workerUIProduct.WorkerFired += DeactivateWorker;
             }
+            
+            _loadingGame.MirraSDKInitialization += Init;
         }
 
         private void OnDisable()
@@ -33,14 +38,27 @@ namespace WorkerContent
                 workerUIProduct.WorkerBuyed -= ActivateWorker;
                 workerUIProduct.WorkerFired -= DeactivateWorker;
             }
+            
+            _loadingGame.MirraSDKInitialization -= Init;
         }
 
-        private void Start()
+        /*private void Start()
         {
             Debug.Log("работник " + PlayerPrefs.GetInt(Worker + WorkerType.Cleaner, 0));
 
             foreach (var worker in _workers)
                 worker.gameObject.SetActive(PlayerPrefs.GetInt(Worker + worker.WorkerType, 0) > 0);
+        }*/
+
+        private void Init()
+        {
+            Debug.Log("работник " + StorageHelper.GetInt(Worker + WorkerType.Cleaner, 0));
+
+            foreach (var worker in _workers)
+            {
+                bool isActive = StorageHelper.GetInt(Worker + worker.WorkerType, 0) > 0;
+                worker.gameObject.SetActive(isActive);
+            }
         }
 
         public Worker GetWorker(WorkerType type)

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Enums;
 using ItemContent;
+using LoadingSceneContent;
 using ShelfContent;
 using UnityEngine;
 
@@ -13,20 +14,28 @@ namespace SaveContent
         [SerializeField] private Shelf _shelf;
         [SerializeField] private bool _isBuyed;
         [SerializeField] private int _index;
+        [SerializeField] private LoadingGame _loadingGame;
 
         private List<ItemType> _itemTypes = new List<ItemType>();
 
         private void OnEnable()
         {
             _shelf.ListItemChanged += SaveDate;
+            _loadingGame.MirraSDKInitialization += Init;
         }
 
         private void OnDisable()
         {
             _shelf.ListItemChanged -= SaveDate;
+            _loadingGame.MirraSDKInitialization -= Init;
         }
 
-        private void Start()
+        /*private void Start()
+        {
+            LoadDataFromPlayerPrefs();
+        }*/
+
+        private void Init()
         {
             LoadDataFromPlayerPrefs();
         }
@@ -39,17 +48,45 @@ namespace SaveContent
 
             string combinedIndicesString = string.Join(",", combinedIndices);
 
+            string key = !_isBuyed ? "combinedItemIndices" : "combinedItemIndices" + _index;
+
+            StorageHelper.SetString(key, combinedIndicesString);
+            
+            /*int[] combinedIndices = itemBasketList.Select(item => (int)item.ItemType)
+                .Concat(itemDrinkList.Select(item => (int)item.ItemType))
+                .ToArray();
+
+            string combinedIndicesString = string.Join(",", combinedIndices);
+
             if (!_isBuyed)
                 PlayerPrefs.SetString("combinedItemIndices", combinedIndicesString);
             else
                 PlayerPrefs.SetString("combinedItemIndices" + _index, combinedIndicesString);
 
-            PlayerPrefs.Save();
+            PlayerPrefs.Save();*/
         }
 
         private void LoadDataFromPlayerPrefs()
         {
-            string combinedIndicesString;
+            string key = !_isBuyed ? "combinedItemIndices" : "combinedItemIndices" + _index;
+
+            string combinedIndicesString = StorageHelper.GetString(key, "");
+
+            if (!string.IsNullOrEmpty(combinedIndicesString))
+            {
+                string[] indicesArray = combinedIndicesString.Split(',');
+                int[] indices = Array.ConvertAll(indicesArray, int.Parse);
+
+                foreach (var index in indices)
+                    _itemTypes.Add((ItemType)index);
+            }
+
+            if (_itemTypes.Count > 0)
+                _shelf.Initialization(_itemTypes);
+            
+            
+            
+            /*string combinedIndicesString;
 
             combinedIndicesString = !_isBuyed
                 ? PlayerPrefs.GetString("combinedItemIndices", "")
@@ -65,7 +102,7 @@ namespace SaveContent
             }
 
             if (_itemTypes.Count > 0)
-                _shelf.Initialization(_itemTypes);
+                _shelf.Initialization(_itemTypes);*/
         }
     }
 }

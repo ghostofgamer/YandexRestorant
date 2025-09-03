@@ -1,6 +1,7 @@
 using System;
 using Enums;
 using PlayerContent.LevelContent;
+using SaveContent;
 using SettingsContent.SoundContent;
 using SoContent;
 using UnityEngine;
@@ -108,7 +109,8 @@ namespace UI.Screens.ShopContent.WorkersContent
             WorkerBuyed?.Invoke(_workerType);
             _wallet.Subtract(Price);
             IsOwned = true;
-            PlayerPrefs.SetInt(Worker + _workerType, 1);
+            // PlayerPrefs.SetInt(Worker + _workerType, 1);
+            StorageHelper.SetInt(Worker + _workerType, 1);
             SetValue();
         }
 
@@ -127,7 +129,8 @@ namespace UI.Screens.ShopContent.WorkersContent
         {
             WorkerFired?.Invoke(_workerType);
             IsOwned = false;
-            PlayerPrefs.SetInt(Worker + _workerType, 0);
+            // PlayerPrefs.SetInt(Worker + _workerType, 0);
+            StorageHelper.SetInt(Worker + _workerType, 0);
             SetValue();
         }
 
