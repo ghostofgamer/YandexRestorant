@@ -1,5 +1,6 @@
 using System;
 using Enums;
+using LoadingSceneContent;
 using PlayerContent.LevelContent;
 using SaveContent;
 using SettingsContent.SoundContent;
@@ -45,7 +46,7 @@ namespace UI.Screens.ShopContent.WorkersContent
         public WorkerType WorkerType => _workerType;
         public int LevelOpened => _levelOpened;
 
-        private void Start()
+        /*private void Start()
         {
             if (PlayerPrefs.GetInt("Zona" + ZoneType.StaffRoom, 0) <= 0 || _playerLevel.CurrentLevel < _levelOpened)
             {
@@ -56,11 +57,24 @@ namespace UI.Screens.ShopContent.WorkersContent
                      _playerLevel.CurrentLevel >= _levelOpened)
             {
                 return;
-            }*/
+            }#1#
 
             IsOwned = PlayerPrefs.GetInt(Worker + _workerType, 0) > 0;
             SetValue();
-        }
+        }*/
+
+        /*private void Init()
+        {
+            if (StorageHelper.GetInt("Zona" + ZoneType.StaffRoom, 0) <= 0 || _playerLevel.CurrentLevel < _levelOpened)
+            {
+                ClosePurchased();
+                return;
+            }
+
+            // IsOwned = PlayerPrefs.GetInt(Worker + _workerType, 0) > 0;
+            IsOwned = StorageHelper.GetInt(Worker + _workerType, 0) > 0;
+            SetValue();
+        }*/
 
         public void Init(WorkerConfig workerConfig)
         {
@@ -74,7 +88,24 @@ namespace UI.Screens.ShopContent.WorkersContent
 
             ValueChanged?.Invoke(Price, Salary);
 
-            if (PlayerPrefs.GetInt("Zona" + ZoneType.StaffRoom, 0) <= 0 || _playerLevel.CurrentLevel < _levelOpened)
+            /*if (PlayerPrefs.GetInt("Zona" + ZoneType.StaffRoom, 0) <= 0 || _playerLevel.CurrentLevel < _levelOpened)
+            {
+                ClosePurchased();
+                return;
+            }
+            /*else if (PlayerPrefs.GetInt("Zona" + ZoneType.StaffRoom, 0) <= ||
+                     _playerLevel.CurrentLevel >= _levelOpened)
+            {
+                return;
+            }#1#
+            else
+            {
+                IsOwned = PlayerPrefs.GetInt(Worker + _workerType, 0) > 0;
+                SetValue();
+            }*/
+            
+            
+            if (StorageHelper.GetInt("Zona" + ZoneType.StaffRoom, 0) <= 0 || _playerLevel.CurrentLevel < _levelOpened)
             {
                 ClosePurchased();
                 return;
@@ -86,14 +117,17 @@ namespace UI.Screens.ShopContent.WorkersContent
             }*/
             else
             {
-                IsOwned = PlayerPrefs.GetInt(Worker + _workerType, 0) > 0;
+                // IsOwned = PlayerPrefs.GetInt(Worker + _workerType, 0) > 0;
+                IsOwned = StorageHelper.GetInt(Worker + _workerType, 0) > 0;
                 SetValue();
             }
         }
 
         public void InitUpgradeInfo()
         {
-            _level = PlayerPrefs.GetInt(_workerType + "LevelWorker", 1);
+            // _level = PlayerPrefs.GetInt(_workerType + "LevelWorker", 1);
+            _level = StorageHelper.GetInt(_workerType + "LevelWorker", 1);
+            
             CurrentConfig = _workerParametersConfig.GetConfig(_workerType, _level);
             ParametersValueChanged?.Invoke(CurrentConfig);
             SetValue();

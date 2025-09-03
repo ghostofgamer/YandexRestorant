@@ -57,6 +57,7 @@ namespace WorkerContent
             foreach (var worker in _workers)
             {
                 bool isActive = StorageHelper.GetInt(Worker + worker.WorkerType, 0) > 0;
+                worker.Init();
                 worker.gameObject.SetActive(isActive);
             }
         }

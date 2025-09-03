@@ -1,5 +1,7 @@
 using System;
 using Enums;
+using MirraGames.SDK;
+using SaveContent;
 using SoContent;
 using UnityEngine;
 using WorkerContent.FSM;
@@ -39,14 +41,22 @@ namespace WorkerContent
 
         public bool IsTired { get; private set; } = false;
 
-        private void Start()
+
+        public void Init()
         {
-            Level = PlayerPrefs.GetInt(_workerType + "LevelWorker", 1);
+            Level = StorageHelper.GetInt(_workerType + "LevelWorker", 1);
         }
+
+        /*private void Start()
+        {
+            // Level = PlayerPrefs.GetInt(_workerType + "LevelWorker", 1);
+            Level =StorageHelper.GetInt(_workerType + "LevelWorker", 1);
+        }*/
 
         private void Update()
         {
-            CurrentState?.Update(this);
+            if (MirraSDK.IsInitialized)
+                CurrentState?.Update(this);
         }
 
         public abstract bool GetConditionsWorkUpdate();
@@ -57,7 +67,9 @@ namespace WorkerContent
 
         public virtual void Activate()
         {
-            Level = PlayerPrefs.GetInt(_workerType + "LevelWorker", 1);
+            // Level = PlayerPrefs.GetInt(_workerType + "LevelWorker", 1);
+            Level = StorageHelper.GetInt(_workerType + "LevelWorker", 1);
+
             _workerMover.SetSpeed(Level);
             _workerTimer.SetTimeWork();
             transform.position = RelaxPosition.position;
@@ -104,7 +116,10 @@ namespace WorkerContent
 
             Level++;
             // AppMetrica.ReportEvent(_workerType.ToString() + " Levels", "{\"" + Level.ToString() + "\":null}");
-            PlayerPrefs.SetInt(_workerType + "LevelWorker", Level);
+            // PlayerPrefs.SetInt(_workerType + "LevelWorker", Level);
+
+            StorageHelper.SetInt(_workerType + "LevelWorker", Level);
+
             _workerMover.SetSpeed(Level);
             Efficiecy = _workerParametersConfig.GetConfig(_workerType, Level).Efficiency;
 
