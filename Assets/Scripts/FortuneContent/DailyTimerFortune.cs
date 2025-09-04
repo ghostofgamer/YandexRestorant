@@ -1,4 +1,5 @@
 using System;
+using SaveContent;
 using UnityEngine;
 
 namespace DailyTimerContent
@@ -18,9 +19,31 @@ namespace DailyTimerContent
         {
             string key = lastPressTime;
 
-            if (PlayerPrefs.HasKey(key))
+            /*if (PlayerPrefs.HasKey(key))
             {
                 string timing = PlayerPrefs.GetString(lastPressTime);
+                DateTime tim;
+
+                if (DateTime.TryParse(timing, out tim))
+                {
+                    // if (DateTime.Now - tim >= TimeSpan.FromSeconds(10))
+                    if (DateTime.Now - tim >= TimeSpan.FromHours(24))
+                        TimeOverCompleted?.Invoke();
+                    else
+                        TimeNotOverCompleted?.Invoke();
+                }
+            }
+            else
+            {
+                TimeOverCompleted?.Invoke();
+                /*foreach (var button in buttonSpin)
+                    button.interactable = true;#1#
+            }*/
+            
+            if (StorageHelper.HasKey(key))
+            {
+                // string timing = PlayerPrefs.GetString(lastPressTime);
+                string timing = StorageHelper.GetString(lastPressTime);
                 DateTime tim;
 
                 if (DateTime.TryParse(timing, out tim))

@@ -1,5 +1,6 @@
 using System;
 using I2.Loc;
+using SaveContent;
 using SoContent;
 using TMPro;
 using UnityEngine;
@@ -15,7 +16,10 @@ namespace UI.MenuUIContent
 
         private void OnEnable()
         {
-            int totalCents = PlayerPrefs.GetInt(CurrentPriceKey + ItemConfig.ItemType, 0);
+            // int totalCents = PlayerPrefs.GetInt(CurrentPriceKey + ItemConfig.ItemType, 0);
+            
+            int totalCents = StorageHelper.GetInt(CurrentPriceKey + ItemConfig.ItemType, 0);
+            
             // _priceText.text = $"PRICE {new DollarValue(0, 0).FromTotalCents(totalCents)}";
             _priceText.text = $"{LocalizationManager.GetTermTranslation("Price")}:{new DollarValue(0, 0).FromTotalCents(totalCents)}";
         }
@@ -28,7 +32,10 @@ namespace UI.MenuUIContent
         public override void Init(ItemsConfig itemsConfig)
         {
             base.Init(itemsConfig);
-            int totalCents = PlayerPrefs.GetInt(CurrentPriceKey + ItemConfig.ItemType, 0);
+            // int totalCents = PlayerPrefs.GetInt(CurrentPriceKey + ItemConfig.ItemType, 0);
+            
+            int totalCents = StorageHelper.GetInt(CurrentPriceKey + ItemConfig.ItemType, 0);
+            
             _priceText.text = $"{LocalizationManager.GetTermTranslation("Price")}:{new DollarValue(0, 0).FromTotalCents(totalCents)}";
         }
     }

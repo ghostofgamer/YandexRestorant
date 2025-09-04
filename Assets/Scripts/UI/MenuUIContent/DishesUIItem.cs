@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using EnergyContent;
 using Enums;
 using I2.Loc;
+using MirraGames.SDK;
+using SaveContent;
 using SettingsContent;
 using SoContent;
 using TMPro;
@@ -61,13 +63,16 @@ namespace UI.MenuUIContent
 
         private void Start()
         {
-            InitVisual();
+            if (MirraSDK.IsInitialized)
+                InitVisual();
         }
 
         private void InitVisual()
         {
-            int totalCents = PlayerPrefs.GetInt(CurrentPriceKey + ItemConfig.ItemType, 0);
-            _purchasedValuePriceState = PlayerPrefs.GetInt("PurchasedValuePriceStateDishes" + ItemType, 0);
+            // int totalCents = PlayerPrefs.GetInt(CurrentPriceKey + ItemConfig.ItemType, 0);
+            int totalCents = StorageHelper.GetInt(CurrentPriceKey + ItemConfig.ItemType, 0);
+            // _purchasedValuePriceState = PlayerPrefs.GetInt("PurchasedValuePriceStateDishes" + ItemType, 0);
+            _purchasedValuePriceState = StorageHelper.GetInt("PurchasedValuePriceStateDishes" + ItemType, 0);
 
             if (_valuePriceState <= _purchasedValuePriceState)
                 _valuePriceState = 0;
@@ -133,7 +138,8 @@ namespace UI.MenuUIContent
                 _energy.DecreaseEnergy(_valuePriceState);
                 Debug.Log("СОХРАНЯЕМ " + _valuePriceState);
                 _purchasedValuePriceState = _valuePriceState;
-                PlayerPrefs.SetInt("PurchasedValuePriceStateDishes" + ItemType, _purchasedValuePriceState);
+                // PlayerPrefs.SetInt("PurchasedValuePriceStateDishes" + ItemType, _purchasedValuePriceState);
+                StorageHelper.SetInt("PurchasedValuePriceStateDishes" + ItemType, _purchasedValuePriceState);
             }
 
             _menuScrollContent.AddItem(ItemType);
@@ -142,7 +148,8 @@ namespace UI.MenuUIContent
         public override void Init(ItemsConfig itemsConfig)
         {
             base.Init(itemsConfig);
-            _purchasedValuePriceState = PlayerPrefs.GetInt("PurchasedValuePriceStateDishes" + ItemType, 0);
+            // _purchasedValuePriceState = PlayerPrefs.GetInt("PurchasedValuePriceStateDishes" + ItemType, 0);
+            _purchasedValuePriceState = StorageHelper.GetInt("PurchasedValuePriceStateDishes" + ItemType, 0);
 
             if (ItemConfig != null)
             {
@@ -155,9 +162,19 @@ namespace UI.MenuUIContent
                     _purchasePrice);
                 _recommendedPrice = ItemConfig.RecommendedPrice;
 
-                if (PlayerPrefs.HasKey(CurrentPriceKey + ItemConfig.ItemType))
+                /*if (PlayerPrefs.HasKey(CurrentPriceKey + ItemConfig.ItemType))
                 {
                     int totalCents = PlayerPrefs.GetInt(CurrentPriceKey + ItemConfig.ItemType, 0);
+                    _currentPrice = new DollarValue(0, 0).FromTotalCents(totalCents);
+                }
+                else
+                {
+                    _currentPrice = new DollarValue(_recommendedPrice.Dollars, _recommendedPrice.Cents);
+                }*/
+
+                if (StorageHelper.HasKey(CurrentPriceKey + ItemConfig.ItemType))
+                {
+                    int totalCents = StorageHelper.GetInt(CurrentPriceKey + ItemConfig.ItemType, 0);
                     _currentPrice = new DollarValue(0, 0).FromTotalCents(totalCents);
                 }
                 else
@@ -243,7 +260,7 @@ namespace UI.MenuUIContent
                 _valuePriceState = 0;
 
             _priceDifferenceText.text = _valuePriceState.ToString();
-            
+
             if (_valuePriceState > _energy.EnergyValue)
             {
                 Debug.Log("тут должно стать красным");
@@ -259,8 +276,11 @@ namespace UI.MenuUIContent
             // Color color = currentCents <= recommendedCents ? _colorGreen : _colorRed;
 
             ChangeCurrentPrice?.Invoke(_currentPrice, _colorGreen);
-            PlayerPrefs.SetInt(CurrentPriceKey + ItemConfig.ItemType, totalCents);
-            PlayerPrefs.Save();
+
+            StorageHelper.SetInt(CurrentPriceKey + ItemConfig.ItemType, totalCents);
+
+            /*PlayerPrefs.SetInt(CurrentPriceKey + ItemConfig.ItemType, totalCents);
+            PlayerPrefs.Save();*/
 
 
             /*int totalCents = _minPrice.ToTotalCents() + (int)value;

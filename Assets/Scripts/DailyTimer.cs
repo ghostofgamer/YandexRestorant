@@ -1,6 +1,8 @@
 using System;
+using LoadingSceneContent;
+using MirraGames.SDK;
+using SaveContent;
 using UnityEngine;
-using UnityEngine.Serialization;
 using UnityEngine.UI;
 
 namespace DailyTimerContent
@@ -12,18 +14,54 @@ namespace DailyTimerContent
         [SerializeField] private string _lastTimeSave;
         [SerializeField] protected string LastPressTime;
         [SerializeField] private string _descriptionSave;
+        [SerializeField] private LoadingGame _loadingGame;
 
-        private void Start()
+        private void OnEnable()
+        {
+            _loadingGame.MirraSDKInitialization += Init;
+        }
+
+        private void OnDisable()
+        {
+            _loadingGame.MirraSDKInitialization -= Init;
+        }
+
+        /*private void Start()
+        {
+            LoadTime();
+        }*/
+
+        private void Update()
+        {
+            if (MirraSDK.IsInitialized)
+                UpdateTime(LastPressTime);
+        }
+
+        private void Init()
         {
             LoadTime();
         }
 
         private void LoadTime()
         {
-            if (PlayerPrefs.HasKey(_lastTimeSave))
+            /*if (PlayerPrefs.HasKey(_lastTimeSave))
             {
                 string key = LastPressTime;
-                string lastPressTimeString = PlayerPrefs.GetString(key);
+                // string lastPressTimeString = PlayerPrefs.GetString(key);
+                string lastPressTimeString =StorageHelper.GetString(key);
+                LastTimesSpin = DateTime.Parse(lastPressTimeString);
+                CheckButtonAvailability(LastPressTime);
+            }
+            else
+            {
+                LastTimesSpin = DateTime.MinValue;
+            }*/
+
+            if (StorageHelper.HasKey(_lastTimeSave))
+            {
+                string key = LastPressTime;
+                // string lastPressTimeString = PlayerPrefs.GetString(key);
+                string lastPressTimeString = StorageHelper.GetString(key);
                 LastTimesSpin = DateTime.Parse(lastPressTimeString);
                 CheckButtonAvailability(LastPressTime);
             }
@@ -37,9 +75,36 @@ namespace DailyTimerContent
         {
             string key = lastPressTime;
 
-            if (PlayerPrefs.HasKey(key))
+            /*if (PlayerPrefs.HasKey(key))
             {
                 string timing = PlayerPrefs.GetString(lastPressTime);
+                DateTime tim;
+
+                if (DateTime.TryParse(timing, out tim))
+                {
+                    // if (DateTime.Now - tim >= TimeSpan.FromSeconds(10))
+                    if (DateTime.Now - tim >= TimeSpan.FromHours(24))
+                    {
+                        foreach (var button in buttonSpin)
+                            button.interactable = true;
+                    }
+                    else
+                    {
+                        foreach (var button in buttonSpin)
+                            button.interactable = false;
+                    }
+                }
+            }
+            else
+            {
+                foreach (var button in buttonSpin)
+                    button.interactable = true;
+            }*/
+
+            if (StorageHelper.HasKey(key))
+            {
+                // string timing = PlayerPrefs.GetString(lastPressTime);
+                string timing = StorageHelper.GetString(lastPressTime);
                 DateTime tim;
 
                 if (DateTime.TryParse(timing, out tim))
@@ -64,14 +129,10 @@ namespace DailyTimerContent
             }
         }
 
-        private void Update()
-        {
-            UpdateTime(LastPressTime);
-        }
-
         private void UpdateTime(string lastPressTime)
         {
-            string timing = PlayerPrefs.GetString(lastPressTime);
+            // string timing = PlayerPrefs.GetString(lastPressTime);
+            string timing = StorageHelper.GetString(lastPressTime);
 
             if (!string.IsNullOrEmpty(timing))
             {
@@ -91,15 +152,17 @@ namespace DailyTimerContent
 
         public void StartButtonClick()
         {
-            OnButtonClick(LastPressTime,_lastTimeSave,_descriptionSave);
+            OnButtonClick(LastPressTime, _lastTimeSave, _descriptionSave);
         }
-        
-        private void OnButtonClick(string lastPressTime,string lastTimeSave, string descriptionSave)
+
+        private void OnButtonClick(string lastPressTime, string lastTimeSave, string descriptionSave)
         {
             LastTimesSpin = DateTime.Now;
-            PlayerPrefs.SetString(lastPressTime, DateTime.Now.ToString());
-            PlayerPrefs.SetString(lastTimeSave, descriptionSave);
-            PlayerPrefs.Save();
+            // PlayerPrefs.SetString(lastPressTime, DateTime.Now.ToString());
+            StorageHelper.SetString(lastPressTime, DateTime.Now.ToString());
+            // PlayerPrefs.SetString(lastTimeSave, descriptionSave);
+            StorageHelper.SetString(lastTimeSave, descriptionSave);
+            // PlayerPrefs.Save();
 
             /*foreach (var button in buttonSpin)
                 button.interactable = false;*/

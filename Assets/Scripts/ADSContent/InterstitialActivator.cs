@@ -1,7 +1,9 @@
 using System;
 using System.Collections;
 using InputContent;
+using LoadingSceneContent;
 using MirraGames.SDK;
+using SaveContent;
 using TMPro;
 using UI.Screens.AdsScreens;
 using UnityEngine;
@@ -20,6 +22,7 @@ namespace ADSContent
         [SerializeField] private TMP_Text countdownText;
         [SerializeField] private PlayerInput _playerInput;
         [SerializeField] private RemoveAdScreen _removeAdScreen;
+        [SerializeField]private LoadingGame _loadingGame;
 
         private TimeSpan _adCooldown;
         private DateTime _sessionStartTime;
@@ -43,14 +46,14 @@ namespace ADSContent
                 return _instance;
             }
         }
-
+        
         void Awake()
         {
             if (_instance == null)
             {
                 _instance = this;
                 DontDestroyOnLoad(gameObject);
-                InitializeSession();
+                // InitializeSession();
             }
             else if (_instance != this)
             {
@@ -60,12 +63,25 @@ namespace ADSContent
             _adCooldown = TimeSpan.FromMinutes(_duration);
         }
 
+        private void OnEnable()
+        {
+            _loadingGame.MirraSDKInitialization += InitializeSession;
+        }
+
+        private void OnDisable()
+        {
+            _loadingGame.MirraSDKInitialization -= InitializeSession;
+        }
+
         private void InitializeSession()
         {
             _sessionStartTime = DateTime.UtcNow;
 
-            if (!PlayerPrefs.HasKey(FirstLaunchKey))
-                PlayerPrefs.SetString(FirstLaunchKey, _sessionStartTime.Ticks.ToString());
+            /*if (!PlayerPrefs.HasKey(FirstLaunchKey))
+                PlayerPrefs.SetString(FirstLaunchKey, _sessionStartTime.Ticks.ToString());*/
+            
+            if(!StorageHelper.HasKey(FirstLaunchKey))
+                StorageHelper.SetString(FirstLaunchKey, _sessionStartTime.Ticks.ToString());
         }
 
         public void ShowAd()
@@ -74,8 +90,9 @@ namespace ADSContent
             {
                 _ads.ShowInterstitial();
                 // Debug.Log("$$$Showing Ad");
-                PlayerPrefs.SetString(LastADKey, DateTime.UtcNow.Ticks.ToString());
-                PlayerPrefs.Save();
+                /*PlayerPrefs.SetString(LastADKey, DateTime.UtcNow.Ticks.ToString());
+                PlayerPrefs.Save();*/
+                StorageHelper.SetString(LastADKey, DateTime.UtcNow.Ticks.ToString());
             }
             else
             {
@@ -157,9 +174,11 @@ namespace ADSContent
         {
             DateTime currentTime = DateTime.UtcNow;
 
-            if (PlayerPrefs.HasKey(FirstLaunchKey))
+            // if (PlayerPrefs.HasKey(FirstLaunchKey))
+            if (StorageHelper.HasKey(FirstLaunchKey))
             {
-                long firstLaunchTicks = long.Parse(PlayerPrefs.GetString(FirstLaunchKey));
+                // long firstLaunchTicks = long.Parse(PlayerPrefs.GetString(FirstLaunchKey));
+                long firstLaunchTicks = long.Parse(StorageHelper.GetString(FirstLaunchKey));
                 DateTime firstLaunchTime = new DateTime(firstLaunchTicks, DateTimeKind.Utc);
 
                 if ((currentTime - firstLaunchTime) < _adCooldown)
@@ -174,10 +193,11 @@ namespace ADSContent
                 Debug.Log("Ad not ready: session cooldown");
                 return false;
             }
-
-            if (PlayerPrefs.HasKey(LastADKey))
+            
+            if (StorageHelper.HasKey(LastADKey))
             {
-                long lastAdTicks = long.Parse(PlayerPrefs.GetString(LastADKey));
+                // long lastAdTicks = long.Parse(PlayerPrefs.GetString(LastADKey));
+                long lastAdTicks = long.Parse(StorageHelper.GetString(LastADKey));
                 DateTime lastAdTime = new DateTime(lastAdTicks, DateTimeKind.Utc);
 
                 Debug.Log("currentTime - lastAdTime " + (currentTime - lastAdTime));
@@ -195,8 +215,11 @@ namespace ADSContent
         private void ShowInter()
         {
             _ads.ShowInterstitial();
-            PlayerPrefs.SetString(LastADKey, DateTime.UtcNow.Ticks.ToString());
-            PlayerPrefs.Save();
+            
+            // PlayerPrefs.SetString(LastADKey, DateTime.UtcNow.Ticks.ToString());
+            // PlayerPrefs.Save();
+            
+            StorageHelper.SetString(LastADKey, DateTime.UtcNow.Ticks.ToString());
         }
     }
 }

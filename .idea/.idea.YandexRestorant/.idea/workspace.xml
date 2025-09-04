@@ -6,10 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="11e15f27-66b8-446e-8e38-f8f60d18b8aa" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.YandexRestorant/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.YandexRestorant/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/Polytope Studio/Lowpoly_Environments/Sources/Materials/PT_Skybox_mat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/Polytope Studio/Lowpoly_Environments/Sources/Materials/PT_Skybox_mat.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Screens/ShopContent/WorkersContent/WorkerUIProduct.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Screens/ShopContent/WorkersContent/WorkerUIProduct.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/WorkerContent/Worker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/WorkerContent/Worker.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/WorkerContent/Workers.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/WorkerContent/Workers.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DailyTimer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DailyTimer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RestaurantContent/MenuContent/MenuInitializer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RestaurantContent/MenuContent/MenuInitializer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SaveContent/PlayerTraySaver.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SaveContent/PlayerTraySaver.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/MenuUIContent/DishesUIItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/MenuUIContent/DishesUIItem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/MenuUIContent/MenuUIItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/MenuUIContent/MenuUIItem.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -159,6 +161,7 @@
       <workItem from="1756716011131" duration="11427000" />
       <workItem from="1756791051391" duration="22767000" />
       <workItem from="1756885214508" duration="19966000" />
+      <workItem from="1756967737419" duration="4239000" />
     </task>
     <servers />
   </component>

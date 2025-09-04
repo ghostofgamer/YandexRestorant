@@ -1,5 +1,6 @@
 using System;
 using Enums;
+using LoadingSceneContent;
 using PlayerContent;
 using UnityEngine;
 
@@ -8,6 +9,7 @@ namespace SaveContent
     public class PlayerTraySaver : MonoBehaviour
     {
         [SerializeField] private PlayerTray _playerTray;
+        [SerializeField] private LoadingGame _loadingGame;
 
         private int _rawCutletTrayValue;
         private int _wellCutletTrayValue;
@@ -15,22 +17,31 @@ namespace SaveContent
         private void OnEnable()
         {
             _playerTray.CutletItemsActiveChanged += SaveData;
+            _loadingGame.MirraSDKInitialization += Init;
         }
 
         private void OnDisable()
         {
             _playerTray.CutletItemsActiveChanged -= SaveData;
+            _loadingGame.MirraSDKInitialization -= Init;
         }
 
-        private void Start()
+        /*private void Start()
+        {
+            LoadData();
+        }*/
+
+        private void Init()
         {
             LoadData();
         }
 
         private void SaveData(int valueRaw, int valueWell)
         {
-            PlayerPrefs.SetInt("RawCutletTrayValue", valueRaw);
-            PlayerPrefs.SetInt("WellCutletTrayValue", valueWell);
+            // PlayerPrefs.SetInt("RawCutletTrayValue", valueRaw);
+            StorageHelper.SetInt("RawCutletTrayValue", valueRaw);
+            // PlayerPrefs.SetInt("WellCutletTrayValue", valueWell);
+            StorageHelper.SetInt("WellCutletTrayValue", valueWell);
 
             Debug.Log("RAwCutLetValue " + valueRaw);
             Debug.Log("WellCutletGrill " + valueWell);
@@ -38,8 +49,10 @@ namespace SaveContent
 
         public void LoadData()
         {
-            int rawValue = PlayerPrefs.GetInt("RawCutletTrayValue", 0);
-            int wellValue = PlayerPrefs.GetInt("WellCutletTrayValue", 0);
+            // int rawValue = PlayerPrefs.GetInt("RawCutletTrayValue", 0);
+            int rawValue = StorageHelper.GetInt("RawCutletTrayValue", 0);
+            // int wellValue = PlayerPrefs.GetInt("WellCutletTrayValue", 0);
+            int wellValue = StorageHelper.GetInt("WellCutletTrayValue", 0);
 
             Debug.Log("RAW " + rawValue);
             Debug.Log("WELL " + wellValue);
@@ -64,7 +77,7 @@ namespace SaveContent
             }
         }
 
-        private void SetValue(ItemType itemType,int value)
+        private void SetValue(ItemType itemType, int value)
         {
             _playerTray.Put(itemType, value);
             _playerTray.SetCurrentItemType(itemType);
