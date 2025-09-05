@@ -13,7 +13,6 @@ namespace SaveContent
         private const string RawCutletKey = "RawCutletGrill";
         private const string WellCutletKey = "WellCutletGrill";
         
-
         private void Awake()
         {
             _grill = GetComponent<Grill>();

@@ -8,6 +8,7 @@ using I2.Loc;
 using InteractableContent;
 using LoadingSceneContent;
 using PlayerContent;
+using SaveContent;
 using SettingsContent.SoundContent;
 using SoContent.AssemblyBurger;
 using TMPro;
@@ -88,9 +89,11 @@ namespace KitchenEquipmentContent
             foreach (var readyCutlet in _readyCutletItems)
                 readyCutlet.gameObject.SetActive(false);
 
-            int rawValue = PlayerPrefs.GetInt("RawCutletGrill", 0);
-            int readyValue = PlayerPrefs.GetInt("WellCutletGrill", 0);
-
+            // int rawValue = PlayerPrefs.GetInt("RawCutletGrill", 0);
+            int rawValue =  StorageHelper.GetInt("RawCutletGrill", 0);
+            
+            // int readyValue = PlayerPrefs.GetInt("WellCutletGrill", 0);
+            int readyValue = StorageHelper.GetInt("WellCutletGrill", 0);
             if (rawValue > 0)
             {
                 _currentType = ItemType.RawCutlet;

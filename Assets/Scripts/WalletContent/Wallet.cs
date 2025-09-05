@@ -105,12 +105,6 @@ namespace WalletContent
             PlayerPrefs.Save();*/
             
             
-            
-            /*MirraSDK.Data.SetInt("DollarValue_Dollars", DollarValue.Dollars);
-            MirraSDK.Data.SetInt("DollarValue_Cents", DollarValue.Cents);
-            MirraSDK.Data.Save(); // аналог PlayerPrefs.Save()*/
-            
-            
             StorageHelper.SetInt(DollarDollarsKey, DollarValue.Dollars);
             StorageHelper.SetInt(DollarCentsKey, DollarValue.Cents);
         }
