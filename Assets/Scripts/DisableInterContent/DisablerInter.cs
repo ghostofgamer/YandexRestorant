@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using ADSContent;
+using IAP;
 using LoadingSceneContent;
 using PlayerContent.LevelContent;
 using SaveContent;
@@ -21,7 +22,8 @@ namespace DisableInterContent
         [SerializeField] private DisablerInterTimer _disablerInterTimer;
         [SerializeField] private DisableInterViewer _disableInterViewer;
         [SerializeField] private Animator _animator;
-        [SerializeField]private LoadingGame _loadingGame;
+        [SerializeField] private LoadingGame _loadingGame;
+        [SerializeField] private Purchaser _purchaser;
 
         private int _currentValueShowReward = 0;
         private bool _isActivateDisableInter = false;
@@ -35,6 +37,7 @@ namespace DisableInterContent
             _playerLevel.LevelChanged += SetValue;
             _disablerInterTimer.TimerCompleted += Reset;
             _loadingGame.MirraSDKInitialization += Init;
+            _purchaser.RemoveADSPurchased += Deactivate;
         }
 
         private void OnDisable()
@@ -42,7 +45,8 @@ namespace DisableInterContent
             _playerLevel.LevelChanged -= SetValue;
             _disablerInterTimer.TimerCompleted -= Reset;
             _loadingGame.MirraSDKInitialization -= Init;
-            
+            _purchaser.RemoveADSPurchased -= Deactivate;
+
             if (_autoSaveCoroutine != null) // ✅ останавливаем корутину при выключении объекта
                 StopCoroutine(_autoSaveCoroutine);
         }
@@ -62,8 +66,28 @@ namespace DisableInterContent
 
         private void Init()
         {
+            bool removeAds = StorageHelper.GetInt("removeADS") == 1;
+
+            Debug.Log("Init DisableInter" + removeAds);
+
+            if (removeAds)
+            {
+                Deactivate();
+                return;
+            }
+
+            Debug.Log("Init DisableInter");
+
             Load();
             _autoSaveCoroutine = StartCoroutine(AutoSaveRoutine());
+        }
+
+        private void Deactivate()
+        {
+            if (_disableInterScreen.gameObject.activeSelf)
+                _disableInterScreen.CloseScreen();
+            
+            _buttonOpenDisableInterScreen.SetActive(false);
         }
 
         private IEnumerator AutoSaveRoutine()
@@ -116,6 +140,11 @@ namespace DisableInterContent
 
         private void SetValue(int level)
         {
+            bool removeAds = StorageHelper.GetInt("removeADS") == 1;
+
+            if (removeAds)
+                return;
+
             _buttonOpenDisableInterScreen.SetActive(level >= 2);
         }
 

@@ -33,6 +33,8 @@ namespace IAP
         [SerializeField] private GameObject[] _shelfes;
         [SerializeField] private LoadingGame _loadingGame;
 
+        public event Action RemoveADSPurchased;
+        
         private void OnEnable()
         {
             _loadingGame.MirraSDKInitialization += RecoveryPurchases;
@@ -243,6 +245,8 @@ namespace IAP
             Debug.Log("On Purchase RemoveAds Completed");
             // AppMetrica.ReportEvent("In_App", "{\"" + "RemoveADS" + "\":null}");
 
+            RemoveADSPurchased?.Invoke();
+            
             if (_interstitialTimer != null)
                 _interstitialTimer.SetValue(false);
 

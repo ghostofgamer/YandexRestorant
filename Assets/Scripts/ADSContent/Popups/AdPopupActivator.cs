@@ -95,6 +95,11 @@ namespace ADSContent.Popups
 
         private void RemoveAdsScreenOpen()
         {
+            bool removeAds = StorageHelper.GetInt("removeADS") == 1;
+            
+            if (removeAds)
+                return;
+            
             _removeAdScreen.OpenScreen();
         }
     }
